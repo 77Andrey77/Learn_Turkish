@@ -1,0 +1,84 @@
+body{
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-modul{
+  width: 1200px;
+  background-color:rgba(232, 247, 173, 1);
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+ margin-bottom: 50px;
+}
+
+.modul_list_cards{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10px 0 10px ;
+}
+
+.card{
+  background-color: #fff;
+  width: 270px;
+  height: 270px;
+  border-radius:10px;
+}
+
+.modul_foto{
+      
+   width: 100%;
+   height: 150px;
+   border-radius: 10px 10px 0 0;
+   margin-bottom: 10px;
+}
+
+.card_info{
+ font-size: 16px;
+ margin-left: 20px;
+ margin-bottom: 10px;
+}
+
+.card_title{
+ font-size: 19px;
+ margin-left: 10px;
+}
+
+.card_button{
+  background-color:tomato;
+  padding: 5px 20px;
+  font-size: 18px;
+  color:#fff;
+  border-radius:20px;
+  justify-content: center;
+}
+
+.button-block{
+  width: 100%;
+  height: 50px;
+  text-align:center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+}
+
+.text_info {
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  height: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.modul_titel{
+  font-size: 26px;
+}
+
+.modul_titel-opacity{
+  font-size: 26px;
+  opacity: 8%;
+}

@@ -1,0 +1,94 @@
+body{
+  /* width: 1400px; */
+  max-width: 100%;
+  height: 100%;
+}
+
+/* //////////переключение языка////////// */
+#lang {
+  display: none;
+}
+
+#lang:checked~.rus,
+#lang:not(:checked)~.ua {
+  display: none;
+}
+
+label[for="lang"] {
+  user-select: none;
+  cursor: pointer;
+}
+
+
+/* ////////////////// */
+.adressLine{
+  display: block;
+  width: 1200px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(251, 245, 224, 1);
+  margin-top: 40px;
+  box-shadow: 5px 10px 5px rgba(113, 105, 105, 0.5);
+}
+
+.listAdress{
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+}
+.mailSection{
+  
+  text-align: center;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.titleSection{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 70px;
+opacity: 5%;
+}
+
+.list-cards{
+  display: flex;
+  width: 1200px;
+  flex-wrap: wrap;
+ 
+}
+.card{
+  background-color:rgba(232, 247, 173, 1);
+  width: 510px;
+  height: 450px;
+  border-radius: 20px;
+  padding: 20px;
+  align-items: center;
+  margin: 25px;
+}
+ 
+ .card-foto{
+  background-color: url('./foto/foto-A1.png');
+  background: 100% 100% no-repeat;
+    background-size: cover;
+    width: 510px;
+    height: 250px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+    
+ }
+
+ .card-text{
+  font-size: 32px;
+  margin-bottom: 25px;
+ }
+
+ .card-button{
+  background-color:rgba(240, 58, 69, 1);
+  font-size: 24px;
+  color: aliceblue;
+  width: 360px;
+  height: 80px;
+  border-radius: 30px;
+ }

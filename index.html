@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn_Turkish</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="adressLine">
+        <ul class="listAdress">
+          <li>
+            <!-- Ссылка на телефонный номер -->
+            <a href="tel:+380955873597">
+              <img src="./icons/gg_phone.svg" alt="icon phone"
+            /></a>
+          </li>
+          <li>
+            <!-- Ссылка на адрес электронной почты  -->
+            <a href="mailto:0955873597@i.ua">
+              <img src="./icons/clarity_email-solid.svg" alt="icon email" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- ///////////////////переключение языка/////////////////////////////////////////////////// -->
+    <input id="lang" type="checkbox" onclick="changeLagnuage()" />
+    <label for="lang" class="rus">RUS</label
+    ><label for="lang" class="ua">UA</label>
+
+    <!-- ////////////////////////////////////////////////////////////////////// -->
+
+    <section class="mailSection">
+      <h1 class="titleSection">Каталог</h1>
+      <ul class="list-cards">
+        <li>
+          <div class="card">
+            <!-- img -->
+
+            <img
+              class="card-foto"
+              src="./foto/foto-A1.png"
+              alt="foto alfabet"
+            />
+
+            <p text="titleCardLevelA1" class="card-text">
+              Простой турецкий для жизни Начальный уровень А1
+            </p>
+
+            <a href="./index_levelA1.html">
+              <button text="buttonStart" class="card-button">
+                Начать обучение
+              </button>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <!-- img -->
+
+            <img
+              class="card-foto"
+              src="./foto/foto-A2.png"
+              alt="foto teacher"
+            />
+
+            <p text="titleCardLevelA2" class="card-text">
+              Простой турецкий для жизни Базовый уровень А2
+            </p>
+            <a href="./index_levelA2.html">
+              <button text="buttonStart" class="card-button">
+                Начать обучение
+              </button>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <!-- img -->
+
+            <img class="card-foto" src="./foto/foto-B1.png" alt="foto woman " />
+
+            <p text="titleCardLevelB1" class="card-text">
+              Простой турецкий для жизни Средний уровень В1
+            </p>
+            <a href="./index_levelB1.html">
+              <button text="buttonStart" class="card-button">
+                Начать обучение
+              </button>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <!-- img -->
+
+            <img
+              class="card-foto"
+              src="./foto/foto-B2.png"
+              alt="foto happy woman"
+            />
+
+            <p text="titleCardLevelB2" class="card-text">
+              Простой турецкий для жизни и работы Уровень В2
+            </p>
+            <a href="./index_levelB2.html">
+              <button text="buttonStart" class="card-button">
+                Начать обучение
+              </button>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <script src="./change_language.js"></script>
+  </body>
+</html>
