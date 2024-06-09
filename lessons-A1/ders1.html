@@ -34,21 +34,47 @@
         <li><button>Закон гармонии согласных</button></li>
       </ul>
     </section>
+     -->
+    <!-- <video
+  src="http://techslides.com/demos/sample-videos/small.webm"
+  poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+  width="640"
+  controls
+  autoplay
+  loop
+  preload="auto"
+></video> -->
+    <video
+      src="../video/клипы_для_урока 1.mp4"
+      width="640"
+      controls
+      autoplay
+      loop
+    ></video>
+    <a href="../materials/Словарь к модулю 1.pdf" download
+      >Словарь к модулю 1</a
+    >
+    <a href="../materials/Модуль 1 Урок 1. Рабочая тетрадь.pdf" download
+      >Рабочая тетрадь Урок 1</a
+    >
 
-    <section>
-      <h2>
-        Задание 1. Давайте посмотрим на картинки и заполним пробелы в словах
-      </h2>
+    <section class="task-section">
+      <div class="task-header" onclick="toggleTaskContent0()">
+        Дополнительный материал
+      </div>
+      <ul>
+        <li><button>Алфавит</button></li>
+        <li><button>ЗАКОН ГАРМОНИИ СЛОГА</button></li>
+        <li><button>ЗАКОН ГАРМОНИИ ГЛАСНЫХ</button></li>
+        <li><button>ЗАКОН ГАРМОНИИ СОГЛАСНЫХ</button></li>
+      </ul>
     </section>
 
-    <section>
-      <h2>Задание 2. Выберите один верный ответ в каждом пункте</h2>
-    </section> -->
     <section class="task-section">
-      <div class="task-header" onclick="toggleTaskContent()">
+      <div class="task-header" onclick="toggleTaskContent1()">
         Задание 1. Давайте посмотрим на картинки и заполним пробелы в словах
       </div>
-      <div class="task-content task-hidden" id="taskContent">
+      <div class="task-content task-hidden" id="taskContent1">
         <div class="image-container">
           <img src="./ders1_1.jpg" alt="Image 1" />
           <select class="answer-select" data-correct="araba">
@@ -303,6 +329,109 @@
         </div>
       </div>
     </section>
+    <!-- ///////////////////////// -->
+
+    <section class="task-section">
+      <div class="task-header" onclick="toggleTaskContent2()">
+        Задание 2. Выберите один верный ответ в каждом пункте
+      </div>
+      <div class="task-content-write task-hidden" id="taskContent2">
+        <div class="write-container">
+          <p>Какой буквы нет в турецком алфавите?</p>
+          <select class="answer-select" data-correct="w">
+            <option value="">--Выберите ответ--</option>
+            <option value="ğ">ğ</option>
+            <option value="n">n</option>
+            <option value="w">w</option>
+            <option value="r">r</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>В какой из строчек перечислены только согласные буквы?</p>
+          <select class="answer-select" data-correct="y,g,ğ,c">
+            <option value="">--Выберите ответ--</option>
+            <option value="ğ,v,i,ş">ğ,v,i,ş</option>
+            <option value="y,g,ğ,c">y,g,ğ,c</option>
+            <option value="ğ,h,â,y">ğ,h,â,y</option>
+            <option value="k,o,û,z">k,o,û,z</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>В каком из вариантов ответов имя 'ЮРИЙ' написано правильно?</p>
+          <select class="answer-select" data-correct="Yuriy">
+            <option value="">--Выберите ответ--</option>
+            <option value="Urii">Urii</option>
+            <option value="Uriy">Uriy</option>
+            <option value="Yurii">Yurii</option>
+            <option value="Yuriy">Yuriy</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>
+            В каком из вариантов ответов дано правильное произношение буквы 'L'?
+          </p>
+          <select class="answer-select" data-correct="Лэ">
+            <option value="">--Выберите ответ--</option>
+            <option value="Эл">Эл</option>
+            <option value="Лэ">Лэ</option>
+            <option value="Ла">Ла</option>
+            <option value="Лы">Лы</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>Как правильно транскрибировать на русский язык слово 'ELEM'?</p>
+          <select class="answer-select" data-correct="Элем">
+            <option value="">--Выберите ответ--</option>
+            <option value="Элем">Элем</option>
+            <option value="Елем">Елем</option>
+            <option value="Элэм">Элем</option>
+            <option value="Елэм">Елэм</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>Сколько согласных и гласных букв в турецком алфавите?</p>
+          <select
+            class="answer-select"
+            data-correct="Гласные -8, согласные-21."
+          >
+            <option value="">--Выберите ответ--</option>
+            <option value="Гласные -10, согласные-19.">
+              Гласные -10, согласные-19.
+            </option>
+            <option value="Гласные -9, согласные-20.">
+              Гласные -9, согласные-20.
+            </option>
+            <option value="Гласные -11, согласные-18.">
+              Гласные -11, согласные-18.
+            </option>
+            <option value="Гласные -8, согласные-21.">
+              Гласные -8, согласные-21.
+            </option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>Как правильно, произносится слово 'AĞAÇ'?</p>
+          <select class="answer-select" data-correct="Аач">
+            <option value="">--Выберите ответ--</option>
+            <option value="Аач">Аач</option>
+            <option value="Ааш">Ааш</option>
+            <option value="Агаш">Агаш</option>
+            <option value="Агач">Агач</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div>
+      <input type="checkbox" id="snieda" name="interest" value="programming" />
+      <label for="snieda">snieda</label>
+    </div> -->
 
     <script src="./scriptDers.js"></script>
   </body>
