@@ -9,7 +9,23 @@
     <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
   </head>
   <body>
-    <!-- <button>Словарный тренажер</button> -->
+    <button id="task-header-trainer">Словарный тренажер</button>
+    <div class="task-content-trainer hidden" id="task-content-trainer">
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">родственники</div>
+        <div class="translation hidden">akraba</div>
+        <div class="image hidden">
+          <img src="./foto/trainer/akraba-родственники.jpg" alt="akraba" />
+          <!-- ////////////////// -->
+          <!-- <img src="./foto/trainer/zürafa-жираф.jpg" alt="akraba" /> -->
+          <!-- ////////////////// -->
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
 
     <!-- <video
       src="../video/клипы_для_урока 1.mp4"
