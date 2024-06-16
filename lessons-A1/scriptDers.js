@@ -89,281 +89,281 @@ const words = [
     {
         word: "akraba",
         translation: "родственники",
-        image: "./foto/trainer/akraba-родственники.jpg"
+        image: "./foto/trainer/akraba.jpg"
     },
     {
         word: "anahtar",
         translation: "ключ",
-        image: "./foto/trainer/anahtar- ключ.jpg"
+        image: "./foto/trainer/anahtar.jpg"
     },
     {
         word: "araba",
         translation: "машина",
-        image: "./foto/trainer/araba-машина.jpg"
+        image: "./foto/trainer/araba.jpg"
     },
     {
         word: "bavul",
         translation: "чемодан",
-        image: "./foto/trainer/bavul- чемодан.jpg"
+        image: "./foto/trainer/bavul.jpg"
     },
     {
         word: "bebek",
         translation: "малыш",
-        image: "./foto/trainer/bebek-малыш.jpg"
+        image: "./foto/trainer/bebek.jpg"
     },
     {
         word: "büyük",
         translation: "большой",
-        image: "./foto/trainer/büyük-большой.jpg"
+        image: "./foto/trainer/büyük.jpg"
     },
     {
         word: "ceket",
         translation: "пиджак",
-        image: "./foto/trainer/ceket-пиджак.jpg"
+        image: "./foto/trainer/ceket.jpg"
     },
     {
         word: "çanta",
         translation: "сумка",
-        image: "./foto/trainer/çanta-сумка.jpg"
+        image: "./foto/trainer/çanta.jpg"
     },
     {
         word: "çatal",
         translation: "вилка",
-        image: "./foto/trainer/çatal-вилка.jpeg"
+        image: "./foto/trainer/çatal.jpeg"
     },
     {
         word: "çay",
         translation: "чай",
-        image: "./foto/trainer/çay-чай.jpg"
+        image: "./foto/trainer/çay.jpg"
     },
     {
         word: "çaydanlık",
         translation: "чайник",
-        image: "./foto/trainer/çaydanlık-чайник.jpg"
+        image: "./foto/trainer/çaydanlık.jpg"
     },
     {
         word: "deniz",
         translation: "море",
-        image: "./foto/trainer/deniz-море.jpg"
+        image: "./foto/trainer/deniz.jpg"
     },
     {
         word: "dondurma",
         translation: "мороженое",
-        image: "./foto/trainer/dondurma-мороженое.jpg"
+        image: "./foto/trainer/dondurma.jpg"
     },
     {
         word: "elbise",
         translation: "одежда платье",
-        image: "./foto/trainer/elbise-одежда платье.jpg"
+        image: "./foto/trainer/elbise.jpg"
     },
     {
         word: "elma",
         translation: "яблоко",
-        image: "./foto/trainer/elma-яблоко.jpg"
+        image: "./foto/trainer/elma.jpg"
     },
     {
         word: "fındık",
         translation: "фундук",
-        image: "./foto/trainer/fındık-фундук.jpg"
+        image: "./foto/trainer/fındık.jpg"
     },
     {
         word: "fırça",
         translation: "щетка",
-        image: "./foto/trainer/fırça-щетка.jpg"
+        image: "./foto/trainer/fırça.jpg"
     },
     {
         word: "fıstık",
         translation: "фисташки",
-        image: "./foto/trainer/fıstık-фисташки.jpg"
+        image: "./foto/trainer/fıstık.jpg"
     },
     {
         word: "gömlek",
         translation: "рубашка",
-        image: "./foto/trainer/gömlek-рубашка.jpg"
+        image: "./foto/trainer/gömlek.jpg"
     },
     {
         word: "göz",
         translation: "глаз",
-        image: "./foto/trainer/göz-глаз.jpg"
+        image: "./foto/trainer/göz.jpg"
     },
     {
         word: "gözlük",
         translation: "очки",
-        image: "./foto/trainer/gözlük-очки.jpg"
+        image: "./foto/trainer/gözlük.jpg"
     },
     {
         word: "hamam",
         translation: "хамам",
-        image: "./foto/trainer/hamam-хамам.jpg"
+        image: "./foto/trainer/hamam.jpg"
     },
     {
         word: "havuç",
         translation: "морковь",
-        image: "./foto/trainer/havuç-морковь.jpg"
+        image: "./foto/trainer/havuç.jpg"
     },
     {
         word: "iğne",
         translation: "иголка",
-        image: "./foto/trainer/iğne-иголка.jpg"
+        image: "./foto/trainer/iğne.jpg"
     },
     {
         word: "inek",
         translation: "корова",
-        image: "./foto/trainer/inek-корова.jpg"
+        image: "./foto/trainer/inek.jpg"
     },
     {
         word: "koltuk",
         translation: "кресло",
-        image: "./foto/trainer/koltuk-кресло.jpg"
+        image: "./foto/trainer/koltuk.jpg"
     },
     {
         word: "köpek",
         translation: "собака",
-        image: "./foto/trainer/köpek-собака.jpg"
+        image: "./foto/trainer/köpek.jpg"
     },
     {
         word: "lamba",
         translation: "лампа",
-        image: "./foto/trainer/lamba-лампа.jpg"
+        image: "./foto/trainer/lamba.jpg"
     },
     {
         word: "ldiven",
         translation: "перчатки",
-        image: "./foto/trainer/ldiven-перчатки.jpg"
+        image: "./foto/trainer/ldiven.jpg"
     },
     {
         word: "limon",
         translation: "лимон",
-        image: "./foto/trainer/limon-лимон.jpg"
+        image: "./foto/trainer/limon.jpg"
     },
     {
         word: "merdiven",
         translation: "лесница",
-        image: "./foto/trainer/merdiven-лесница.jpg"
+        image: "./foto/trainer/merdiven.jpg"
     },
     {
         word: "musluk",
         translation: "кран",
-        image: "./foto/trainer/musluk-кран.jpg"
+        image: "./foto/trainer/musluk.jpg"
     },
     {
         word: "nar",
         translation: "гранат",
-        image: "./foto/trainer/nar-гранат.jpg"
+        image: "./foto/trainer/nar.jpg"
     },
     {
         word: "orman",
         translation: "лес",
-        image: "./foto/trainer/orman-лес.jpg"
+        image: "./foto/trainer/orman.jpg"
     },
     {
         word: "otobüs",
         translation: "автобус",
-        image: "./foto/trainer/otobüs-автобус.jpg"
+        image: "./foto/trainer/otobüs.jpg"
     },
     {
         word: "öğretmen",
         translation: "учитель",
-        image: "./foto/trainer/öğretmen-учитель.jpg"
+        image: "./foto/trainer/öğretmen.jpg"
     },
     {
         word: "ördek",
         translation: "утка",
-        image: "./foto/trainer/ördek-утка.jpg"
+        image: "./foto/trainer/ördek.jpg"
     },
     {
         word: "örnek",
         translation: "пример",
-        image: "./foto/trainer/örnek-пример.jpg"
+        image: "./foto/trainer/örnek.jpg"
     },
     {
         word: "para",
         translation: "деньги",
-        image: "./foto/trainer/para-деньги.jpg"
+        image: "./foto/trainer/para.jpg"
     },
     {
         word: "portakal",
         translation: "апельсин",
-        image: "./foto/trainer/portakal-апельсин.jpg"
+        image: "./foto/trainer/portakal.jpg"
     },
     {
         word: "radyo",
         translation: "радио",
-        image: "./foto/trainer/radyo-радио.jpg"
+        image: "./foto/trainer/radyo.jpg"
     },
     {
         word: "saat",
         translation: "часы",
-        image: "./foto/trainer/saat-часы.jpg"
+        image: "./foto/trainer/saat.jpg"
     },
     {
         word: "şemsiye",
         translation: "зонт",
-        image: "./foto/trainer/şemsiye-зонт.jpg"
+        image: "./foto/trainer/şemsiye.jpg"
     },
     {
         word: "şişe",
         translation: "бутылка",
-        image: "./foto/trainer/şişe-бутылка.jpg"
+        image: "./foto/trainer/şişe.jpg"
     },
     {
         word: "tabak",
         translation: "тарелка",
-        image: "./foto/trainer/tabak-тарелка.jpg"
+        image: "./foto/trainer/tabak.jpg"
     },
     {
         word: "tavuk",
         translation: "курица",
-        image: "./foto/trainer/tavuk-курица.jpg"
+        image: "./foto/trainer/tavuk.jpg"
     },
     {
         word: "terlik",
         translation: "тапочки",
-        image: "./foto/trainer/terlik-тапочки.jpg"
+        image: "./foto/trainer/terlik.jpg"
     },
     {
         word: "uçak",
         translation: "самолет",
-        image: "./foto/trainer/uçak-самолет.jpg"
+        image: "./foto/trainer/uçak.jpg"
     },
     {
         word: "ütü",
         translation: "утюг",
-        image: "./foto/trainer/ütü-утюг.jpg"
+        image: "./foto/trainer/ütü.jpg"
     },
     {
         word: "üzgün",
         translation: "грустный",
-        image: "./foto/trainer/üzgün-грустный.jpg"
+        image: "./foto/trainer/üzgün.jpg"
     },
     {
         word: "üzüm",
         translation: "виноград",
-        image: "./foto/trainer/üzüm-виноград.jpg"
+        image: "./foto/trainer/üzüm.jpg"
     },
     {
         word: "vagon",
         translation: "вагон",
-        image: "./foto/trainer/vagon-вагон.jpg"
+        image: "./foto/trainer/vagon.jpg"
     },
     {
         word: "yüzük",
         translation: "кольцо",
-        image: "./foto/trainer/yüzük-кольцо.jpg"
+        image: "./foto/trainer/yüzük.jpg"
     },
     {
         word: "yıldız",
         translation: "звезда",
-        image: "./foto/trainer/yıldız-звезда.jpg"
+        image: "./foto/trainer/yıldız.jpg"
     },
     {
         word: "zeytin",
         translation: "оливки",
-        image: "./foto/trainer/zeytin-оливки.jpg"
+        image: "./foto/trainer/zeytin.jpg"
     },{
         word: "zürafa",
         translation: "жираф",
-        image: "./foto/trainer/zürafa-жираф.jpg"
+        image: "./foto/trainer/zürafa.jpg"
     }
 ];
 
