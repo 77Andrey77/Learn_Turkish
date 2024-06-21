@@ -217,7 +217,8 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px;
 }
 
@@ -227,11 +228,14 @@ body {
   font-size: 24px;
   padding: 20px;
 }
-
+.item-img{
+  width: 300px;
+}
 
 
 .controls {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 button {
