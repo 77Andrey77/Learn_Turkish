@@ -1,11 +1,18 @@
 body {
     font-family: Arial, sans-serif;
+    max-width: 1400px;
+    /* padding: 100px; */
+    background-color:#e2e6ea;
+    
 }
 
 .task-section {
   width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
     border: 1px solid #ccc;
-    margin: 20px;
+    margin-bottom: 30px;
     padding: 10px;
     border-radius: 5px;
     background-color:#ccc;
@@ -18,7 +25,55 @@ body {
     /* margin-bottom: 10px; */
 }
 
+.titel-ders{
+  font-size: 60px;
+  color: rgb(0, 0, 0, 0.05);
+  text-align: center;
+  margin: 30px;
+}
+.text-description{
+  /* background-color: aquamarine; */
+  width: 800px;
+  font-size: 20px;
+  line-height:1.5;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+/* .trainer-button{
+  margin-left: auto;
+  margin-right: auto;
+} */
+.section-wrapper{
+    width: 1200px;
+    /* background-color: red; */
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.section-download{
+ 
+  flex-direction: column;
+}
+
+.link-download{
+  width: 600px;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius:5px;
+  background-color:rgb(221, 245, 168);
+}
+
+.ders1-video{
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 .task-content {
@@ -163,6 +218,7 @@ body {
   align-items: center;
   position: relative;
   margin: 20px;
+  padding: 10px;
 }
 
 .word,
@@ -185,10 +241,11 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #007bff;
+  background-color: #5a9ce3;
   color: #fff;
+  margin: 20px;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #f32f2f;
 }

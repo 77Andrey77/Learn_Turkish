@@ -9,16 +9,27 @@
     <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
   </head>
   <body>
-    <button id="task-header-trainer">Словарный тренажер</button>
+    <h3 class="titel-ders">DERS 1 (ALFABE)</h3>
+    <p class="text-description">
+      Алфавит. Образование множественного числа. Знакомство с турецкими буквами.
+      На уроке вы научитесь правильному произношению звуков, чтобы в дальнейшем
+      вам не пришлось исправлять свой акцент и попадать в неловкие ситуации.
+      Научитесь образовывать множественное число и поймете, почему в турецком
+      языке так важна гармония звуков. Взаимопонимание с собеседником вам
+      обеспечено.
+    </p>
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
     <div class="task-content-trainer hidden" id="task-content-trainer">
       <div id="card" class="card" onclick="flipCard()">
         <div class="word">родственники</div>
         <div class="translation hidden">akraba</div>
         <div class="image hidden">
           <img src="./foto/trainer/akraba.jpg" alt="akraba" />
-          <!-- ////////////////// -->
-          <!-- <img src="./foto/trainer/zürafa-жираф.jpg" alt="akraba" /> -->
-          <!-- ////////////////// -->
         </div>
       </div>
       <div class="controls">
@@ -27,20 +38,31 @@
       </div>
     </div>
 
-    <!-- <video
-      src="../video/клипы_для_урока 1.mp4"
-      width="640"
-      controls
-      autoplay
-      loop
-      preload="none"
-    ></video> -->
-    <a href="../../materials/Словарь к модулю 1.pdf" download
-      >Словарь к модулю 1</a
-    >
-    <a href="../../materials/Модуль 1 Урок 1. Рабочая тетрадь.pdf" download
-      >Рабочая тетрадь Урок 1</a
-    >
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../video/клипы_для_урока 1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/Словарь к модулю 1.pdf"
+        download
+        >Скачать Словарь к модулю 1</a
+      >
+      <a
+        class="link-download"
+        href="../../materials/Модуль 1 Урок 1. Рабочая тетрадь.pdf"
+        download
+        >Скачать Рабочая тетрадь Урок 1</a
+      >
+    </div>
 
     <section class="task-section">
       <div class="task-header" id="task-header0">Дополнительный материал</div>
