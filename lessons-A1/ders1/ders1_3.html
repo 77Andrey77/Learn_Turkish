@@ -41,150 +41,81 @@
       </div>
     </div>
     <!-- /////////////video//////////// -->
+    <img
+      class="icon-headphones"
+      src="../../icons/icon-headphones.svg"
+      alt="icon-headphones"
+    />
+    <p class="title-audio">Прослушайте аудио и выберете верное слово</p>
 
     <div class="section-wrapper">
-      <video
+      <!-- <video
         class="ders1-video"
         src="../../video/video-ders1.mp4"
         width="640"
         controls
         loop
         preload="none"
-      ></video>
+      ></video> -->
+      <audio
+        src="../../audio/ders1-page3.m4a"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></audio>
     </div>
     <!-- ///////////////////////// -->
 
-    <div class="section-wrapper section-download">
+    <div class="section-wrapper section-download hidden">
       <a
         class="link-download"
-        href="../../materials/Словарь к модулю 1.pdf"
+        href="../../materials/exception-words.png"
         download
-        >Скачать Словарь к модулю 1</a
-      >
-      <a
-        class="link-download"
-        href="../../materials/Модуль 1 Урок 1. Рабочая тетрадь.pdf"
-        download
-        >Скачать Рабочая тетрадь Урок 1</a
+        >Скачать СЛОВА-ИСКЛЮЧЕНИЯ</a
       >
     </div>
     <!-- ///////////////////////// -->
 
-    <section class="task-section">
+    <section class="task-section hidden">
       <div class="task-header" id="task-header0">Дополнительный материал</div>
       <ul class="task-more-material hidden" id="task-more-material">
         <li>
-          <button id="task-header-alfabet">Алфавит</button>
+          <button id="task-header-alfabet">
+            ОБРАЗОВАНИЕ МНОЖЕСТВЕННОГО ЧИСЛА
+          </button>
           <div class="slider hidden" id="task-content-alfabet">
             <div class="slides">
               <div class="slide">
-                <img src="./foto/slide1.JPG" alt="Image 1" />
+                <img
+                  src="./foto/slide-Ders1-page2-1.JPG"
+                  alt="slide-Ders1-page2-1"
+                />
               </div>
               <div class="slide">
-                <img src="./foto/slide2.JPG" alt="Image 2" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide3.JPG" alt="Image 3" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide4.JPG" alt="Image 4" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide5.JPG" alt="Image 5" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide6.JPG" alt="Image 6" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide7.JPG" alt="Image 7" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide8.JPG" alt="Image 8" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide9.JPG" alt="Image 9" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide10.JPG" alt="Image 10" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide11.JPG" alt="Image 11" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide12.JPG" alt="Image 12" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide13.JPG" alt="Image 13" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide14.JPG" alt="Image 14" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide15.JPG" alt="Image 15" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide16.JPG" alt="Image 16" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide17.JPG" alt="Image 17" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide18.JPG" alt="Image 18" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide19.JPG" alt="Image 19" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide20.JPG" alt="Image 20" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide21.JPG" alt="Image 21" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide22.JPG" alt="Image 22" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide23.JPG" alt="Image 23" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide24.JPG" alt="Image 24" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide25.JPG" alt="Image 25" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide26.JPG" alt="Image 26" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide27.JPG" alt="Image 27" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide28.JPG" alt="Image 28" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide29.JPG" alt="Image 29" />
-              </div>
-              <div class="slide">
-                <img src="./foto/slide30.JPG" alt="Image 30" />
+                <img
+                  src="./foto/slide-Ders1-page2-2.jpg"
+                  alt="slide-Ders1-page2-2"
+                />
               </div>
             </div>
             <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
             <button class="next" onclick="moveSlides(1)">&#10095;</button>
           </div>
         </li>
-        <li>
+        <li class="hidden">
           <button id="task-header-law1">ЗАКОН ГАРМОНИИ СЛОГА</button>
           <div class="task-law hidden" id="task-content-law1-img">
             <img src="./foto/slide1(1).JPG" alt="img-law" />
           </div>
         </li>
-        <li>
+        <li class="hidden">
           <button id="task-header-law2">ЗАКОН ГАРМОНИИ ГЛАСНЫХ</button>
           <div class="task-law hidden" id="task-content-law2-img">
             <img src="./foto/slide1(2).JPG" alt="img-law" />
           </div>
         </li>
-        <li>
+        <li class="hidden">
           <button id="task-header-law3">ЗАКОН ГАРМОНИИ СОГЛАСНЫХ</button>
           <div class="task-law hidden" id="task-content-law3-img">
             <img src="./foto/slide1(3).JPG" alt="img-law" />
@@ -196,7 +127,7 @@
 
     <section class="task-section">
       <div class="task-header" id="task-header1">
-        Задание 1. Давайте посмотрим на картинки и заполним пробелы в словах
+        Задание 4. Посмотрите на картинку и правильно выберите вариант
       </div>
       <div class="task-content hidden" id="taskContent1">
         <div class="image-container">
@@ -209,12 +140,12 @@
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_2.jpg" alt="Image 2" />
-          <select class="answer-select" data-correct="bavul">
+          <img src="../ders1/foto/trainer/bebek.jpg" alt="Image 2" />
+          <select class="answer-select" data-correct="bebek">
             <option value="">--Выберите ответ--</option>
-            <option value="baden">baden</option>
             <option value="bacan">bacan</option>
-            <option value="bavul">bavul</option>
+            <option value="bebek">bebek</option>
+            <option value="badenl">baden</option>
           </select>
         </div>
         <div class="image-container">
@@ -236,102 +167,102 @@
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_5.jpg" alt="Image 5" />
-          <select class="answer-select" data-correct="dondurma">
+          <img src="../ders1/foto/trainer/deniz.jpg" alt="Image 5" />
+          <select class="answer-select" data-correct="deniz">
             <option value="">--Выберите ответ--</option>
+            <option value="deniz">deniz</option>
             <option value="dondurma">dondurma</option>
-            <option value="damat">damat</option>
             <option value="dalga">dalga</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_6.jpg" alt="Image 6" />
-          <select class="answer-select" data-correct="el">
+          <img src="../ders1/foto/trainer/elma.jpg" alt="Image 6" />
+          <select class="answer-select" data-correct="elma">
             <option value="">--Выберите ответ--</option>
-            <option value="el">el</option>
+            <option value="etek">etek</option>
             <option value="elbise">elbise</option>
-            <option value="etec">etec</option>
+            <option value="elma">elma</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_7.jpg" alt="Image 7" />
-          <select class="answer-select" data-correct="fener">
+          <img src="../ders1/foto/trainer/fındık.jpg" alt="Image 7" />
+          <select class="answer-select" data-correct="fındık">
             <option value="">--Выберите ответ--</option>
             <option value="fare">fare</option>
             <option value="fener">fener</option>
-            <option value="fakir">fakir</option>
+            <option value="fındık">fındık</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_8.jpg" alt="Image 8" />
-          <select class="answer-select" data-correct="gemi">
+          <img src="../ders1/foto/trainer/göz.jpg" alt="Image 8" />
+          <select class="answer-select" data-correct="göz">
             <option value="">--Выберите ответ--</option>
+            <option value="göz">göz</option>
             <option value="gece">gece</option>
-            <option value="galon">galon</option>
             <option value="gemi">gemi</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_9.jpg" alt="Image 9" />
-          <select class="answer-select" data-correct="havuç">
+          <img src="../ders1/foto/trainer/halı.jpg" alt="Image 9" />
+          <select class="answer-select" data-correct="halı">
             <option value="">--Выберите ответ--</option>
-            <option value="hafiza">hafiza</option>
+            <option value="halı">halı</option>
             <option value="havuç">havuç</option>
             <option value="hayvan">hayvan</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_10.jpg" alt="Image 10" />
-          <select class="answer-select" data-correct="ıstakoz">
+          <img src="../ders1/foto/trainer/ıspanak.jpg" alt="Image 10" />
+          <select class="answer-select" data-correct="ıspanak">
             <option value="">--Выберите ответ--</option>
             <option value="ıstakoz">ıstakoz</option>
-            <option value="ılık">ılık</option>
             <option value="ıspanak">ıspanak</option>
+            <option value="ılık">ılık</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_11.jpg" alt="Image 11" />
-          <select class="answer-select" data-correct="iğne">
+          <img src="../ders1/foto/trainer/inek.jpg" alt="Image 11" />
+          <select class="answer-select" data-correct="inek">
             <option value="">--Выберите ответ--</option>
-            <option value="ip">ip</option>
+            <option value="iğne">iğne</option>
             <option value="iştah">iştah</option>
-            <option value="iğne">iğne</option>
+            <option value="inek">inek</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_12.jpg" alt="Image 12" />
-          <select class="answer-select" data-correct="jilet">
+          <img src="../ders1/foto/trainer/jeton.jpg" alt="Image 12" />
+          <select class="answer-select" data-correct="jeton">
             <option value="">--Выберите ответ--</option>
+            <option value="jest">jest</option>
             <option value="jilet">jilet</option>
             <option value="jeton">jeton</option>
-            <option value="jest">jest</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_13.jpg" alt="Image 13" />
-          <select class="answer-select" data-correct="kalem">
+          <img src="../ders1/foto/trainer/köpek.jpg" alt="Image 13" />
+          <select class="answer-select" data-correct="köpek">
             <option value="">--Выберите ответ--</option>
             <option value="kalem">kalem</option>
             <option value="kravat">kravat</option>
-            <option value="kablo">kablo</option>
+            <option value="köpek">köpek</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_14.jpg" alt="Image 14" />
-          <select class="answer-select" data-correct="lokomotif">
+          <img src="../ders1/foto/trainer/limon.jpg" alt="Image 14" />
+          <select class="answer-select" data-correct="limon">
             <option value="">--Выберите ответ--</option>
-            <option value="leylek">leylek</option>
+            <option value="limon">limon</option>
             <option value="lavabo">lavabo</option>
-            <option value="lokomotif">lokomotif</option>
+            <option value="leylek">leylek</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_15.jpg" alt="Image 15" />
-          <select class="answer-select" data-correct="makas">
+          <img src="../ders1/foto/trainer/merdiven.jpg" alt="Image 15" />
+          <select class="answer-select" data-correct="merdiven">
             <option value="">--Выберите ответ--</option>
-            <option value="makas">makas</option>
             <option value="masa">masa</option>
-            <option value="maaş">maaş</option>
+            <option value="makas">makas</option>
+            <option value="merdiven">merdiven</option>
           </select>
         </div>
         <div class="image-container">
@@ -344,38 +275,38 @@
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_17.jpg" alt="Image 17" />
-          <select class="answer-select" data-correct="ocak">
+          <img src="../ders1/foto/trainer/otobüs.jpg" alt="Image 17" />
+          <select class="answer-select" data-correct="otobüs">
             <option value="">--Выберите ответ--</option>
-            <option value="ocak">ocak</option>
-            <option value="oğul">oğul</option>
             <option value="oda">oda</option>
+            <option value="oğul">oğul</option>
+            <option value="otobüs">otobüs</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_18.jpg" alt="Image 18" />
-          <select class="answer-select" data-correct="öküz">
+          <img src="../ders1/foto/trainer/ördek.jpg" alt="Image 18" />
+          <select class="answer-select" data-correct="ördek">
             <option value="">--Выберите ответ--</option>
-            <option value="öfke">öfke</option>
             <option value="ödeme">ödeme</option>
             <option value="öküz">öküz</option>
+            <option value="ördek">ördek</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_19.jpg" alt="Image 19" />
-          <select class="answer-select" data-correct="palto">
+          <img src="../ders1/foto/trainer/portakal.jpg" alt="Image 19" />
+          <select class="answer-select" data-correct="portakal">
             <option value="">--Выберите ответ--</option>
             <option value="palet">palet</option>
+            <option value="portakal">portakal</option>
             <option value="palto">palto</option>
-            <option value="palas">palas</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_20.jpg" alt="Image 20" />
-          <select class="answer-select" data-correct="ruj">
+          <img src="../ders1/foto/trainer/radyo.jpg" alt="Image 20" />
+          <select class="answer-select" data-correct="radyo">
             <option value="">--Выберите ответ--</option>
             <option value="ruj">ruj</option>
-            <option value="radon">radon</option>
+            <option value="radyo">radyo</option>
             <option value="raf">raf</option>
           </select>
         </div>
@@ -389,19 +320,19 @@
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_22.jpg" alt="Image 22" />
-          <select class="answer-select" data-correct="şişe">
+          <img src="../ders1/foto/trainer/şemsiye.jpg" alt="Image 22" />
+          <select class="answer-select" data-correct="şemsiye">
             <option value="">--Выберите ответ--</option>
-            <option value="şah">şah</option>
-            <option value="şişe">şişe</option>
+            <option value="şemsiye">şemsiye</option>
             <option value="şair">şair</option>
+            <option value="şişe">şişe</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_23.jpg" alt="Image 23" />
-          <select class="answer-select" data-correct="tren">
+          <img src="../ders1/foto/trainer/tavuk.jpg" alt="Image 23" />
+          <select class="answer-select" data-correct="tavuk">
             <option value="">--Выберите ответ--</option>
-            <option value="transfer">transfer</option>
+            <option value="tavuk">tavuk</option>
             <option value="tren">tren</option>
             <option value="trafik">trafik</option>
           </select>
@@ -416,38 +347,38 @@
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_25.jpg" alt="Image 25" />
-          <select class="answer-select" data-correct="ütü">
+          <img src="../ders1/foto/trainer/üzüm.jpg" alt="Image 25" />
+          <select class="answer-select" data-correct="üzüm">
             <option value="">--Выберите ответ--</option>
-            <option value="üç">üç</option>
-            <option value="ülke">ülke</option>
+            <option value="üzüm">üzüm</option>
             <option value="ütü">ütü</option>
+            <option value="ülke">ülke</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_26.jpg" alt="Image 26" />
-          <select class="answer-select" data-correct="vazo">
+          <img src="../ders1/foto/trainer/vagon.jpg" alt="Image 26" />
+          <select class="answer-select" data-correct="vagon">
             <option value="">--Выберите ответ--</option>
-            <option value="varoş">varoş</option>
-            <option value="vazo">vazo</option>
+            <option value="vagon">vagon</option>
             <option value="vakit">vakit</option>
+            <option value="vazo">vazo</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_27.jpg" alt="Image 27" />
-          <select class="answer-select" data-correct="yüzük">
+          <img src="../ders1/foto/trainer/yıldız.jpg" alt="Image 27" />
+          <select class="answer-select" data-correct="yıldız">
             <option value="">--Выберите ответ--</option>
-            <option value="yabanci">yabanci</option>
             <option value="yatak">yatak</option>
+            <option value="yıldız">yıldız</option>
             <option value="yüzük">yüzük</option>
           </select>
         </div>
         <div class="image-container">
-          <img src="../ders1/foto/ders1_28.jpg" alt="Image 28" />
-          <select class="answer-select" data-correct="zeytin">
+          <img src="../ders1/foto/trainer/zürafa.jpg" alt="Image 28" />
+          <select class="answer-select" data-correct="zürafa">
             <option value="">--Выберите ответ--</option>
             <option value="zeytin">zeytin</option>
-            <option value="zam">zam</option>
+            <option value="zürafa">zürafa</option>
             <option value="zarf">zarf</option>
           </select>
         </div>
@@ -455,107 +386,93 @@
     </section>
     <!-- ///////////////////////// -->
 
-    <section class="task-section">
+    <section class="task-section hidden">
       <div class="task-header" id="task-header2">
-        Задание 2. Выберите один верный ответ в каждом пункте
+        Задание 3. Выберите один верный ответ в каждом пункте
       </div>
       <div class="task-content-write hidden" id="taskContent2">
         <div class="write-container">
-          <p>Какой буквы нет в турецком алфавите?</p>
-          <select class="answer-select" data-correct="w">
+          <p>Kız</p>
+          <select class="answer-select" data-correct="lar">
             <option value="">--Выберите ответ--</option>
-            <option value="ğ">ğ</option>
-            <option value="n">n</option>
-            <option value="w">w</option>
-            <option value="r">r</option>
+            <option value="lar">lar</option>
+            <option value="ler">ler</option>
           </select>
         </div>
 
         <div class="write-container">
-          <p>В какой из строчек перечислены только согласные буквы?</p>
-          <select class="answer-select" data-correct="y,g,ğ,c">
+          <p>Bisiklet</p>
+          <select class="answer-select" data-correct="ler">
             <option value="">--Выберите ответ--</option>
-            <option value="ğ,v,i,ş">ğ,v,i,ş</option>
-            <option value="y,g,ğ,c">y,g,ğ,c</option>
-            <option value="ğ,h,â,y">ğ,h,â,y</option>
-            <option value="k,o,û,z">k,o,û,z</option>
+            <option value="lar">lar</option>
+            <option value="ler">ler</option>
           </select>
         </div>
 
         <div class="write-container">
-          <p>В каком из вариантов ответов имя 'ЮРИЙ' написано правильно?</p>
-          <select class="answer-select" data-correct="Yuriy">
+          <p>Fincan</p>
+          <select class="answer-select" data-correct="lar">
             <option value="">--Выберите ответ--</option>
-            <option value="Urii">Urii</option>
-            <option value="Uriy">Uriy</option>
-            <option value="Yurii">Yurii</option>
-            <option value="Yuriy">Yuriy</option>
+            <option value="lar">lar</option>
+            <option value="ler">ler</option>
           </select>
         </div>
 
         <div class="write-container">
-          <p>
-            В каком из вариантов ответов дано правильное произношение буквы 'L'?
-          </p>
-          <select class="answer-select" data-correct="Лэ">
+          <p>Askı</p>
+          <select class="answer-select" data-correct="lar">
             <option value="">--Выберите ответ--</option>
-            <option value="Эл">Эл</option>
-            <option value="Лэ">Лэ</option>
-            <option value="Ла">Ла</option>
-            <option value="Лы">Лы</option>
+            <option value="lar">lar</option>
+            <option value="ler">ler</option>
           </select>
         </div>
 
         <div class="write-container">
-          <p>Как правильно транскрибировать на русский язык слово 'ELEM'?</p>
-          <select class="answer-select" data-correct="Элем">
+          <p>Televizyon</p>
+          <select class="answer-select" data-correct="lar">
             <option value="">--Выберите ответ--</option>
-            <option value="Элем">Элем</option>
-            <option value="Елем">Елем</option>
-            <option value="Элэм">Элем</option>
-            <option value="Елэм">Елэм</option>
+            <option value="lar">lar</option>
+            <option value="ler">ler</option>
           </select>
         </div>
 
         <div class="write-container">
-          <p>Сколько согласных и гласных букв в турецком алфавите?</p>
-          <select
-            class="answer-select"
-            data-correct="Гласные -8, согласные-21."
-          >
+          <p>Pasta</p>
+          <select class="answer-select" data-correct="lar">
             <option value="">--Выберите ответ--</option>
-            <option value="Гласные -10, согласные-19.">
-              Гласные -10, согласные-19.
-            </option>
-            <option value="Гласные -9, согласные-20.">
-              Гласные -9, согласные-20.
-            </option>
-            <option value="Гласные -11, согласные-18.">
-              Гласные -11, согласные-18.
-            </option>
-            <option value="Гласные -8, согласные-21.">
-              Гласные -8, согласные-21.
-            </option>
+            <option value="lar">lar</option>
+            <option value="ler">ler</option>
           </select>
         </div>
 
         <div class="write-container">
-          <p>Как правильно, произносится слово 'AĞAÇ'?</p>
-          <select class="answer-select" data-correct="Аач">
+          <p>Saat</p>
+          <select class="answer-select" data-correct="ler">
             <option value="">--Выберите ответ--</option>
-            <option value="Аач">Аач</option>
-            <option value="Ааш">Ааш</option>
-            <option value="Агаш">Агаш</option>
-            <option value="Агач">Агач</option>
+            <option value="lar">lar</option>
+            <option value="ler">ler</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>Anahtar</p>
+          <select class="answer-select" data-correct="lar">
+            <option value="">--Выберите ответ--</option>
+            <option value="lar">lar</option>
+            <option value="ler">ler</option>
           </select>
         </div>
       </div>
     </section>
 
     <div class="controls">
-      <a href="./ders1_2.html"> <button>Далее</button></a>
+      <a href="./ders1_2.html"> <button>Назад</button></a>
+
+      <a href="./ders1_3.html"> <button>Далее</button></a>
     </div>
 
     <script src="../scriptDers.js"></script>
   </body>
 </html>
+
+<!-- Задание 5. Посмотрите на картинку и правильно выберите вариант -->

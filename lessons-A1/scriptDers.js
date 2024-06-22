@@ -18,6 +18,7 @@ function toggleContentVisibility(headerSelector, contentSelector) {
 
 // Использование функции для разных пар элементов
 toggleContentVisibility('#task-header0', '#task-more-material');
+
 toggleContentVisibility('#task-header1', '#taskContent1');
 toggleContentVisibility('#task-header2', '#taskContent2');
 
@@ -27,6 +28,10 @@ toggleContentVisibility('#task-header-law2', '#task-content-law2-img');
 toggleContentVisibility('#task-header-law3', '#task-content-law3-img');
 
 toggleContentVisibility('#task-header-trainer', '#task-content-trainer');
+
+// для второй страници первого урока
+// toggleContentVisibility('#task-header-plural', '#task-content-plural');
+
 
 
 

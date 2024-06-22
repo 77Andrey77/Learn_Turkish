@@ -54,10 +54,21 @@ body {
     display: flex;
     justify-content: center;
     padding: 10px;
+    margin-bottom: 20px;
 }
 .section-download{
  
   flex-direction: column;
+}
+.title-audio{
+display: flex;
+justify-content: center;
+font-weight: bold;
+margin-bottom: 20px;
+}
+.icon-headphones{
+  margin-left: 400px;
+  width: 100px;
 }
 
 .link-download{
@@ -228,12 +239,11 @@ body {
   font-size: 24px;
   padding: 20px;
 }
-.item-img{
-  width: 300px;
-}
+
 
 
 .controls {
+  /* margin-top: 20px; */
   display: flex;
   justify-content: center;
 }
