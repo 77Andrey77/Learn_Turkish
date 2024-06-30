@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_2</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <a href="../../index.html">На главную</a>
+    <h3 class="titel-ders">DERS 2 (TANIŞMA, SELAMLAŞMA, DİLEKLER)</h3>
+    <p class="text-description">
+      Знакомство по-турецки. Самые важные слова и фразы для поддержания диалога.
+      На уроке вы узнаете, как покорить собеседника уже с первых слов
+      приветствия, без стеснения продолжить беседу и оставить приятное
+      впечатление о себе при прощании.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set2"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">родственники</div>
+        <div class="translation hidden">ad</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/ad.jpg" alt="ad" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+    <!-- /////////////dowloading//////////// -->
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/словарик урок2.png"
+        download
+        >Скачать Словарик к уроку</a
+      >
+      <a
+        class="link-download"
+        href="../../materials/Модуль 1. Урок 2.pdf"
+        download
+        >Скачать Рабочая тетрадь Урок 2</a
+      >
+    </div>
+    <!-- ////////////more info///////////// -->
+
+    <section class="task-section hidden">
+      <div class="task-header" id="task-header0">Дополнительный материал</div>
+      <ul
+        class="task-content task-more-material hidden"
+        id="task-more-material"
+      >
+        <li>
+          <button id="task-header-alfabet">Алфавит</button>
+          <div class="slider hidden" id="task-content-alfabet">
+            <div class="slides">
+              <div class="slide">
+                <img src="#" alt="Image 1" />
+              </div>
+              <div class="slide">
+                <img src="#" alt="Image 2" />
+              </div>
+              <div class="slide">
+                <img src="#" alt="Image 3" />
+              </div>
+              <!-- <div class="slide">
+                <img src="./foto/slide4.JPG" alt="Image 4" />
+              </div>
+              -->
+            </div>
+            <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+        <li>
+          <button id="task-header-law1">ЗАКОН ГАРМОНИИ СЛОГА</button>
+          <div class="task-law hidden" id="task-content-law1-img">
+            <img src="#" alt="img-law" />
+          </div>
+        </li>
+        <li>
+          <button id="task-header-law2">ЗАКОН ГАРМОНИИ ГЛАСНЫХ</button>
+          <div class="task-law hidden" id="task-content-law2-img">
+            <img src="#" alt="img-law" />
+          </div>
+        </li>
+        <li>
+          <button id="task-header-law3">ЗАКОН ГАРМОНИИ СОГЛАСНЫХ</button>
+          <div class="task-law hidden" id="task-content-law3-img">
+            <img src="#" alt="img-law" />
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- //////////////Задание 1 с картинками/////////// -->
+
+    <section class="task-section hidden">
+      <div class="task-header" id="task-header1">
+        Задание 1. Давайте заполним пробелы ниже
+      </div>
+      <div class="task-content hidden" id="taskContent1">
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_1.jpg" alt="Image 1" />
+          <select class="answer-select" data-correct="araba">
+            <option value="">--Выберите ответ--</option>
+            <option value="arca">arca</option>
+            <option value="araba">araba</option>
+            <option value="akraba">akraba</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_2.jpg" alt="Image 2" />
+          <select class="answer-select" data-correct="bavul">
+            <option value="">--Выберите ответ--</option>
+            <option value="baden">baden</option>
+            <option value="bacan">bacan</option>
+            <option value="bavul">bavul</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_3.jpg" alt="Image 3" />
+          <select class="answer-select" data-correct="cetvel">
+            <option value="">--Выберите ответ--</option>
+            <option value="cetvel">cetvel</option>
+            <option value="cebir">cebir</option>
+            <option value="cam">cam</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_4.png" alt="Image 4" />
+          <select class="answer-select" data-correct="çanta">
+            <option value="">--Выберите ответ--</option>
+            <option value="çağdaş">çağdaş</option>
+            <option value="çalma">çalma</option>
+            <option value="çanta">çanta</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_5.jpg" alt="Image 5" />
+          <select class="answer-select" data-correct="dondurma">
+            <option value="">--Выберите ответ--</option>
+            <option value="dondurma">dondurma</option>
+            <option value="damat">damat</option>
+            <option value="dalga">dalga</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_6.jpg" alt="Image 6" />
+          <select class="answer-select" data-correct="el">
+            <option value="">--Выберите ответ--</option>
+            <option value="el">el</option>
+            <option value="elbise">elbise</option>
+            <option value="etec">etec</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_7.jpg" alt="Image 7" />
+          <select class="answer-select" data-correct="fener">
+            <option value="">--Выберите ответ--</option>
+            <option value="fare">fare</option>
+            <option value="fener">fener</option>
+            <option value="fakir">fakir</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_8.jpg" alt="Image 8" />
+          <select class="answer-select" data-correct="gemi">
+            <option value="">--Выберите ответ--</option>
+            <option value="gece">gece</option>
+            <option value="galon">galon</option>
+            <option value="gemi">gemi</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_9.jpg" alt="Image 9" />
+          <select class="answer-select" data-correct="havuç">
+            <option value="">--Выберите ответ--</option>
+            <option value="hafiza">hafiza</option>
+            <option value="havuç">havuç</option>
+            <option value="hayvan">hayvan</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_10.jpg" alt="Image 10" />
+          <select class="answer-select" data-correct="ıstakoz">
+            <option value="">--Выберите ответ--</option>
+            <option value="ıstakoz">ıstakoz</option>
+            <option value="ılık">ılık</option>
+            <option value="ıspanak">ıspanak</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_11.jpg" alt="Image 11" />
+          <select class="answer-select" data-correct="iğne">
+            <option value="">--Выберите ответ--</option>
+            <option value="ip">ip</option>
+            <option value="iştah">iştah</option>
+            <option value="iğne">iğne</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_12.jpg" alt="Image 12" />
+          <select class="answer-select" data-correct="jilet">
+            <option value="">--Выберите ответ--</option>
+            <option value="jilet">jilet</option>
+            <option value="jeton">jeton</option>
+            <option value="jest">jest</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_13.jpg" alt="Image 13" />
+          <select class="answer-select" data-correct="kalem">
+            <option value="">--Выберите ответ--</option>
+            <option value="kalem">kalem</option>
+            <option value="kravat">kravat</option>
+            <option value="kablo">kablo</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_14.jpg" alt="Image 14" />
+          <select class="answer-select" data-correct="lokomotif">
+            <option value="">--Выберите ответ--</option>
+            <option value="leylek">leylek</option>
+            <option value="lavabo">lavabo</option>
+            <option value="lokomotif">lokomotif</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_15.jpg" alt="Image 15" />
+          <select class="answer-select" data-correct="makas">
+            <option value="">--Выберите ответ--</option>
+            <option value="makas">makas</option>
+            <option value="masa">masa</option>
+            <option value="maaş">maaş</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_16.jpg" alt="Image 16" />
+          <select class="answer-select" data-correct="nar">
+            <option value="">--Выберите ответ--</option>
+            <option value="nakit">nakit</option>
+            <option value="nar">nar</option>
+            <option value="nabiz">nabiz</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_17.jpg" alt="Image 17" />
+          <select class="answer-select" data-correct="ocak">
+            <option value="">--Выберите ответ--</option>
+            <option value="ocak">ocak</option>
+            <option value="oğul">oğul</option>
+            <option value="oda">oda</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_18.jpg" alt="Image 18" />
+          <select class="answer-select" data-correct="öküz">
+            <option value="">--Выберите ответ--</option>
+            <option value="öfke">öfke</option>
+            <option value="ödeme">ödeme</option>
+            <option value="öküz">öküz</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_19.jpg" alt="Image 19" />
+          <select class="answer-select" data-correct="palto">
+            <option value="">--Выберите ответ--</option>
+            <option value="palet">palet</option>
+            <option value="palto">palto</option>
+            <option value="palas">palas</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_20.jpg" alt="Image 20" />
+          <select class="answer-select" data-correct="ruj">
+            <option value="">--Выберите ответ--</option>
+            <option value="ruj">ruj</option>
+            <option value="radon">radon</option>
+            <option value="raf">raf</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_21.jpg" alt="Image 21" />
+          <select class="answer-select" data-correct="saat">
+            <option value="">--Выберите ответ--</option>
+            <option value="sarı">sarı</option>
+            <option value="saat">saat</option>
+            <option value="soba">soba</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_22.jpg" alt="Image 22" />
+          <select class="answer-select" data-correct="şişe">
+            <option value="">--Выберите ответ--</option>
+            <option value="şah">şah</option>
+            <option value="şişe">şişe</option>
+            <option value="şair">şair</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_23.jpg" alt="Image 23" />
+          <select class="answer-select" data-correct="tren">
+            <option value="">--Выберите ответ--</option>
+            <option value="transfer">transfer</option>
+            <option value="tren">tren</option>
+            <option value="trafik">trafik</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_24.jpg" alt="Image 24" />
+          <select class="answer-select" data-correct="uçak">
+            <option value="">--Выберите ответ--</option>
+            <option value="uçak">uçak</option>
+            <option value="ufo">ufo</option>
+            <option value="ucuz">ucuz</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_25.jpg" alt="Image 25" />
+          <select class="answer-select" data-correct="ütü">
+            <option value="">--Выберите ответ--</option>
+            <option value="üç">üç</option>
+            <option value="ülke">ülke</option>
+            <option value="ütü">ütü</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_26.jpg" alt="Image 26" />
+          <select class="answer-select" data-correct="vazo">
+            <option value="">--Выберите ответ--</option>
+            <option value="varoş">varoş</option>
+            <option value="vazo">vazo</option>
+            <option value="vakit">vakit</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_27.jpg" alt="Image 27" />
+          <select class="answer-select" data-correct="yüzük">
+            <option value="">--Выберите ответ--</option>
+            <option value="yabanci">yabanci</option>
+            <option value="yatak">yatak</option>
+            <option value="yüzük">yüzük</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders1/foto/ders1_28.jpg" alt="Image 28" />
+          <select class="answer-select" data-correct="zeytin">
+            <option value="">--Выберите ответ--</option>
+            <option value="zeytin">zeytin</option>
+            <option value="zam">zam</option>
+            <option value="zarf">zarf</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <!-- /////////////Задание 1 без картинок//////////// -->
+
+    <section class="task-section">
+      <div class="task-header" ">
+        	Задание 1. Давайте заполним пробелы ниже
+      </div>
+      <div class="task-content write hidden">
+
+        <p class="answer-textDialog">Ali: İyi günler.</p>
+
+        <div class="write-container">
+          <p>Feray: İyi </p>
+          <select class="answer-select" data-correct="günler">
+            <option value="">--Выберите ответ--</option>
+            <option value="memnun">memnun</option>
+            <option value="adım">adım</option>
+            <option value="günler">günler</option>
+            <option value="adın">adın</option>
+            <option value="oldum">oldum</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>Ali: Benim </p>
+          <select class="answer-select" data-correct="adım">
+            <option value="">--Выберите ответ--</option>
+            <option value="memnun">memnun</option>
+            <option value="adım">adım</option>
+            <option  value="günler">günler</option>
+            <option value="adın">adın</option>
+            <option value="oldum">oldum</option>
+          </select>
+          <p> Ali.</p>
+        </div>
+
+
+        <div class="write-container">
+          <p>Senin </p>
+          <select class="answer-select" data-correct="adın">
+            <option value="">--Выберите ответ--</option>
+            <option value="memnun">memnun</option>
+            <option value="adım">adım</option>
+            <option  value="günler">günler</option>
+            <option value="adın">adın</option>
+            <option value="oldum">oldum</option>
+          </select>
+          <p>ne?</p>
+        </div>
+
+
+        <div class="write-container">
+          <p>Feray: Benim </p>
+          <select
+            class="answer-select"
+            data-correct="adım"
+          >
+            <option value="">--Выберите ответ--</option>
+            <option value="memnun">memnun</option>
+            <option value="adım">adım</option>
+            <option  value="günler">günler</option>
+            <option value="adın">adın</option>
+            <option value="oldum">oldum</option>
+          </select>
+          <p>Feray.</p>
+        </div>
+
+       
+
+        <div class="write-container">
+          <p>Ali: </p>
+          <select class="answer-select" data-correct="memnun">
+            <option value="">--Выберите ответ--</option>
+            <option value="memnun">memnun</option>
+            <option value="adım">adım</option>
+            <option  value="günler">günler</option>
+            <option value="adın">adın</option>
+            <option value="oldum">oldum</option>
+          </select>
+          <p>oldum.</p>
+        </div>
+
+      
+
+        <div class="write-container">
+          <p>Feray: Ben de memnun </p>
+          <select class="answer-select" data-correct="oldum">
+            <option value="">--Выберите ответ--</option>
+            <option value="memnun">memnun</option>
+            <option value="adım">adım</option>
+            <option  value="günler">günler</option>
+            <option value="adın">adın</option>
+            <option value="oldum">oldum</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 2 без картинок//////////// -->
+
+    <section class="task-section">
+      <div class="task-header" id="task-header2">
+        Задание 2. Давайте заполним пробелы ниже
+      </div>
+      <div class="task-content write hidden" id="taskContent2">
+        
+       <form id="text-form-1">
+          <p>Yusuf: Merhaba.</p>
+          <label for="word1">Elif: </label>
+          <input type="text" id="word1" name="word1"><br>
+          <p>Yusuf: Nasılsın Elif?</p>
+
+          <label for="word2">Elif:  </label>
+          <input type="text" id="word2" name="word2">
+  
+          <label for="word3">, teşekkür  </label>
+          <input type="text" id="word3" name="word3">
+           <label for="word4"> . Sen </label>
+          <input type="text" id="word4" name="word4">
+            <p>?</p>
+          <br>
+
+           <label for="word5">Yusuf: Teşekkür </label>
+          <input type="text" id="word5" name="word5">
+           <label for="word6"> . Ben de </label>
+          <input type="text" id="word6" name="word6"><br><br>
+
+           <label for="word7">Elif: Hoşça </label>
+          <input type="text" id="word7" name="word7"><br><br>
+
+           <label for="word8">Yusuf: Güle </label>
+          <input type="text" id="word8" name="word8"><br><br>
+
+       </form>
+
+      </div>
+    </section>
+
+    <!-- /////////////Задание 3 без картинок//////////// -->
+
+    <section class="task-section">
+      <div class="task-header" id="task-header2-3">
+        Задание 3. Когда, что мы говорим? Давайте заполним пробелы ниже.
+        05.00-11.00 Günaydın!
+      </div>
+      <div class="task-content write hidden" id="taskContent2-3">
+        <div class="write-container">
+          <p>11.00-17.00</p>
+          <select class="answer-select" data-correct="İyi günler">
+            <option value="">--Выберите ответ--</option>
+            <option value="İyi geceler">İyi geceler</option>
+            <option value="İyi akşamlar">İyi akşamlar</option>
+            <option value="İyi günler">İyi günler</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>17.00-21.00</p>
+          <select class="answer-select" data-correct="İyi akşamlar">
+            <option value="">--Выберите ответ--</option>
+            <option value="İyi geceler">İyi geceler</option>
+            <option value="İyi akşamlar">İyi akşamlar</option>
+            <option value="İyi günler">İyi günler</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>21.00-05.00</p>
+          <select class="answer-select" data-correct="İyi geceler">
+            <option value="">--Выберите ответ--</option>
+            <option value="İyi geceler">İyi geceler</option>
+            <option value="İyi akşamlar">İyi akşamlar</option>
+            <option value="İyi günler">İyi günler</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 4 без картинок//////////// -->
+
+    <section class="task-section">
+      <div class="task-header" id="task-header2-4">
+        Задание 4. Давайте, используя предложения ниже, закончим диалог
+      </div>
+      <div class="task-content write hidden" id="taskContent2-4">
+
+        <ul>
+          <li>
+        <p class="answer-textDialog">Alex: Merhaba!</p>
+          </li>
+
+          <li>
+            <div class="write-container">
+            <p>Sinan:</p>
+            <select class="answer-select" data-correct="merhaba">
+             <option value="">--Выберите ответ--</option>
+             <option value="benim adım Sinan">benim adım Sinan</option>
+             <option value="merhaba">merhaba</option>
+             <option value="Teşekkür ederim, iyiyim. Sen nasılsın">
+              Teşekkür ederim, iyiyim. Sen nasılsın
+             </option>
+             <option value="güle güle">güle güle</option>
+             <option value="nerelisin">nerelisin</option>
+             <option value="ben de memnun oldum">ben de memnun oldum</option>
+            </select>
+            </div>
+          </li>
+
+          <li>
+           <p class="answer-textDialog">Alex: Benim adım Alex. Senin adın ne?</p>
+          </li>
+
+          <li>
+            <div class="write-container">
+          <p>Sinan:</p>
+          <select class="answer-select" data-correct="benim adım Sinan">
+            <option value="">--Выберите ответ--</option>
+            <option value="benim adım Sinan">benim adım Sinan</option>
+            <option value="merhaba">merhaba</option>
+            <option value="Teşekkür ederim, iyiyim. Sen nasılsın">
+              Teşekkür ederim, iyiyim. Sen nasılsın
+            </option>
+            <option value="güle güle">güle güle</option>
+            <option value="nerelisin">nerelisin</option>
+            <option value="ben de memnun oldum">ben de memnun oldum</option>
+          </select>
+        </div>
+          </li>
+
+          <li>
+        <p class="answer-textDialog">Alex: Memnun oldum.</p>
+          </li>
+
+          <li>
+<div class="write-container">
+          <p>Sinan:</p>
+          <select class="answer-select" data-correct="ben de memnun oldum">
+            <option value="">--Выберите ответ--</option>
+            <option value="nerelisin">nerelisin</option>
+            <option value="benim adım Sinan">benim adım Sinan</option>
+            <option value="güle güle">güle güle</option>
+            <option value="ben de memnun oldum">ben de memnun oldum</option>
+            <option value="Teşekkür ederim, iyiyim. Sen nasılsın">
+              Teşekkür ederim, iyiyim. Sen nasılsın
+            </option>
+            <option value="merhaba">merhaba</option>
+          </select>
+        </div>
+          </li>
+
+          <li>
+        <p class="answer-textDialog">Alex: Nasılsın?</p>
+          </li>
+
+          <li>
+        <div class="write-container">
+          <p>Sinan:</p>
+          <select
+            class="answer-select"
+            data-correct="Teşekkür ederim, iyiyim. Sen nasılsın"
+          >
+            <option value="">--Выберите ответ--</option>
+            <option value="nerelisin">nerelisin</option>
+            <option value="benim adım Sinan">benim adım Sinan</option>
+            <option value="güle güle">güle güle</option>
+            <option value="ben de memnun oldum">ben de memnun oldum</option>
+            <option value="Teşekkür ederim, iyiyim. Sen nasılsın">
+              Teşekkür ederim, iyiyim. Sen nasılsın
+            </option>
+            <option value="merhaba">merhaba</option>
+          </select>
+        </div>
+          </li>
+
+          <li>
+        <p class="answer-textDialog">Alex: Sağ ol, ben de iyiyim.</p>            
+          </li>
+
+          <li> 
+ <div class="write-container">
+          <p>Sinan:</p>
+          <select class="answer-select" data-correct="nerelisin">
+            <option value="">--Выберите ответ--</option>
+            <option value="nerelisin">nerelisin</option>
+            <option value="benim adım Sinan">benim adım Sinan</option>
+            <option value="güle güle">güle güle</option>
+            <option value="ben de memnun oldum">ben de memnun oldum</option>
+            <option value="Teşekkür ederim, iyiyim. Sen nasılsın">
+              Teşekkür ederim, iyiyim. Sen nasılsın
+            </option>
+            <option value="merhaba">merhaba</option>
+          </select>
+        </div>
+          </li>
+
+          <li>
+        <p class="answer-textDialog">Alex: Ben Avusturyalıyım.</p>
+          </li>
+
+          <li>
+        <p class="answer-textDialog">Sinan: Hoşça kal.</p>
+          </li>
+
+          <li>
+            <div class="write-container">
+          <p>Sinan:</p>
+          <select class="answer-select" data-correct="güle güle">
+            <option value="">--Выберите ответ--</option>
+            <option value="nerelisin">nerelisin</option>
+            <option value="benim adım Sinan">benim adım Sinan</option>
+            <option value="güle güle">güle güle</option>
+            <option value="ben de memnun oldum">ben de memnun oldum</option>
+            <option value="Teşekkür ederim, iyiyim. Sen nasılsın">
+              Teşekkür ederim, iyiyim. Sen nasılsın
+            </option>
+            <option value="merhaba">merhaba</option>
+          </select>
+        </div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+ <!-- /////////////Задание 5 без картинок//////////// -->
+
+    <section class="task-section">
+      <div class="task-header" >
+        Задание 5. Давайте сопоставим слова ниже
+      </div>
+      <div class="task-content write hidden" id="taskContent2-4">
+        
+     <ul>
+       <li>
+         <div class="write-container">
+          <p>Memnun oldum.</p>
+          <select class="answer-select" data-correct="Ben de">
+            <option value="">--Выберите ответ--</option>
+            <option value="Adım Ali">Adım Ali</option>
+            <option value="İyiyim">İyiyim</option>
+            <option  value="Ben de">Ben de</option>
+            <option value="Güle güle">Güle güle</option>
+            <option value="Yunanistanlıyım">Yunanistanlıyım</option>
+          </select>
+        </div>
+      </li>
+
+      <li>
+        <div class="write-container">
+          <p>Hoşça kalın</p>
+          <select class="answer-select" data-correct="Güle güle">
+            <option value="">--Выберите ответ--</option>
+            <option value="Adım Ali">Adım Ali</option>
+            <option value="İyiyim">İyiyim</option>
+            <option  value="Ben de">Ben de</option>
+            <option value="Güle güle">Güle güle</option>
+            <option value="Yunanistanlıyım">Yunanistanlıyım</option>
+          </select>
+        </div> 
+      </li>
+
+      <li>
+        <div class="write-container">
+          <p>Nasılsın?</p>
+          <select class="answer-select" data-correct="İyiyim">
+            <option value="">--Выберите ответ--</option>
+            <option value="Adım Ali">Adım Ali</option>
+            <option value="İyiyim">İyiyim</option>
+            <option  value="Ben de">Ben de</option>
+            <option value="Güle güle">Güle güle</option>
+            <option value="Yunanistanlıyım">Yunanistanlıyım</option>
+          </select>
+        </div>
+      </li>
+
+      <li>
+        <div class="write-container">
+          <p>Adın ne?</p>
+          <select class="answer-select" data-correct="Adım Ali">
+            <option value="Adım Ali">Adım Ali</option>
+            <option value="İyiyim">İyiyim</option>
+            <option  value="Ben de">Ben de</option>
+            <option value="Güle güle">Güle güle</option>
+            <option value="Yunanistanlıyım">Yunanistanlıyım</option>
+          </select>
+        </div>
+      </li>
+
+      <li>
+        <div class="write-container">
+          <p>Nerelisin?</p>
+          <select class="answer-select" data-correct="Yunanistanlıyım">
+            <option value="">--Выберите ответ--</option>
+            <option value="Adım Ali">Adım Ali</option>
+            <option value="İyiyim">İyiyim</option>
+            <option  value="Ben de">Ben de</option>
+            <option value="Güle güle">Güle güle</option>
+            <option value="Yunanistanlıyım">Yunanistanlıyım</option>
+          </select>
+        </div>
+      </li>
+    </ul>
+
+      </div>
+    </section>
+
+    <!-- /////////////Задание 6 без картинок//////////// -->
+
+    <section class="task-section">
+      <div class="task-header" id="task-header2-4">
+        	Задание 6. Давайте сопоставим предложения ниже
+      </div>
+      <div class="task-content write hidden" >
+        
+     <ul>
+       <li>
+         <div class="write-container">
+          <p>Senin adın</p>
+          <select class="answer-select" data-correct="ne?">
+            <option value="">--Выберите ответ--</option>
+
+            <option value="ne?">ne?</option>
+            <option value="oldum">oldum</option>
+            <option value="günler!"> günler! </option>
+            <option value="adım Ahmet">adım Ahmet</option>
+            <option value="ederim">ederim</option>
+          </select>
+        </div>
+      </li>
+      
+      <li>
+        <div class="write-container">
+          <p>Benim</p>
+          <select class="answer-select" data-correct="adım Ahmet">
+            <option value="">--Выберите ответ--</option>
+           <option value="ne?">ne?</option>
+            <option value="oldum">oldum</option>
+            <option value="günler!"> günler! </option>
+            <option value="adım Ahmet">adım Ahmet</option>
+            <option value="ederim">ederim</option>
+          </select>
+        </div> 
+      </li>
+
+      <li>
+        <div class="write-container">
+          <p>İyi</p>
+          <select class="answer-select" data-correct="günler!">
+            <option value="">--Выберите ответ--</option>
+            <option value="ne?">ne?</option>
+            <option value="oldum">oldum</option>
+            <option value="günler!"> günler! </option>
+            <option value="adım Ahmet">adım Ahmet</option>
+            <option value="ederim">ederim</option>
+          </select>
+        </div>
+      </li>
+
+      <li>
+        <div class="write-container">
+          <p>STeşekkür</p>
+          <select
+            class="answer-select"
+            data-correct="ederim"
+          >
+            <option value="">--Выберите ответ--</option>
+          <option value="ne?">ne?</option>
+            <option value="oldum">oldum</option>
+            <option value="günler!"> günler! </option>
+            <option value="adım Ahmet">adım Ahmet</option>
+            <option value="ederim">ederim</option>
+          </select>
+        </div>
+      </li>
+
+      <li>
+        <div class="write-container">
+          <p>Memnun</p>
+          <select class="answer-select" data-correct="oldum">
+            <option value="">--Выберите ответ--</option>
+           <option value="ne?">ne?</option>
+            <option value="oldum">oldum</option>
+            <option value="günler!"> günler! </option>
+            <option value="adım Ahmet">adım Ahmet</option>
+            <option value="ederim">ederim</option>
+          </select>
+        </div>
+      </li>
+    </ul>
+
+      </div>
+    </section>
+
+
+    <!-- /////////////Задание 7 без картинок//////////// -->
+
+  <section class="task-section">
+      <div class="task-header" id="task-header2">
+        Задание 7. Давайте завершим диалог ниже
+      </div>
+      <div class="task-content write hidden" >
+        
+       <form id="text-form-2">
+        <ul>
+          <li class="inline">
+          <p>Devlet: Merhaba!</p>
+          </li>
+
+          <li class="inline">
+            <label for="word9">Talin:</label>
+          <input type="text" id="word9" name="word9"> <p>!</p>
+          </li>
+
+          <li class="inline">
+            <label for="word10">Devlet: Benim </label>
+          <input type="text" id="word10" name="word10">
+          <label for="word11">Devlet. </label>
+          <input type="text" id="word11" name="word11">
+          <p>adın ne?</p>
+          </li>
+
+          <li class="inline">
+            <label for="word12"> Talin:</label>
+          <input type="text" id="word12" name="word12">
+            <p> adım Talin.</p>
+          </li>
+
+          <li class="inline">
+               <label for="word13">Devlet: </label>
+          <input type="text" id="word13" name="word13"><p>?</p>
+          </li>
+          
+          <li class="inline">
+          <p>Talin: Fransalıyım. Sen nerelisin?</p>
+          </li>
+          
+          <li class="inline">
+             <label for="word14"> Devlet: Ben Türkmenistan</label>
+          <input type="text" id="word14" name="word14">
+          </li>
+        </ul>
+
+       </form>
+
+      </div>
+    </section>
+
+    <!-- /////////////Задание 8 с картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header" id="task-header1">
+        Задание 8. Давайте сопоставим тексты ниже с картинками
+      </div>
+      <div class="task-content hidden" >
+        <div class="image-container">
+          <img src="../ders2/foto/ders2-1-8yong.jpg" alt="Image 1" />
+          <select class="answer-select" data-correct="Merhaba, benim adım Yong. Ben Koreliyim. 22 yaşındayım. Öğrenciyim. Bekârım">
+            <option value="">--Выберите ответ--</option>
+            <option value="Merhaba, benim adım John. 44 yaşındayım. Ben doktorum. Kenyalıyım. Evliyim. Eşim öğretmen. 2 kızım var.">Merhaba, benim adım John. 44 yaşındayım. Ben doktorum. Kenyalıyım. Evliyim. Eşim öğretmen. 2 kızım var.</option>
+            <option value="Merhaba, benim adım Ahmet. Ben 60 yaşındayım. Eşim ev hanımı. Ben Türküm. Ben Bursalıyım. Emekliyim">Merhaba, benim adım Ahmet. Ben 60 yaşındayım. Eşim ev hanımı. Ben Türküm. Ben Bursalıyım. Emekliyim</option>
+            <option value="Merhaba, benim adım Yong. Ben Koreliyim. 22 yaşındayım. Öğrenciyim. Bekârım">Merhaba, benim adım Yong. Ben Koreliyim. 22 yaşındayım. Öğrenciyim. Bekârım</option>
+            <option value="Merhaba, benim adım Aryan. Ben İranlıyım. 33 yaşındayım. Ben avukatım. Bekârım">Merhaba, benim adım Aryan. Ben İranlıyım. 33 yaşındayım. Ben avukatım. Bekârım</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders2/foto/ders2-1-8Aryan.jpg" alt="Image 2" />
+          <select class="answer-select" data-correct="Merhaba, benim adım Aryan. Ben İranlıyım. 33 yaşındayım. Ben avukatım. Bekârım">
+            <option value="">--Выберите ответ--</option>
+             <option value="Merhaba, benim adım John. 44 yaşındayım. Ben doktorum. Kenyalıyım. Evliyim. Eşim öğretmen. 2 kızım var.">Merhaba, benim adım John. 44 yaşındayım. Ben doktorum. Kenyalıyım. Evliyim. Eşim öğretmen. 2 kızım var.</option>
+            <option value="Merhaba, benim adım Ahmet. Ben 60 yaşındayım. Eşim ev hanımı. Ben Türküm. Ben Bursalıyım. Emekliyim">Merhaba, benim adım Ahmet. Ben 60 yaşındayım. Eşim ev hanımı. Ben Türküm. Ben Bursalıyım. Emekliyim</option>
+            <option value="Merhaba, benim adım Yong. Ben Koreliyim. 22 yaşındayım. Öğrenciyim. Bekârım">Merhaba, benim adım Yong. Ben Koreliyim. 22 yaşındayım. Öğrenciyim. Bekârım</option>
+            <option value="Merhaba, benim adım Aryan. Ben İranlıyım. 33 yaşındayım. Ben avukatım. Bekârım">Merhaba, benim adım Aryan. Ben İranlıyım. 33 yaşındayım. Ben avukatım. Bekârım</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders2/foto/ders2-1-8john.jpeg" alt="Image 3" />
+          <select class="answer-select" data-correct="Merhaba, benim adım John. 44 yaşındayım. Ben doktorum. Kenyalıyım. Evliyim. Eşim öğretmen. 2 kızım var.">
+            <option value="">--Выберите ответ--</option>
+             <option value="Merhaba, benim adım John. 44 yaşındayım. Ben doktorum. Kenyalıyım. Evliyim. Eşim öğretmen. 2 kızım var.">Merhaba, benim adım John. 44 yaşındayım. Ben doktorum. Kenyalıyım. Evliyim. Eşim öğretmen. 2 kızım var.</option>
+            <option value="Merhaba, benim adım Ahmet. Ben 60 yaşındayım. Eşim ev hanımı. Ben Türküm. Ben Bursalıyım. Emekliyim">Merhaba, benim adım Ahmet. Ben 60 yaşındayım. Eşim ev hanımı. Ben Türküm. Ben Bursalıyım. Emekliyim</option>
+            <option value="Merhaba, benim adım Yong. Ben Koreliyim. 22 yaşındayım. Öğrenciyim. Bekârım">Merhaba, benim adım Yong. Ben Koreliyim. 22 yaşındayım. Öğrenciyim. Bekârım</option>
+            <option value="Merhaba, benim adım Aryan. Ben İranlıyım. 33 yaşındayım. Ben avukatım. Bekârım">Merhaba, benim adım Aryan. Ben İranlıyım. 33 yaşındayım. Ben avukatım. Bekârım</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="../ders2/foto/ders2-1-8ahmet.jpeg" alt="Image 4" />
+          <select class="answer-select" data-correct="Merhaba, benim adım Ahmet. Ben 60 yaşındayım. Eşim ev hanımı. Ben Türküm. Ben Bursalıyım. Emekliyim">
+            <option value="">--Выберите ответ--</option>
+             <option value="Merhaba, benim adım John. 44 yaşındayım. Ben doktorum. Kenyalıyım. Evliyim. Eşim öğretmen. 2 kızım var.">Merhaba, benim adım John. 44 yaşındayım. Ben doktorum. Kenyalıyım. Evliyim. Eşim öğretmen. 2 kızım var.</option>
+            <option value="Merhaba, benim adım Ahmet. Ben 60 yaşındayım. Eşim ev hanımı. Ben Türküm. Ben Bursalıyım. Emekliyim">Merhaba, benim adım Ahmet. Ben 60 yaşındayım. Eşim ev hanımı. Ben Türküm. Ben Bursalıyım. Emekliyim</option>
+            <option value="Merhaba, benim adım Yong. Ben Koreliyim. 22 yaşındayım. Öğrenciyim. Bekârım">Merhaba, benim adım Yong. Ben Koreliyim. 22 yaşındayım. Öğrenciyim. Bekârım</option>
+            <option value="Merhaba, benim adım Aryan. Ben İranlıyım. 33 yaşındayım. Ben avukatım. Bekârım">Merhaba, benim adım Aryan. Ben İranlıyım. 33 yaşındayım. Ben avukatım. Bekârım</option>
+          </select>
+        </div>
+       
+      </div>
+    </section>
+    <!-- /////////////Задание 9 без картинок//////////// -->
+
+ <section class="task-section">
+      <div class="task-header" >
+        Задание 9. Давайте сопоставим имена и предложения в соответствии с текстами
+      </div>
+      <div class="task-content write hidden">
+        
+     <ul>
+       <li>
+         <div class="write-container">
+          <p>Yong</p>
+          <select class="answer-select" data-correct="22 yaşındayım">
+            <option value="">--Выберите ответ--</option>
+            <option  value="Ahmet">Ahmet</option>
+            <option value="22 yaşındayım">22 yaşındayım</option>
+            <option value="Aryan">Aryan</option>
+            <option value="İki kızım var">İki kızım var</option>          
+          </select>
+        </div>
+      </li>
+
+      <li>
+        <div class="write-container">
+          <p>Kenyalıyım</p>
+          <select class="answer-select" data-correct="İki kızım var">
+            <option value="">--Выберите ответ--</option>
+            <option  value="Ahmet">Ahmet</option>
+            <option value="22 yaşındayım">22 yaşındayım</option>
+            <option value="Aryan">Aryan</option>
+            <option value="İki kızım var">İki kızım var</option> 
+          </select>
+        </div> 
+      </li>
+
+      <li>
+        <div class="write-container">
+          <p>Emekliyim</p>
+          <select class="answer-select" data-correct="Ahmet">
+            <option value="">--Выберите ответ--</option>
+            <option  value="Ahmet">Ahmet</option>
+            <option value="22 yaşındayım">22 yaşındayım</option>
+            <option value="Aryan">Aryan</option>
+            <option value="İki kızım var">İki kızım var</option> 
+          </select>
+        </div>
+      </li>
+
+      <li>
+        <div class="write-container">
+          <p>Avukatım</p>
+          <select class="answer-select" data-correct="Aryan">
+            <option value="">--Выберите ответ--</option>
+            <option  value="Ahmet">Ahmet</option>
+            <option value="22 yaşındayım">22 yaşındayım</option>
+            <option value="Aryan">Aryan</option>
+            <option value="İki kızım var">İki kızım var</option> 
+          </select>
+        </div>
+      </li>
+    </ul>
+
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders2_1.html"> <button>Далее</button></a>
+    </div>
+
+
+    <script src="../writeText.js"></script>
+
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+  </body>
+</html>

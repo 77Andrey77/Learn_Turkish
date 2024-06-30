@@ -94,7 +94,7 @@ width:1000px;
   display: flex;
   flex-wrap: wrap;
 }
-.task-content-write{
+.task-content .write{
   display: flex;
   flex-direction: column;
 }
@@ -104,10 +104,8 @@ width:1000px;
 .write-container{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: baseline;
-  /* padding-left:100px ; */
-  /* padding-right: 200px; */
   padding: 15px 200px 15px 100px;
   /* Поле сверху 10px, справа 15px, снизу 20px, слева 25px */
 }
@@ -116,6 +114,10 @@ width:1000px;
   height: 30px;
   background-color:blanchedalmond;
   border-radius:5px;
+}
+
+.answer-textDialog{
+  padding: 15px 200px 0 100px;
 }
 
 .hidden {
@@ -265,4 +267,9 @@ button {
 
 button:hover {
   background-color: #f32f2f;
+}
+.inline {
+  display: flex;
+  align-items: center;
+  margin: 20px;
 }

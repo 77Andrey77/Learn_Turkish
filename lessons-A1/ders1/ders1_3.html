@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
   </head>
   <body>
+    <a href="../../index.html">На главную</a>
+
     <h3 class="titel-ders">DERS 1 (ALFABE)</h3>
     <p class="text-description">
       Алфавит. Образование множественного числа. Знакомство с турецкими буквами.
@@ -27,7 +29,11 @@
       </button>
     </div>
 
-    <div class="task-content-trainer hidden" id="task-content-trainer">
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set1"
+    >
       <div id="card" class="card" onclick="flipCard()">
         <div class="word">родственники</div>
         <div class="translation hidden">akraba</div>
@@ -471,6 +477,7 @@
       <a href="./ders1_4test.html"> <button>Далее</button></a>
     </div>
 
+    <script src="../words.js"></script>
     <script src="../scriptDers.js"></script>
   </body>
 </html>

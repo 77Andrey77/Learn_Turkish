@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
   </head>
   <body>
+    <a href="../../index.html">На главную</a>
+
     <h3 class="titel-ders">DERS 1 (ALFABE)</h3>
     <p class="text-description">
       Алфавит. Образование множественного числа. Знакомство с турецкими буквами.
@@ -27,18 +29,43 @@
       </button>
     </div>
 
-    <div class="task-content-trainer hidden" id="task-content-trainer">
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set1"
+    >
       <div id="card" class="card" onclick="flipCard()">
-        <div class="word">родственники</div>
-        <div class="translation hidden">akraba</div>
+        <div class="word">слово</div>
+        <div class="translation hidden">translation</div>
         <div class="image hidden">
-          <img class="item-img" src="./foto/trainer/akraba.jpg" alt="akraba" />
+          <img src="./foto/trainer/akraba.jpg" alt="image" />
         </div>
       </div>
       <div class="controls">
         <button onclick="prevWord()">Предыдущее</button>
         <button onclick="nextWord()">Следующее</button>
       </div>
+
+      <!-- Набор 1 -->
+      <!-- <div id="card1" class="card" onclick="flipCard(1)">
+        <div class="word">Набор 1</div>
+        <div class="translation hidden">translation</div>
+        <div class="image hidden">
+          <img src="./foto/trainer/akraba.jpg" alt="image" />
+        </div>
+      </div> -->
+
+      <!-- <div id="card" class="card" onclick="flipCard()">
+        <div class="word">родственники</div>
+        <div class="translation hidden">akraba</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/trainer/akraba.jpg" alt="akraba" />
+        </div>
+      </div> -->
+      <!-- <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div> -->
     </div>
     <!-- /////////////video//////////// -->
 
@@ -52,7 +79,7 @@
         preload="none"
       ></video>
     </div>
-    <!-- ///////////////////////// -->
+    <!-- /////////////download file//////////// -->
 
     <div class="section-wrapper section-download">
       <a
@@ -68,11 +95,11 @@
         >Скачать Рабочая тетрадь Урок 1</a
       >
     </div>
-    <!-- ///////////////////////// -->
+    <!-- //////////////Дополнительный материал/////////// -->
 
     <section class="task-section">
-      <div class="task-header" id="task-header0">Дополнительный материал</div>
-      <ul class="task-more-material hidden" id="task-more-material">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
         <li>
           <button id="task-header-alfabet">Алфавит</button>
           <div class="slider hidden" id="task-content-alfabet">
@@ -192,7 +219,7 @@
         </li>
       </ul>
     </section>
-    <!-- ///////////////////////// -->
+    <!-- //////////////Задание 1/////////// -->
 
     <section class="task-section">
       <div class="task-header" id="task-header1">
@@ -453,13 +480,13 @@
         </div>
       </div>
     </section>
-    <!-- ///////////////////////// -->
+    <!-- /////////////Задание 2//////////// -->
 
     <section class="task-section">
       <div class="task-header" id="task-header2">
         Задание 2. Выберите один верный ответ в каждом пункте
       </div>
-      <div class="task-content-write hidden" id="taskContent2">
+      <div class="task-content write hidden" id="taskContent2">
         <div class="write-container">
           <p>Какой буквы нет в турецком алфавите?</p>
           <select class="answer-select" data-correct="w">
@@ -552,10 +579,14 @@
       </div>
     </section>
 
+    <!-- /////////////переключение страниц//////////// -->
     <div class="controls">
       <a href="./ders1_2.html"> <button>Далее</button></a>
     </div>
 
+    <script src="../words.js"></script>
     <script src="../scriptDers.js"></script>
+    <script src="../slider-foto.js"></script>
+    <script src="../more-materials.js"></script>
   </body>
 </html>
