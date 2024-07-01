@@ -7,6 +7,10 @@ body {
 }
 li{list-style: none;}
 
+span{
+  font-weight: bold;
+}
+
 .task-section {
   width: 1200px;
   margin-left: auto;
@@ -95,11 +99,21 @@ width:1000px;
   display: flex;
   flex-wrap: wrap;
 }
-.task-content .write{
+.task-content {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-start; */
+  position: relative;
+}
+/* .task8{
+  flex-direction:row;
+} */
+
+/* .white{
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
-}
+} */
+
 .task-more-marerial{
   background-color:beige;
 }
@@ -304,3 +318,46 @@ input{
   justify-content: center;
 margin-bottom: 50px;
 }
+
+
+
+/* /////////ders2-task12 img///////////////// */
+.container-items {
+  display: flex;
+  flex-direction: column;
+}
+.container-items10{
+  display: flex;
+    flex-direction: row;
+}
+
+
+.item-task12 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+select {
+  margin: 5px 0;
+}
+.item-list10{
+  margin: 20px;
+}
+.item-text{
+  margin: 8px;
+}
+
+.img-ders2-task1{
+  position: absolute;
+ right: 10px;
+ top: 20px;
+}
+/* ////////////////// */

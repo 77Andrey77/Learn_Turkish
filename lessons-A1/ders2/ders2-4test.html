@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_2</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+
+    <h3 class="titel-ders">DERS 2 (TANIŞMA, SELAMLAŞMA, DİLEKLER)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders2.html"
+            ><button>Знакомство. Основные слова и фразы</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders2-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders2-3.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders2-4test.html"
+            ><button class="active">Итоговый тест</button></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Знакомство по-турецки. Самые важные слова и фразы для поддержания диалога.
+      На уроке вы узнаете, как покорить собеседника уже с первых слов
+      приветствия, без стеснения продолжить беседу и оставить приятное
+      впечатление о себе при прощании.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set2"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">родственники</div>
+        <div class="translation hidden">ad</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/ad.jpg" alt="ad" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <p class="title-audio">
+      Давайте пройдем итоговый тест, чтобы упорядочить знания и поскорей перейти
+      к следующему уроку. Обратите внимание, что результат прохождения итогового
+      теста будет влиять на прогресс урока. Чтобы разблокировать 3 урок, вам
+      нужно ответить правильно с минимальным количеством ошибок. Удачи!
+    </p>
+
+    <!-- ///////////////////////// -->
+
+    <!-- ///////////////////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Итоговый тест к уроку 2</div>
+      <div class="task-content write hidden">
+        <div class="write-container">
+          <p>
+            1. Выберите <span>неправильный</span> вариант ответа. Как можно
+            поблагодарить по-турецки?
+          </p>
+          <select class="answer-select" data-correct="nasılsınız">
+            <option value="">--Выберите ответ--</option>
+            <option value="nasılsınız">nasılsınız</option>
+            <option value="teşekkür ederim">teşekkür ederim</option>
+            <option value="sağ olun">sağ olun</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>
+            2. Выберите <span>неправильный</span> вариант ответа. Как можно
+            поприветствовать собеседника по-турецки?
+          </p>
+          <select class="answer-select" data-correct="hoşça kalın">
+            <option value="">--Выберите ответ--</option>
+            <option value="hoşça kalın">hoşça kalın</option>
+            <option value="iyi günler">iyi günler</option>
+            <option value="merhaba">merhaba</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>
+            3. Выберите <span>неправильный</span> вариант ответа. Как можно
+            попрощаться с собеседником по-турецки?
+          </p>
+          <select class="answer-select" data-correct="merhaba">
+            <option value="">--Выберите ответ--</option>
+            <option value="hoşça kalın">hoşça kalın</option>
+            <option value="iyi günler">iyi günler</option>
+            <option value="merhaba">merhaba</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>4. Выберите подходящий вариант ответа на вопрос: 'Nasılsınız?'</p>
+          <select class="answer-select" data-correct="adım Marina">
+            <option value="">--Выберите ответ--</option>
+            <option value="iyiyim">iyiyim</option>
+            <option value="iyi günler">iyi günler</option>
+            <option value="adım Marina">adım Marina</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>5. Выберите подходящий вариант ответа на вопрос: ‘Nerelisiniz?'</p>
+          <select class="answer-select" data-correct="Moskova’lıyım">
+            <option value="">--Выберите ответ--</option>
+            <option value="Moskova’lıyım">Moskova’lıyım</option>
+            <option value="Rusya’dayım">Rusya’dayım</option>
+            <option value="adım Marina">adım Marina</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>
+            6. Как <span>нельзя</span> ответить на вопрос: ‘Sizin adınız ne?’
+          </p>
+          <select class="answer-select" data-correct="Rusum">
+            <option value="">--Выберите ответ--</option>
+            <option value="Rusum">Rusum</option>
+            <option value="ismim Marina">ismim Marina</option>
+            <option value="adım Marina">adım Marina</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>
+            7. Какой из вопросов мы можем задать, если обращаемся на
+            <span>ВЫ?</span>
+          </p>
+          <select class="answer-select" data-correct=" nasılsınız?">
+            <option value="">--Выберите ответ--</option>
+            <option value=" nasılsınız?">nasılsınız?</option>
+            <option value="nerelisin? ">nerelisin?</option>
+            <option value="senin adın ne?">senin adın ne?</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>
+            8. Какой из вопросов мы можем задать, если обращаемся на
+            <span>ТЫ?</span>
+          </p>
+          <select class="answer-select" data-correct="nerelisin?">
+            <option value="">--Выберите ответ--</option>
+            <option value=" nasılsınız?">nasılsınız?</option>
+            <option value="nerelisin?">nerelisin?</option>
+            <option value="senin adın ne?">senin adın ne?</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>9. Как по-турецки спросить: «Откуда ты родом?».</p>
+          <select class="answer-select" data-correct="nerelisin?">
+            <option value="">--Выберите ответ--</option>
+            <option value="nasılsın?">nasılsın?</option>
+            <option value="nerelisin?">nerelisin?</option>
+            <option value="neredesin?">neredesin?</option>
+          </select>
+        </div>
+
+        <div class="write-container">
+          <p>10. Как по-турецки спросить: «Ты где?».</p>
+          <select class="answer-select" data-correct="neredesin?">
+            <option value="">--Выберите ответ--</option>
+            <option value="nasılsın?">nasılsın?</option>
+            <option value="nerelisin?">nerelisin?</option>
+            <option value="neredesin?">neredesin?</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders2_3.html"> <button>Назад</button></a>
+
+      <a href="../ders3/ders3.html"> <button>DERS 3</button></a>
+    </div>
+
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+  </body>
+</html>
+
+<!-- Задание 5. Посмотрите на картинку и правильно выберите вариант -->
