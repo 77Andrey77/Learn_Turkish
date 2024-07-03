@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_3</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <h3 class="titel-ders">DERS 3 (BU NE? O KİM?)</h3>
+
+    <!-- <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders2.html"
+            ><button class="active">
+              Знакомство. Основные слова и фразы
+            </button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders2-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders2-3.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders2-4test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav> -->
+
+    <p class="text-description">
+      Вопросительные и указательные местоимения. Вопросительная частица mi. На
+      уроке вы узнаете, когда вопрос не может обойтись без вопросительной
+      частицы “mi”. Освоите особенности построения утвердительных, отрицательных
+      и вопросительных предложений.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set3"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/evet.jpg" alt="evet" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+    <!-- /////////////dowloading//////////// -->
+
+    <div class="section-wrapper section-download">
+      <!-- <a
+        class="link-download"
+        href="../../materials/словарик урок2.png"
+        download
+        >Скачать Словарик к уроку</a
+      > -->
+      <a
+        class="link-download"
+        href="../../materials/Скачать Рабочая тетрадь. Урок 3.pdf"
+        download
+        >Скачать Рабочая тетрадь Урок 2</a
+      >
+    </div>
+    <!-- ////////////more info///////////// -->
+
+    <!-- //////////////Дополнительный материал/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
+        <li>
+          <button id="task-header-law1">ВОПРОСИТЕЛЬНЫЕ МЕСТОИМЕНИЯ</button>
+          <div class="task-law hidden" id="task-content-law1-img">
+            <img
+              src="./foto/ders3moreMaterial1-1.JPG"
+              alt="ВОПРОСИТЕЛЬНЫЕ МЕСТОИМЕНИЯ"
+            />
+          </div>
+        </li>
+
+        <li>
+          <button id="task-header-alfabet">УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИЯ</button>
+          <div class="slider hidden" id="task-content-alfabet">
+            <div class="slides">
+              <div class="slide">
+                <img
+                  src="./foto/ders3moreMaterial2-1.JPG"
+                  alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders3moreMaterial2-2.JPG"
+                  alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders3moreMaterial2-3.JPG"
+                  alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders3moreMaterial2-4.JPG"
+                  alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ"
+                />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law2">заглушка</button>
+          <div class="task-law hidden" id="task-content-law2-img">
+            <img src="./foto/ders3moreMaterial1-1.JPG" alt="img-law" />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law3">заглушка</button>
+          <div class="task-law hidden" id="task-content-law3-img">
+            <img src="./foto/ders3moreMaterial1-1.JPG" alt="img-law" />
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- /////////////Задание 1 с картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        1. Давайте посмотрим на примеры ниже и выберем вопрос и ответ
+      </div>
+      <div class="task-content write hidden">
+        <div class="container-items">
+          <div class="item-task12">
+            <img src="./foto/ders3-1-makas.png" alt="makas" width="300" />
+            <div class="select-container">
+              <div class="write-container">
+                <select class="answer-select" data-correct="ne">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="ne">ne</option>
+                  <option value="kim">kim</option>
+                </select>
+              </div>
+
+              <div class="write-container">
+                <select class="answer-select" data-correct="makas">
+                  <option value="">--Выберите ответ--</option>
+
+                  <option value="tren">tren</option>
+                  <option value="ev">ev</option>
+                  <option value="kasap">kasap</option>
+                  <option value="bardak">bardak</option>
+                  <option value="doktor">doktor</option>
+                  <option value="kamyon">kamyon</option>
+                  <option value="mühendis">mühendis</option>
+                  <option value="ressam">ressam</option>
+                  <option value="çatal">çatal</option>
+                  <option value="piyanist">piyanist</option>
+                  <option value="makas">makas</option>
+                  <option value="otobüs">otobüs</option>
+                  <option value="kuş">kuş</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-task12">
+            <img src="./foto/ders3-1-ev.jpeg" alt="ev" width="300" />
+            <div class="select-container">
+              <div class="write-container">
+                <select class="answer-select" data-correct="ne">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="ne">ne</option>
+                  <option value="kim">kim</option>
+                </select>
+              </div>
+
+              <div class="write-container">
+                <select class="answer-select" data-correct="ev">
+                  <option value="">--Выберите ответ--</option>
+
+                  <option value="tren">tren</option>
+                  <option value="ev">ev</option>
+                  <option value="kasap">kasap</option>
+                  <option value="bardak">bardak</option>
+                  <option value="doktor">doktor</option>
+                  <option value="kamyon">kamyon</option>
+                  <option value="mühendis">mühendis</option>
+                  <option value="ressam">ressam</option>
+                  <option value="çatal">çatal</option>
+                  <option value="piyanist">piyanist</option>
+                  <option value="makas">makas</option>
+                  <option value="otobüs">otobüs</option>
+                  <option value="kuş">kuş</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-task12">
+            <img src="./foto/ders3-1-çatal.png" alt="çatal" width="300" />
+            <div class="select-container">
+              <div class="write-container">
+                <select class="answer-select" data-correct="ne">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="ne">ne</option>
+                  <option value="kim">kim</option>
+                </select>
+              </div>
+
+              <div class="write-container">
+                <select class="answer-select" data-correct="çatal">
+                  <option value="">--Выберите ответ--</option>
+
+                  <option value="tren">tren</option>
+                  <option value="ev">ev</option>
+                  <option value="kasap">kasap</option>
+                  <option value="bardak">bardak</option>
+                  <option value="doktor">doktor</option>
+                  <option value="kamyon">kamyon</option>
+                  <option value="mühendis">mühendis</option>
+                  <option value="ressam">ressam</option>
+                  <option value="çatal">çatal</option>
+                  <option value="piyanist">piyanist</option>
+                  <option value="makas">makas</option>
+                  <option value="otobüs">otobüs</option>
+                  <option value="kuş">kuş</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-task12">
+            <img src="./foto/ders3-1-bardak.png" alt="bardak" width="300" />
+            <div class="select-container">
+              <div class="write-container">
+                <select class="answer-select" data-correct="ne">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="ne">ne</option>
+                  <option value="kim">kim</option>
+                </select>
+              </div>
+
+              <div class="write-container">
+                <select class="answer-select" data-correct="bardak">
+                  <option value="">--Выберите ответ--</option>
+
+                  <option value="tren">tren</option>
+                  <option value="ev">ev</option>
+                  <option value="kasap">kasap</option>
+                  <option value="bardak">bardak</option>
+                  <option value="doktor">doktor</option>
+                  <option value="kamyon">kamyon</option>
+                  <option value="mühendis">mühendis</option>
+                  <option value="ressam">ressam</option>
+                  <option value="çatal">çatal</option>
+                  <option value="piyanist">piyanist</option>
+                  <option value="makas">makas</option>
+                  <option value="otobüs">otobüs</option>
+                  <option value="kuş">kuş</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-task12">
+            <img src="./foto/ders3-1-doktor.jpeg" alt="doktor" width="300" />
+            <div class="select-container">
+              <div class="write-container">
+                <select class="answer-select" data-correct="kim">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="ne">ne</option>
+                  <option value="kim">kim</option>
+                </select>
+              </div>
+
+              <div class="write-container">
+                <select class="answer-select" data-correct="doktor">
+                  <option value="">--Выберите ответ--</option>
+
+                  <option value="tren">tren</option>
+                  <option value="ev">ev</option>
+                  <option value="kasap">kasap</option>
+                  <option value="bardak">bardak</option>
+                  <option value="doktor">doktor</option>
+                  <option value="kamyon">kamyon</option>
+                  <option value="mühendis">mühendis</option>
+                  <option value="ressam">ressam</option>
+                  <option value="çatal">çatal</option>
+                  <option value="piyanist">piyanist</option>
+                  <option value="makas">makas</option>
+                  <option value="otobüs">otobüs</option>
+                  <option value="kuş">kuş</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-task12">
+            <img
+              src="./foto/ders3-1-muhendis.jpeg"
+              alt="mühendis"
+              width="300"
+            />
+            <div class="select-container">
+              <div class="write-container">
+                <select class="answer-select" data-correct="kim">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="ne">ne</option>
+                  <option value="kim">kim</option>
+                </select>
+              </div>
+
+              <div class="write-container">
+                <select class="answer-select" data-correct="mühendis">
+                  <option value="">--Выберите ответ--</option>
+
+                  <option value="tren">tren</option>
+                  <option value="ev">ev</option>
+                  <option value="kasap">kasap</option>
+                  <option value="bardak">bardak</option>
+                  <option value="doktor">doktor</option>
+                  <option value="kamyon">kamyon</option>
+                  <option value="mühendis">mühendis</option>
+                  <option value="ressam">ressam</option>
+                  <option value="çatal">çatal</option>
+                  <option value="piyanist">piyanist</option>
+                  <option value="makas">makas</option>
+                  <option value="otobüs">otobüs</option>
+                  <option value="kuş">kuş</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-task12">
+            <img src="./foto/ders3-1-ressam.jpeg" alt="ressam" width="300" />
+            <div class="select-container">
+              <div class="write-container">
+                <select class="answer-select" data-correct="kim">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="ne">ne</option>
+                  <option value="kim">kim</option>
+                </select>
+              </div>
+
+              <div class="write-container">
+                <select class="answer-select" data-correct="ressam">
+                  <option value="">--Выберите ответ--</option>
+
+                  <option value="tren">tren</option>
+                  <option value="ev">ev</option>
+                  <option value="kasap">kasap</option>
+                  <option value="bardak">bardak</option>
+                  <option value="doktor">doktor</option>
+                  <option value="kamyon">kamyon</option>
+                  <option value="mühendis">mühendis</option>
+                  <option value="ressam">ressam</option>
+                  <option value="çatal">çatal</option>
+                  <option value="piyanist">piyanist</option>
+                  <option value="makas">makas</option>
+                  <option value="otobüs">otobüs</option>
+                  <option value="kuş">kuş</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-task12">
+            <img
+              src="./foto/ders3-1-piyanist.jpeg"
+              alt="piyanist"
+              width="300"
+            />
+            <div class="select-container">
+              <div class="write-container">
+                <select class="answer-select" data-correct="kim">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="ne">ne</option>
+                  <option value="kim">kim</option>
+                </select>
+              </div>
+
+              <div class="write-container">
+                <select class="answer-select" data-correct="piyanist">
+                  <option value="">--Выберите ответ--</option>
+
+                  <option value="tren">tren</option>
+                  <option value="ev">ev</option>
+                  <option value="kasap">kasap</option>
+                  <option value="bardak">bardak</option>
+                  <option value="doktor">doktor</option>
+                  <option value="kamyon">kamyon</option>
+                  <option value="mühendis">mühendis</option>
+                  <option value="ressam">ressam</option>
+                  <option value="çatal">çatal</option>
+                  <option value="piyanist">piyanist</option>
+                  <option value="makas">makas</option>
+                  <option value="otobüs">otobüs</option>
+                  <option value="kuş">kuş</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-task12">
+            <img src="./foto/ders3-1-tren.jpeg" alt="tren" width="300" />
+            <div class="select-container">
+              <div class="write-container">
+                <select class="answer-select" data-correct="ne">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="ne">ne</option>
+                  <option value="kim">kim</option>
+                </select>
+              </div>
+
+              <div class="write-container">
+                <select class="answer-select" data-correct="tren">
+                  <option value="">--Выберите ответ--</option>
+
+                  <option value="tren">tren</option>
+                  <option value="ev">ev</option>
+                  <option value="kasap">kasap</option>
+                  <option value="bardak">bardak</option>
+                  <option value="doktor">doktor</option>
+                  <option value="kamyon">kamyon</option>
+                  <option value="mühendis">mühendis</option>
+                  <option value="ressam">ressam</option>
+                  <option value="çatal">çatal</option>
+                  <option value="piyanist">piyanist</option>
+                  <option value="makas">makas</option>
+                  <option value="otobüs">otobüs</option>
+                  <option value="kuş">kuş</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-task12">
+            <img src="./foto/ders3-1-kamyon.jpg" alt="kamyon" width="300" />
+            <div class="select-container">
+              <div class="write-container">
+                <select class="answer-select" data-correct="ne">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="ne">ne</option>
+                  <option value="kim">kim</option>
+                </select>
+              </div>
+
+              <div class="write-container">
+                <select class="answer-select" data-correct="kamyon">
+                  <option value="">--Выберите ответ--</option>
+
+                  <option value="tren">tren</option>
+                  <option value="ev">ev</option>
+                  <option value="kasap">kasap</option>
+                  <option value="bardak">bardak</option>
+                  <option value="doktor">doktor</option>
+                  <option value="kamyon">kamyon</option>
+                  <option value="mühendis">mühendis</option>
+                  <option value="ressam">ressam</option>
+                  <option value="çatal">çatal</option>
+                  <option value="piyanist">piyanist</option>
+                  <option value="makas">makas</option>
+                  <option value="otobüs">otobüs</option>
+                  <option value="kuş">kuş</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-task12">
+            <img src="./foto/ders3-1-otobus.jpeg" alt="otobüs" width="300" />
+            <div class="select-container">
+              <div class="write-container">
+                <select class="answer-select" data-correct="ne">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="ne">ne</option>
+                  <option value="kim">kim</option>
+                </select>
+              </div>
+
+              <div class="write-container">
+                <select class="answer-select" data-correct="otobüs">
+                  <option value="">--Выберите ответ--</option>
+
+                  <option value="tren">tren</option>
+                  <option value="ev">ev</option>
+                  <option value="kasap">kasap</option>
+                  <option value="bardak">bardak</option>
+                  <option value="doktor">doktor</option>
+                  <option value="kamyon">kamyon</option>
+                  <option value="mühendis">mühendis</option>
+                  <option value="ressam">ressam</option>
+                  <option value="çatal">çatal</option>
+                  <option value="piyanist">piyanist</option>
+                  <option value="makas">makas</option>
+                  <option value="otobüs">otobüs</option>
+                  <option value="kuş">kuş</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-task12">
+            <img src="./foto/ders3-1-kuş.jpeg" alt="kuş" width="300" />
+            <div class="select-container">
+              <div class="write-container">
+                <select class="answer-select" data-correct="ne">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="ne">ne</option>
+                  <option value="kim">kim</option>
+                </select>
+              </div>
+
+              <div class="write-container">
+                <select class="answer-select" data-correct="kuş">
+                  <option value="">--Выберите ответ--</option>
+
+                  <option value="tren">tren</option>
+                  <option value="ev">ev</option>
+                  <option value="kasap">kasap</option>
+                  <option value="bardak">bardak</option>
+                  <option value="doktor">doktor</option>
+                  <option value="kamyon">kamyon</option>
+                  <option value="mühendis">mühendis</option>
+                  <option value="ressam">ressam</option>
+                  <option value="çatal">çatal</option>
+                  <option value="piyanist">piyanist</option>
+                  <option value="makas">makas</option>
+                  <option value="otobüs">otobüs</option>
+                  <option value="kuş">kuş</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-task12">
+            <img src="./foto/ders3-1-kasap.jpeg" alt="kasap" width="300" />
+            <div class="select-container">
+              <div class="write-container">
+                <select class="answer-select" data-correct="kim">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="ne">ne</option>
+                  <option value="kim">kim</option>
+                </select>
+              </div>
+
+              <div class="write-container">
+                <select class="answer-select" data-correct="kasap">
+                  <option value="">--Выберите ответ--</option>
+
+                  <option value="tren">tren</option>
+                  <option value="ev">ev</option>
+                  <option value="kasap">kasap</option>
+                  <option value="bardak">bardak</option>
+                  <option value="doktor">doktor</option>
+                  <option value="kamyon">kamyon</option>
+                  <option value="mühendis">mühendis</option>
+                  <option value="ressam">ressam</option>
+                  <option value="çatal">çatal</option>
+                  <option value="piyanist">piyanist</option>
+                  <option value="makas">makas</option>
+                  <option value="otobüs">otobüs</option>
+                  <option value="kuş">kuş</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="../ders2/ders2-4test.html"> <button>Назад</button></a>
+
+      <a href="./ders3-2.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <script src="../slider-foto.js"></script>
+    <script src="../more-materials.js"></script>
+  </body>
+</html>

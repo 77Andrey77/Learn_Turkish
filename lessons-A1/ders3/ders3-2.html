@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_3</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <h3 class="titel-ders">DERS 3 (BU NE? O KİM?)</h3>
+
+    <!-- <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders2.html"
+            ><button class="active">
+              Знакомство. Основные слова и фразы
+            </button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders2-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders2-3.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders2-4test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav> -->
+
+    <p class="text-description">
+      Вопросительные и указательные местоимения. Вопросительная частица mi. На
+      уроке вы узнаете, когда вопрос не может обойтись без вопросительной
+      частицы “mi”. Освоите особенности построения утвердительных, отрицательных
+      и вопросительных предложений.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set3"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/evet.jpg" alt="evet" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+    <!-- /////////////dowloading//////////// -->
+
+    <!-- ////////////more info///////////// -->
+
+    <!-- //////////////Дополнительный материал/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
+        <li>
+          <button id="task-header-law1">ВОПРОСИТЕЛЬНАЯ ЧАСТИЦА</button>
+          <div class="task-law hidden" id="task-content-law1-img">
+            <img
+              src="./foto/ders3-page2-moreinf1.JPG"
+              alt="ВОПРОСИТЕЛЬНАЯ ЧАСТИЦА"
+            />
+          </div>
+        </li>
+
+        <li>
+          <button id="task-header-law2">ОТРИЦАНИЕ С DEĞIL</button>
+          <div class="task-law hidden" id="task-content-law2-img">
+            <img
+              src="./foto/ders3-page2-moreinf2.JPG"
+              alt="ОТРИЦАНИЕ С DEĞIL"
+            />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-alfabet">заглушка</button>
+          <div class="slider hidden" id="task-content-alfabet">
+            <div class="slides">
+              <div class="slide">
+                <img
+                  src="./foto/ders3moreMaterial2-1.JPG"
+                  alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders3moreMaterial2-2.JPG"
+                  alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders3moreMaterial2-3.JPG"
+                  alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders3moreMaterial2-4.JPG"
+                  alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ"
+                />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law3">заглушка</button>
+          <div class="task-law hidden" id="task-content-law3-img">
+            <img src="./foto/ders3moreMaterial1-1.JPG" alt="img-law" />
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- /////////////Задание 2 без img//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 2. Давайте образуем вопросительные предложения и ответим на них
+      </div>
+      <div class="task-content write hidden">
+        <form id="text-form-3">
+          <ul>
+            <li class="inline">
+              <div class="write-container">
+                <p>Bu çanta</p>
+                <select class="answer-select" data-correct="mı">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="mı">mı</option>
+                  <option value="mi">mi</option>
+                  <option value="mu">mu</option>
+                  <option value="mü">mü</option>
+                </select>
+                <p>?</p>
+              </div>
+            </li>
+
+            <li class="inline">
+              <label for="word15">Evet, </label>
+              <input type="text" id="word15" name="word15" />
+              <input type="text" id="word16" name="word16" />
+            </li>
+
+            <li class="inline">
+              <div class="write-container">
+                <p>O, ev</p>
+                <select class="answer-select" data-correct="mi">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="mı">mı</option>
+                  <option value="mi">mi</option>
+                  <option value="mu">mu</option>
+                  <option value="mü">mü</option>
+                </select>
+                <p>?</p>
+              </div>
+            </li>
+
+            <li class="inline">
+              <label for="word17">Hayır, </label>
+              <input type="text" id="word17" name="word17" />
+              <input type="text" id="word18" name="word18" />
+              <input type="text" id="word19" name="word19" />
+            </li>
+
+            <li class="inline">
+              <div class="write-container">
+                <p>Bu, şoför</p>
+                <select class="answer-select" data-correct="mü">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="mı">mı</option>
+                  <option value="mi">mi</option>
+                  <option value="mu">mu</option>
+                  <option value="mü">mü</option>
+                </select>
+                <p>?</p>
+              </div>
+            </li>
+
+            <li class="inline">
+              <label for="word20">Evet, </label>
+              <input type="text" id="word20" name="word20" />
+              <input type="text" id="word21" name="word21" />
+            </li>
+
+            <li class="inline">
+              <div class="write-container">
+                <p>O, hemşire</p>
+                <select class="answer-select" data-correct="mi">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="mı">mı</option>
+                  <option value="mi">mi</option>
+                  <option value="mu">mu</option>
+                  <option value="mü">mü</option>
+                </select>
+                <p>?</p>
+              </div>
+            </li>
+
+            <li class="inline">
+              <label for="word22">Evet, </label>
+              <input type="text" id="word22" name="word22" />
+              <input type="text" id="word23" name="word23" />
+            </li>
+
+            <li class="inline">
+              <div class="write-container">
+                <p>Bu perde</p>
+                <select class="answer-select" data-correct="mi">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="mı">mı</option>
+                  <option value="mi">mi</option>
+                  <option value="mu">mu</option>
+                  <option value="mü">mü</option>
+                </select>
+                <p>?</p>
+              </div>
+            </li>
+
+            <li class="inline">
+              <label for="word21">Hayır, </label>
+              <input type="text" id="word24" name="word24" />
+              <input type="text" id="word25" name="word25" />
+              <input type="text" id="word26" name="word26" />
+            </li>
+
+            <li class="inline">
+              <div class="write-container">
+                <p>O, futbolcu</p>
+                <select class="answer-select" data-correct="mu">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="mı">mı</option>
+                  <option value="mi">mi</option>
+                  <option value="mu">mu</option>
+                  <option value="mü">mü</option>
+                </select>
+                <p>?</p>
+              </div>
+            </li>
+
+            <li class="inline">
+              <label for="word27">Hayır, </label>
+              <input type="text" id="word27" name="word27" />
+              <input type="text" id="word28" name="word28" />
+            </li>
+
+            <li class="inline">
+              <div class="write-container">
+                <p>Bu kutu</p>
+                <select class="answer-select" data-correct="mu">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="mı">mı</option>
+                  <option value="mi">mi</option>
+                  <option value="mu">mu</option>
+                  <option value="mü">mü</option>
+                </select>
+                <p>?</p>
+              </div>
+            </li>
+
+            <li class="inline">
+              <label for="word29">Hayır, </label>
+              <input type="text" id="word29" name="word29" />
+              <input type="text" id="word30" name="word30" />
+              <input type="text" id="word31" name="word31" />
+            </li>
+
+            <li class="inline">
+              <div class="write-container">
+                <p>O mağaza</p>
+                <select class="answer-select" data-correct="mı">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="mı">mı</option>
+                  <option value="mi">mi</option>
+                  <option value="mu">mu</option>
+                  <option value="mü">mü</option>
+                </select>
+                <p>?</p>
+              </div>
+            </li>
+
+            <li class="inline">
+              <label for="word32">Evet, </label>
+              <input type="text" id="word32" name="word32" />
+              <input type="text" id="word33" name="word33" />
+            </li>
+
+            <li class="inline">
+              <div class="write-container">
+                <p>Bu market</p>
+                <select class="answer-select" data-correct="mi">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="mı">mı</option>
+                  <option value="mi">mi</option>
+                  <option value="mu">mu</option>
+                  <option value="mü">mü</option>
+                </select>
+                <p>?</p>
+              </div>
+            </li>
+
+            <li class="inline">
+              <label for="word34">Hayır, </label>
+              <input type="text" id="word34" name="word34" />
+              <input type="text" id="word35" name="word35" />
+              <input type="text" id="word36" name="word36" />
+            </li>
+
+            <li class="inline">
+              <div class="write-container">
+                <p>O, şarkıcı</p>
+                <select class="answer-select" data-correct="mı">
+                  <option value="">--Выберите ответ--</option>
+                  <option value="mı">mı</option>
+                  <option value="mi">mi</option>
+                  <option value="mu">mu</option>
+                  <option value="mü">mü</option>
+                </select>
+                <p>?</p>
+              </div>
+            </li>
+
+            <li class="inline">
+              <label for="word37">Evet, </label>
+              <input type="text" id="word37" name="word37" />
+              <input type="text" id="word38" name="word38" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 2 c img//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 3. Давайте напишем вопросы к ответам ниже
+      </div>
+      <div class="task-content hidden">
+        <form id="text-form-4">
+          <div class="image-container">
+            <img src="./foto/ders3-p2-t3-1.png" alt="Image 1" />
+            <label class="labelInline" for="word39">
+              <input
+                class="inputLabelInline-short"
+                type="text"
+                id="word39"
+                name="word39"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word40"
+                name="word40"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word41"
+                name="word41"
+              />
+              <p>?</p>
+            </label>
+
+            <p>Evet, bu sandalye.</p>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders3-p2-t3-2.jpg" alt="Image 2" />
+            <label class="labelInline" for="word42">
+              <input
+                class="inputLabelInline-short"
+                type="text"
+                id="word42"
+                name="word42"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word43"
+                name="word43"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word44"
+                name="word44"
+              />
+              <p>?</p>
+            </label>
+
+            <p>Hayır, köpek değil, bu kedi.</p>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders3-p2-t3-3.png" alt="Image 3" />
+            <label class="labelInline" for="word45">
+              <input
+                class="inputLabelInline-short"
+                type="text"
+                id="word45"
+                name="word45"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word46"
+                name="word46"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word47"
+                name="word47"
+              />
+              <p>?</p>
+            </label>
+
+            <p>Evet, şu sözlük.</p>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders3-p2-t3-4.png" alt="Image 4" />
+            <label class="labelInline" for="word48">
+              <input
+                class="inputLabelInline-short"
+                type="text"
+                id="word48"
+                name="word48"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word49"
+                name="word49"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word50"
+                name="word50"
+              />
+              <p>?</p>
+            </label>
+
+            <p>Hayır, o gözlük değil, şapka.</p>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders3-p2-t3-5.jpg" alt="Image 5" />
+            <label class="labelInline" for="word51">
+              <input
+                class="inputLabelInline-short"
+                type="text"
+                id="word51"
+                name="word51"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word52"
+                name="word52"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word53"
+                name="word53"
+              />
+              <p>?</p>
+            </label>
+
+            <p>Evet, o basketbolcu.</p>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders3-p2-t3-6.png" alt="Image 6" />
+            <label class="labelInline" for="word54">
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word54"
+                name="word54"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word55"
+                name="word55"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word56"
+                name="word56"
+              />
+              <p>?</p>
+            </label>
+
+            <p>Hayır, o Ali değil. O Ahmet.</p>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders3-p2-t3-7.jpg" alt="Image 7" />
+            <label class="labelInline" for="word57">
+              <input
+                class="inputLabelInline-short"
+                type="text"
+                id="word57"
+                name="word57"
+              />
+              <input
+                class="inputLabelInline-short"
+                type="text"
+                id="word58"
+                name="word58"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word59"
+                name="word59"
+              />
+              <input
+                class="inputLabelInline-short"
+                type="text"
+                id="word60"
+                name="word60"
+              />
+              <p>?</p>
+            </label>
+
+            <p>Evet, o ev hanımı.</p>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders3-p2-t3-8.jpg" alt="Image 8" />
+            <label class="labelInline" for="word61">
+              <input
+                class="inputLabelInline-short"
+                type="text"
+                id="word61"
+                name="word61"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word62"
+                name="word62"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word63"
+                name="word63"
+              />
+              <input
+                class="inputLabelInline-short"
+                type="text"
+                id="word64"
+                name="word64"
+              />
+              <p>?</p>
+            </label>
+
+            <p>Hayır, bu Galata Kulesi değil. Bu Atakule.</p>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders3-p2-t3-9.jpg" alt="Image 9" />
+            <label class="labelInline" for="word65">
+              <input
+                class="inputLabelInline-short"
+                type="text"
+                id="word65"
+                name="word65"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word66"
+                name="word66"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word67"
+                name="word67"
+              />
+
+              <p>?</p>
+            </label>
+
+            <p>Evet, o domates</p>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders3-p2-t3-10.jpg" alt="Image 10" />
+            <label class="labelInline" for="word68">
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word68"
+                name="word68"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word69"
+                name="word69"
+              />
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word70"
+                name="word70"
+              />
+
+              <p>?</p>
+            </label>
+
+            <p>Evet, onlar çocuk.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders3.html"> <button>Назад</button></a>
+
+      <a href="./ders3-3.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <script src="../more-materials.js"></script>
+  </body>
+</html>

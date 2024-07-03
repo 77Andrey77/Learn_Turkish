@@ -146,8 +146,9 @@ width:1000px;
     display: flex;
     flex-direction:column;
     width: 270px;
-    padding: 5px;
-    margin: 10px;
+    padding: 4px;
+    margin: 5px;
+  border: 1px solid rgb(134, 237, 65);
   /* background-color: bisque; */
 
 }
@@ -360,4 +361,23 @@ select {
  right: 10px;
  top: 20px;
 }
-/* ////////////////// */
+/* /////////ders3-2-task3///////// */
+ #text-form-4{
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+ .labelInline{
+  display: flex;
+  align-items: center;
+ }
+ .inputLabelInline{
+  width: 75px;
+  margin: 30px 4px 30px 3px;
+    padding: 2px;
+ }
+ .inputLabelInline-short {
+   width: 30px;
+   margin: 30px 4px 30px 3px;
+   padding: 2px;
+ }

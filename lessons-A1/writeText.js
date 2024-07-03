@@ -47,7 +47,12 @@ const correctWords1 = ['Merhaba', 'Iyiyim', 'Ederim', 'Nasılsın', 'Ederim', 'I
 
 const correctWords2 = ['Merhaba', 'Adım', 'Senin', 'Benim', 'Nerelisin', 'Lıyım'];
 
-  
+const correctWords3 = ['Bu', 'Çanta', 'O', 'Ev', 'Değil', 'Bu', 'Şoför', 'O', 'Hemşire','Bu','Perde','Değil','O' ,'Futbolcu','Bu', 'Kutu','Değil','O', 'Mağaza','Bu', 'Market','Değil ','O', 'Şarkıcı'];
+   
+const correctWords4 = ['Bu', 'Sandalye', 'Mi', 'Bu ', 'Köpek', 'Mi','Şu', 'Sözlük', 'Mü', 'O ', 'Gözlük', 'Mü','O', 'Basketbolcu', 'Mu', 'O', 'Ali', 'Mi','O', 'Ev', 'Hanımı', 'Mı', 'Bu', 'Galata','Kulesi', 'Mi', 'O', 'Domates', 'Mi', 'Onlar','Çocuk', 'Mu'];
+                    // ( 39       40       41    42    43       44   45      46     47     48     49        50  51    52             53    54   55     56  57    58    59        60   61      62       63       64   65     66        67    68     69        70   )
+
+
 
     function checkWord(correctWords) {
     return function(event) {
@@ -75,4 +80,16 @@ const correctWords2 = ['Merhaba', 'Adım', 'Senin', 'Benim', 'Nerelisin', 'Lıy�
   // Добавляем обработчик события input для каждого текстового поля во втором наборе
   document.querySelectorAll('#text-form-2 input[type="text"]').forEach((input, index) => {
     input.addEventListener('input', checkWord(correctWords2));
+  });
+
+
+// Добавляем обработчик события input для каждого текстового поля в 3 наборе
+  document.querySelectorAll('#text-form-3 input[type="text"]').forEach((input, index) => {
+    input.addEventListener('input', checkWord(correctWords3));
+  });
+
+
+  // Добавляем обработчик события input для каждого текстового поля в 4 наборе
+  document.querySelectorAll('#text-form-4 input[type="text"]').forEach((input, index) => {
+    input.addEventListener('input', checkWord(correctWords4));
   });

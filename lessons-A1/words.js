@@ -387,5 +387,217 @@ const wordsSets = {
         image: "./foto/iyi geceler.jpeg"
     }
     
-]
+    ],
+    set3: [
+      {
+        word: "evet",
+        translation: "Да",
+        image: "./foto/evet.jpg"
+        },  
+        {
+        word: "hayır",
+        translation: "Нет",
+        image: "./foto/hayır.jpg"
+    },  
+    {
+        word: "bu",
+        translation: "это, этот, эта (предмет близко)",
+        image: "../not-image.png"
+    },  
+    {
+        word: "şu",
+        translation: "это, этот, эта, то, тот, та (предмет немного дальше)",
+        image: "../not-image.png"
+    },  
+    {
+        word: "o",
+        translation: "это, этот, эта (предмет далеко)",
+        image: "../not-image.png"
+    },  
+    {
+        word: "kim?",
+        translation: "кто?",
+        image: "./foto/kim.jpg"
+    },  
+    {
+        word: "ne?",
+        translation: "что?",
+        image: "./foto/ne.jpg"
+    },  
+    {
+        word: "bunlar",
+        translation: "эти (предмет близко)",
+        image: "../not-image.png"
+    },  
+    {
+        word: "şunlar",
+        translation: "те (предмет немного дальше)",
+        image: "../not-image.png"
+    },  
+    {
+        word: "onlar",
+        translation: "те, они (предмет далеко)",
+        image: "../not-image.png"
+    },  
+    {
+        word: "burası",
+        translation: "тут, это место",
+        image: "../not-image.png"
+    },  
+    {
+        word: "şurası",
+        translation: "тут, это место",
+        image: "../not-image.png"
+    },  
+    {
+        word: "orası",
+        translation: "там, то место",
+        image: "../not-image.png"
+    },  
+    {
+        word: "neresi?",
+        translation: "какое место?",
+        image: "./foto/neresi.jpg"
+    },  
+    {
+        word: "makas",
+        translation: "ножницы",
+        image: "./foto/makas.jpeg"
+    },  
+    {
+        word: "ev",
+        translation: "дом",
+        image: "./foto/ev.jpg"
+    },  
+    {
+        word: "bardak",
+        translation: "стакан",
+        image: "./foto/bardak.jpg"
+    },  
+    {
+        word: "mühendis",
+        translation: "инженер",
+        image: "./foto/mühendis.jpg"
+    },  
+    {
+        word: "ressam",
+        translation: "художник",
+        image: "./foto/ressam.jpg"
+    },  
+    {
+        word: "tren",
+        translation: "поезд",
+        image: "./foto/tren.jpg"
+    },  
+    {
+        word: "kamyon",
+        translation: "грузовик",
+        image: "./foto/kamyon.jpg"
+    },  
+    {
+        word: "kuş",
+        translation: "птица",
+        image: "./foto/kuş.jpg"
+    },  
+{
+        word: "kasap",
+        translation: "мясник, мясная лавка",
+        image: "./foto/kasap.jpg"
+        },  
+    {
+        word: "kız",
+        translation: "девочка, дочка",
+        image: "./foto/kız.jpg"
+        },  
+    {
+        word: "bisiklet",
+        translation: "велосипед",
+        image: "./foto/bisiklet.jpg"
+        },  
+    {
+        word: "fincan",
+        translation: "кружка",
+        image: "./foto/fincan.jpg"
+        },  
+    {
+        word: "askı",
+        translation: "вешалка",
+        image: "./foto/askı.jpg"
+        },  
+    {
+        word: "pasta",
+        translation: "торт",
+        image: "./foto/pasta.jpg"
+        },  
+    {
+        word: "yumurta",
+        translation: "яйцо",
+        image: "./foto/yumurta.jpg"
+        },  
+    {
+        word: "çilek",
+        translation: "клубника",
+        image: "./foto/çilek.jpg"
+        },  
+    {
+        word: "şoför",
+        translation: "водитель",
+        image: "./foto/şoför.jpeg"
+        },  
+    {
+        word: "hemşire",
+        translation: "медсестра",
+        image: "./foto/hemşire.jpg"
+        },  
+    {
+        word: "perde",
+        translation: "шторы",
+        image: "./foto/perde.jpg"
+        },  
+    {
+        word: "kutu",
+        translation: "коробка",
+        image: "./foto/kutu.jpg"
+        },  
+     {
+        word: "şarkıcı",
+        translation: "певец",
+        image: "./foto/şarkıcı.jpg"
+        },  
+      {
+        word: "sandalye",
+        translation: "стул",
+        image: "./foto/sandalye.jpg"
+        },  
+       {
+        word: "kedi",
+        translation: "кошка",
+        image: "./foto/kedi.jpg"
+        },  
+        {
+        word: "sözlük",
+        translation: "словарь",
+        image: "./foto/sözlük.jpg"
+        },  
+         {
+        word: "ev hanımı",
+        translation: "домохозяйка",
+        image: "./foto/ev hanımı.jpg"
+        },  
+          {
+        word: "domates",
+        translation: "помидор",
+        image: "./foto/domates.jpg"
+        },  
+           {
+        word: "çocuk",
+        translation: "ребенок",
+        image: "./foto/çocuk.jpg"
+        },  
+            {
+        word: "çarşı",
+        translation: "рынок",
+        image: "./foto/çarşı.jpg"
+        } 
+    ]
 };
