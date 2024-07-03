@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_3</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <h3 class="titel-ders">DERS 3 (BU NE? O KİM?)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders3.html"><button>Кто это? Что это?</button></a>
+        </li>
+
+        <li>
+          <a href="./ders3-2.html"><button>Вопросительная частица</button></a>
+        </li>
+
+        <li>
+          <a href="./ders3-3.html"
+            ><button class="active">Что это за место?</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders3-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders2-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Вопросительные и указательные местоимения. Вопросительная частица mi. На
+      уроке вы узнаете, когда вопрос не может обойтись без вопросительной
+      частицы “mi”. Освоите особенности построения утвердительных, отрицательных
+      и вопросительных предложений.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set3"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/evet.jpg" alt="evet" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+    <!-- /////////////dowloading//////////// -->
+
+    <!-- ////////////more info///////////// -->
+
+    <!-- //////////////Дополнительный материал/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
+        <li>
+          <button id="task-header-law1">ОБОЗНАЧЕНИЕ МЕСТА</button>
+          <div class="task-law hidden" id="task-content-law1-img">
+            <img src="./foto/ders3-p3-moreinfo.JPG" alt="ОБОЗНАЧЕНИЕ МЕСТА" />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law2">ОТРИЦАНИЕ С DEĞIL</button>
+          <div class="task-law hidden" id="task-content-law2-img">
+            <img
+              src="./foto/ders3-page2-moreinf2.JPG"
+              alt="ОТРИЦАНИЕ С DEĞIL"
+            />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-alfabet">заглушка</button>
+          <div class="slider hidden" id="task-content-alfabet">
+            <div class="slides">
+              <div class="slide">
+                <img
+                  src="./foto/ders3moreMaterial2-1.JPG"
+                  alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders3moreMaterial2-2.JPG"
+                  alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders3moreMaterial2-3.JPG"
+                  alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders3moreMaterial2-4.JPG"
+                  alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ"
+                />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law3">заглушка</button>
+          <div class="task-law hidden" id="task-content-law3-img">
+            <img src="./foto/ders3moreMaterial1-1.JPG" alt="img-law" />
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- /////////////Задание 2 без img//////////// -->
+
+    <!-- //////////////Задание 1/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 4. Давайте посмотрим на картинки ниже и ответим на вопрос:
+        Burası neresi?
+      </div>
+      <div class="task-content hidden">
+        <div class="image-container">
+          <img src="./foto/ders3-p3-1.jpg" alt="Image 1" />
+          <select class="answer-select" data-correct="Burası Kapadokya">
+            <option value="">--Выберите ответ--</option>
+            <option value="Burası İtalya">Burası İtalya</option>
+            <option value="Burası Fransa">Burası Fransa</option>
+            <option value="Burası Moskova">Burası Moskova</option>
+            <option value="Burası Kapadokya">Burası Kapadokya</option>
+            <option value="Burası Londra">Burası Londra</option>
+            <option value="Burası Mısır">Burası Mısır</option>
+            <option value="Burası Hindistan">Burası Hindistan</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders3-p3-2.jpg" alt="Image 2" />
+          <select class="answer-select" data-correct="Burası Hindistan">
+            <option value="">--Выберите ответ--</option>
+            <option value="Burası İtalya">Burası İtalya</option>
+            <option value="Burası Fransa">Burası Fransa</option>
+            <option value="Burası Moskova">Burası Moskova</option>
+            <option value="Burası Kapadokya">Burası Kapadokya</option>
+            <option value="Burası Londra">Burası Londra</option>
+            <option value="Burası Mısır">Burası Mısır</option>
+            <option value="Burası Hindistan">Burası Hindistan</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders3-p3-3.jpg" alt="Image 3" />
+          <select class="answer-select" data-correct="Burası Fransa">
+            <option value="">--Выберите ответ--</option>
+            <option value="Burası İtalya">Burası İtalya</option>
+            <option value="Burası Fransa">Burası Fransa</option>
+            <option value="Burası Moskova">Burası Moskova</option>
+            <option value="Burası Kapadokya">Burası Kapadokya</option>
+            <option value="Burası Londra">Burası Londra</option>
+            <option value="Burası Mısır">Burası Mısır</option>
+            <option value="Burası Hindistan">Burası Hindistan</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders3-p3-4.jpg" alt="Image 4" />
+          <select class="answer-select" data-correct="Burası İtalya">
+            <option value="">--Выберите ответ--</option>
+            <option value="Burası İtalya">Burası İtalya</option>
+            <option value="Burası Fransa">Burası Fransa</option>
+            <option value="Burası Moskova">Burası Moskova</option>
+            <option value="Burası Kapadokya">Burası Kapadokya</option>
+            <option value="Burası Londra">Burası Londra</option>
+            <option value="Burası Mısır">Burası Mısır</option>
+            <option value="Burası Hindistan">Burası Hindistan</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders3-p3-5.jpg" alt="Image 5" />
+          <select class="answer-select" data-correct="Burası Mısır">
+            <option value="">--Выберите ответ--</option>
+            <option value="Burası İtalya">Burası İtalya</option>
+            <option value="Burası Fransa">Burası Fransa</option>
+            <option value="Burası Moskova">Burası Moskova</option>
+            <option value="Burası Kapadokya">Burası Kapadokya</option>
+            <option value="Burası Londra">Burası Londra</option>
+            <option value="Burası Mısır">Burası Mısır</option>
+            <option value="Burası Hindistan">Burası Hindistan</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders3-p3-6.jpg" alt="Image 6" />
+          <select class="answer-select" data-correct="Burası Moskova">
+            <option value="">--Выберите ответ--</option>
+            <option value="Burası İtalya">Burası İtalya</option>
+            <option value="Burası Fransa">Burası Fransa</option>
+            <option value="Burası Moskova">Burası Moskova</option>
+            <option value="Burası Kapadokya">Burası Kapadokya</option>
+            <option value="Burası Londra">Burası Londra</option>
+            <option value="Burası Mısır">Burası Mısır</option>
+            <option value="Burası Hindistan">Burası Hindistan</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders3-p3-7.jpg" alt="Image 7" />
+          <select class="answer-select" data-correct="Burası Londra">
+            <option value="">--Выберите ответ--</option>
+            <option value="Burası İtalya">Burası İtalya</option>
+            <option value="Burası Fransa">Burası Fransa</option>
+            <option value="Burası Moskova">Burası Moskova</option>
+            <option value="Burası Kapadokya">Burası Kapadokya</option>
+            <option value="Burası Londra">Burası Londra</option>
+            <option value="Burası Mısır">Burası Mısır</option>
+            <option value="Burası Hindistan">Burası Hindistan</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders3-2.html"> <button>Назад</button></a>
+
+      <a href="./ders3-4.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <script src="../more-materials.js"></script>
+  </body>
+</html>
