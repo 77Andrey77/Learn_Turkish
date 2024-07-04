@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST1</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+
+    <h3 class="titel-ders">TEST 1</h3>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper hidden">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set4"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="../not-image.png" alt="akraba" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- ///////////////Задание 1////////// -->
+    <section class="task-section">
+      <div class="task-header">1. Давайте сопоставим предложения ниже</div>
+      <div class="task-content write hidden">
+        <img
+          class="img-ders2-task1"
+          src="./test1-1.jpg"
+          width="500"
+          alt="img for test1-1"
+        />
+
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Nasılsın?</p>
+              <select class="answer-select" data-correct="İyiyim.">
+                <option value="">--Выберите ответ--</option>
+                <option value="Ankaralıyım.">Ankaralıyım.</option>
+                <option value="İyiyim.">İyiyim.</option>
+                <option value="Ben öğrenciyim.">Ben öğrenciyim.</option>
+                <option value="Merhaba!">Merhaba!</option>
+                <option value="Görüşmek üzere.">Görüşmek üzere.</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Nerelisin?</p>
+              <select class="answer-select" data-correct="Ankaralıyım.">
+                <option value="">--Выберите ответ--</option>
+                <option value="Ankaralıyım.">Ankaralıyım.</option>
+                <option value="İyiyim.">İyiyim.</option>
+                <option value="Ben öğrenciyim.">Ben öğrenciyim.</option>
+                <option value="Merhaba!">Merhaba!</option>
+                <option value="Görüşmek üzere.">Görüşmek üzere.</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Görüşürüz.</p>
+              <select class="answer-select" data-correct="Görüşmek üzere.">
+                <option value="">--Выберите ответ--</option>
+                <option value="Ankaralıyım.">Ankaralıyım.</option>
+                <option value="İyiyim.">İyiyim.</option>
+                <option value="Ben öğrenciyim.">Ben öğrenciyim.</option>
+                <option value="Merhaba!">Merhaba!</option>
+                <option value="Görüşmek üzere.">Görüşmek üzere.</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ne iş yapıyorsun?</p>
+              <select class="answer-select" data-correct="Ben öğrenciyim.">
+                <option value="">--Выберите ответ--</option>
+                <option value="Ankaralıyım.">Ankaralıyım.</option>
+                <option value="İyiyim.">İyiyim.</option>
+                <option value="Ben öğrenciyim.">Ben öğrenciyim.</option>
+                <option value="Merhaba!">Merhaba!</option>
+                <option value="Görüşmek üzere.">Görüşmek üzere.</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Merhaba!</p>
+              <select class="answer-select" data-correct="Merhaba!">
+                <option value="">--Выберите ответ--</option>
+                <option value="Ankaralıyım.">Ankaralıyım.</option>
+                <option value="İyiyim.">İyiyim.</option>
+                <option value="Ben öğrenciyim.">Ben öğrenciyim.</option>
+                <option value="Merhaba!">Merhaba!</option>
+                <option value="Görüşmek üzere.">Görüşmek üzere.</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Feray: Ben de memnun</p>
+              <select class="answer-select" data-correct="oldum">
+                <option value="">--Выберите ответ--</option>
+                <option value="memnun">memnun</option>
+                <option value="adım">adım</option>
+                <option value="günler">günler</option>
+                <option value="adın">adın</option>
+                <option value="oldum">oldum</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ///////////////Задание 2////////// -->
+    <section class="task-section">
+      <div class="task-header">2. Давайте отметим правильный вариант</div>
+      <div class="task-content write hidden">
+        <ul>
+          <li><p>Mehmet: ......</p></li>
+
+          <li><p>Anna: İyiyim. Teşekkür ederim.</p></li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="Nasılsın?">
+                <option value="">--Выберите ответ--</option>
+                <option value="Adınız ne?">Adınız ne?</option>
+                <option value="Merhaba!">Merhaba!</option>
+                <option value="Nasılsın?">Nasılsın?</option>
+              </select>
+            </div>
+          </li>
+
+          <li><p>Sercan: Adınız ne?</p></li>
+
+          <li><p>Bahar :...... .</p></li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="Benim adım Bahar">
+                <option value="">--Выберите ответ--</option>
+                <option value="Memnun oldum">Memnun oldum</option>
+                <option value="Teşekkür ederim">Teşekkür ederim</option>
+                <option value="Benim adım Bahar">Benim adım Bahar</option>
+              </select>
+            </div>
+          </li>
+
+          <li><p>Berna: Memnun oldum.</p></li>
+
+          <li><p>Hande: ...... .</p></li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="Ben de memnun oldum">
+                <option value="">--Выберите ответ--</option>
+                <option value="Ben de memnun oldum">Ben de memnun oldum</option>
+                <option value="İyiyim.">İyiyim.</option>
+                <option value="Almanyalıyım">Almanyalıyım</option>
+              </select>
+            </div>
+          </li>
+
+          <li><p>Özkan: Benim adım Özkan. Senin adın ne?</p></li>
+
+          <li><p>Sera: ...... .</p></li>
+
+          <li><p>Özkan: Memnun oldum.</p></li>
+
+          <li><p>Sera: ...... .</p></li>
+
+          <li>
+            <div class="write-container">
+              <select
+                class="answer-select"
+                data-correct="Benim adım Sera / Ben de memnun oldum"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Senin adın Sera / Görüşürüz">
+                  Senin adın Sera / Görüşürüz
+                </option>
+                <option value="Benim adım Sera / Ben de memnun oldum">
+                  Benim adım Sera / Ben de memnun oldum
+                </option>
+                <option value="Teşekkür ederim / Benim adım Sera">
+                  Teşekkür ederim / Benim adım Sera
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li><p>İlker: Nasılsın?</p></li>
+
+          <li><p>Selma: ...... .</p></li>
+
+          <li><p>lker: Ben de iyiyim. Teşekkür ederim.</p></li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="İyiyim. Sen?">
+                <option value="">--Выберите ответ--</option>
+                <option value="İyiyim. Sen?">İyiyim. Sen?</option>
+                <option value="İyiyim.">İyiyim.</option>
+                <option value="Sen">Sen</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ///////////////Задание 3 c img////////// -->
+    <section class="task-section">
+      <div class="task-header">
+        3. Давайте сделаем следующие слова во множественном числе, выбрав аффикс
+      </div>
+      <div class="task-content write hidden">
+        <img
+          class="img-ders2-task1"
+          src="./test1-3.jpg"
+          width="740"
+          alt="img for test1-3"
+        />
+
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Masa</p>
+              <select class="answer-select" data-correct="Lar">
+                <option value="">--Выберите ответ--</option>
+                <option value="Lar">Lar</option>
+                <option value="Ler">Ler</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Kalem</p>
+              <select class="answer-select" data-correct="Ler">
+                <option value="">--Выберите ответ--</option>
+                <option value="Lar">Lar</option>
+                <option value="Ler">Ler</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Sandalye</p>
+              <select class="answer-select" data-correct="Ler">
+                <option value="">--Выберите ответ--</option>
+                <option value="Lar">Lar</option>
+                <option value="Ler">Ler</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Vazo</p>
+              <select class="answer-select" data-correct="Lar">
+                <option value="">--Выберите ответ--</option>
+                <option value="Lar">Lar</option>
+                <option value="Ler">Ler</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Öğrenci</p>
+              <select class="answer-select" data-correct="Ler">
+                <option value="">--Выберите ответ--</option>
+                <option value="Lar">Lar</option>
+                <option value="Ler">Ler</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Öğretmen</p>
+              <select class="answer-select" data-correct="Ler">
+                <option value="">--Выберите ответ--</option>
+                <option value="Lar">Lar</option>
+                <option value="Ler">Ler</option>
+              </select>
+            </div>
+          </li>
+
+           <li>
+          <div class="write-container">
+            <p>Saat</p>
+            <select class="answer-select" data-correct="Ler">
+              <option value="">--Выберите ответ--</option>
+              <option value="Lar">Lar</option>
+              <option value="Ler">Ler</option>
+            </select>
+          </div>
+        </li>
+
+         <li>
+          <div class="write-container">
+            <p>Kitap</p>
+            <select class="answer-select" data-correct="Lar">
+              <option value="">--Выберите ответ--</option>
+              <option value="Lar">Lar</option>
+              <option value="Ler">Ler</option>
+            </select>
+          </div>
+        </li>
+
+        <li>
+          <div class="write-container">
+            <p>Silgi</p>
+            <select class="answer-select" data-correct="Ler">
+              <option value="">--Выберите ответ--</option>
+              <option value="Lar">Lar</option>
+              <option value="Ler">Ler</option>
+            </select>
+          </div>
+        </li>
+
+        <li>
+          <div class="write-container">
+            <p>Sözlük</p>
+            <select class="answer-select" data-correct="Ler">
+              <option value="">--Выберите ответ--</option>
+              <option value="Lar">Lar</option>
+              <option value="Ler">Ler</option>
+            </select>
+          </div>
+        </li>
+
+        <li>
+          <div class="write-container">
+            <p>Okul</p>
+            <select class="answer-select" data-correct="Lar">
+              <option value="">--Выберите ответ--</option>
+              <option value="Lar">Lar</option>
+              <option value="Ler">Ler</option>
+            </select>
+          </div>
+        </li>
+
+        <li>
+          <div class="write-container">
+            <p>Sınıf</p>
+            <select class="answer-select" data-correct="Lar">
+              <option value="">--Выберите ответ--</option>
+              <option value="Lar">Lar</option>
+              <option value="Ler">Ler</option>
+            </select>
+          </div>
+        </li>
+        </ul>
+
+       
+
+       
+      </div>
+    </section>
+
+    <!-- ///////////////Задание 4 c img////////// -->
+    <section class="task-section">
+      <div class="task-header">
+        4. Давайте отметим верно (Doğru) или неверно (Yanlış) написаны слова и
+        фразы
+      </div>
+      <div class="task-content write hidden">
+        <img
+          class="img-ders2-task1"
+          src="./test1-4.jpg"
+          width="500"
+          alt="img for test1-4"
+        />
+
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Bu ne? Bu öğretmen.</p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Üç kalemler</p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Saatler</p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Bu sınıf mu?</p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Burası okul.</p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Bunlar kitap.</p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+
+        <li>
+          <div class="write-container">
+            <p>Nasılsın? Fransalıyım.</p>
+            <select class="answer-select" data-correct="Yanlış">
+              <option value="">--Выберите ответ--</option>
+              <option value="Doğru">Doğru</option>
+              <option value="Yanlış">Yanlış</option>
+            </select>
+          </div>
+        </li>
+
+        <li>
+          <div class="write-container">
+            <p>Bu kim? Bu Ali.</p>
+            <select class="answer-select" data-correct="Doğru">
+              <option value="">--Выберите ответ--</option>
+              <option value="Doğru">Doğru</option>
+              <option value="Yanlış">Yanlış</option>
+            </select>
+          </div>
+        </li>
+
+        <li>
+          <div class="write-container">
+            <p>Şunlar kim? Bunlar masa.</p>
+            <select class="answer-select" data-correct="Yanlış">
+              <option value="">--Выберите ответ--</option>
+              <option value="Doğru">Doğru</option>
+              <option value="Yanlış">Yanlış</option>
+            </select>
+          </div>
+        </li>
+      </div>
+    </section>
+
+    <!-- ///////////////Задание 5 c img////////// -->
+    <section class="task-section">
+      <div class="task-header">
+        5. Давайте отметим где, когда, что мы говорим?
+      </div>
+      <div class="task-content write hidden">
+        <img
+          class="img-ders2-task1"
+          src="./test1-5.jpg"
+          width="270"
+          alt="img for test1-5"
+        />
+
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>LOKANTA:</p>
+              <select class="answer-select" data-correct="Afiyet olsun!">
+                <option value="">--Выберите ответ--</option>
+                <option value="Afiyet olsun!">Afiyet olsun!</option>
+                <option value="Geçmiş olsun!">Geçmiş olsun!</option>
+                <option value="Görüşürüz">Görüşürüz</option>
+
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>GECE:</p>
+              <select class="answer-select" data-correct="İyi geceler!">
+                <option value="">--Выберите ответ--</option>
+                <option value="Günaydın!">Günaydın!</option>
+                <option value="Tebrikler!">Tebrikler!</option>
+                <option value="İyi geceler!">İyi geceler!</option>
+
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>HASTANE:</p>
+              <select class="answer-select" data-correct="Geçmiş olsun!">
+                <option value="">--Выберите ответ--</option>
+                <option value="Güle güle!">Güle güle!</option>
+                <option value="Geçmiş olsun!">Geçmiş olsun!</option>
+                <option value="Bol şanslar!">Bol şanslar!</option>
+
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>DOĞUM GÜNÜ:</p>
+              <select class="answer-select" data-correct="Mutlu yıllar!">
+                <option value="">--Выберите ответ--</option>
+                <option value="Mutlu yıllar!">Mutlu yıllar!</option>
+                <option value="Afiyet olsun!">Afiyet olsun!</option>
+                <option value="Geçmiş olsun!">Geçmiş olsun!</option>
+
+              </select>
+            </div>
+          </li>
+
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="../ders3/ders3-5test.html"> <button>Назад</button></a>
+
+      <a href="#"> <button>Ders 4</button></a>
+    </div>
+
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+  </body>
+</html>
+
+<!-- Задание 5. Посмотрите на картинку и правильно выберите вариант -->

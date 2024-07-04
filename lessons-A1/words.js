@@ -599,5 +599,12 @@ const wordsSets = {
         translation: "рынок",
         image: "./foto/çarşı.jpg"
         } 
+    ],
+    set4: [
+         {
+        word: "not-image",
+        translation: "not-image",
+        image: "../not-image.png"
+        }
     ]
 };
