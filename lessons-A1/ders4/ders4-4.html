@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_4</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <h3 class="titel-ders">DERS 4 (OKULDA)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders4.html"
+            ><button>Местный падеж. Где? У кого? Есть или нет.</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders4-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders4-3.html"><button>Цвета</button></a>
+        </li>
+
+        <li>
+          <a href="./ders4-4.html"
+            ><button class="active">Аудирование</button></a
+          >
+        </li>
+
+        <li>
+          <a href="#"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Местный падеж. Лексемы “var” и “yok”. Цвета. На уроке вы узнаете: ● как
+      образовывать и распознавать слова в местном падеже. После вы легко сможете
+      спросить: где находится бассейн и у кого можно попросить бесплатный
+      коктейль. ● о значении одних из самых популярных слов в турецком языке:
+      “var” (есть, имеется) и “yok” (нет, не имеется). После этого, узнать есть
+      ли свободный столик в ресторане или нет, не составит вам никакого труда.
+      ●как на турецком звучат все основные цвета. Пополните свой словарный
+      запас, а заодно и красноречие.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set5"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/nerede.jpg" alt="nerede" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////audio//////////// -->
+
+    <img
+      class="icon-headphones"
+      src="../../icons/icon-headphones.svg"
+      alt="icon-headphones"
+    />
+    <p class="title-audio">Прослушаем аудио</p>
+    <div class="section-wrapper">
+      <audio
+        src="../../audio/ders3-page4.m4a"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></audio>
+    </div>
+    <p class="title-audio"><span>Текст аудио</span></p>
+
+    <p class="title-audio">
+      Burası benim odam. Odamda yatak, beyaz masa, sandalye, yastıklar, halı,
+      ayna, dolap var. Yatakta iki yastık var. Yerde sarı bir halı var. Sandalye
+      pembe. Masada lamba var. Duvarda aynalar, raflar var.
+    </p>
+    <!-- /////////////Задание 2 без картинк//////////// -->
+    <section class="task-section">
+      <div class="task-header">
+        Задание 7. Давайте прослушаем аудио, найдем комнату и заполним
+        пропущенные поля
+      </div>
+      <div class="task-content write hidden">
+        <img src="./foto/ders4-p4-t7.png" alt="foto task 7" />
+
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Ответ: комната №</p>
+              <select class="answer-select" data-correct="3">
+                <option value="">--Выберите ответ--</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Masa</p>
+              <select class="answer-select" data-correct="beyaz">
+                <option value="">--Выберите ответ--</option>
+                <option value="sarı">sarı</option>
+                <option value="kırmızı">kırmızı</option>
+                <option value="beyaz">beyaz</option>
+                <option value="pembe">pembe</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Sandalye</p>
+              <select class="answer-select" data-correct="pembe">
+                <option value="">--Выберите ответ--</option>
+                <option value="sarı">sarı</option>
+                <option value="kırmızı">kırmızı</option>
+                <option value="beyaz">beyaz</option>
+                <option value="pembe">pembe</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Halı</p>
+              <select class="answer-select" data-correct="sarı">
+                <option value="">--Выберите ответ--</option>
+                <option value="sarı">sarı</option>
+                <option value="kırmızı">kırmızı</option>
+                <option value="beyaz">beyaz</option>
+                <option value="pembe">pembe</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Lamba</p>
+              <select class="answer-select" data-correct="kırmızı">
+                <option value="">--Выберите ответ--</option>
+                <option value="sarı">sarı</option>
+                <option value="kırmızı">kırmızı</option>
+                <option value="beyaz">beyaz</option>
+                <option value="pembe">pembe</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders4-3.html"> <button>Назад</button></a>
+
+      <a href="./ders4-5test.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

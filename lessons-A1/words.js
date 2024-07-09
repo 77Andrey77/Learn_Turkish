@@ -606,5 +606,199 @@ const wordsSets = {
         translation: "not-image",
         image: "../not-image.png"
         }
+    ],
+    set5: [
+         {
+        word: "var",
+        translation: "есть (имеется)",
+        image: "../not-image.png"
+        },
+       {
+        word: "yok",
+        translation: "нет (отсутствует)",
+        image: "../not-image.png"
+        },
+       {
+        word: "nerede?",
+        translation: "где?",
+        image: "./foto/nerede.jpg"
+        },
+       {
+        word: "kimde?",
+        translation: "у кого?",
+        image: "../not-image.png"
+        },
+       {
+        word: "kalem",
+        translation: "ручка",
+        image: "./foto/kalem.jpg"
+        },
+       {
+        word: "bilgisayar",
+        translation: "компьютер",
+        image: "./foto/bilgisayar.jpg"
+        },
+       {
+        word: "diğer",
+        translation: "другой",
+        image: "../not-image.png"
+        },
+       {
+        word: "defter",
+        translation: "тетрадь",
+        image: "./foto/defter.jpg"
+        },
+       {
+        word: "kitap",
+        translation: "книга",
+        image: "./foto/kitap.jpg"
+        },
+       {
+        word: "masa",
+        translation: "стол",
+        image: "./foto/masa.jpg"
+        },
+       {
+        word: "dolap",
+        translation: "шкаф",
+        image: "./foto/dolap.jpg"
+        },
+       {
+        word: "sokak",
+        translation: "улица",
+        image: "./foto/sokak.jpg"
+        },
+       {
+        word: "şehir",
+        translation: "город",
+        image: "./foto/şehir.jpg"
+        },
+       {
+        word: "sınıf",
+        translation: "класс",
+       image: "./foto/sınıf.jpg"
+        },
+       {
+        word: "yatak",
+        translation: "кровать",
+       image: "./foto/yatak.jpg"
+        },
+       {
+        word: "oda",
+        translation: "комната",
+        image: "./foto/oda.jpg"
+        },
+       {
+        word: "kahve",
+        translation: "кофе",
+       image: "./foto/kahve.jpg"
+        },
+       {
+        word: "dakika",
+        translation: "минута",
+        image: "./foto/dakika.jpg"
+        },
+       {
+        word: "ağaç",
+        translation: "дерево",
+        image: "./foto/ağaç.jpeg"
+        },
+       {
+        word: "resim",
+        translation: "рисунок",
+       image: "./foto/resim.jpg"
+        },
+       {
+        word: "öğrenci",
+        translation: "ученик",
+        image: "./foto/öğrenci.jpg"
+        },
+       {
+        word: "kantin",
+        translation: "буфет",
+        image: "./foto/kantin.jpg"
+        },
+       {
+        word: "cüzdan",
+        translation: "кошелек",
+        image: "./foto/cüzdan.jpg"
+        },
+       {
+        word: "bahçe",
+        translation: "сад",
+       image: "./foto/bahçe.jpg"
+        },
+       {
+        word: "saat kaçta?",
+        translation: "в котором часу?",
+       image: "./foto/saat kaçta.jpeg"
+        },
+       {
+        word: "herkes",
+        translation: "все",
+        image: "./foto/herkes.jpg"
+        },
+       {
+        word: "halı",
+        translation: "ковер",
+     image: "./foto/halı.jpg"
+        },
+       {
+        word: "siyah",
+        translation: "черный",
+        image: "./foto/siyah.jpg"
+        },
+       {
+        word: "beyaz",
+        translation: "белый",
+       image: "./foto/beyaz.jpg"
+        },
+       {
+        word: "kırmızı",
+        translation: "красный",
+        image: "./foto/kırmızı.jpg"
+        },
+       {
+        word: "sarı",
+        translation: "желтый",
+       image: "./foto/sarı.jpg"
+        },
+       {
+        word: "mavi",
+        translation: "голубой",
+        image: "./foto/mavi.jpg"
+        },
+       {
+        word: "gri",
+        translation: "серый",
+       image: "./foto/gri.jpg"
+        },
+       {
+        word: "yeşil",
+        translation: "зеленый",
+        image: "./foto/yeşil.jpg"
+        },
+       {
+        word: "kahverengi",
+        translation: "коричневый",
+        image: "./foto/kahverengi.jpg"
+        },
+       {
+        word: "turuncu",
+        translation: "оранжевый",
+        image: "./foto/turuncu.jpg"
+        },
+       {
+        word: "lacivert",
+        translation: "синий",
+        image: "./foto/lacivert.jpeg"
+        },
+       {
+        word: "pembe",
+        translation: "розовый",
+        image: "./foto/pembe.jpg"
+        }
+        
     ]
+
 };

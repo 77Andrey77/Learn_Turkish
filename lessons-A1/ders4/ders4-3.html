@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_4</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <h3 class="titel-ders">DERS 4 (OKULDA)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders4.html"
+            ><button>Местный падеж. Где? У кого? Есть или нет.</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders4-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders4-3.html"><button class="active">Цвета</button></a>
+        </li>
+
+        <li>
+          <a href="./ders4-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="#"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Местный падеж. Лексемы “var” и “yok”. Цвета. На уроке вы узнаете: ● как
+      образовывать и распознавать слова в местном падеже. После вы легко сможете
+      спросить: где находится бассейн и у кого можно попросить бесплатный
+      коктейль. ● о значении одних из самых популярных слов в турецком языке:
+      “var” (есть, имеется) и “yok” (нет, не имеется). После этого, узнать есть
+      ли свободный столик в ресторане или нет, не составит вам никакого труда.
+      ●как на турецком звучат все основные цвета. Пополните свой словарный
+      запас, а заодно и красноречие.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set5"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/nerede.jpg" alt="nerede" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+
+    <!-- /////////////Задание 2 без картинк//////////// -->
+    <section class="task-section">
+      <div class="task-header">
+        Задание: 6. Соотнесите слова с соответсвующими им цветами
+      </div>
+      <div class="task-content write hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>1. Portakal</p>
+              <select class="answer-select" data-correct="Turuncu">
+                <option value="">--Выберите ответ--</option>
+                <option value="Turuncu">Turuncu</option>
+                <option value="Kahverengi">Kahverengi</option>
+                <option value="Yeşil">Yeşil</option>
+                <option value="Mavi">Mavi</option>
+                <option value="Sarı">Sarı</option>
+                <option value="Beyaz">Beyaz</option>
+                <option value="Mor">Mor</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>2. Patlıcan</p>
+              <select class="answer-select" data-correct="Mor">
+                <option value="">--Выберите ответ--</option>
+                <option value="Turuncu">Turuncu</option>
+                <option value="Kahverengi">Kahverengi</option>
+                <option value="Yeşil">Yeşil</option>
+                <option value="Mavi">Mavi</option>
+                <option value="Sarı">Sarı</option>
+                <option value="Beyaz">Beyaz</option>
+                <option value="Mor">Mor</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>3. Muz</p>
+              <select class="answer-select" data-correct="Sarı">
+                <option value="">--Выберите ответ--</option>
+                <option value="Turuncu">Turuncu</option>
+                <option value="Kahverengi">Kahverengi</option>
+                <option value="Yeşil">Yeşil</option>
+                <option value="Mavi">Mavi</option>
+                <option value="Sarı">Sarı</option>
+                <option value="Beyaz">Beyaz</option>
+                <option value="Mor">Mor</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>4. Bulut</p>
+              <select class="answer-select" data-correct="Beyaz">
+                <option value="">--Выберите ответ--</option>
+                <option value="Turuncu">Turuncu</option>
+                <option value="Kahverengi">Kahverengi</option>
+                <option value="Yeşil">Yeşil</option>
+                <option value="Mavi">Mavi</option>
+                <option value="Sarı">Sarı</option>
+                <option value="Beyaz">Beyaz</option>
+                <option value="Mor">Mor</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>5. Gök</p>
+              <select class="answer-select" data-correct="Mavi">
+                <option value="">--Выберите ответ--</option>
+                <option value="Turuncu">Turuncu</option>
+                <option value="Kahverengi">Kahverengi</option>
+                <option value="Yeşil">Yeşil</option>
+                <option value="Mavi">Mavi</option>
+                <option value="Sarı">Sarı</option>
+                <option value="Beyaz">Beyaz</option>
+                <option value="Mor">Mor</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>6. Salatalık</p>
+              <select class="answer-select" data-correct="Yeşil">
+                <option value="">--Выберите ответ--</option>
+                <option value="Turuncu">Turuncu</option>
+                <option value="Kahverengi">Kahverengi</option>
+                <option value="Yeşil">Yeşil</option>
+                <option value="Mavi">Mavi</option>
+                <option value="Sarı">Sarı</option>
+                <option value="Beyaz">Beyaz</option>
+                <option value="Mor">Mor</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>7. Kahve</p>
+              <select class="answer-select" data-correct="Kahverengi">
+                <option value="">--Выберите ответ--</option>
+                <option value="Turuncu">Turuncu</option>
+                <option value="Kahverengi">Kahverengi</option>
+                <option value="Yeşil">Yeşil</option>
+                <option value="Mavi">Mavi</option>
+                <option value="Sarı">Sarı</option>
+                <option value="Beyaz">Beyaz</option>
+                <option value="Mor">Mor</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders4-2.html"> <button>Назад</button></a>
+
+      <a href="./ders4-4.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

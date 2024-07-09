@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_4</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <h3 class="titel-ders">DERS 4 (OKULDA)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders4.html"
+            ><button>Местный падеж. Где? У кого? Есть или нет.</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders4-2.html"><button class="active">Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="#"><button>Цвета</button></a>
+        </li>
+
+        <li>
+          <a href="#"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="#"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Местный падеж. Лексемы “var” и “yok”. Цвета. На уроке вы узнаете: ● как
+      образовывать и распознавать слова в местном падеже. После вы легко сможете
+      спросить: где находится бассейн и у кого можно попросить бесплатный
+      коктейль. ● о значении одних из самых популярных слов в турецком языке:
+      “var” (есть, имеется) и “yok” (нет, не имеется). После этого, узнать есть
+      ли свободный столик в ресторане или нет, не составит вам никакого труда.
+      ●как на турецком звучат все основные цвета. Пополните свой словарный
+      запас, а заодно и красноречие.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set5"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/nerede.jpg" alt="nerede" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////Задание 4 без картинк//////////// -->
+    <section class="task-section">
+      <div class="task-header">ЧТЕНИЕ</div>
+      <div class="task-content">
+        <img src="./foto/ders4-p2-t1.jpg" alt="ders4-p2" />
+        <ul>
+          <li class="inline">
+            <h3><span>OKUL ARKADAŞIM</span></h3>
+          </li>
+
+          <li class="inline">
+            <p><span>Gül:</span> Merhaba Elif! Nasılsın?</p>
+          </li>
+
+          <li class="inline">
+            <p><span>Elif:</span> İyiyim, ya sen?</p>
+          </li>
+
+          <li class="inline">
+            <p><span>Gül:</span> Ben de iyiyim. Sen okulda mısın?</p>
+          </li>
+
+          <li class="inline">
+            <p><span>Elif:</span> Evet, okuldayım. Sen neredesin?</p>
+          </li>
+
+          <li class="inline">
+            <p><span>Gül:</span> Ben yoldayım. Bugün ders saat kaçta?</p>
+          </li>
+
+          <li class="inline">
+            <p><span>Elif:</span> Saat dokuzda.</p>
+          </li>
+
+          <li class="inline">
+            <p><span>Gül:</span> Okulda kim var?</p>
+          </li>
+
+          <li class="inline">
+            <p>
+              <span>Elif:</span> Herkes var. Ben sınıftayım. Diğer arkadaşlar
+              kantinde ya da bahçede.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p><span>Gül:</span> Öğretmen de sınıfta mı?</p>
+          </li>
+
+          <li class="inline">
+            <p><span>Elif:</span> Hayır, o sınıfta değil, ofiste.</p>
+          </li>
+
+          <li class="inline">
+            <p>
+              <span>Gül:</span> Tamam, ben on dakikada geliyorum. Görüşürüz.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p><span>Elif:</span> Görüşürüz.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 5 без картинк//////////// -->
+    <section class="task-section">
+      <div class="task-header">
+        Задание 5. Давайте ответим на следующие вопросы по тексту
+      </div>
+      <div class="task-content write hidden">
+        <!-- <img src="./foto/ders4-1-3.jpg" alt="ders4-1-3" /> -->
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Elif nerede?</p>
+              <select class="answer-select" data-correct="Elif okulda">
+                <option value="">--Выберите ответ--</option>
+                <option value="Elif okulda">Elif okulda</option>
+                <option value="Elif evdev">Elif evde</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Öğretmen sınıfta mı?</p>
+              <select class="answer-select" data-correct="Hayır">
+                <option value="">--Выберите ответ--</option>
+                <option value="Evet">Evet</option>
+                <option value="Hayır">Hayır</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ders saat kaçta?</p>
+              <select class="answer-select" data-correct="Ders saat dokuzda">
+                <option value="">--Выберите ответ--</option>
+                <option value="Ders saat dokuzda">Ders saat dokuzda</option>
+                <option value="Ders saat sekizde">Ders saat sekizde</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Gül okulda mı?</p>
+              <select class="answer-select" data-correct="Hayır">
+                <option value="">--Выберите ответ--</option>
+                <option value="Evet">Evet</option>
+                <option value="Hayır">Hayır</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Okulda kim var?</p>
+              <select class="answer-select" data-correct="Okulda herkes var">
+                <option value="">--Выберите ответ--</option>
+                <option value="Okulda Elif ve Gül var">
+                  Okulda Elif ve Gül var
+                </option>
+                <option value="Okulda herkes var">Okulda herkes var</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders4.html"> <button>Назад</button></a>
+
+      <a href="./ders4-3.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

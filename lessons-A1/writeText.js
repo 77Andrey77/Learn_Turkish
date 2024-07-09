@@ -53,6 +53,8 @@ const correctWords4 = ['Bu', 'Sandalye', 'Mi', 'Bu ', 'Köpek', 'Mi','Şu', 'Sö
                     // ( 39       40       41    42    43       44   45      46     47     48     49        50  51    52             53    54   55     56  57    58    59        60   61      62       63       64   65     66        67    68     69        70   )
 const correctWords5 = ['Burası', 'Kim', 'Mü', 'Evet', 'Değil'];
                   // (  71        72     73    74      75)
+const correctWords6 = ['Özlük', 'Alem', 'Elefon', 'İlgisayar', 'Efter', 'Anta', 'Itap', 'Aat', 'Andalye', 'Asa'];
+                  //   (76        77       78        79          80       81      82       83     84        85)
 
 
     function checkWord(correctWords) {
@@ -98,4 +100,9 @@ const correctWords5 = ['Burası', 'Kim', 'Mü', 'Evet', 'Değil'];
   // Добавляем обработчик события input для каждого текстового поля в 5 наборе
   document.querySelectorAll('#text-form-5 input[type="text"]').forEach((input, index) => {
     input.addEventListener('input', checkWord(correctWords5));
+  });
+
+   // Добавляем обработчик события input для каждого текстового поля в  наборе
+  document.querySelectorAll('#text-form-6 input[type="text"]').forEach((input, index) => {
+    input.addEventListener('input', checkWord(correctWords6));
   });

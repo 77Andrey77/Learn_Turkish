@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_4</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <h3 class="titel-ders">DERS 4 (OKULDA)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders4.html"
+            ><button class="active">
+              Местный падеж. Где? У кого? Есть или нет.
+            </button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders4-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="#"><button>Цвета</button></a>
+        </li>
+
+        <li>
+          <a href="#"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="#"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Местный падеж. Лексемы “var” и “yok”. Цвета. На уроке вы узнаете: ● как
+      образовывать и распознавать слова в местном падеже. После вы легко сможете
+      спросить: где находится бассейн и у кого можно попросить бесплатный
+      коктейль. ● о значении одних из самых популярных слов в турецком языке:
+      “var” (есть, имеется) и “yok” (нет, не имеется). После этого, узнать есть
+      ли свободный столик в ресторане или нет, не составит вам никакого труда.
+      ●как на турецком звучат все основные цвета. Пополните свой словарный
+      запас, а заодно и красноречие.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set5"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/nerede.jpg" alt="nerede" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+    <!-- /////////////dowloading//////////// -->
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/Словарь к модулю 2.pdf"
+        download
+        >Скачать Словарь к модулю 2</a
+      >
+      <a
+        class="link-download"
+        href="../../materials/Модуль 2. Урок 4.pdf"
+        download
+        >Скачать Рабочая тетрадь Урок 4</a
+      >
+    </div>
+
+    <!-- //////////////Дополнительный материал/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
+        <li>
+          <button id="task-header-law1">МЕСТНЫЙ ПАДЕЖ</button>
+          <div class="task-law hidden" id="task-content-law1-img">
+            <img src="./foto/ders4-moreinfo-1.JPG" alt="МЕСТНЫЙ ПАДЕЖ" />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-alfabet">УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИЯ</button>
+          <div class="slider hidden" id="task-content-alfabet">
+            <div class="slides">
+              <div class="slide">
+                <img src="" alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ" />
+              </div>
+              <div class="slide">
+                <img src="" alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ" />
+              </div>
+              <div class="slide">
+                <img src="" alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ" />
+              </div>
+              <div class="slide">
+                <img src="" alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ" />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+
+        <!-- <li class="hidden">
+          <button id="task-header-law2">заглушка</button>
+          <div class="task-law hidden" id="task-content-law2-img">
+            <img src="" alt="img-law" />
+          </div>
+        </li> -->
+
+        <li class="hidden">
+          <button id="task-header-law3">заглушка</button>
+          <div class="task-law hidden" id="task-content-law3-img">
+            <img src="" alt="img-law" />
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- /////////////Задание 1 с картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 1. Давайте посмотрим на фотографии ниже и напишем слова (ввод
+        начинается с большой буквы)
+      </div>
+      <div class="task-content hidden">
+        <form id="text-form-6">
+          <div class="image-container">
+            <img src="./foto/ders4-task1-1.png" alt="Image 1" />
+            <label class="labelInline" for="word76">
+              <p>S</p>
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word76"
+                name="word76"
+              />
+            </label>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders4-task1-2.png" alt="Image 2" />
+            <label class="labelInline" for="word77">
+              <p>K</p>
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word77"
+                name="word77"
+              />
+            </label>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders4-task1-3.png" alt="Image 3" />
+            <label class="labelInline" for="word78">
+              <p>T</p>
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word78"
+                name="word78"
+              />
+            </label>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders4-task1-4.png" alt="Image 4" />
+            <label class="labelInline" for="word79">
+              <p>B</p>
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word79"
+                name="word79"
+              />
+            </label>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders4-task1-5.png" alt="Image 5" />
+            <label class="labelInline" for="word80">
+              <p>D</p>
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word80"
+                name="word80"
+              />
+            </label>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders4-task1-6.png" alt="Image 6" />
+            <label class="labelInline" for="word81">
+              <p>Ç</p>
+
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word81"
+                name="word81"
+              />
+            </label>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders4-task1-7.png" alt="Image 7" />
+            <label class="labelInline" for="word82">
+              <p>K</p>
+
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word82"
+                name="word82"
+              />
+            </label>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders4-task1-8.png" alt="Image 8" />
+            <label class="labelInline" for="word83">
+              <p>S</p>
+
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word83"
+                name="word83"
+              />
+            </label>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders4-task1-9.png" alt="Image 9" />
+            <label class="labelInline" for="word84">
+              <p>S</p>
+
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word84"
+                name="word84"
+              />
+            </label>
+          </div>
+
+          <div class="image-container">
+            <img src="./foto/ders4-task1-10.png" alt="Image 10" />
+            <label class="labelInline" for="word85">
+              <p>S</p>
+
+              <input
+                class="inputLabelInline"
+                type="text"
+                id="word85"
+                name="word85"
+              />
+            </label>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 2 без картинк//////////// -->
+    <section class="task-section">
+      <div class="task-header">
+        Задание 2. Выберите аффикс местного падежа без учета апострофа ('):
+        da/ta/de/te
+      </div>
+      <div class="task-content write hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>kitap</p>
+              <select class="answer-select" data-correct="ta">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Türkiye</p>
+              <select class="answer-select" data-correct="de">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Çin</p>
+              <select class="answer-select" data-correct="de">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>dolap</p>
+              <select class="answer-select" data-correct="ta">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>defter</p>
+              <select class="answer-select" data-correct="de">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>televizyon</p>
+              <select class="answer-select" data-correct="da">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Rusya</p>
+              <select class="answer-select" data-correct="da">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>sokak</p>
+              <select class="answer-select" data-correct="ta">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Akdeniz</p>
+              <select class="answer-select" data-correct="de">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>metro</p>
+              <select class="answer-select" data-correct="da">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>otobüs</p>
+              <select class="answer-select" data-correct="te">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>park</p>
+              <select class="answer-select" data-correct="ta">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>şehir</p>
+              <select class="answer-select" data-correct="te">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>İstanbul</p>
+              <select class="answer-select" data-correct="da">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 3 без картинк//////////// -->
+    <section class="task-section">
+      <div class="task-header">
+        Задание 3. Давайте заполним пробелы ниже аффиксом местного падежа
+      </div>
+      <div class="task-content write hidden">
+        <img src="./foto/ders4-1-3.jpg" alt="ders4-1-3" />
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Ali sınıf….</p>
+              <select class="answer-select" data-correct="ta">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Kalem masa….</p>
+              <select class="answer-select" data-correct="da">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Yatak oda….</p>
+              <select class="answer-select" data-correct="da">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Kitap ben….</p>
+              <select class="answer-select" data-correct="de">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Kuşlar ağaç….</p>
+              <select class="answer-select" data-correct="ta">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Resimler kitap….</p>
+              <select class="answer-select" data-correct="ta">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Bilgisayarlar ofis….</p>
+              <select class="answer-select" data-correct="te">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Öğrenciler kantin….</p>
+              <select class="answer-select" data-correct="de">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Çocuklar sokak….</p>
+              <select class="answer-select" data-correct="ta">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Film sinema….</p>
+              <select class="answer-select" data-correct="da">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+
+    <!-- //////////////Дополнительный материал/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
+        <li>
+          <button id="task-header-law2">Лексемы VAR и YOK</button>
+          <div class="task-law hidden" id="task-content-law2-img">
+            <img src="./foto/ders4-moreinfo-2.JPG" alt="Лексемы var и yok" />
+          </div>
+        </li>
+        <li class="hidden">
+          <button id="task-header-alfabet">УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИЯ</button>
+          <div class="slider hidden" id="task-content-alfabet">
+            <div class="slides">
+              <div class="slide">
+                <img src="" alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ" />
+              </div>
+              <div class="slide">
+                <img src="" alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ" />
+              </div>
+              <div class="slide">
+                <img src="" alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ" />
+              </div>
+              <div class="slide">
+                <img src="" alt="УКАЗАТЕЛЬНІЕ МЕСТОИМЕНИ" />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law2">заглушка</button>
+          <div class="task-law hidden" id="task-content-law2-img">
+            <img src="" alt="img-law" />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law3">заглушка</button>
+          <div class="task-law hidden" id="task-content-law3-img">
+            <img src="" alt="img-law" />
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- /////////////Задание 4 с картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 4. Давайте посмотрим на картинки ниже и ответим на вопрос:
+        Burası neresi?
+      </div>
+      <div class="task-content hidden">
+        <div class="image-container">
+          <img src="./foto/ders4-task4-1.jpeg" alt="Image 1" />
+          <div class="container-items10">
+            <p class="all-line">Oda</p>
+            <select
+              class="answer-select short"
+              data-correct="da masa ve sandalye"
+            >
+              <option value="">--Выберите ответ--</option>
+              <option value="da masa ve sandalye">da masa ve sandalye</option>
+              <option value="ta masa ve sandalye">ta masa ve sandalye</option>
+              <option value="ta çocuk">ta çocuk</option>
+              <option value="te çocuk">te çocuk</option>
+              <option value="te çocuklar">te çocuklar</option>
+              <option value="ta çocuklar">ta çocuklar</option>
+              <option value="ta öğrenciler ve öğretmen">
+                ta öğrenciler ve öğretmen
+              </option>
+              <option value="da öğrenciler ve öğretmen">
+                da öğrenciler ve öğretmen
+              </option>
+              <option value="de insanlar">de insanlar</option>
+              <option value="te insanlar">te insanlar</option>
+              <option value="ta binalar">ta binalar</option>
+              <option value="da binalar">da binalar</option>
+              <option value="da yatak">da yatak</option>
+              <option value="de yatak">de yatak</option>
+              <option value="da kahve">da kahve</option>
+              <option value="de kahve">de kahve</option>
+            </select>
+            <p class="all-line">var</p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders4-task4-2.png" alt="Image 2" />
+          <div class="container-items10">
+            <p class="all-line">Koltuk</p>
+            <select class="answer-select short" data-correct="ta çocuk">
+              <option value="">--Выберите ответ--</option>
+              <option value="da masa ve sandalye">da masa ve sandalye</option>
+              <option value="ta masa ve sandalye">ta masa ve sandalye</option>
+              <option value="ta çocuk">ta çocuk</option>
+              <option value="te çocuk">te çocuk</option>
+              <option value="te çocuklar">te çocuklar</option>
+              <option value="ta çocuklar">ta çocuklar</option>
+              <option value="ta öğrenciler ve öğretmen">
+                ta öğrenciler ve öğretmen
+              </option>
+              <option value="da öğrenciler ve öğretmen">
+                da öğrenciler ve öğretmen
+              </option>
+              <option value="de insanlar">de insanlar</option>
+              <option value="te insanlar">te insanlar</option>
+              <option value="ta binalar">ta binalar</option>
+              <option value="da binalar">da binalar</option>
+              <option value="da yatak">da yatak</option>
+              <option value="de yatak">de yatak</option>
+              <option value="da kahve">da kahve</option>
+              <option value="de kahve">de kahve</option>
+            </select>
+            <p class="all-line">var</p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders4-task4-3.jpeg" alt="Image 3" />
+          <div class="container-items10">
+            <p class="all-line">Otobüs</p>
+            <select class="answer-select short" data-correct="te çocuklar">
+              <option value="">--Выберите ответ--</option>
+              <option value="da masa ve sandalye">da masa ve sandalye</option>
+              <option value="ta masa ve sandalye">ta masa ve sandalye</option>
+              <option value="ta çocuk">ta çocuk</option>
+              <option value="te çocuk">te çocuk</option>
+              <option value="te çocuklar">te çocuklar</option>
+              <option value="ta çocuklar">ta çocuklar</option>
+              <option value="ta öğrenciler ve öğretmen">
+                ta öğrenciler ve öğretmen
+              </option>
+              <option value="da öğrenciler ve öğretmen">
+                da öğrenciler ve öğretmen
+              </option>
+              <option value="de insanlar">de insanlar</option>
+              <option value="te insanlar">te insanlar</option>
+              <option value="ta binalar">ta binalar</option>
+              <option value="da binalar">da binalar</option>
+              <option value="da yatak">da yatak</option>
+              <option value="de yatak">de yatak</option>
+              <option value="da kahve">da kahve</option>
+              <option value="de kahve">de kahve</option>
+            </select>
+            <p class="all-line">var</p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders4-task4-4.jpeg" alt="Image 4" />
+          <div class="container-items10">
+            <p class="all-line">Sınıf</p>
+            <select
+              class="answer-select short"
+              data-correct="ta öğrenciler ve öğretmen"
+            >
+              <option value="">--Выберите ответ--</option>
+              <option value="da masa ve sandalye">da masa ve sandalye</option>
+              <option value="ta masa ve sandalye">ta masa ve sandalye</option>
+              <option value="ta çocuk">ta çocuk</option>
+              <option value="te çocuk">te çocuk</option>
+              <option value="te çocuklar">te çocuklar</option>
+              <option value="ta çocuklar">ta çocuklar</option>
+              <option value="ta öğrenciler ve öğretmen">
+                ta öğrenciler ve öğretmen
+              </option>
+              <option value="da öğrenciler ve öğretmen">
+                da öğrenciler ve öğretmen
+              </option>
+              <option value="de insanlar">de insanlar</option>
+              <option value="te insanlar">te insanlar</option>
+              <option value="ta binalar">ta binalar</option>
+              <option value="da binalar">da binalar</option>
+              <option value="da yatak">da yatak</option>
+              <option value="de yatak">de yatak</option>
+              <option value="da kahve">da kahve</option>
+              <option value="de kahve">de kahve</option>
+            </select>
+            <p class="all-line">var</p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders4-task4-5.jpeg" alt="Image 5" />
+          <div class="container-items10">
+            <p class="all-line">Bahçe</p>
+            <select class="answer-select short" data-correct="de insanlar">
+              <option value="">--Выберите ответ--</option>
+              <option value="da masa ve sandalye">da masa ve sandalye</option>
+              <option value="ta masa ve sandalye">ta masa ve sandalye</option>
+              <option value="ta çocuk">ta çocuk</option>
+              <option value="te çocuk">te çocuk</option>
+              <option value="te çocuklar">te çocuklar</option>
+              <option value="ta çocuklar">ta çocuklar</option>
+              <option value="ta öğrenciler ve öğretmen">
+                ta öğrenciler ve öğretmen
+              </option>
+              <option value="da öğrenciler ve öğretmen">
+                da öğrenciler ve öğretmen
+              </option>
+              <option value="de insanlar">de insanlar</option>
+              <option value="te insanlar">te insanlar</option>
+              <option value="ta binalar">ta binalar</option>
+              <option value="da binalar">da binalar</option>
+              <option value="da yatak">da yatak</option>
+              <option value="de yatak">de yatak</option>
+              <option value="da kahve">da kahve</option>
+              <option value="de kahve">de kahve</option>
+            </select>
+            <p class="all-line">var</p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders4-task4-6.jpeg" alt="Image 6" />
+          <div class="container-items10">
+            <p class="all-line">Sokak</p>
+            <select class="answer-select short" data-correct="ta binalar">
+              <option value="">--Выберите ответ--</option>
+              <option value="da masa ve sandalye">da masa ve sandalye</option>
+              <option value="ta masa ve sandalye">ta masa ve sandalye</option>
+              <option value="ta çocuk">ta çocuk</option>
+              <option value="te çocuk">te çocuk</option>
+              <option value="te çocuklar">te çocuklar</option>
+              <option value="ta çocuklar">ta çocuklar</option>
+              <option value="ta öğrenciler ve öğretmen">
+                ta öğrenciler ve öğretmen
+              </option>
+              <option value="da öğrenciler ve öğretmen">
+                da öğrenciler ve öğretmen
+              </option>
+              <option value="de insanlar">de insanlar</option>
+              <option value="te insanlar">te insanlar</option>
+              <option value="ta binalar">ta binalar</option>
+              <option value="da binalar">da binalar</option>
+              <option value="da yatak">da yatak</option>
+              <option value="de yatak">de yatak</option>
+              <option value="da kahve">da kahve</option>
+              <option value="de kahve">de kahve</option>
+            </select>
+            <p class="all-line">var</p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders4-task4-7.jpeg" alt="Image 7" />
+          <div class="container-items10">
+            <p class="all-line">Oda</p>
+            <select class="answer-select short" data-correct="da yatak">
+              <option value="">--Выберите ответ--</option>
+              <option value="da masa ve sandalye">da masa ve sandalye</option>
+              <option value="ta masa ve sandalye">ta masa ve sandalye</option>
+              <option value="ta çocuk">ta çocuk</option>
+              <option value="te çocuk">te çocuk</option>
+              <option value="te çocuklar">te çocuklar</option>
+              <option value="ta çocuklar">ta çocuklar</option>
+              <option value="ta öğrenciler ve öğretmen">
+                ta öğrenciler ve öğretmen
+              </option>
+              <option value="da öğrenciler ve öğretmen">
+                da öğrenciler ve öğretmen
+              </option>
+              <option value="de insanlar">de insanlar</option>
+              <option value="te insanlar">te insanlar</option>
+              <option value="ta binalar">ta binalar</option>
+              <option value="da binalar">da binalar</option>
+              <option value="da yatak">da yatak</option>
+              <option value="de yatak">de yatak</option>
+              <option value="da kahve">da kahve</option>
+              <option value="de kahve">de kahve</option>
+            </select>
+            <p class="all-line">var</p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders4-task4-8.jpeg" alt="Image 8" />
+          <div class="container-items10">
+            <p class="all-line">Fincan</p>
+            <select class="answer-select short" data-correct="da kahve">
+              <option value="">--Выберите ответ--</option>
+              <option value="da masa ve sandalye">da masa ve sandalye</option>
+              <option value="ta masa ve sandalye">ta masa ve sandalye</option>
+              <option value="ta çocuk">ta çocuk</option>
+              <option value="te çocuk">te çocuk</option>
+              <option value="te çocuklar">te çocuklar</option>
+              <option value="ta çocuklar">ta çocuklar</option>
+              <option value="ta öğrenciler ve öğretmen">
+                ta öğrenciler ve öğretmen
+              </option>
+              <option value="da öğrenciler ve öğretmen">
+                da öğrenciler ve öğretmen
+              </option>
+              <option value="de insanlar">de insanlar</option>
+              <option value="te insanlar">te insanlar</option>
+              <option value="ta binalar">ta binalar</option>
+              <option value="da binalar">da binalar</option>
+              <option value="da yatak">da yatak</option>
+              <option value="de yatak">de yatak</option>
+              <option value="da kahve">da kahve</option>
+              <option value="de kahve">de kahve</option>
+            </select>
+            <p class="all-line">var</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="../test1/test1.html"> <button>Назад</button></a>
+
+      <a href="./ders4-2.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+
+    <!-- <script src="../slider-foto.js"></script> -->
+    <script src="../more-materials.js"></script>
+  </body>
+</html>
