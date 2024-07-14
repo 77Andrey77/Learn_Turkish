@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_5</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+    <h3 class="titel-ders">DERS 5 (SAYILAR)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders5.html"
+            ><button>Количественные числительные</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders5-2.html"><button>Порядковые числительные</button></a>
+        </li>
+
+        <li>
+          <a href="./ders5-3.html"><button class="active">Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders5-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders5-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Количественные и порядковые числительные. На уроке вы научитесь говорить о
+      количестве и очередности. После вы легко сможете рассказать, сколько раз
+      вы бывали в Турции, и чем вам запомнилась первая поездка, например.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set6"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/kaç.jpg" alt="kaç" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////Задание  без картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">ЧТЕНИЕ Диалог 1</div>
+      <div class="task-content hidden">
+        <ul>
+          <p><span>MARKETTE</span></p>
+
+          <li class="answer-textDialog">
+            <p>Müşteri: Günaydın! Ekmek var mı?</p>
+          </li>
+          <li class="answer-textDialog"><p>Satıcı: Evet, var.</p></li>
+
+          <li>
+            <div class="write-container">
+              <p>Müşteri: Ekmek</p>
+              <select class="answer-select" data-correct="taze">
+                <option value="">--Выберите ответ--</option>
+                <option value="burada">burada</option>
+                <option value="lira">lira</option>
+                <option value="25">25</option>
+                <option value="kadar">kadar</option>
+                <option value="yarım">yarım</option>
+                <option value="efendim">efendim</option>
+                <option value="taze">taze</option>
+                <option value="buyurun">buyurun</option>
+              </select>
+              <p>mi?</p>
+            </div>
+          </li>
+
+          <li class="answer-textDialog">
+            <p>Satıcı: Evet, çok taze. Başka bir siparişiniz var mı?</p>
+          </li>
+
+          <
+
+          <li>
+            <div class="write-container">
+              <p>Müşteri: Evet bir kilo beyaz peynir kaç</p>
+
+              <select class="answer-select" data-correct="lira">
+                <option value="">--Выберите ответ--</option>
+                <option value="burada">burada</option>
+                <option value="lira">lira</option>
+                <option value="25">25</option>
+                <option value="kadar">kadar</option>
+                <option value="yarım">yarım</option>
+                <option value="efendim">efendim</option>
+                <option value="taze">taze</option>
+                <option value="buyurun">buyurun</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <li class="answer-textDialog"><p>Satıcı: 10 lira</p></li>
+
+          <li>
+            <div class="write-container">
+              <p>Müşteri: Peki, 5 yumurta,</p>
+              <select class="answer-select" data-correct="yarım">
+                <option value="">--Выберите ответ--</option>
+                <option value="burada">burada</option>
+                <option value="lira">lira</option>
+                <option value="25">25</option>
+                <option value="kadar">kadar</option>
+                <option value="yarım">yarım</option>
+                <option value="efendim">efendim</option>
+                <option value="taze">taze</option>
+                <option value="buyurun">buyurun</option>
+              </select>
+              <p>
+                kilo beyaz peynir, bir paket zeytin ve bir tane ekmek. Hepsi ne
+                kadar?
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Satıcı:</p>
+              <select class="answer-select" data-correct="25">
+                <option value="">--Выберите ответ--</option>
+                <option value="burada">burada</option>
+                <option value="lira">lira</option>
+                <option value="25">25</option>
+                <option value="kadar">kadar</option>
+                <option value="yarım">yarım</option>
+                <option value="efendim">efendim</option>
+                <option value="taze">taze</option>
+                <option value="buyurun">buyurun</option>
+              </select>
+              <p>TL, efendim.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Müşteri:</p>
+              <select class="answer-select" data-correct="buyurun">
+                <option value="">--Выберите ответ--</option>
+                <option value="burada">burada</option>
+                <option value="lira">lira</option>
+                <option value="25">25</option>
+                <option value="kadar">kadar</option>
+                <option value="yarım">yarım</option>
+                <option value="efendim">efendim</option>
+                <option value="taze">taze</option>
+                <option value="buyurun">buyurun</option>
+              </select>
+              <p>. Teşekkür ederim. İyi günler.</p>
+            </div>
+          </li>
+
+          <li class="answer-textDialog"><p>Satıcı: İyi günler.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="task-section">
+      <div class="task-header">ЧТЕНИЕ Диалог 2</div>
+      <div class="task-content hidden">
+        <ul>
+          <p><span>BÜFEDE</span></p>
+
+          <li class="answer-textDialog">
+            <p>Müşteri: Günaydın! Gazete var mı?</p>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Satıcı: Günaydın! Buyurun gazeteler</p>
+              <select class="answer-select" data-correct="burada">
+                <option value="">--Выберите ответ--</option>
+                <option value="burada">burada</option>
+                <option value="lira">lira</option>
+                <option value="25">25</option>
+                <option value="kadar">kadar</option>
+                <option value="yarım">yarım</option>
+                <option value="efendim">efendim</option>
+                <option value="taze">taze</option>
+                <option value="buyurun">buyurun</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Müşteri: Teşekkürler. Ne</p>
+              <select class="answer-select" data-correct="kadar">
+                <option value="">--Выберите ответ--</option>
+                <option value="burada">burada</option>
+                <option value="lira">lira</option>
+                <option value="25">25</option>
+                <option value="kadar">kadar</option>
+                <option value="yarım">yarım</option>
+                <option value="efendim">efendim</option>
+                <option value="taze">taze</option>
+                <option value="buyurun">buyurun</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Satıcı: 2</p>
+              <select class="answer-select" data-correct="lira">
+                <option value="">--Выберите ответ--</option>
+                <option value="burada">burada</option>
+                <option value="lira">lira</option>
+                <option value="25">25</option>
+                <option value="kadar">kadar</option>
+                <option value="yarım">yarım</option>
+                <option value="efendim">efendim</option>
+                <option value="taze">taze</option>
+                <option value="buyurun">buyurun</option>
+              </select>
+              <p>.</p>
+            </div>
+          </li>
+
+          <li class="answer-textDialog"><p>Müşteri: Tamam, pil var mı?</p></li>
+          <li class="answer-textDialog"><p>Satıcı: Evet, var.</p></li>
+
+          <li class="answer-textDialog">
+            <p>Müşteri: Bir de pil lütfen. Hepsi ne kadar?</p>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Satıcı: 3 lira,</p>
+
+              <select class="answer-select" data-correct="efendim">
+                <option value="">--Выберите ответ--</option>
+                <option value="burada">burada</option>
+                <option value="lira">lira</option>
+                <option value="25">25</option>
+                <option value="kadar">kadar</option>
+                <option value="yarım">yarım</option>
+                <option value="efendim">efendim</option>
+                <option value="taze">taze</option>
+                <option value="buyurun">buyurun</option>
+              </select>
+            </div>
+          </li>
+
+          <li class="answer-textDialog"><p>Müşteri: Buyurun.</p></li>
+          <li class="answer-textDialog">
+            <p>Satıcı: Teşekkür ederim. İyi günler</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /////////////Задание 7 без картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 7. Напишем цены на следующие продукты
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Beyaz peynir: …… lira</p>
+              <select class="answer-select" data-correct="10">
+                <option value="">--Выберите ответ--</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Pil: …… lira</p>
+              <select class="answer-select" data-correct="1">
+                <option value="">--Выберите ответ--</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Gazete: …… lira</p>
+              <select class="answer-select" data-correct="2">
+                <option value="">--Выберите ответ--</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders5-2.html"> <button>Назад</button></a>
+
+      <a href="./ders5-4.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

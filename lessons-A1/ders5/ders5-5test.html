@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_5</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 5 (SAYILAR)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders5.html"
+            ><button>Количественные числительные</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders5-2.html"><button>Порядковые числительные</button></a>
+        </li>
+
+        <li>
+          <a href="./ders5-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders5-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders5-5test.html"
+            ><button class="active">Итоговый тест</button></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Количественные и порядковые числительные. На уроке вы научитесь говорить о
+      количестве и очередности. После вы легко сможете рассказать, сколько раз
+      вы бывали в Турции, и чем вам запомнилась первая поездка, например.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set6"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/kaç.jpg" alt="kaç" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////test 5 без картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Итоговый тест к уроку 5</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>1. İki elde … parmak var.</p>
+              <select class="answer-select" data-correct="on">
+                <option value="">--Выберите ответ--</option>
+                <option value="beş">beş</option>
+                <option value="on">on</option>
+                <option value="iki beş">iki beş</option>
+                <option value="on beş">on beş</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>2. Bir saatte … dakika var.</p>
+              <select class="answer-select" data-correct="altmış">
+                <option value="">--Выберите ответ--</option>
+                <option value="altı">altı</option>
+                <option value="altı on">altı on</option>
+                <option value="altmış">altmış</option>
+                <option value="on altı">on altı</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>3. Bir günde … saat var.</p>
+              <select class="answer-select" data-correct="Yirmi dört">
+                <option value="">--Выберите ответ--</option>
+                <option value="Kırk sekiz">Kırk sekiz</option>
+                <option value="On iki">On iki</option>
+                <option value="Yirmi dört">Yirmi dört</option>
+                <option value="Otuz bir">Otuz bir</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>4. Bir yılda …. gün var.</p>
+              <select class="answer-select" data-correct="Üç yüz altmış beş">
+                <option value="">--Выберите ответ--</option>
+                <option value="İki yüz on iki">İki yüz on iki</option>
+                <option value="Üç yüz elli altı">Üç yüz elli altı</option>
+                <option value="Üç yüz altmış beş">Üç yüz altmış beş</option>
+                <option value="Üç bin altmış beş">Üç bin altmış beş</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>5. Выберите правильное написание числительного 1205.</p>
+              <select class="answer-select" data-correct="Bin iki yüz beş">
+                <option value="">--Выберите ответ--</option>
+                <option value="Bir yirmi beş">Bir yirmi beş</option>
+                <option value="Bin yüz iki beş">Bin yüz iki beş</option>
+                <option value="Bir bin yirmi beş">Bir bin yirmi beş</option>
+                <option value="Bin iki yüz beş">Bin iki yüz beş</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                6. Выберите правильное написание числительного «Altı yüz seksen
+                yedi» в числовом виде.
+              </p>
+              <select class="answer-select" data-correct="687">
+                <option value="">--Выберите ответ--</option>
+                <option value="6 100 807">6 100 807</option>
+                <option value="600 87">600 87</option>
+                <option value="6807">6807</option>
+                <option value="687">687</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>7. Bu kitapta … sayfa var?</p>
+              <select class="answer-select" data-correct="kaç">
+                <option value="">--Выберите ответ--</option>
+                <option value="kaç">kaç</option>
+                <option value="kaçıncı">kaçıncı</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>8. Resim … sayfada var?</p>
+              <select class="answer-select" data-correct="kaçıncı">
+                <option value="">--Выберите ответ--</option>
+                <option value="kaç">kaç</option>
+                <option value="kaçıncı">kaçıncı</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                9. Выберите верный буквенный эквивалент: Bugün ayın kaçı? Bugün
+                13 Ekim.
+              </p>
+              <select class="answer-select" data-correct="Bugün on üç Ekim.">
+                <option value="">--Выберите ответ--</option>
+                <option value="Bugün on üçüncü Ekim.">
+                  Bugün on üçüncü Ekim.
+                </option>
+                <option value="Bugün onuncu üçüncü Ekim.">
+                  Bugün onuncu üçüncü Ekim.
+                </option>
+                <option value="Bugün on üç Ekim.">Bugün on üç Ekim.</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                10. Переведите на турецкий язык: Кафетерий на третьем этаже.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Kafeterya üçüncü katta"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Kafeterya üçüncü kat">
+                  Kafeterya üçüncü kat
+                </option>
+                <option value="Kafeterya üçüncü katta">
+                  Kafeterya üçüncü katta
+                </option>
+                <option value="Kafeterya üç katıncı.">
+                  Kafeterya üç katıncı.
+                </option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders5-3.html"> <button>Назад</button></a>
+
+      <a href="./ders5-5test.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

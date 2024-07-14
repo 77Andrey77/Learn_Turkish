@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_5</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 5 (SAYILAR)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders5.html"
+            ><button class="active">Количественные числительные</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders5-2.html"><button>Порядковые числительные</button></a>
+        </li>
+
+        <li>
+          <a href="./ders5-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders5-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders5-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Количественные и порядковые числительные. На уроке вы научитесь говорить о
+      количестве и очередности. После вы легко сможете рассказать, сколько раз
+      вы бывали в Турции, и чем вам запомнилась первая поездка, например.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set6"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/kaç.jpg" alt="kaç" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+    <!-- /////////////dowloading//////////// -->
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/Модуль 2. Урок 5.pdf"
+        download
+        >Скачать Рабочая тетрадь Урок 5</a
+      >
+    </div>
+
+    <!-- //////////////Дополнительный материал/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
+        <li class="hidden">
+          <button id="task-header-law1">МЕСТНЫЙ ПАДЕЖ</button>
+          <div class="task-law hidden" id="task-content-law1-img">
+            <img src="#" alt="МЕСТНЫЙ ПАДЕЖ" />
+          </div>
+        </li>
+
+        <li>
+          <button id="task-header-alfabet">КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ</button>
+          <div class="slider hidden" id="task-content-alfabet">
+            <div class="slides">
+              <div class="slide">
+                <img
+                  src="./foto/ders5-moreinfo1.JPG"
+                  alt="КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders5-moreinfo2.JPG"
+                  alt="КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders5-moreinfo3.JPG"
+                  alt="КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ"
+                />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law2">заглушка</button>
+          <div class="task-law hidden" id="task-content-law2-img">
+            <img src="" alt="img-law" />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law3">заглушка</button>
+          <div class="task-law hidden" id="task-content-law3-img">
+            <img src="" alt="img-law" />
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- /////////////Задание 1 без картинк//////////// -->
+    <section class="task-section">
+      <div class="task-header">Задание 1. Давайте сопоставим числа ниже</div>
+      <div class="task-content hidden">
+        <img src="./foto/ders5-task1.jpg" alt="foto ders5-task1" />
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>42</p>
+              <select class="answer-select" data-correct="kırk iki">
+                <option value="">--Выберите ответ--</option>
+                <option value="elli beş">elli beş</option>
+                <option value="yüz yirmi üç">yüz yirmi üç</option>
+                <option value="kırk iki">kırk iki</option>
+                <option value="otuz dokuz">otuz dokuz</option>
+                <option value="on sekiz">on sekiz</option>
+                <option value="doksan bir">doksan bir</option>
+                <option value="yetmiş bir">yetmiş bir</option>
+                <option value="seksen dört">seksen dört</option>
+                <option value="altmış">altmış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>123</p>
+              <select class="answer-select" data-correct="yüz yirmi üç">
+                <option value="">--Выберите ответ--</option>
+                <option value="elli beş">elli beş</option>
+                <option value="yüz yirmi üç">yüz yirmi üç</option>
+                <option value="kırk iki">kırk iki</option>
+                <option value="otuz dokuz">otuz dokuz</option>
+                <option value="on sekiz">on sekiz</option>
+                <option value="doksan bir">doksan bir</option>
+                <option value="yetmiş bir">yetmiş bir</option>
+                <option value="seksen dört">seksen dört</option>
+                <option value="altmış">altmış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>55</p>
+              <select class="answer-select" data-correct="elli beş">
+                <option value="">--Выберите ответ--</option>
+                <option value="elli beş">elli beş</option>
+                <option value="yüz yirmi üç">yüz yirmi üç</option>
+                <option value="kırk iki">kırk iki</option>
+                <option value="otuz dokuz">otuz dokuz</option>
+                <option value="on sekiz">on sekiz</option>
+                <option value="doksan bir">doksan bir</option>
+                <option value="yetmiş bir">yetmiş bir</option>
+                <option value="seksen dört">seksen dört</option>
+                <option value="altmış">altmış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>39</p>
+              <select class="answer-select" data-correct="otuz dokuz">
+                <option value="">--Выберите ответ--</option>
+                <option value="elli beş">elli beş</option>
+                <option value="yüz yirmi üç">yüz yirmi üç</option>
+                <option value="kırk iki">kırk iki</option>
+                <option value="otuz dokuz">otuz dokuz</option>
+                <option value="on sekiz">on sekiz</option>
+                <option value="doksan bir">doksan bir</option>
+                <option value="yetmiş bir">yetmiş bir</option>
+                <option value="seksen dört">seksen dört</option>
+                <option value="altmış">altmış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>18</p>
+              <select class="answer-select" data-correct="on sekiz">
+                <option value="">--Выберите ответ--</option>
+                <option value="elli beş">elli beş</option>
+                <option value="yüz yirmi üç">yüz yirmi üç</option>
+                <option value="kırk iki">kırk iki</option>
+                <option value="otuz dokuz">otuz dokuz</option>
+                <option value="on sekiz">on sekiz</option>
+                <option value="doksan bir">doksan bir</option>
+                <option value="yetmiş bir">yetmiş bir</option>
+                <option value="seksen dört">seksen dört</option>
+                <option value="altmış">altmış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>71</p>
+              <select class="answer-select" data-correct="yetmiş bir">
+                <option value="">--Выберите ответ--</option>
+                <option value="elli beş">elli beş</option>
+                <option value="yüz yirmi üç">yüz yirmi üç</option>
+                <option value="kırk iki">kırk iki</option>
+                <option value="otuz dokuz">otuz dokuz</option>
+                <option value="on sekiz">on sekiz</option>
+                <option value="doksan bir">doksan bir</option>
+                <option value="yetmiş bir">yetmiş bir</option>
+                <option value="seksen dört">seksen dört</option>
+                <option value="altmış">altmış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>84</p>
+              <select class="answer-select" data-correct="seksen dört">
+                <option value="">--Выберите ответ--</option>
+                <option value="elli beş">elli beş</option>
+                <option value="yüz yirmi üç">yüz yirmi üç</option>
+                <option value="kırk iki">kırk iki</option>
+                <option value="otuz dokuz">otuz dokuz</option>
+                <option value="on sekiz">on sekiz</option>
+                <option value="doksan bir">doksan bir</option>
+                <option value="yetmiş bir">yetmiş bir</option>
+                <option value="seksen dört">seksen dört</option>
+                <option value="altmış">altmış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>60</p>
+              <select class="answer-select" data-correct="altmış">
+                <option value="">--Выберите ответ--</option>
+                <option value="elli beş">elli beş</option>
+                <option value="yüz yirmi üç">yüz yirmi üç</option>
+                <option value="kırk iki">kırk iki</option>
+                <option value="otuz dokuz">otuz dokuz</option>
+                <option value="on sekiz">on sekiz</option>
+                <option value="doksan bir">doksan bir</option>
+                <option value="yetmiş bir">yetmiş bir</option>
+                <option value="seksen dört">seksen dört</option>
+                <option value="altmış">altmış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>91</p>
+              <select class="answer-select" data-correct="doksan bir">
+                <option value="">--Выберите ответ--</option>
+                <option value="elli beş">elli beş</option>
+                <option value="yüz yirmi üç">yüz yirmi üç</option>
+                <option value="kırk iki">kırk iki</option>
+                <option value="otuz dokuz">otuz dokuz</option>
+                <option value="on sekiz">on sekiz</option>
+                <option value="doksan bir">doksan bir</option>
+                <option value="yetmiş bir">yetmiş bir</option>
+                <option value="seksen dört">seksen dört</option>
+                <option value="altmış">altmış</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 2 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 2. Давайте напишем ответы (начинаются с большой буквы) на
+        вопросы ниже словами
+      </div>
+      <div class="task-content write hidden">
+        <img src="./foto/dars5-task2.jpg" alt="foto ders5-task2" />
+
+        <form id="text-form-7">
+          <ul>
+            <li class="inline">
+              <label for="word86">seksen dört – kırk altı = </label>
+              <input type="text" id="word86" name="word86" />
+              <input type="text" id="word87" name="word87" />
+            </li>
+
+            <li class="inline">
+              <label for="word88">otuz iki + yirmi beş =</label>
+              <input type="text" id="word88" name="word88" />
+              <input type="text" id="word89" name="word89" />
+            </li>
+
+            <li class="inline">
+              <label for="word90">seksen dokuz + kırk iki = </label>
+              <input type="text" id="word90" name="word90" />
+              <input type="text" id="word91" name="word91" />
+              <input type="text" id="word92" name="word92" />
+            </li>
+
+            <li class="inline">
+              <label for="word93">kırk beş / dokuz =</label>
+              <input type="text" id="word93" name="word93" />
+            </li>
+
+            <li class="inline">
+              <label for="word94">altmış altı + otuz üç =</label>
+              <input type="text" id="word94" name="word94" />
+              <input type="text" id="word95" name="word95" />
+            </li>
+
+            <li class="inline">
+              <label for="word96">yirmi dört x sekiz = </label>
+              <input type="text" id="word96" name="word96" />
+              <input type="text" id="word97" name="word97" />
+              <input type="text" id="word98" name="word98" />
+            </li>
+
+            <li class="inline">
+              <label for="word99">yetmiş üç + yirmi altı = </label>
+              <input type="text" id="word99" name="word99" />
+              <input type="text" id="word100" name="word100" />
+            </li>
+
+            <li class="inline">
+              <label for="word101">doksan + yüz =</label>
+              <input type="text" id="word101" name="word101" />
+              <input type="text" id="word102" name="word102" />
+            </li>
+
+            <li class="inline">
+              <label for="word103">yirmi iki x üç = </label>
+              <input type="text" id="word103" name="word103" />
+              <input type="text" id="word104" name="word104" />
+            </li>
+
+            <li class="inline">
+              <label for="word105">bin + yüz = </label>
+              <input type="text" id="word105" name="word105" />
+              <input type="text" id="word106" name="word106" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 3 без картинк//////////// -->
+    <section class="task-section">
+      <div class="task-header">
+        Задание 3. Давайте выберем верный вариант телефонного номера
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>sıfır iki yüz on iki dört yüz kırk otuz bir yirmi iki</p>
+              <select class="answer-select" data-correct="0212 440 31 22">
+                <option value="">--Выберите ответ--</option>
+                <option value="0200 124 31 22">0200 124 31 22</option>
+                <option value="0520 573 87 23">0520 573 87 23</option>
+                <option value="0216 154 54 37">0216 154 54 37</option>
+                <option value="0212 440 31 22">0212 440 31 22</option>
+                <option value="0520 570 38 72">0520 570 38 72</option>
+                <option value="90 980 565 92 45">90 980 565 92 45</option>
+                <option value="0200 161 54 37">0200 161 54 37</option>
+                <option value="99 185 565 90 24">99 185 565 90 24</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>sıfır iki yüz on altı yüz elli dört elli dört otuz yedi</p>
+              <select class="answer-select" data-correct="0216 154 54 37">
+                <option value="">--Выберите ответ--</option>
+                <option value="0200 124 31 22">0200 124 31 22</option>
+                <option value="0520 573 87 23">0520 573 87 23</option>
+                <option value="0216 154 54 37">0216 154 54 37</option>
+                <option value="0212 440 31 22">0212 440 31 22</option>
+                <option value="0520 570 38 72">0520 570 38 72</option>
+                <option value="90 980 565 92 45">90 980 565 92 45</option>
+                <option value="0200 161 54 37">0200 161 54 37</option>
+                <option value="99 185 565 90 24">99 185 565 90 24</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>sıfır beş yüz yirmi beş yüz yetmiş üç seksen yedi yirmi üç</p>
+              <select class="answer-select" data-correct="0520 573 87 23">
+                <option value="">--Выберите ответ--</option>
+                <option value="0200 124 31 22">0200 124 31 22</option>
+                <option value="0520 573 87 23">0520 573 87 23</option>
+                <option value="0216 154 54 37">0216 154 54 37</option>
+                <option value="0212 440 31 22">0212 440 31 22</option>
+                <option value="0520 570 38 72">0520 570 38 72</option>
+                <option value="90 980 565 92 45">90 980 565 92 45</option>
+                <option value="0200 161 54 37">0200 161 54 37</option>
+                <option value="99 185 565 90 24">99 185 565 90 24</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                doksan dokuz yüz seksen beş yüz altmış beş doksan iki kırk beş
+              </p>
+              <select class="answer-select" data-correct="90 980 565 92 45">
+                <option value="">--Выберите ответ--</option>
+                <option value="0200 124 31 22">0200 124 31 22</option>
+                <option value="0520 573 87 23">0520 573 87 23</option>
+                <option value="0216 154 54 37">0216 154 54 37</option>
+                <option value="0212 440 31 22">0212 440 31 22</option>
+                <option value="0520 570 38 72">0520 570 38 72</option>
+                <option value="90 980 565 92 45">90 980 565 92 45</option>
+                <option value="0200 161 54 37">0200 161 54 37</option>
+                <option value="99 185 565 90 24">99 185 565 90 24</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /////////////Задание 4 с картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Задание 4. Давайте выберем правильные даты</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>on iki nisan bin dokuz yüz doksan dört</p>
+              <select class="answer-select" data-correct="12.04.1994">
+                <option value="">--Выберите ответ--</option>
+                <option value="08.08.2012">08.08.2012</option>
+                <option value="22.01.2012">22.01.2012</option>
+                <option value="21.02.2011">21.02.2011</option>
+                <option value="07.09.2011">07.09.2011</option>
+                <option value="26.11.1984">26.11.1984</option>
+                <option value="3.04.1994">3.04.1994</option>
+                <option value="09.09.2012">09.09.2012</option>
+                <option value="21.01.2011">21.01.2011</option>
+                <option value="26.12.1984">26.12.1984</option>
+                <option value="27.12.1983">27.12.1983</option>
+                <option value="12.07.1994">12.07.1994</option>
+                <option value="12.04.1994">12.04.1994</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>yirmi altı aralık bin dokuz yüz seksen dört</p>
+              <select class="answer-select" data-correct="26.12.1984">
+                <option value="">--Выберите ответ--</option>
+                <option value="08.08.2012">08.08.2012</option>
+                <option value="22.01.2012">22.01.2012</option>
+                <option value="21.02.2011">21.02.2011</option>
+                <option value="07.09.2011">07.09.2011</option>
+                <option value="26.11.1984">26.11.1984</option>
+                <option value="3.04.1994">3.04.1994</option>
+                <option value="09.09.2012">09.09.2012</option>
+                <option value="21.01.2011">21.01.2011</option>
+                <option value="26.12.1984">26.12.1984</option>
+                <option value="27.12.1983">27.12.1983</option>
+                <option value="12.07.1994">12.07.1994</option>
+                <option value="12.04.1994">12.04.1994</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>yirmi bir ocak iki bin on bir</p>
+              <select class="answer-select" data-correct="21.01.2011">
+                <option value="">--Выберите ответ--</option>
+                <option value="08.08.2012">08.08.2012</option>
+                <option value="22.01.2012">22.01.2012</option>
+                <option value="21.02.2011">21.02.2011</option>
+                <option value="07.09.2011">07.09.2011</option>
+                <option value="26.11.1984">26.11.1984</option>
+                <option value="3.04.1994">3.04.1994</option>
+                <option value="09.09.2012">09.09.2012</option>
+                <option value="21.01.2011">21.01.2011</option>
+                <option value="26.12.1984">26.12.1984</option>
+                <option value="27.12.1983">27.12.1983</option>
+                <option value="12.07.1994">12.07.1994</option>
+                <option value="12.04.1994">12.04.1994</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>dokuz eylül iki bin on iki</p>
+              <select class="answer-select" data-correct="09.09.2012">
+                <option value="">--Выберите ответ--</option>
+                <option value="08.08.2012">08.08.2012</option>
+                <option value="22.01.2012">22.01.2012</option>
+                <option value="21.02.2011">21.02.2011</option>
+                <option value="07.09.2011">07.09.2011</option>
+                <option value="26.11.1984">26.11.1984</option>
+                <option value="3.04.1994">3.04.1994</option>
+                <option value="09.09.2012">09.09.2012</option>
+                <option value="21.01.2011">21.01.2011</option>
+                <option value="26.12.1984">26.12.1984</option>
+                <option value="27.12.1983">27.12.1983</option>
+                <option value="12.07.1994">12.07.1994</option>
+                <option value="12.04.1994">12.04.1994</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="../ders4/ders4-5test.html"> <button>Назад</button></a>
+
+      <a href="./ders5-2.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <script src="../slider-foto.js"></script>
+    <script src="../more-materials.js"></script>
+  </body>
+</html>

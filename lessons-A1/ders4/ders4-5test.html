@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_4</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 4 (OKULDA)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders4.html"
+            ><button>Местный падеж. Где? У кого? Есть или нет.</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders4-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders4-3.html"><button>Цвета</button></a>
+        </li>
+
+        <li>
+          <a href="./ders4-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders4-5test.html"
+            ><button class="active">Итоговый тест</button></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Местный падеж. Лексемы “var” и “yok”. Цвета. На уроке вы узнаете: <br />
+      ● как образовывать и распознавать слова в местном падеже. После вы легко
+      сможете спросить: где находится бассейн и у кого можно попросить
+      бесплатный коктейль. <br />● о значении одних из самых популярных слов в
+      турецком языке: “var” (есть, имеется) и “yok” (нет, не имеется). После
+      этого, узнать есть ли свободный столик в ресторане или нет, не составит
+      вам никакого труда. <br />
+      ●как на турецком звучат все основные цвета. Пополните свой словарный
+      запас, а заодно и красноречие.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set5"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/nerede.jpg" alt="nerede" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- ///////////////////////// -->
+
+    <p class="title-audio">
+      Давайте пройдем итоговый тест, чтобы упорядочить знания и поскорей перейти
+      к контрольной работе первого модуля. Обратите внимание, что результат
+      прохождения итогового теста будет влиять на прогресс урока. Чтобы
+      разблокировать контрольную работу, вам нужно ответить правильно с
+      минимальным количеством ошибок. Kolay gelsin!
+    </p>
+
+    <!-- /////////////test ders4 без картинк//////////// -->
+    <section class="task-section">
+      <div class="task-header">Итоговый тест к уроку 4</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>
+                1. Выберите нужное окончание по закону гармонии. Lavabo banyo…
+              </p>
+              <select class="answer-select" data-correct="da">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                2. Выберите нужное окончание по закону гармонии. Ocak mutfak…
+              </p>
+              <select class="answer-select" data-correct="ta">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                3. Выберите нужное окончание по закону гармонии. Defter çanta …
+              </p>
+              <select class="answer-select" data-correct="da">
+                <option value="">--Выберите ответ--</option>
+                <option value="da">da</option>
+                <option value="ta">ta</option>
+                <option value="de">de</option>
+                <option value="te">te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>4. Найдите правильный перевод предложений: У кого ключи?</p>
+              <select class="answer-select" data-correct="Anahtar kimde?">
+                <option value="">--Выберите ответ--</option>
+                <option value="Anahtarda kim?">Anahtarda kim?</option>
+                <option value="Anahtar kimde?">Anahtar kimde?</option>
+                <option value="Anahtar kimde mi?">Anahtar kimde mi?</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>5. Найдите правильный перевод предложений: Ключи не у меня.</p>
+              <select class="answer-select" data-correct="Anahtar bende değil.">
+                <option value="">--Выберите ответ--</option>
+                <option value="Anahtar bende değil.">
+                  Anahtar bende değil.
+                </option>
+                <option value="Anahtar değil bende.">
+                  Anahtar değil bende.
+                </option>
+                <option value="Anahtar ben değilde.">
+                  Anahtar ben değilde.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                6. Найдите правильный перевод предложений: В Анкаре есть море?
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Ankara’da deniz var mı?"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Ankara’da deniz mi?">Ankara’da deniz mi?</option>
+                <option value="Ankara’da deniz var mı?">
+                  Ankara’da deniz var mı?
+                </option>
+                <option value="Ankara deniz var mı?">
+                  Ankara deniz var mı?
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                7. Найдите правильный перевод предложений: Что на ужин есть?
+              </p>
+              <select class="answer-select" data-correct="Yemekte ne var?">
+                <option value="">--Выберите ответ--</option>
+                <option value="Yemekte ne var mı?">Yemekte ne var mı?</option>
+                <option value="Yemekte ne var?">Yemekte ne var?</option>
+                <option value="Yemek nerede?">Yemek nerede?</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>8. Найдите правильный перевод предложений: Проблем нет!</p>
+              <select class="answer-select" data-correct="Problem yok.">
+                <option value="">--Выберите ответ--</option>
+                <option value="Problem var.">Problem var.</option>
+                <option value="Problem değil.">Problem değil.</option>
+                <option value="Problem yok.">Problem yok.</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>9. Karpuz ne renk? Karpuz … .</p>
+              <select class="answer-select" data-correct="kırmızı">
+                <option value="">--Выберите ответ--</option>
+                <option value="mavi">mavi</option>
+                <option value="beyaz">beyaz</option>
+                <option value="siyah">siyah</option>
+                <option value="kırmızı">kırmızı</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>10. Limon sarı mı?</p>
+              <select class="answer-select" data-correct="Evet, limon sarı.">
+                <option value="">--Выберите ответ--</option>
+                <option value="Evet, limon sarı.">Evet, limon sarı.</option>
+                <option value="Hayır, limon sarı değil.">
+                  Hayır, limon sarı değil.
+                </option>
+                <option value="Evet, limon mavi.">Evet, limon mavi.</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////dowloading//////////// -->
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/Модуль 2. Урок 4.pdf"
+        download
+        >Скачать. Модуль 2. Урок 4. Рабочая тетрадь</a
+      >
+    </div>
+
+    <div class="controls">
+      <a href="./ders4-4.html"> <button>Назад</button></a>
+
+      <a href="../ders5/ders5.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

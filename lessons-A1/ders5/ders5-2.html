@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_5</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+    <h3 class="titel-ders">DERS 5 (SAYILAR)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders5.html"
+            ><button>Количественные числительные</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders5-2.html"
+            ><button class="active">Порядковые числительные</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders5-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders5-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders5-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Количественные и порядковые числительные. На уроке вы научитесь говорить о
+      количестве и очередности. После вы легко сможете рассказать, сколько раз
+      вы бывали в Турции, и чем вам запомнилась первая поездка, например.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set6"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/kaç.jpg" alt="kaç" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+
+    <!-- /////////////Задание 5 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 5. Ответим на вопросы, используя данные таблицы
+      </div>
+      <div class="task-content write hidden">
+        <img src="./foto/ders5-task5.png" alt="foto ders5-task5" />
+
+        <form id="text-form-8">
+          <ul>
+            <li class="inline">
+              <label for="word107">Fransa kaçıncı? Fransa </label>
+              <input type="text" id="word107" name="word107" />
+            </li>
+
+            <li class="inline">
+              <label for="word108">Avusturya kaçıncı? Avusturya </label>
+              <input type="text" id="word108" name="word108" />
+            </li>
+
+            <li class="inline">
+              <label for="word109">Belarus kaçıncı? Belarus</label>
+              <input type="text" id="word109" name="word109" />
+            </li>
+
+            <li class="inline">
+              <label for="word110">İsviçre kaçıncı? İsviçre </label>
+              <input type="text" id="word110" name="word110" />
+            </li>
+
+            <li class="inline">
+              <label for="word111">Almanya kaçıncı? Almanya </label>
+              <input type="text" id="word11" name="word111" />
+            </li>
+
+            <li class="inline">
+              <label for="word112">Hollanda kaçıncı? Hollanda</label>
+              <input type="text" id="word112" name="word112" />
+            </li>
+
+            <li class="inline">
+              <label for="word113">ABD kaçıncı? ABD </label>
+              <input type="text" id="word113" name="word113" />
+            </li>
+
+            <li class="inline">
+              <label for="word114">Kanada kaçıncı? Kanada </label>
+              <input type="text" id="word114" name="word114" />
+            </li>
+
+            <li class="inline">
+              <label for="word115">Norveç kaçıncı? Norveç </label>
+              <input type="text" id="word115" name="word115" />
+            </li>
+
+            <li class="inline">
+              <label for="word116">Rusya kaçıncı? Rusya </label>
+              <input type="text" id="word116" name="word116" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 6 с картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 6. Давайте посмотрим на фотографии и выберем названия вещей
+      </div>
+      <div class="task-content hidden">
+        <div class="item-task12">
+          <img src="./foto/takım elbise.jpg" alt="takım elbise" width="300" />
+          <div class="select-container">
+            <div class="write-container">
+              <p>……… 150 TL</p>
+              <select class="answer-select" data-correct="takım elbise">
+                <option value="">--Выберите ответ--</option>
+                <option value="şort">şort</option>
+                <option value="tişört">tişört</option>
+                <option value="pantolon">pantolon</option>
+                <option value="elbise">elbise</option>
+                <option value="çizme">çizme</option>
+                <option value="topuklu ayakkabı">topuklu ayakkabı</option>
+                <option value="ayakkabı">ayakkabı</option>
+                <option value="takım elbise">takım elbise</option>
+                <option value="gömlek">gömlek</option>
+                <option value="mont">mont</option>
+                <option value="şal">şal</option>
+                <option value="kemer">kemer</option>
+                <option value="şemsiye">şemsiye</option>
+                <option value="kravat">kravat</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/gömlek.png" alt="gömlek" width="300" />
+          <div class="select-container">
+            <div class="write-container">
+              <p>……… 50 TL</p>
+              <select class="answer-select" data-correct="gömlek">
+                <option value="">--Выберите ответ--</option>
+                <option value="şort">şort</option>
+                <option value="tişört">tişört</option>
+                <option value="pantolon">pantolon</option>
+                <option value="elbise">elbise</option>
+                <option value="çizme">çizme</option>
+                <option value="topuklu ayakkabı">topuklu ayakkabı</option>
+                <option value="ayakkabı">ayakkabı</option>
+                <option value="takım elbise">takım elbise</option>
+                <option value="gömlek">gömlek</option>
+                <option value="mont">mont</option>
+                <option value="şal">şal</option>
+                <option value="kemer">kemer</option>
+                <option value="şemsiye">şemsiye</option>
+                <option value="kravat">kravat</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/mont.jpg" alt="mont" width="300" />
+          <div class="select-container">
+            <div class="write-container">
+              <p>……… 75 TL</p>
+              <select class="answer-select" data-correct="mont">
+                <option value="">--Выберите ответ--</option>
+                <option value="şort">şort</option>
+                <option value="tişört">tişört</option>
+                <option value="pantolon">pantolon</option>
+                <option value="elbise">elbise</option>
+                <option value="çizme">çizme</option>
+                <option value="topuklu ayakkabı">topuklu ayakkabı</option>
+                <option value="ayakkabı">ayakkabı</option>
+                <option value="takım elbise">takım elbise</option>
+                <option value="gömlek">gömlek</option>
+                <option value="mont">mont</option>
+                <option value="şal">şal</option>
+                <option value="kemer">kemer</option>
+                <option value="şemsiye">şemsiye</option>
+                <option value="kravat">kravat</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/şemsiye.png" alt="şemsiye" width="300" />
+          <div class="select-container">
+            <div class="write-container">
+              <p>……… 10 TL</p>
+              <select class="answer-select" data-correct="şemsiye">
+                <option value="">--Выберите ответ--</option>
+                <option value="şort">şort</option>
+                <option value="tişört">tişört</option>
+                <option value="pantolon">pantolon</option>
+                <option value="elbise">elbise</option>
+                <option value="çizme">çizme</option>
+                <option value="topuklu ayakkabı">topuklu ayakkabı</option>
+                <option value="ayakkabı">ayakkabı</option>
+                <option value="takım elbise">takım elbise</option>
+                <option value="gömlek">gömlek</option>
+                <option value="mont">mont</option>
+                <option value="şal">şal</option>
+                <option value="kemer">kemer</option>
+                <option value="şemsiye">şemsiye</option>
+                <option value="kravat">kravat</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/ayakkabı.jpg" alt="ayakkabı" width="300" />
+          <div class="select-container">
+            <div class="write-container">
+              <p>……… 80 TL</p>
+              <select class="answer-select" data-correct="ayakkabı">
+                <option value="">--Выберите ответ--</option>
+                <option value="şort">şort</option>
+                <option value="tişört">tişört</option>
+                <option value="pantolon">pantolon</option>
+                <option value="elbise">elbise</option>
+                <option value="çizme">çizme</option>
+                <option value="topuklu ayakkabı">topuklu ayakkabı</option>
+                <option value="ayakkabı">ayakkabı</option>
+                <option value="takım elbise">takım elbise</option>
+                <option value="gömlek">gömlek</option>
+                <option value="mont">mont</option>
+                <option value="şal">şal</option>
+                <option value="kemer">kemer</option>
+                <option value="şemsiye">şemsiye</option>
+                <option value="kravat">kravat</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/kravat.jpg" alt="kravat" width="300" />
+          <div class="select-container">
+            <div class="write-container">
+              <p>……… 15 TL</p>
+              <select class="answer-select" data-correct="kravat">
+                <option value="">--Выберите ответ--</option>
+                <option value="şort">şort</option>
+                <option value="tişört">tişört</option>
+                <option value="pantolon">pantolon</option>
+                <option value="elbise">elbise</option>
+                <option value="çizme">çizme</option>
+                <option value="topuklu ayakkabı">topuklu ayakkabı</option>
+                <option value="ayakkabı">ayakkabı</option>
+                <option value="takım elbise">takım elbise</option>
+                <option value="gömlek">gömlek</option>
+                <option value="mont">mont</option>
+                <option value="şal">şal</option>
+                <option value="kemer">kemer</option>
+                <option value="şemsiye">şemsiye</option>
+                <option value="kravat">kravat</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/tişört.jpg" alt="takım elbise" width="300" />
+          <div class="select-container">
+            <div class="write-container">
+              <p>……… 40 TL</p>
+              <select class="answer-select" data-correct="tişört">
+                <option value="">--Выберите ответ--</option>
+                <option value="şort">şort</option>
+                <option value="tişört">tişört</option>
+                <option value="pantolon">pantolon</option>
+                <option value="elbise">elbise</option>
+                <option value="çizme">çizme</option>
+                <option value="topuklu ayakkabı">topuklu ayakkabı</option>
+                <option value="ayakkabı">ayakkabı</option>
+                <option value="takım elbise">takım elbise</option>
+                <option value="gömlek">gömlek</option>
+                <option value="mont">mont</option>
+                <option value="şal">şal</option>
+                <option value="kemer">kemer</option>
+                <option value="şemsiye">şemsiye</option>
+                <option value="kravat">kravat</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/şort.jpeg" alt="şort" width="300" />
+          <div class="select-container">
+            <div class="write-container">
+              <p>……… 35 TL</p>
+              <select class="answer-select" data-correct="şort">
+                <option value="">--Выберите ответ--</option>
+                <option value="şort">şort</option>
+                <option value="tişört">tişört</option>
+                <option value="pantolon">pantolon</option>
+                <option value="elbise">elbise</option>
+                <option value="çizme">çizme</option>
+                <option value="topuklu ayakkabı">topuklu ayakkabı</option>
+                <option value="ayakkabı">ayakkabı</option>
+                <option value="takım elbise">takım elbise</option>
+                <option value="gömlek">gömlek</option>
+                <option value="mont">mont</option>
+                <option value="şal">şal</option>
+                <option value="kemer">kemer</option>
+                <option value="şemsiye">şemsiye</option>
+                <option value="kravat">kravat</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/kemer.jpg" alt="kemer" width="300" />
+          <div class="select-container">
+            <div class="write-container">
+              <p>……… 20 TL</p>
+              <select class="answer-select" data-correct="kemer">
+                <option value="">--Выберите ответ--</option>
+                <option value="şort">şort</option>
+                <option value="tişört">tişört</option>
+                <option value="pantolon">pantolon</option>
+                <option value="elbise">elbise</option>
+                <option value="çizme">çizme</option>
+                <option value="topuklu ayakkabı">topuklu ayakkabı</option>
+                <option value="ayakkabı">ayakkabı</option>
+                <option value="takım elbise">takım elbise</option>
+                <option value="gömlek">gömlek</option>
+                <option value="mont">mont</option>
+                <option value="şal">şal</option>
+                <option value="kemer">kemer</option>
+                <option value="şemsiye">şemsiye</option>
+                <option value="kravat">kravat</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/pantolon.jpg" alt="pantolon" width="300" />
+          <div class="select-container">
+            <div class="write-container">
+              <p>……… 60 TL</p>
+              <select class="answer-select" data-correct="pantolon">
+                <option value="">--Выберите ответ--</option>
+                <option value="şort">şort</option>
+                <option value="tişört">tişört</option>
+                <option value="pantolon">pantolon</option>
+                <option value="elbise">elbise</option>
+                <option value="çizme">çizme</option>
+                <option value="topuklu ayakkabı">topuklu ayakkabı</option>
+                <option value="ayakkabı">ayakkabı</option>
+                <option value="takım elbise">takım elbise</option>
+                <option value="gömlek">gömlek</option>
+                <option value="mont">mont</option>
+                <option value="şal">şal</option>
+                <option value="kemer">kemer</option>
+                <option value="şemsiye">şemsiye</option>
+                <option value="kravat">kravat</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/şal.png" alt="şal" width="300" />
+          <div class="select-container">
+            <div class="write-container">
+              <p>……… 5 TL</p>
+              <select class="answer-select" data-correct="şal">
+                <option value="">--Выберите ответ--</option>
+                <option value="şort">şort</option>
+                <option value="tişört">tişört</option>
+                <option value="pantolon">pantolon</option>
+                <option value="elbise">elbise</option>
+                <option value="çizme">çizme</option>
+                <option value="topuklu ayakkabı">topuklu ayakkabı</option>
+                <option value="ayakkabı">ayakkabı</option>
+                <option value="takım elbise">takım elbise</option>
+                <option value="gömlek">gömlek</option>
+                <option value="mont">mont</option>
+                <option value="şal">şal</option>
+                <option value="kemer">kemer</option>
+                <option value="şemsiye">şemsiye</option>
+                <option value="kravat">kravat</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/elbise.png" alt="elbise" width="300" />
+          <div class="select-container">
+            <div class="write-container">
+              <p>……… 100 TL</p>
+              <select class="answer-select" data-correct="elbise">
+                <option value="">--Выберите ответ--</option>
+                <option value="şort">şort</option>
+                <option value="tişört">tişört</option>
+                <option value="pantolon">pantolon</option>
+                <option value="elbise">elbise</option>
+                <option value="çizme">çizme</option>
+                <option value="topuklu ayakkabı">topuklu ayakkabı</option>
+                <option value="ayakkabı">ayakkabı</option>
+                <option value="takım elbise">takım elbise</option>
+                <option value="gömlek">gömlek</option>
+                <option value="mont">mont</option>
+                <option value="şal">şal</option>
+                <option value="kemer">kemer</option>
+                <option value="şemsiye">şemsiye</option>
+                <option value="kravat">kravat</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/çizme.jpg" alt="çizme" width="300" />
+          <div class="select-container">
+            <div class="write-container">
+              <p>……… 200 TL</p>
+              <select class="answer-select" data-correct="çizme">
+                <option value="">--Выберите ответ--</option>
+                <option value="şort">şort</option>
+                <option value="tişört">tişört</option>
+                <option value="pantolon">pantolon</option>
+                <option value="elbise">elbise</option>
+                <option value="çizme">çizme</option>
+                <option value="topuklu ayakkabı">topuklu ayakkabı</option>
+                <option value="ayakkabı">ayakkabı</option>
+                <option value="takım elbise">takım elbise</option>
+                <option value="gömlek">gömlek</option>
+                <option value="mont">mont</option>
+                <option value="şal">şal</option>
+                <option value="kemer">kemer</option>
+                <option value="şemsiye">şemsiye</option>
+                <option value="kravat">kravat</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img
+            src="./foto/topuklu ayakkabı.jpg"
+            alt="topuklu ayakkabı"
+            width="300"
+          />
+          <div class="select-container">
+            <div class="write-container">
+              <p>……… 120 TL</p>
+              <select class="answer-select" data-correct="topuklu ayakkabı">
+                <option value="">--Выберите ответ--</option>
+                <option value="şort">şort</option>
+                <option value="tişört">tişört</option>
+                <option value="pantolon">pantolon</option>
+                <option value="elbise">elbise</option>
+                <option value="çizme">çizme</option>
+                <option value="topuklu ayakkabı">topuklu ayakkabı</option>
+                <option value="ayakkabı">ayakkabı</option>
+                <option value="takım elbise">takım elbise</option>
+                <option value="gömlek">gömlek</option>
+                <option value="mont">mont</option>
+                <option value="şal">şal</option>
+                <option value="kemer">kemer</option>
+                <option value="şemsiye">şemsiye</option>
+                <option value="kravat">kravat</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders5.html"> <button>Назад</button></a>
+
+      <a href="./ders5-3.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_4</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 5 (SAYILAR)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders5.html"
+            ><button>Количественные числительные</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders5-2.html"><button>Порядковые числительные</button></a>
+        </li>
+
+        <li>
+          <a href="./ders5-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders5-4.html"
+            ><button class="active">Аудирование</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders5-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Количественные и порядковые числительные. На уроке вы научитесь говорить о
+      количестве и очередности. После вы легко сможете рассказать, сколько раз
+      вы бывали в Турции, и чем вам запомнилась первая поездка, например.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set6"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/kaç.jpg" alt="kaç" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////audio//////////// -->
+
+    <img
+      class="icon-headphones"
+      src="../../icons/icon-headphones.svg"
+      alt="icon-headphones"
+    />
+    <p class="title-audio">
+      Прослушаем диалог, заполним пробелы. Все цифры пропишем словами.
+    </p>
+    <div class="section-wrapper">
+      <audio
+        src="../../audio/ders5-page4.m4a"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></audio>
+    </div>
+    <!-- <p class="title-audio"><span>Текст аудио</span></p> -->
+
+    <section class="task-section">
+      <div class="task-header">Текст аудио</div>
+      <div class="task-content hidden">
+        <ul>
+          <li><span>Resepsiyonist:</span> Merhaba. Hoş geldiniz.</li>
+          <span>Resepsiyonist:</span>
+          <li><span>Derya:</span> Hoş bulduk.</li>
+          <li><span>Resepsiyonist:</span> Adınız nedir?</li>
+          <li><span>Derya:</span> Derya Günay.</li>
+          <li><span>Resepsiyonist:</span> Adresiniz nedir?</li>
+          <li>
+            <span>Derya:</span> Gül mahallesi, 7. Sokak, No:34 Emek / Ankara
+          </li>
+          <li><span>Resepsiyonist:</span> Telefon numaranız nedir?</li>
+          <li><span>Derya:</span> 0525 340 84 67.</li>
+          <li><span>Resepsiyonist:</span> Ne zaman geliyorsunuz?</li>
+          <li><span>Derya:</span> 29 Kasım’da.</li>
+          <li><span>Resepsiyonist:</span> Kaç gün kalacaksınız?</li>
+          <li><span>Derya:</span> 4 gün</li>
+          <li>
+            <span>Resepsiyonist:</span> Kaydınız tamam. Oda numaranız 315.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 2 без картинк//////////// -->
+    <section class="task-section">
+      <div class="task-header">
+        Прослушаем диалог, заполним пробелы. Все цифры пропишем словами
+      </div>
+      <div class="task-content write hidden">
+        <img
+          class="img-ders2-task1"
+          src="./foto/ders5-p5-audio.jpg"
+          alt="foto ders5-p5-audio"
+          width="300"
+        />
+
+        <form id="text-form-9">
+          <ul>
+            <li class="inline">Resepsiyonist: Merhaba. Hoş geldiniz.</li>
+
+            <li class="inline">Derya: Hoş bulduk.</li>
+
+            <li class="inline">Resepsiyonist: Adınız nedir?</li>
+
+            <li class="inline">
+              <label for="word117">Derya: </label>
+              <input type="text" id="word117" name="word117" />
+              <p>Günay.</p>
+            </li>
+
+            <li class="inline">Resepsiyonist: Adresiniz nedir?</li>
+
+            <li class="inline">
+              <label for="word118">Derya: Gül mahallesi,</label>
+              <input type="text" id="word118" name="word118" />
+              <label for="word119">Sokak, No:</label>
+              <input type="text" id="word119" name="word119" />
+              <input type="text" id="word120" name="word120" />
+              <p>Emek / Ankara</p>
+            </li>
+
+            <li class="inline">Resepsiyonist: Telefon numaranız nedir?</li>
+
+            <li class="inline">
+              <label for="word121">Derya: 0525 340</label>
+              <input type="text" id="word121" name="word121" />
+              <input type="text" id="word122" name="word122" />
+              <input type="text" id="word123" name="word123" />
+              <input type="text" id="word124" name="word124" />
+            </li>
+
+            <li class="inline">Resepsiyonist: Ne zaman geliyorsunuz?</li>
+
+            <li class="inline">
+              <label for="word125">Derya:</label>
+              <input type="text" id="word125" name="word125" />
+              <input type="text" id="word126" name="word126" />
+              <p>Kasım’da.</p>
+            </li>
+
+            <li class="inline">Resepsiyonist: Kaç gün kalacaksınız?</li>
+
+            <li class="inline">
+              <label for="word127">Derya:</label>
+              <input type="text" id="word127" name="word127" />
+              <p>gün</p>
+            </li>
+
+            <li class="inline">
+              <label for="word128"
+                >Resepsiyonist: Kaydınız tamam. Oda numaranız
+              </label>
+              <input type="text" id="word128" name="word128" />
+              <input type="text" id="word129" name="word129" />
+              <input type="text" id="word130" name="word130" />
+              <input type="text" id="word131" name="word131" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders5-3.html"> <button>Назад</button></a>
+
+      <a href="./ders5-5test.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

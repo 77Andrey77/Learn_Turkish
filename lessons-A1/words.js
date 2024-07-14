@@ -799,6 +799,154 @@ const wordsSets = {
         image: "./foto/pembe.jpg"
         }
         
+    ],
+    set6: [
+        {
+        word: "kaç?",
+        translation: "сколько?",
+        image: "./foto/kaç.jpg"
+        },
+        {
+        word: "kaçıncı?",
+        translation: "какой по счету?",
+        image: "../not-image.png"
+        },
+        {
+        word: "ne kadar?",
+        translation: "сколько?",
+        image: "../not-image.png"
+        },
+        {
+        word: "kaç lira?",
+        translation: "сколько лир?",
+        image: "../not-image.png"
+        },
+
+        {
+        word: "çizme",
+        translation: "сапоги",
+        image: "./foto/çizme.jpg"
+        },
+        {
+        word: "kemer",
+        translation: "ремень",
+        image: "./foto/kemer.jpg"
+        },
+        {
+        word: "mont",
+        translation: "куртка",
+        image: "./foto/mont.jpg"
+        },
+        {
+        word: "takım elbise",
+        translation: "костюм",
+        image: "./foto/takım elbise.jpg"
+        },
+        {
+        word: "pantolon",
+        translation: "штаны",
+        image: "./foto/pantolon.jpg"
+        },
+        {
+        word: "tişört",
+        translation: "футболка",
+        image: "./foto/tişört.jpg"
+        },
+        {
+        word: "ayakkabı",
+        translation: "обувь",
+        image: "./foto/ayakkabı.jpg"
+        },
+        {
+        word: "şort",
+        translation: "шорты",
+        image: "./foto/şort.jpeg"
+        },
+        {
+        word: "kravat",
+        translation: "галстук",
+        image: "./foto/kravat.jpg"
+        },
+        {
+        word: "topuklu ayakkabı",
+        translation: "обувь на каблуке",
+        image: "./foto/topuklu ayakkabı.jpg"
+        },
+        {
+        word: "müşteri",
+        translation: "клиент",
+        image: "./foto/müşteri.jpg"
+        },
+        {
+        word: "ekmek",
+        translation: "хлеб",
+        image: "./foto/ekmek.jpg"
+        },
+        {
+        word: "taze",
+        translation: "свежий",
+        image: "./foto/taze.jpg"
+        },
+        {
+        word: "kilo",
+        translation: "килограм",
+        image: "./foto/kilo.jpg"
+        },
+        {
+        word: "peynir",
+        translation: "сыр",
+        image: "./foto/peynir.jpg"
+        },
+        {
+        word: "tane",
+        translation: "штука",
+        image: "../not-image.png"
+        },
+        {
+        word: "sipariş",
+        translation: "заказ",
+        image: "./foto/sipariş.jpg"
+        },
+        {
+        word: "buyurun",
+        translation: "прошу вас",
+        image: "./foto/buyurun.jpeg"
+        },
+        {
+        word: "pil",
+        translation: "батарейка",
+        image: "./foto/pil.jpg"
+        },
+        {
+        word: "hoş geldiniz",
+        translation: "добро пожаловать",
+        image: "./foto/hoş geldiniz.jpeg"
+        },
+        {
+        word: "hoş bulduk",
+        translation: "спасибо (в ответ на 'добро пожаловать')",
+        image: "./foto/hoş bulduk.jpeg"
+        },
+        {
+        word: "ne zaman?",
+        translation: "когда?",
+        image: "./foto/ne zaman.jpg"
+        },
+        {
+        word: "lütfen",
+        translation: "пожалуйста",
+        image: "./foto/lütfen.jpg"
+        },
+        {
+        word: "başka",
+        translation: "другой",
+        image: "../not-image.png"
+        },
+        {
+        word: "sayı",
+        translation: "число",
+        image: "./foto/sayı.jpeg"
+        }
     ]
 
 };
