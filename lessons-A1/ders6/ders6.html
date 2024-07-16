@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_6</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 6 (ŞEHİRDE)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders6.html"
+            ><button class="active">
+              Профессии. Прилагательные и наречия
+            </button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders6-2.html"
+            ><button>Личные местоимения и аффиксы</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders6-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders6-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders6-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Профессии. Личные местоимения и аффиксы. Прилагательные и наречия. На
+      уроке вы познакомитесь с названиями рабочих мест и профессий. Научитесь
+      описывать людей с помощью прилагательных. Диалог с вами станет ещё более
+      увлекательным.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set6"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/kaç.jpg" alt="kaç" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+    <!-- /////////////dowloading//////////// -->
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/Модуль 2. Урок 6.pdf"
+        download
+        >Скачать Рабочая тетрадь Урок 6</a
+      >
+    </div>
+
+    <!-- //////////////Дополнительный материал/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
+        <li class="hidden">
+          <button id="task-header-law1">МЕСТНЫЙ ПАДЕЖ</button>
+          <div class="task-law hidden" id="task-content-law1-img">
+            <img src="#" alt="МЕСТНЫЙ ПАДЕЖ" />
+          </div>
+        </li>
+
+        <li>
+          <button id="task-header-alfabet">КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ</button>
+          <div class="slider hidden" id="task-content-alfabet">
+            <div class="slides">
+              <div class="slide">
+                <img
+                  src="./foto/ders5-moreinfo1.JPG"
+                  alt="КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders5-moreinfo2.JPG"
+                  alt="КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders5-moreinfo3.JPG"
+                  alt="КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ"
+                />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law2">заглушка</button>
+          <div class="task-law hidden" id="task-content-law2-img">
+            <img src="" alt="img-law" />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law3">заглушка</button>
+          <div class="task-law hidden" id="task-content-law3-img">
+            <img src="" alt="img-law" />
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- //////////////Задание 1 c foto/////////// -->
+
+    <section class="task-section">
+      <div class="task-header" id="task-header1">
+        Задание 1. Давайте сопоставим нижеперечисленные рабочие места с
+        картинками
+      </div>
+      <div class="task-content hidden" id="taskContent1">
+        <div class="image-container">
+          <img src="./foto/ders6-task1-1.jpg" alt="Eczane" />
+          <select class="answer-select" data-correct="Eczane">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-2.jpg" alt="Fırın" />
+          <select class="answer-select" data-correct="Fırın">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-3.jpg" alt="Market" />
+          <select class="answer-select" data-correct="Market">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-4.jpg" alt="Kasap" />
+          <select class="answer-select" data-correct="Kasap">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-5.jpg" alt="Manav" />
+          <select class="answer-select" data-correct="Manav">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-6.jpg" alt="Mağaza" />
+          <select class="answer-select" data-correct="Mağaza">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-7.jpg" alt="Kuaför" />
+          <select class="answer-select" data-correct="Kuaför">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-8.jpg" alt="Pastane" />
+          <select class="answer-select" data-correct="Pastane">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-9.jpg" alt="Otel" />
+          <select class="answer-select" data-correct="Otel">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-10.jpg" alt="Kuyumcu" />
+          <select class="answer-select" data-correct="Kuyumcu">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-11.jpg" alt="Postane" />
+          <select class="answer-select" data-correct="Postane">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+
+    <!-- /////////////Задание 2 с картинк//////////// -->
+    <section class="task-section">
+      <div class="task-header">
+        Задание 2. Давайте сопоставим прилагательные ниже с картинками
+      </div>
+      <div class="task-content hidden">
+        <div class="image-container">
+          <img src="./foto/ders6-task2-1.jpg" alt="zengin x fakir" />
+          <select class="answer-select" data-correct="zengin x fakir">
+            <option value="">--Выберите ответ--</option>
+            <option value="sıcak x soğuk">sıcak x soğuk</option>
+            <option value="zengin x fakir">zengin x fakir</option>
+            <option value="iyi x kötü">iyi x kötü</option>
+            <option value="güzel x çirkin">güzel x çirkin</option>
+            <option value="büyük x küçük">büyük x küçük</option>
+            <option value="sakin x sinirli">sakin x sinirli</option>
+            <option value="yeni x eski">yeni x eski</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task2-2.jpg" alt="iyi x kötü" />
+          <select class="answer-select" data-correct="iyi x kötü">
+            <option value="">--Выберите ответ--</option>
+            <option value="sıcak x soğuk">sıcak x soğuk</option>
+            <option value="zengin x fakir">zengin x fakir</option>
+            <option value="iyi x kötü">iyi x kötü</option>
+            <option value="güzel x çirkin">güzel x çirkin</option>
+            <option value="büyük x küçük">büyük x küçük</option>
+            <option value="sakin x sinirli">sakin x sinirli</option>
+            <option value="yeni x eski">yeni x eski</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task2-3.png" alt="sıcak x soğuk" />
+          <select class="answer-select" data-correct="sıcak x soğuk">
+            <option value="">--Выберите ответ--</option>
+            <option value="sıcak x soğuk">sıcak x soğuk</option>
+            <option value="zengin x fakir">zengin x fakir</option>
+            <option value="iyi x kötü">iyi x kötü</option>
+            <option value="güzel x çirkin">güzel x çirkin</option>
+            <option value="büyük x küçük">büyük x küçük</option>
+            <option value="sakin x sinirli">sakin x sinirli</option>
+            <option value="yeni x eski">yeni x eski</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task2-4.png" alt="büyük x küçük" />
+          <select class="answer-select" data-correct="büyük x küçük">
+            <option value="">--Выберите ответ--</option>
+            <option value="sıcak x soğuk">sıcak x soğuk</option>
+            <option value="zengin x fakir">zengin x fakir</option>
+            <option value="iyi x kötü">iyi x kötü</option>
+            <option value="güzel x çirkin">güzel x çirkin</option>
+            <option value="büyük x küçük">büyük x küçük</option>
+            <option value="sakin x sinirli">sakin x sinirli</option>
+            <option value="yeni x eski">yeni x eski</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task2-5.jpg" alt="sakin x sinirli" />
+          <select class="answer-select" data-correct="sakin x sinirli">
+            <option value="">--Выберите ответ--</option>
+            <option value="sıcak x soğuk">sıcak x soğuk</option>
+            <option value="zengin x fakir">zengin x fakir</option>
+            <option value="iyi x kötü">iyi x kötü</option>
+            <option value="güzel x çirkin">güzel x çirkin</option>
+            <option value="büyük x küçük">büyük x küçük</option>
+            <option value="sakin x sinirli">sakin x sinirli</option>
+            <option value="yeni x eski">yeni x eski</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task2-6.jpg" alt="güzel x çirkin" />
+          <select class="answer-select" data-correct="güzel x çirkin">
+            <option value="">--Выберите ответ--</option>
+            <option value="sıcak x soğuk">sıcak x soğuk</option>
+            <option value="zengin x fakir">zengin x fakir</option>
+            <option value="iyi x kötü">iyi x kötü</option>
+            <option value="güzel x çirkin">güzel x çirkin</option>
+            <option value="büyük x küçük">büyük x küçük</option>
+            <option value="sakin x sinirli">sakin x sinirli</option>
+            <option value="yeni x eski">yeni x eski</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task2-7.jpg" alt="yeni x eski" />
+          <select class="answer-select" data-correct="yeni x eski">
+            <option value="">--Выберите ответ--</option>
+            <option value="sıcak x soğuk">sıcak x soğuk</option>
+            <option value="zengin x fakir">zengin x fakir</option>
+            <option value="iyi x kötü">iyi x kötü</option>
+            <option value="güzel x çirkin">güzel x çirkin</option>
+            <option value="büyük x küçük">büyük x küçük</option>
+            <option value="sakin x sinirli">sakin x sinirli</option>
+            <option value="yeni x eski">yeni x eski</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <!-- /////////////Задание 3 без картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 3. Давайте сопоставим прилагательные ниже с их противоположным и
+        отрицательным значением
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Yavaş</p>
+              <select class="answer-select" data-correct="hızlı">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Güzel</p>
+              <select class="answer-select" data-correct="çirkin">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Düzenli</p>
+              <select class="answer-select" data-correct="dağınık">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Dolu</p>
+              <select class="answer-select" data-correct="boş">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Pahalı</p>
+              <select class="answer-select" data-correct="ucuz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>İyi</p>
+              <select class="answer-select" data-correct="kötü">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Kibar</p>
+              <select class="answer-select" data-correct="kaba">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Önemli</p>
+              <select class="answer-select" data-correct="önemsiz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Güçlü</p>
+              <select class="answer-select" data-correct="güçsüz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Çalışkan</p>
+              <select class="answer-select" data-correct="tembel">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Genç</p>
+              <select class="answer-select" data-correct="yaşlı">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Konuşkan</p>
+              <select class="answer-select" data-correct="sessiz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Dar</p>
+              <select class="answer-select" data-correct="geniş">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Korkak</p>
+              <select class="answer-select" data-correct="cesur">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Kolay</p>
+              <select class="answer-select" data-correct="zor">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Dikkatli</p>
+              <select class="answer-select" data-correct="dikkatsiz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Sinirli</p>
+              <select class="answer-select" data-correct="sakin">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Mutlu</p>
+              <select class="answer-select" data-correct="mutsuz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Zengin</p>
+              <select class="answer-select" data-correct="fakir">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Yakın</p>
+              <select class="answer-select" data-correct="uzak">
+                <option value="">--Выберите ответ--</option>
+                <option value="yaşlı">yaşlı</option>
+                <option value="hızlı">hızlı</option>
+                <option value="kötü">kötü</option>
+                <option value="uzak">uzak</option>
+                <option value="dağınık">dağınık</option>
+                <option value="dikkatsiz">dikkatsiz</option>
+                <option value="ucuz">ucuz</option>
+                <option value="geniş">geniş</option>
+                <option value="mutsuz">mutsuz</option>
+                <option value="cesur">cesur</option>
+                <option value="zor">zor</option>
+                <option value="çirkin">çirkin</option>
+                <option value="fakir">fakir</option>
+                <option value="boş">boş</option>
+                <option value="sessiz">sessiz</option>
+                <option value="sakin">sakin</option>
+                <option value="tembel">tembel</option>
+                <option value="kaba">kaba</option>
+                <option value="güçsüz">güçsüz</option>
+                <option value="önemsiz">önemsiz</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="../ders5/ders5-5test.html"> <button>Назад</button></a>
+
+      <a href="./ders6-2.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <script src="../slider-foto.js"></script>
+    <script src="../more-materials.js"></script>
+  </body>
+</html>
