@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_6</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 6 (ŞEHİRDE)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders6.html"
+            ><button>Профессии. Прилагательные и наречия</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders6-2.html"
+            ><button class="active">Личные местоимения и аффиксы</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders6-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders6-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders6-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Профессии. Личные местоимения и аффиксы. Прилагательные и наречия. На
+      уроке вы познакомитесь с названиями рабочих мест и профессий. Научитесь
+      описывать людей с помощью прилагательных. Диалог с вами станет ещё более
+      увлекательным.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set7"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/uzak.jpg" alt="doğru" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+    <!-- /////////////dowloading//////////// -->
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/Модуль 2. Урок 6.pdf"
+        download
+        >Скачать Рабочая тетрадь Урок 6</a
+      >
+    </div>
+
+    <!-- //////////////Дополнительный материал/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
+        <li class="hidden">
+          <button id="task-header-law1">Словообрательные аффиксы</button>
+          <div class="task-law hidden" id="task-content-law1-img">
+            <img src="" alt="МЕСТНЫЙ ПАДЕЖ" />
+          </div>
+        </li>
+
+        <li>
+          <button id="task-header-alfabet">ЛИЧНЫЕ МЕСТОИМЕНИЯ</button>
+          <div class="slider hidden" id="task-content-alfabet">
+            <div class="slides">
+              <div class="slide">
+                <img
+                  src="./foto/ders6-p2-moreinfo1-1.JPG"
+                  alt="ЛИЧНЫЕ МЕСТОИМЕНИЯ"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders6-p2-moreinfo1-2.JPG"
+                  alt="ЛИЧНЫЕ МЕСТОИМЕНИЯ"
+                />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+
+        <li>
+          <button id="task-header-law2">ЛИЧНЫЕ АФФИКСЫ</button>
+          <div class="task-law hidden" id="task-content-law2-img">
+            <img src="./foto/ders6-p2-moreinfo2.JPG" alt="img-law" />
+          </div>
+        </li>
+
+        <li>
+          <button id="task-header-law3">
+            ОТРИЦАТЕЛЬНАЯ И ВОПРОСИТЕЛЬНАЯ ФОРМЫ
+          </button>
+          <div class="task-law hidden" id="task-content-law3-img">
+            <img src="./foto/ders6-p2-moreinfo3.JPG" alt="img-law" />
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- /////////////Задание 4 без картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 4. Вставьте подходящий аффикс сказуемости
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>ben oğretmen __</p>
+              <select class="answer-select" data-correct="im">
+                <option value="">--Выберите ответ--</option>
+                <option value="yım">yım</option>
+                <option value="im">im</option>
+                <option value="yim">yim</option>
+                <option value="um">um</option>
+                <option value="yüm">yüm</option>
+                <option value="yum">yum</option>
+                <option value="üm">üm</option>
+                <option value="ım">ım</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>ben avukat __</p>
+              <select class="answer-select" data-correct="ım">
+                <option value="">--Выберите ответ--</option>
+                <option value="yım">yım</option>
+                <option value="im">im</option>
+                <option value="yim">yim</option>
+                <option value="um">um</option>
+                <option value="yüm">yüm</option>
+                <option value="yum">yum</option>
+                <option value="üm">üm</option>
+                <option value="ım">ım</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>ben doktor __</p>
+              <select class="answer-select" data-correct="um">
+                <option value="">--Выберите ответ--</option>
+                <option value="yım">yım</option>
+                <option value="im">im</option>
+                <option value="yim">yim</option>
+                <option value="um">um</option>
+                <option value="yüm">yüm</option>
+                <option value="yum">yum</option>
+                <option value="üm">üm</option>
+                <option value="ım">ım</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>ben mühendis __</p>
+              <select class="answer-select" data-correct="im">
+                <option value="">--Выберите ответ--</option>
+                <option value="yım">yım</option>
+                <option value="im">im</option>
+                <option value="yim">yim</option>
+                <option value="um">um</option>
+                <option value="yüm">yüm</option>
+                <option value="yum">yum</option>
+                <option value="üm">üm</option>
+                <option value="ım">ım</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>ben öğrenci __</p>
+              <select class="answer-select" data-correct="yım">
+                <option value="">--Выберите ответ--</option>
+                <option value="yım">yım</option>
+                <option value="im">im</option>
+                <option value="yim">yim</option>
+                <option value="um">um</option>
+                <option value="yüm">yüm</option>
+                <option value="yum">yum</option>
+                <option value="üm">üm</option>
+                <option value="ım">ım</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>sen oğretmen __</p>
+              <select class="answer-select" data-correct="sin">
+                <option value="">--Выберите ответ--</option>
+                <option value="sin">sin</option>
+                <option value="sın">sın</option>
+                <option value="sün">sün</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>sen avukat __</p>
+              <select class="answer-select" data-correct="sın">
+                <option value="">--Выберите ответ--</option>
+                <option value="sin">sin</option>
+                <option value="sın">sın</option>
+                <option value="sün">sün</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>sen doktor __</p>
+              <select class="answer-select" data-correct="sun">
+                <option value="">--Выберите ответ--</option>
+                <option value="sin">sin</option>
+                <option value="sın">sın</option>
+                <option value="sun">sun</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>sen mühendis __</p>
+              <select class="answer-select" data-correct="sin">
+                <option value="">--Выберите ответ--</option>
+                <option value="sin">sin</option>
+                <option value="sın">sın</option>
+                <option value="sün">sün</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>sen öğrenci __</p>
+              <select class="answer-select" data-correct="sin">
+                <option value="">--Выберите ответ--</option>
+                <option value="sin">sin</option>
+                <option value="sın">sın</option>
+                <option value="sün">sün</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>o öğretmen __</p>
+              <select class="answer-select" data-correct="-">
+                <option value="">--Выберите ответ--</option>
+                <option value="sin">sin</option>
+                <option value="-">-</option>
+                <option value="sın">sın</option>
+                <option value="sün">sün</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>o avukat __</p>
+              <select class="answer-select" data-correct="-">
+                <option value="">--Выберите ответ--</option>
+                <option value="sin">sin</option>
+                <option value="-">-</option>
+                <option value="sın">sın</option>
+                <option value="sün">sün</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>o doktor __</p>
+              <select class="answer-select" data-correct="-">
+                <option value="">--Выберите ответ--</option>
+                <option value="sin">sin</option>
+                <option value="-">-</option>
+                <option value="sın">sın</option>
+                <option value="sün">sün</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>o mühendis __</p>
+              <select class="answer-select" data-correct="-">
+                <option value="">--Выберите ответ--</option>
+                <option value="sin">sin</option>
+                <option value="-">-</option>
+                <option value="sın">sın</option>
+                <option value="sün">sün</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>o öğrenci __</p>
+              <select class="answer-select" data-correct="-">
+                <option value="">--Выберите ответ--</option>
+                <option value="sin">sin</option>
+                <option value="-">-</option>
+                <option value="sın">sın</option>
+                <option value="sün">sün</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>biz oğretmen __</p>
+              <select class="answer-select" data-correct="iz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yuz">yuz</option>
+                <option value="yız">yız</option>
+                <option value="üz">üz</option>
+                <option value="uz">uz</option>
+                <option value="ız">ız</option>
+                <option value="yiz">yiz</option>
+                <option value="iz">iz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>biz avukat __</p>
+              <select class="answer-select" data-correct="ız">
+                <option value="">--Выберите ответ--</option>
+                <option value="yuz">yuz</option>
+                <option value="yız">yız</option>
+                <option value="üz">üz</option>
+                <option value="uz">uz</option>
+                <option value="ız">ız</option>
+                <option value="yiz">yiz</option>
+                <option value="iz">iz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>biz doktor __</p>
+              <select class="answer-select" data-correct="uz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yuz">yuz</option>
+                <option value="yız">yız</option>
+                <option value="üz">üz</option>
+                <option value="uz">uz</option>
+                <option value="ız">ız</option>
+                <option value="yiz">yiz</option>
+                <option value="iz">iz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>biz mühendis __</p>
+              <select class="answer-select" data-correct="iz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yuz">yuz</option>
+                <option value="yız">yız</option>
+                <option value="üz">üz</option>
+                <option value="uz">uz</option>
+                <option value="ız">ız</option>
+                <option value="yiz">yiz</option>
+                <option value="iz">iz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>biz öğrenci __</p>
+              <select class="answer-select" data-correct="yiz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yuz">yuz</option>
+                <option value="yız">yız</option>
+                <option value="üz">üz</option>
+                <option value="uz">uz</option>
+                <option value="ız">ız</option>
+                <option value="yiz">yiz</option>
+                <option value="iz">iz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>siz oğretmen __</p>
+              <select class="answer-select" data-correct="siniz">
+                <option value="">--Выберите ответ--</option>
+                <option value="siniz">siniz</option>
+                <option value="sunuz">sunuz</option>
+                <option value="sünüz">sünüz</option>
+                <option value="sınız">sınız</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>siz avukat __</p>
+              <select class="answer-select" data-correct="sınız">
+                <option value="">--Выберите ответ--</option>
+                <option value="siniz">siniz</option>
+                <option value="sunuz">sunuz</option>
+                <option value="sünüz">sünüz</option>
+                <option value="sınız">sınız</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>onlar öğretmen __</p>
+              <select class="answer-select" data-correct="ler">
+                <option value="">--Выберите ответ--</option>
+                <option value="ler">ler</option>
+                <option value="lar">lar</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>onlar avukat __</p>
+              <select class="answer-select" data-correct="lar">
+                <option value="">--Выберите ответ--</option>
+                <option value="ler">ler</option>
+                <option value="lar">lar</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>onlar doktor __</p>
+              <select class="answer-select" data-correct="lar">
+                <option value="">--Выберите ответ--</option>
+                <option value="ler">ler</option>
+                <option value="lar">lar</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>onlar mühendis __</p>
+              <select class="answer-select" data-correct="ler">
+                <option value="">--Выберите ответ--</option>
+                <option value="ler">ler</option>
+                <option value="lar">lar</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>onlar öğrenci __</p>
+              <select class="answer-select" data-correct="ler">
+                <option value="">--Выберите ответ--</option>
+                <option value="ler">ler</option>
+                <option value="lar">lar</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 5 без картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 5. Дополните предложения, поставив отрицательную частицу в
+        нужной форме
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Ben doktor</p>
+              <select class="answer-select" data-correct="değilim">
+                <option value="">--Выберите ответ--</option>
+                <option value="değil">değil</option>
+                <option value="değilsiniz">değilsiniz</option>
+                <option value="değiller">değiller</option>
+                <option value="değiliz">değiliz</option>
+                <option value="değilim">değilim</option>
+                <option value="değilsin">değilsin</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Sen aşçı</p>
+              <select class="answer-select" data-correct="değilsin">
+                <option value="">--Выберите ответ--</option>
+                <option value="değil">değil</option>
+                <option value="değilsiniz">değilsiniz</option>
+                <option value="değiller">değiller</option>
+                <option value="değiliz">değiliz</option>
+                <option value="değilim">değilim</option>
+                <option value="değilsin">değilsin</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>O pilot</p>
+              <select class="answer-select" data-correct="değil">
+                <option value="">--Выберите ответ--</option>
+                <option value="değil">değil</option>
+                <option value="değilsiniz">değilsiniz</option>
+                <option value="değiller">değiller</option>
+                <option value="değiliz">değiliz</option>
+                <option value="değilim">değilim</option>
+                <option value="değilsin">değilsin</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Biz Ankaralı</p>
+              <select class="answer-select" data-correct="değiliz">
+                <option value="">--Выберите ответ--</option>
+                <option value="değil">değil</option>
+                <option value="değilsiniz">değilsiniz</option>
+                <option value="değiller">değiller</option>
+                <option value="değiliz">değiliz</option>
+                <option value="değilim">değilim</option>
+                <option value="değilsin">değilsin</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Siz İspanyol</p>
+              <select class="answer-select" data-correct="değilsiniz">
+                <option value="">--Выберите ответ--</option>
+                <option value="değil">değil</option>
+                <option value="değilsiniz">değilsiniz</option>
+                <option value="değiller">değiller</option>
+                <option value="değiliz">değiliz</option>
+                <option value="değilim">değilim</option>
+                <option value="değilsin">değilsin</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Onlar zengin</p>
+              <select class="answer-select" data-correct="değiller">
+                <option value="değil">değil</option>
+                <option value="değilsiniz">değilsiniz</option>
+                <option value="değiller">değiller</option>
+                <option value="değiliz">değiliz</option>
+                <option value="değilim">değilim</option>
+                <option value="değilsin">değilsin</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 6 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 6. Давайте напишем вопросы в соответствии с ответами ниже
+      </div>
+      <div class="task-content write hidden">
+        <!-- <img src="./foto/dars5-task2.jpg" alt="foto ders5-task2" /> -->
+
+        <form id="text-form-10">
+          <ul>
+            <li class="inline">
+              <label for="word132">Sen</label>
+              <input type="text" id="word132" name="word132" />
+              <p>?</p>
+            </li>
+
+            <li class="inline"><p>Ben işteyim. (Ты где?)</p></li>
+
+            <li class="inline">
+              <label for="word133">Siz </label>
+              <input type="text" id="word133" name="word133" />
+              <p>?</p>
+            </li>
+
+            <li class="inline"><p>Biz Suriyeliyiz. (Вы откуда?)</p></li>
+
+            <li class="inline">
+              <label for="word134"></label>
+              <input type="text" id="word134" name="word134" />
+              <input type="text" id="word135" name="word135" />
+              <input type="text" id="word136" name="word136" />
+              <input type="text" id="word137" name="word137" />
+              <p>?</p>
+            </li>
+
+            <li class="inline"><p>Evet, bu kitap güzel.</p></li>
+
+            <li class="inline">
+              <label for="word138"></label>
+              <input type="text" id="word138" name="word138" />
+              <input type="text" id="word139" name="word139" />
+              <input type="text" id="word140" name="word140" />
+              <p>?</p>
+            </li>
+
+            <li class="inline"><p>Hayır, Sinan sinirli değil.</p></li>
+
+            <li class="inline">
+              <label for="word141"></label>
+              <input type="text" id="word141" name="word141" />
+              <input type="text" id="word142" name="word142" />
+              <p>?</p>
+            </li>
+
+            <li class="inline"><p>18 yaşındayım.</p></li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 7 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 7. Составим предложения со следующими словами
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li class="inline">
+            <p>değil / biz / kafede</p>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="biz">
+                <option value="">--Выберите ответ--</option>
+                <option value="değil">değil</option>
+                <option value="biz">biz</option>
+                <option value="kafede">kafede</option>
+              </select>
+
+              <select class="answer-select" data-correct="kafede">
+                <option value="">--Выберите ответ--</option>
+                <option value="değil">değil</option>
+                <option value="biz">biz</option>
+                <option value="kafede">kafede</option>
+              </select>
+
+              <select class="answer-select" data-correct="değiliz">
+                <option value="">--Выберите ответ--</option>
+                <option value="değil">değil</option>
+                <option value="biz">biz</option>
+                <option value="değiliz">değiliz</option>
+                <option value="kafede">kafede</option>
+              </select>
+            </div>
+          </li>
+
+          <li class="inline"><p>iyi /doktor /o / bir</p></li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="o">
+                <option value="">--Выберите ответ--</option>
+                <option value="iyi">iyi</option>
+                <option value="doktor">doktor</option>
+                <option value="o">o</option>
+                <option value="bir">bir</option>
+              </select>
+
+              <select class="answer-select" data-correct="iyi">
+                <option value="">--Выберите ответ--</option>
+                <option value="iyi">iyi</option>
+                <option value="doktor">doktor</option>
+                <option value="o">o</option>
+                <option value="bir">bir</option>
+              </select>
+
+              <select class="answer-select" data-correct="bir">
+                <option value="">--Выберите ответ--</option>
+                <option value="iyi">iyi</option>
+                <option value="doktor">doktor</option>
+                <option value="o">o</option>
+                <option value="bir">bir</option>
+              </select>
+
+              <select class="answer-select" data-correct="doktor">
+                <option value="">--Выберите ответ--</option>
+                <option value="iyi">iyi</option>
+                <option value="doktor">doktor</option>
+                <option value="o">o</option>
+                <option value="bir">bir</option>
+              </select>
+            </div>
+          </li>
+
+          <li class="inline"><p>telefonu / değil / onun /eski</p></li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="onun">
+                <option value="">--Выберите ответ--</option>
+                <option value="telefonu">telefonu</option>
+                <option value="değil">değil</option>
+                <option value="onun">onun</option>
+                <option value="eski">eski</option>
+              </select>
+
+              <select class="answer-select" data-correct="telefonu">
+                <option value="">--Выберите ответ--</option>
+                <option value="telefonu">telefonu</option>
+                <option value="değil">değil</option>
+                <option value="onun">onun</option>
+                <option value="eski">eski</option>
+              </select>
+
+              <select class="answer-select" data-correct="eski">
+                <option value="">--Выберите ответ--</option>
+                <option value="telefonu">telefonu</option>
+                <option value="değil">değil</option>
+                <option value="onun">onun</option>
+                <option value="eski">eski</option>
+              </select>
+
+              <select class="answer-select" data-correct="değil">
+                <option value="">--Выберите ответ--</option>
+                <option value="telefonu">telefonu</option>
+                <option value="değil">değil</option>
+                <option value="onun">onun</option>
+                <option value="eski">eski</option>
+              </select>
+            </div>
+          </li>
+
+          <li class="inline"><p>bu / siz / okulda / misiniz / öğrenci</p></li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="siz">
+                <option value="">--Выберите ответ--</option>
+                <option value="bu">bu</option>
+                <option value="siz">siz</option>
+                <option value="okulda">okulda</option>
+                <option value="misiniz">misiniz</option>
+                <option value="öğrenci">öğrenci</option>
+              </select>
+
+              <select class="answer-select" data-correct="bu">
+                <option value="">--Выберите ответ--</option>
+                <option value="bu">bu</option>
+                <option value="siz">siz</option>
+                <option value="okulda">okulda</option>
+                <option value="misiniz">misiniz</option>
+                <option value="öğrenci">öğrenci</option>
+              </select>
+
+              <select class="answer-select" data-correct="okulda">
+                <option value="">--Выберите ответ--</option>
+                <option value="bu">bu</option>
+                <option value="siz">siz</option>
+                <option value="okulda">okulda</option>
+                <option value="misiniz">misiniz</option>
+                <option value="öğrenci">öğrenci</option>
+              </select>
+
+              <select class="answer-select" data-correct="öğrenci">
+                <option value="">--Выберите ответ--</option>
+                <option value="bu">bu</option>
+                <option value="siz">siz</option>
+                <option value="okulda">okulda</option>
+                <option value="misiniz">misiniz</option>
+                <option value="öğrenci">öğrenci</option>
+              </select>
+
+              <select class="answer-select" data-correct="misiniz">
+                <option value="">--Выберите ответ--</option>
+                <option value="bu">bu</option>
+                <option value="siz">siz</option>
+                <option value="okulda">okulda</option>
+                <option value="misiniz">misiniz</option>
+                <option value="öğrenci">öğrenci</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <li class="inline"><p>oda / mi / değil / bu / büyük</p></li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="bu">
+                <option value="">--Выберите ответ--</option>
+                <option value="oda">oda</option>
+                <option value="mi">mi</option>
+                <option value="değil">değil</option>
+                <option value="bu">bu</option>
+                <option value="büyük">büyük</option>
+              </select>
+
+              <select class="answer-select" data-correct="oda">
+                <option value="">--Выберите ответ--</option>
+                <option value="oda">oda</option>
+                <option value="mi">mi</option>
+                <option value="değil">değil</option>
+                <option value="bu">bu</option>
+                <option value="büyük">büyük</option>
+              </select>
+
+              <select class="answer-select" data-correct="büyük">
+                <option value="">--Выберите ответ--</option>
+                <option value="oda">oda</option>
+                <option value="mi">mi</option>
+                <option value="değil">değil</option>
+                <option value="bu">bu</option>
+                <option value="büyük">büyük</option>
+              </select>
+
+              <select class="answer-select" data-correct="değil">
+                <option value="">--Выберите ответ--</option>
+                <option value="oda">oda</option>
+                <option value="mi">mi</option>
+                <option value="değil">değil</option>
+                <option value="bu">bu</option>
+                <option value="büyük">büyük</option>
+              </select>
+
+              <select class="answer-select" data-correct="mi">
+                <option value="">--Выберите ответ--</option>
+                <option value="oda">oda</option>
+                <option value="mi">mi</option>
+                <option value="değil">değil</option>
+                <option value="bu">bu</option>
+                <option value="büyük">büyük</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /////////////Задание 8 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Задание 8. Давайте заполним пробелы ниже</div>
+      <div class="task-content write hidden">
+        <img src="./foto/ders6-task8.jpg" alt="foto ders6-task8" />
+
+        <form id="text-form-11">
+          <ul>
+            <li class="inline">
+              <label for="word143">Ben ofiste (sekreter)</label>
+              <input type="text" id="word143" name="word143" />
+              <p>.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word144"
+                >Siz İstanbul Üniversitesinde (öğrenci)</label
+              >
+              <input type="text" id="word144" name="word144" />
+              <input type="text" id="word145" name="word145" />
+              <p>?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word146">Sence biz (güzel)</label>
+              <input type="text" id="word146" name="word146" />
+              <input type="text" id="word147" name="word147" />
+              <p>?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word148">Siz çok (şişman)</label>
+              <input type="text" id="word148" name="word148" />
+            </li>
+
+            <li class="inline">
+              <label for="word149">Onlar şimdi (tatildeler) </label>
+              <input type="text" id="word149" name="word149" />
+              <input type="text" id="word150" name="word150" />
+              <p>?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word151">Bu film güzel ama biraz (değil /uzun)</label>
+              <input type="text" id="word151" name="word151" />
+              <input type="text" id="word152" name="word152" />
+              <input type="text" id="word153" name="word153" />
+              <p>?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word154">Biz şimdi (evde)</label>
+              <input type="text" id="word154" name="word154" />
+              <p>.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word155">Bugün tatil. Sen (müsait)</label>
+              <input type="text" id="word155" name="word155" />
+              <input type="text" id="word156" name="word156" />
+
+              <p>?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word157">Biz bugün çok (mutlu) </label>
+              <input type="text" id="word157" name="word157" />
+
+              <p>.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word158">Siz her gün (işte)</label>
+              <input type="text" id="word158" name="word158" />
+              <input type="text" id="word159" name="word159" />
+
+              <p>?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word160">Deniz Bey mimar ve o çok (yakışıklı)</label>
+              <input type="text" id="word160" name="word160" />
+
+              <p>?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word161">Bu kazak (ucuz)</label>
+              <input type="text" id="word161" name="word161" />
+              <input type="text" id="word162" name="word162" />
+
+              <p>?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word163">Onlar bugün (değil/okulda) </label>
+              <input type="text" id="word163" name="word163" />
+              <input type="text" id="word164" name="word164" />
+
+              <p>, evdeler.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word165">Evde süt (var)</label>
+              <input type="text" id="word165" name="word165" />
+              <input type="text" id="word166" name="word166" />
+
+              <p>?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word167">Sen başarılı bir (iş adamı) </label>
+              <input type="text" id="word167" name="word167" />
+              <input type="text" id="word168" name="word168" />
+
+              <p>.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word169"
+                >Evin ışıkları kapalı. Onlar (değiller/evde)</label
+              >
+              <input type="text" id="word169" name="word169" />
+              <input type="text" id="word170" name="word170" />
+              <input type="text" id="word171" name="word171" />
+              <p>?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word172">Ben bütün gün (dışarıda)</label>
+              <input type="text" id="word172" name="word172" />
+
+              <p>.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word173">Sen bugün hiç (değil/iyi) </label>
+              <input type="text" id="word173" name="word173" />
+              <input type="text" id="word174" name="word174" />
+              <p>. Bence hastasın.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word175">Kıvanç (İzmirli)</label>
+              <input type="text" id="word175" name="word175" />
+              <input type="text" id="word176" name="word176" />
+              <p>?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word177">Biz (tembel)</label>
+              <input type="text" id="word177" name="word177" />
+              <p>.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word178">Neden okuldasın? Sen (değil/hasta)</label>
+              <input type="text" id="word178" name="word178" />
+              <input type="text" id="word179" name="word179" />
+              <input type="text" id="word180" name="word180" />
+              <p>?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word181">Ofisim eve (değil/uzak) </label>
+              <input type="text" id="word181" name="word181" />
+              <input type="text" id="word182" name="word182" />
+              <p>.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word183">Ben çok mutluyum. Sen (değil/mutlu)</label>
+              <input type="text" id="word183" name="word183" />
+              <input type="text" id="word184" name="word184" />
+              <input type="text" id="word185" name="word185" />
+              <p>?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word186"
+                >İstanbul Ankara’dan daha (değil/kalabalık)
+              </label>
+              <input type="text" id="word186" name="word186" />
+              <input type="text" id="word187" name="word187" />
+              <input type="text" id="word188" name="word188" />
+              <p>?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word189"
+                >Bu kitap çok sıradan, hiç (değil/ilginç)</label
+              >
+              <input type="text" id="word189" name="word189" />
+              <input type="text" id="word190" name="word190" />
+            </li>
+
+            <li class="inline">
+              <label for="word191">Biz akşam evde (yok)</label>
+              <input type="text" id="word191" name="word191" />
+            </li>
+
+            <li class="inline">
+              <label for="word192">Sen (doktor)</label>
+              <input type="text" id="word192" name="word192" />
+              <input type="text" id="word193" name="word193" />
+
+              <p>?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word194"
+                >Şu ayakkabı 300 TL. Bu çok (değil/pahalı)
+              </label>
+              <input type="text" id="word194" name="word194" />
+              <input type="text" id="word195" name="word195" />
+              <input type="text" id="word196" name="word196" />
+              <p>?</p>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders6.html"> <button>Назад</button></a>
+
+      <a href="./ders6-3.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <script src="../more-materials.js"></script>
+  </body>
+</html>

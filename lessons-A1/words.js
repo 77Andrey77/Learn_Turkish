@@ -168,7 +168,7 @@ const wordsSets = {
     {
         word: "orman",
         translation: "лес",
-        image: "./foto/trainer/orman.jpg"
+        image: "./foto/trainer/orman.jpeg"
     },
     {
         word: "otobüs",
@@ -193,7 +193,7 @@ const wordsSets = {
     {
         word: "para",
         translation: "деньги",
-        image: "./foto/trainer/para.jpg"
+        image: "./foto/trainer/para.jpeg"
     },
     {
         word: "portakal",
@@ -223,7 +223,7 @@ const wordsSets = {
     {
         word: "tabak",
         translation: "тарелка",
-        image: "./foto/trainer/tabak.jpg"
+        image: "./foto/trainer/tabak.jpeg"
     },
     {
         word: "tavuk",
@@ -947,6 +947,323 @@ const wordsSets = {
         translation: "число",
         image: "./foto/sayı.jpeg"
         }
+    ],
+    set7: [
+        {
+        word: "doğru",
+        translation: "правильно",
+        image: "./foto/doğru.jpg"
+        }, 
+        {
+        word: "yanlış",
+        translation: "неправильно",
+        image: "./foto/yanlış.webp"
+        }, 
+        {
+        word: "çok",
+        translation: "очень, много",
+        image: "../not-image.png"
+        }, 
+        {
+        word: "insan",
+        translation: "человек",
+        image: "./foto/insan.jpg"
+        }, 
+        {
+        word: "komik",
+        translation: "смешной",
+        image: "./foto/komik.jpg"
+        }, 
+        {
+        word: "çalışkan",
+        translation: "трудолюбивый",
+        image: "./foto/çalışkan.jpg"
+        }, 
+        {
+        word: "daha",
+        translation: "ещё",
+        image: "../not-image.png"
+        }, 
+        {
+        word: "sessiz",
+        translation: "беззвучный, тихий",
+        image: "./foto/sessiz.webp"
+        }, 
+        {
+        word: "sakin",
+        translation: "тихий, спокойный",
+        image: "./foto/sakin.jpg"
+        }, 
+        {
+        word: "sinirli",
+        translation: "нервный",
+        image: "./foto/sinirli.jpg"
+        }, 
+        {
+        word: "sıcak",
+        translation: "горячий",
+        image: "./foto/sıcak.jpg"
+        }, 
+        {
+        word: "soğuk",
+        translation: "холодный",
+        image: "./foto/soğuk.jpg"
+        }, 
+        {
+        word: "sahil",
+        translation: "берег",
+        image: "./foto/sahil.jpg"
+        }, 
+        {
+        word: "şimdi",
+        translation: "сейчас",
+        image: "./foto/şimdi.webp"
+        }, 
+        {
+        word: "küçük",
+        translation: "маленький",
+        image: "./foto/küçük.webp"
+        }, 
+        {
+        word: "gün",
+        translation: "день",
+        image: "./foto/gün.webp"
+        }, 
+        {
+        word: "bütün",
+        translation: "весь",
+        image: "./foto/bütün.jpg"
+        }, 
+        {
+        word: "balık",
+        translation: "рыба",
+        image: "./foto/balık.jpg"
+        }, 
+        {
+        word: "eski",
+        translation: "старый",
+        image: "./foto/eski.jpg"
+        }, 
+        {
+        word: "lezzetli",
+        translation: "вкусный",
+        image: "./foto/lezzetli.webp"
+        }, 
+        {
+        word: "biraz",
+        translation: "немного",
+        image: "./foto/biraz.jpg"
+        }, 
+        {
+        word: "sekreter",
+        translation: "секретарь",
+        image: "./foto/sekreter.jpg"
+        }, 
+        {
+        word: "şişman",
+        translation: "толстый",
+        image: "./foto/şişman.jpg"
+        }, 
+        {
+        word: "güzel",
+        translation: "красивая",
+        image: "./foto/güzel.jpg"
+        }, 
+        {
+        word: "eczane",
+        translation: "аптека",
+        image: "./foto/eczane.jpg"
+        }, 
+        {
+        word: "fırın",
+        translation: "пекарня",
+        image: "./foto/fırın.jpg"
+        }, 
+        {
+        word: "market",
+        translation: "продуктовая лавка",
+        image: "./foto/market.jpg"
+        }, 
+        {
+        word: "manav",
+        translation: "зеленщик",
+        image: "./foto/manav.webp"
+        }, 
+        {
+        word: "pastane",
+        translation: "кондитерская",
+        image: "./foto/pastane.jpg"
+        }, 
+        {
+        word: "kuaför",
+        translation: "парикмахерская",
+        image: "./foto/kuaför.jpg"
+        }, 
+        {
+        word: "kuyumcu",
+        translation: "ювелирная лавка",
+        image: "./foto/kuyumcu.jpg"
+        }, 
+        {
+        word: "postane",
+        translation: "почта",
+        image: "./foto/postane.jpg"
+        }, 
+        {
+        word: "zengin",
+        translation: "богатый",
+        image: "./foto/zengin.jpg"
+        }, 
+        {
+        word: "fakir",
+        translation: "бедный",
+        image: "./foto/fakir.webp"
+        }, 
+        {
+        word: "iyi",
+        translation: "хороший",
+        image: "./foto/iyi.jpg"
+        }, 
+        {
+        word: "kötü",
+        translation: "плохой",
+        image: "./foto/kötü.jpg"
+        }, 
+        {
+        word: "yeni",
+        translation: "новый",
+        image: "./foto/yeni.jpg"
+        }, 
+        {
+        word: "yavaş",
+        translation: "медленный",
+        image: "./foto/yavaş.jpg"
+        }, 
+        {
+        word: "hızlı",
+        translation: "скорый",
+        image: "./foto/hızlı.jpg"
+        }, 
+        {
+        word: "çirkin",
+        translation: "уродливый",
+        image: "./foto/çirkin.jpg"
+        }, 
+
+        {
+        word: "düzenli",
+        translation: "регулярный, упорядоченный",
+        image: "./foto/düzenli.jpg"
+        }, 
+        {
+        word: "dağınık",
+        translation: "разбросанный (бардак)",
+        image: "../not-image.png"
+        }, 
+        {
+        word: "dolu",
+        translation: "полный",
+        image: "./foto/dolu.jpg"
+        }, 
+        {
+        word: "boş",
+        translation: "пустой, свободный",
+        image: "./foto/boş.jpg"
+        }, 
+        {
+        word: "pahalı",
+        translation: "дорогой",
+        image: "./foto/pahalı.jpg"
+        }, 
+        {
+        word: "ucuz",
+        translation: "дешевый",
+        image: "./foto/ucuz.jpg"
+        }, 
+        {
+        word: "kibar",
+        translation: "благородный",
+        image: "./foto/kibar.jpg"
+        }, 
+        {
+        word: "kaba",
+        translation: "грубый",
+        image: "./foto/kaba.jpg"
+        }, 
+        {
+        word: "önemli",
+        translation: "важный",
+        image: "./foto/önemli.jpg"
+        }, 
+        {
+        word: "güçlü",
+        translation: "сильный",
+        image: "./foto/güçlü.jpg"
+        }, 
+        {
+        word: "genç",
+        translation: "молодой",
+        image: "./foto/genç.jpg"
+        }, 
+        {
+        word: "yaşlı",
+        translation: "пожилой",
+        image: "./foto/yaşlı.jpg"
+        }, 
+        {
+        word: "konuşkan",
+        translation: "общительный",
+        image: "./foto/konuşkan.jpg"
+        }, 
+        {
+        word: "dar",
+        translation: "узкий",
+        image: "./foto/dar.jpg"
+        }, 
+
+        {
+        word: "geniş",
+        translation: "широкий",
+        image: "./foto/geniş.jpg"
+        }, 
+        {
+        word: "korkak",
+        translation: "трусливый",
+        image: "./foto/korkak.jpg"
+        }, 
+        {
+        word: "cesur",
+        translation: "смелый",
+        image: "./foto/cesur.jpg"
+        }, 
+        {
+        word: "kolay",
+        translation: "легкий",
+        image: "./foto/kolay.webp"
+        }, 
+        {
+        word: "zor",
+        translation: "сложный",
+        image: "./foto/zor.jpg"
+        }, 
+         {
+        word: "dikkatli",
+        translation: "внимательный",
+        image: "./foto/dikkatli.jpg"
+        }, 
+    
+     {
+        word: "yakın",
+        translation: "близкий",
+        image: "./foto/yakın.jpg"
+        }, 
+    
+     {
+        word: "uzak",
+        translation: "далекий",
+        image: "./foto/uzak.jpg"
+        }, 
+    
     ]
 
 };
