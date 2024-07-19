@@ -370,10 +370,14 @@ select {
  top: 20px;
 }
 /* /////////ders3-2-task3///////// */
- #text-form-4{
+ #text-form-4,
+ #text-form-12{
   display: flex;
   flex-wrap: wrap;
  }
+ /* #text-form-12{
+  flex-direction: row;
+ } */
 
  .labelInline{
   display: flex;
@@ -397,5 +401,5 @@ select {
 
  .all-line {
 margin: 15px 5px 5px 5px;
-  /* align-items:baseline; */
+  
  }
