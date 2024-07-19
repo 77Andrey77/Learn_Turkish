@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_7</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 7 (BİR GÜNÜM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders7.html"
+            ><button class="active">Настоящее время глагола</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders7-2.html"
+            ><button>Спряжение глаголов по лицам</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders7-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders7-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders7-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Настоящее время глагола. Спряжения глаголов по лицам. На уроке вы
+      научитесь описывать свою повседневную жизнь и жизнь других людей. Вы
+      получите основы для приятного и, главное, непринужденного общения.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set8"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/" alt="doğru" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+    <!-- /////////////dowloading//////////// -->
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/Модуль 2. Урок 6.pdf"
+        download
+        >Скачать словарь к модулю 3</a
+      >
+    </div>
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/Модуль 2. Урок 6.pdf"
+        download
+        >Скачать Рабочая тетрадь. Урок 7</a
+      >
+    </div>
+
+    <!-- //////////////Дополнительный материал/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
+        <li>
+          <button id="task-header-law1">Словообрательные аффиксы</button>
+          <div class="task-law hidden" id="task-content-law1-img">
+            <img src="./foto/ders6-moreinfo1.jpg" alt="МЕСТНЫЙ ПАДЕЖ" />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-alfabet">КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ</button>
+          <div class="slider hidden" id="task-content-alfabet">
+            <div class="slides">
+              <div class="slide">
+                <img src="" alt="КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ" />
+              </div>
+              <div class="slide">
+                <img src="" alt="КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ" />
+              </div>
+              <div class="slide">
+                <img src="" alt="КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ" />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law2">заглушка</button>
+          <div class="task-law hidden" id="task-content-law2-img">
+            <img src="" alt="img-law" />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law3">заглушка</button>
+          <div class="task-law hidden" id="task-content-law3-img">
+            <img src="" alt="img-law" />
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- //////////////Задание 1 c foto/////////// -->
+
+    <!-- <section class="task-section">
+      <div class="task-header">Задание 1. Образуйте следующие фразы</div>
+      <div class="task-content hidden">
+        <div class="image-container">
+          <img src="./foto/ders6-task1-1.jpg" alt="Eczane" />
+          <select class="answer-select" data-correct="Eczane">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-2.jpg" alt="Fırın" />
+          <select class="answer-select" data-correct="Fırın">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-3.jpg" alt="Market" />
+          <select class="answer-select" data-correct="Market">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-4.jpg" alt="Kasap" />
+          <select class="answer-select" data-correct="Kasap">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-5.jpg" alt="Manav" />
+          <select class="answer-select" data-correct="Manav">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-6.jpg" alt="Mağaza" />
+          <select class="answer-select" data-correct="Mağaza">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-7.jpg" alt="Kuaför" />
+          <select class="answer-select" data-correct="Kuaför">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-8.jpg" alt="Pastane" />
+          <select class="answer-select" data-correct="Pastane">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-9.jpg" alt="Otel" />
+          <select class="answer-select" data-correct="Otel">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-10.jpg" alt="Kuyumcu" />
+          <select class="answer-select" data-correct="Kuyumcu">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task1-11.jpg" alt="Postane" />
+          <select class="answer-select" data-correct="Postane">
+            <option value="">--Выберите ответ--</option>
+            <option value="Pastane">Pastane</option>
+            <option value="Banka">Banka</option>
+            <option value="Fırın">Fırın</option>
+            <option value="Manav">Manav</option>
+            <option value="Kuyumcu">Kuyumcu</option>
+            <option value="Mağaza">Mağaza</option>
+            <option value="Postane">Postane</option>
+            <option value="Market">Market</option>
+            <option value="Kuaför">Kuaför</option>
+            <option value="Eczane">Eczane</option>
+            <option value="Otel">Otel</option>
+            <option value="Kasap">Kasap</option>
+          </select>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- /////////////Задание 2 с картинк//////////// -->
+    <!-- <section class="task-section">
+      <div class="task-header">
+        Задание 2. Давайте сопоставим прилагательные ниже с картинками
+      </div>
+      <div class="task-content hidden">
+        <div class="image-container">
+          <img src="./foto/ders6-task2-1.jpg" alt="zengin x fakir" />
+          <select class="answer-select" data-correct="zengin x fakir">
+            <option value="">--Выберите ответ--</option>
+            <option value="sıcak x soğuk">sıcak x soğuk</option>
+            <option value="zengin x fakir">zengin x fakir</option>
+            <option value="iyi x kötü">iyi x kötü</option>
+            <option value="güzel x çirkin">güzel x çirkin</option>
+            <option value="büyük x küçük">büyük x küçük</option>
+            <option value="sakin x sinirli">sakin x sinirli</option>
+            <option value="yeni x eski">yeni x eski</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task2-2.jpg" alt="iyi x kötü" />
+          <select class="answer-select" data-correct="iyi x kötü">
+            <option value="">--Выберите ответ--</option>
+            <option value="sıcak x soğuk">sıcak x soğuk</option>
+            <option value="zengin x fakir">zengin x fakir</option>
+            <option value="iyi x kötü">iyi x kötü</option>
+            <option value="güzel x çirkin">güzel x çirkin</option>
+            <option value="büyük x küçük">büyük x küçük</option>
+            <option value="sakin x sinirli">sakin x sinirli</option>
+            <option value="yeni x eski">yeni x eski</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task2-3.png" alt="sıcak x soğuk" />
+          <select class="answer-select" data-correct="sıcak x soğuk">
+            <option value="">--Выберите ответ--</option>
+            <option value="sıcak x soğuk">sıcak x soğuk</option>
+            <option value="zengin x fakir">zengin x fakir</option>
+            <option value="iyi x kötü">iyi x kötü</option>
+            <option value="güzel x çirkin">güzel x çirkin</option>
+            <option value="büyük x küçük">büyük x küçük</option>
+            <option value="sakin x sinirli">sakin x sinirli</option>
+            <option value="yeni x eski">yeni x eski</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task2-4.png" alt="büyük x küçük" />
+          <select class="answer-select" data-correct="büyük x küçük">
+            <option value="">--Выберите ответ--</option>
+            <option value="sıcak x soğuk">sıcak x soğuk</option>
+            <option value="zengin x fakir">zengin x fakir</option>
+            <option value="iyi x kötü">iyi x kötü</option>
+            <option value="güzel x çirkin">güzel x çirkin</option>
+            <option value="büyük x küçük">büyük x küçük</option>
+            <option value="sakin x sinirli">sakin x sinirli</option>
+            <option value="yeni x eski">yeni x eski</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task2-5.jpg" alt="sakin x sinirli" />
+          <select class="answer-select" data-correct="sakin x sinirli">
+            <option value="">--Выберите ответ--</option>
+            <option value="sıcak x soğuk">sıcak x soğuk</option>
+            <option value="zengin x fakir">zengin x fakir</option>
+            <option value="iyi x kötü">iyi x kötü</option>
+            <option value="güzel x çirkin">güzel x çirkin</option>
+            <option value="büyük x küçük">büyük x küçük</option>
+            <option value="sakin x sinirli">sakin x sinirli</option>
+            <option value="yeni x eski">yeni x eski</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task2-6.jpg" alt="güzel x çirkin" />
+          <select class="answer-select" data-correct="güzel x çirkin">
+            <option value="">--Выберите ответ--</option>
+            <option value="sıcak x soğuk">sıcak x soğuk</option>
+            <option value="zengin x fakir">zengin x fakir</option>
+            <option value="iyi x kötü">iyi x kötü</option>
+            <option value="güzel x çirkin">güzel x çirkin</option>
+            <option value="büyük x küçük">büyük x küçük</option>
+            <option value="sakin x sinirli">sakin x sinirli</option>
+            <option value="yeni x eski">yeni x eski</option>
+          </select>
+        </div>
+
+        <div class="image-container">
+          <img src="./foto/ders6-task2-7.jpg" alt="yeni x eski" />
+          <select class="answer-select" data-correct="yeni x eski">
+            <option value="">--Выберите ответ--</option>
+            <option value="sıcak x soğuk">sıcak x soğuk</option>
+            <option value="zengin x fakir">zengin x fakir</option>
+            <option value="iyi x kötü">iyi x kötü</option>
+            <option value="güzel x çirkin">güzel x çirkin</option>
+            <option value="büyük x küçük">büyük x küçük</option>
+            <option value="sakin x sinirli">sakin x sinirli</option>
+            <option value="yeni x eski">yeni x eski</option>
+          </select>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- /////////////Задание 1 без картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Задание 1. Образуйте следующие фразы</div>
+      <div class="task-content hidden">
+        <p>
+          <span
+            >СМОТРЕТЬ ФИЛЬМ, ДЕЛАТЬ УРОКИ, ГОТОВИТЬ ЕДУ, ПРИНИМАТЬ ДУШ, СЛУШАТЬ
+            МУЗЫКУ, ПОЛЬЗОВАТЬСЯ КОМПЬЮТЕРОМ, ЗАВТРАКАТЬ, ГОВОРИТЬ ПО-ТУРЕЦКИ,
+            ЧИТАТЬ ГАЗЕТУ, ИГРАТЬ В ИГРУ</span
+          >
+        </p>
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>film</p>
+              <select class="answer-select" data-correct="izlemek">
+                <option value="">--Выберите ответ--</option>
+                <option value="dinlemek">dinlemek</option>
+                <option value="çalışmak">çalışmak</option>
+                <option value="oynamak">oynamak</option>
+                <option value="okumak">okumak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="pişirmek">pişirmek</option>
+                <option value="izlemek">izlemek</option>
+                <option value="almak">almak</option>
+                <option value="konuşmak">konuşmak</option>
+                <option value="yapmak">yapmak</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>kahvaltı</p>
+              <select class="answer-select" data-correct="yapmak">
+                <option value="">--Выберите ответ--</option>
+                <option value="dinlemek">dinlemek</option>
+                <option value="çalışmak">çalışmak</option>
+                <option value="oynamak">oynamak</option>
+                <option value="okumak">okumak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="pişirmek">pişirmek</option>
+                <option value="izlemek">izlemek</option>
+                <option value="almak">almak</option>
+                <option value="konuşmak">konuşmak</option>
+                <option value="yapmak">yapmak</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>oyun</p>
+              <select class="answer-select" data-correct="oynamak">
+                <option value="">--Выберите ответ--</option>
+                <option value="dinlemek">dinlemek</option>
+                <option value="çalışmak">çalışmak</option>
+                <option value="oynamak">oynamak</option>
+                <option value="okumak">okumak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="pişirmek">pişirmek</option>
+                <option value="izlemek">izlemek</option>
+                <option value="almak">almak</option>
+                <option value="konuşmak">konuşmak</option>
+                <option value="yapmak">yapmak</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>ders</p>
+              <select class="answer-select" data-correct="çalışmak">
+                <option value="">--Выберите ответ--</option>
+                <option value="dinlemek">dinlemek</option>
+                <option value="çalışmak">çalışmak</option>
+                <option value="oynamak">oynamak</option>
+                <option value="okumak">okumak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="pişirmek">pişirmek</option>
+                <option value="izlemek">izlemek</option>
+                <option value="almak">almak</option>
+                <option value="konuşmak">konuşmak</option>
+                <option value="yapmak">yapmak</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>müzik</p>
+              <select class="answer-select" data-correct="dinlemek">
+                <option value="">--Выберите ответ--</option>
+                <option value="dinlemek">dinlemek</option>
+                <option value="çalışmak">çalışmak</option>
+                <option value="oynamak">oynamak</option>
+                <option value="okumak">okumak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="pişirmek">pişirmek</option>
+                <option value="izlemek">izlemek</option>
+                <option value="almak">almak</option>
+                <option value="konuşmak">konuşmak</option>
+                <option value="yapmak">yapmak</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>gazete</p>
+              <select class="answer-select" data-correct="okumak">
+                <option value="">--Выберите ответ--</option>
+                <option value="dinlemek">dinlemek</option>
+                <option value="çalışmak">çalışmak</option>
+                <option value="oynamak">oynamak</option>
+                <option value="okumak">okumak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="pişirmek">pişirmek</option>
+                <option value="izlemek">izlemek</option>
+                <option value="almak">almak</option>
+                <option value="konuşmak">konuşmak</option>
+                <option value="yapmak">yapmak</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>yemek</p>
+              <select class="answer-select" data-correct="pişirmek">
+                <option value="">--Выберите ответ--</option>
+                <option value="dinlemek">dinlemek</option>
+                <option value="çalışmak">çalışmak</option>
+                <option value="oynamak">oynamak</option>
+                <option value="okumak">okumak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="pişirmek">pişirmek</option>
+                <option value="izlemek">izlemek</option>
+                <option value="almak">almak</option>
+                <option value="konuşmak">konuşmak</option>
+                <option value="yapmak">yapmak</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>duş</p>
+              <select class="answer-select" data-correct="almak">
+                <option value="">--Выберите ответ--</option>
+                <option value="dinlemek">dinlemek</option>
+                <option value="çalışmak">çalışmak</option>
+                <option value="oynamak">oynamak</option>
+                <option value="okumak">okumak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="pişirmek">pişirmek</option>
+                <option value="izlemek">izlemek</option>
+                <option value="almak">almak</option>
+                <option value="konuşmak">konuşmak</option>
+                <option value="yapmak">yapmak</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>bilgisayar</p>
+              <select class="answer-select" data-correct="kullanmak">
+                <option value="">--Выберите ответ--</option>
+                <option value="dinlemek">dinlemek</option>
+                <option value="çalışmak">çalışmak</option>
+                <option value="oynamak">oynamak</option>
+                <option value="okumak">okumak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="pişirmek">pişirmek</option>
+                <option value="izlemek">izlemek</option>
+                <option value="almak">almak</option>
+                <option value="konuşmak">konuşmak</option>
+                <option value="yapmak">yapmak</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Türkçe</p>
+              <select class="answer-select" data-correct="konuşmak">
+                <option value="">--Выберите ответ--</option>
+                <option value="dinlemek">dinlemek</option>
+                <option value="çalışmak">çalışmak</option>
+                <option value="oynamak">oynamak</option>
+                <option value="okumak">okumak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="pişirmek">pişirmek</option>
+                <option value="izlemek">izlemek</option>
+                <option value="almak">almak</option>
+                <option value="konuşmak">konuşmak</option>
+                <option value="yapmak">yapmak</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 2 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 2. Образуйте утвердительную форму глагола в настоящем
+        времени.(Писать с большой буквы)
+      </div>
+      <div class="task-content write hidden">
+        <form id="text-form-13">
+          <p><span>Например: </span> almak- alıyor</p>
+          <ul>
+            <li class="inline">
+              <label for="word218">okumak</label>
+              <input type="text" id="word218" name="word218" />
+            </li>
+
+            <li class="inline">
+              <label for="word219">konuşmak </label>
+              <input type="text" id="word219" name="word219" />
+            </li>
+
+            <li class="inline">
+              <label for="word220">beklemek </label>
+              <input type="text" id="word220" name="word220" />
+            </li>
+
+            <li class="inline">
+              <label for="word221">güneşlenmek</label>
+              <input type="text" id="word221" name="word221" />
+            </li>
+
+            <li class="inline">
+              <label for="word222">uyumak </label>
+              <input type="text" id="word222" name="word222" />
+            </li>
+
+            <li class="inline">
+              <label for="word223">kullanmak</label>
+              <input type="text" id="word223" name="word223" />
+            </li>
+
+            <li class="inline">
+              <label for="word224">başlamak </label>
+              <input type="text" id="word224" name="word224" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 3 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 3. Образуйте от глаголов отрицательную форму 3-го лица
+        настоящего времени.(Писать с большой буквы)
+      </div>
+      <div class="task-content write hidden">
+        <form id="text-form-14">
+          <p><span>Например: </span>oynamak- oynamıyor.</p>
+          <ul>
+            <li class="inline">
+              <label for="word225">giyinmek →</label>
+              <input type="text" id="word225" name="word225" />
+            </li>
+
+            <li class="inline">
+              <label for="word226">öpmek →</label>
+              <input type="text" id="word226" name="word226" />
+            </li>
+
+            <li class="inline">
+              <label for="word227">çalmak →</label>
+              <input type="text" id="word227" name="word227" />
+            </li>
+
+            <li class="inline">
+              <label for="word228">kalkmak →</label>
+              <input type="text" id="word228" name="word228" />
+            </li>
+
+            <li class="inline">
+              <label for="word229">gecikmek →</label>
+              <input type="text" id="word229" name="word229" />
+            </li>
+
+            <li class="inline">
+              <label for="word230">tanımak →</label>
+              <input type="text" id="word230" name="word230" />
+            </li>
+
+            <li class="inline">
+              <label for="word231">yatmak →</label>
+              <input type="text" id="word231" name="word231" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 4 без картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 4. Давайте посмотрим на таблицу и закончим предложения
+      </div>
+      <div class="task-content hidden">
+        <img src="./foto/ders7-task4.jpg" alt="foto ders7-task4" width="1200" />
+
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>- Semih nerede</p>
+              <select class="answer-select" data-correct="yaşıyor">
+                <option value="">--Выберите ответ--</option>
+                <option selected="selected" value="yaşıyor">yaşıyor</option>
+                <option value="çalışıyor">çalışıyor</option>
+                <option value="kalkıyor">kalkıyor</option>
+                <option value="yapıyor">yapıyor</option>
+                <option value="Arkadaşları ile buluşuyor">
+                  Arkadaşları ile buluşuyor
+                </option>
+                <option value="spor yapıyor mu">spor yapıyor mu</option>
+                <option value="geç yatmıyor">geç yatmıyor</option>
+                <option value="konsere gidiyor mu">konsere gidiyor mu</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <li class="inline">- Ankara’da.</li>
+
+          <li>
+            <div class="write-container">
+              <p>- Arzu nerede</p>
+              <select class="answer-select" data-correct="çalışıyor">
+                <option value="">--Выберите ответ--</option>
+                <option selected="selected" value="yaşıyor">yaşıyor</option>
+                <option value="çalışıyor">çalışıyor</option>
+                <option value="kalkıyor">kalkıyor</option>
+                <option value="yapıyor">yapıyor</option>
+                <option value="Arkadaşları ile buluşuyor">
+                  Arkadaşları ile buluşuyor
+                </option>
+                <option value="spor yapıyor mu">spor yapıyor mu</option>
+                <option value="geç yatmıyor">geç yatmıyor</option>
+                <option value="konsere gidiyor mu">konsere gidiyor mu</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <li class="inline">- Bankada.</li>
+
+          <li>
+            <div class="write-container">
+              <p>- Semih saat kaçta</p>
+              <select class="answer-select" data-correct="kalkıyor">
+                <option value="">--Выберите ответ--</option>
+                <option selected="selected" value="yaşıyor">yaşıyor</option>
+                <option value="çalışıyor">çalışıyor</option>
+                <option value="kalkıyor">kalkıyor</option>
+                <option value="yapıyor">yapıyor</option>
+                <option value="Arkadaşları ile buluşuyor">
+                  Arkadaşları ile buluşuyor
+                </option>
+                <option value="spor yapıyor mu">spor yapıyor mu</option>
+                <option value="geç yatmıyor">geç yatmıyor</option>
+                <option value="konsere gidiyor mu">konsere gidiyor mu</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <li class="inline">- Saat 7.30’da.</li>
+
+          <li>
+            <div class="write-container">
+              <p>- Arzu sabahları neler</p>
+              <select class="answer-select" data-correct="yapıyor">
+                <option value="">--Выберите ответ--</option>
+                <option selected="selected" value="yaşıyor">yaşıyor</option>
+                <option value="çalışıyor">çalışıyor</option>
+                <option value="kalkıyor">kalkıyor</option>
+                <option value="yapıyor">yapıyor</option>
+                <option value="Arkadaşları ile buluşuyor">
+                  Arkadaşları ile buluşuyor
+                </option>
+                <option value="spor yapıyor mu">spor yapıyor mu</option>
+                <option value="geç yatmıyor">geç yatmıyor</option>
+                <option value="konsere gidiyor mu">konsere gidiyor mu</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <li class="inline">- 07.00’da kalkıyor, işe gidiyor.</li>
+
+          <li class="inline">- Semih boş zamanlarında neler yapıyor ?</li>
+
+          <li>
+            <div class="write-container">
+              <p>-</p>
+              <select
+                class="answer-select"
+                data-correct="Arkadaşları ile buluşuyor"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option selected="selected" value="yaşıyor">yaşıyor</option>
+                <option value="çalışıyor">çalışıyor</option>
+                <option value="kalkıyor">kalkıyor</option>
+                <option value="yapıyor">yapıyor</option>
+                <option value="Arkadaşları ile buluşuyor">
+                  Arkadaşları ile buluşuyor
+                </option>
+                <option value="spor yapıyor mu">spor yapıyor mu</option>
+                <option value="geç yatmıyor">geç yatmıyor</option>
+                <option value="konsere gidiyor mu">konsere gidiyor mu</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>- Arzu hafta sonu</p>
+              <select class="answer-select" data-correct="spor yapıyor mu">
+                <option value="">--Выберите ответ--</option>
+                <option selected="selected" value="yaşıyor">yaşıyor</option>
+                <option value="çalışıyor">çalışıyor</option>
+                <option value="kalkıyor">kalkıyor</option>
+                <option value="yapıyor">yapıyor</option>
+                <option value="Arkadaşları ile buluşuyor">
+                  Arkadaşları ile buluşuyor
+                </option>
+                <option value="spor yapıyor mu">spor yapıyor mu</option>
+                <option value="geç yatmıyor">geç yatmıyor</option>
+                <option value="konsere gidiyor mu">konsere gidiyor mu</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <li class="inline">- Evet, o spor yapıyor.</li>
+
+          <li class="inline">- Arzu akşamları geç yatıyor mu?</li>
+
+          <li>
+            <div class="write-container">
+              <p>- Hayır, o</p>
+              <select class="answer-select" data-correct="geç yatmıyor">
+                <option value="">--Выберите ответ--</option>
+                <option selected="selected" value="yaşıyor">yaşıyor</option>
+                <option value="çalışıyor">çalışıyor</option>
+                <option value="kalkıyor">kalkıyor</option>
+                <option value="yapıyor">yapıyor</option>
+                <option value="Arkadaşları ile buluşuyor">
+                  Arkadaşları ile buluşuyor
+                </option>
+                <option value="spor yapıyor mu">spor yapıyor mu</option>
+                <option value="geç yatmıyor">geç yatmıyor</option>
+                <option value="konsere gidiyor mu">konsere gidiyor mu</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>- Semih hafta sonu</p>
+              <select class="answer-select" data-correct="konsere gidiyor mu">
+                <option value="">--Выберите ответ--</option>
+                <option selected="selected" value="yaşıyor">yaşıyor</option>
+                <option value="çalışıyor">çalışıyor</option>
+                <option value="kalkıyor">kalkıyor</option>
+                <option value="yapıyor">yapıyor</option>
+                <option value="Arkadaşları ile buluşuyor">
+                  Arkadaşları ile buluşuyor
+                </option>
+                <option value="spor yapıyor mu">spor yapıyor mu</option>
+                <option value="geç yatmıyor">geç yatmıyor</option>
+                <option value="konsere gidiyor mu">konsere gidiyor mu</option>
+              </select>
+            </div>
+          </li>
+
+          <li class="inline">- Evet, o hafta sonu konsere gidiyor.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 5 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 5. Давайте составим вопросы из слов в настоящем времени. (Писать
+        с большой буквы)
+      </div>
+      <div class="task-content write hidden">
+        <form id="text-form-15">
+          <ul>
+            <li class="inline">
+              <label for="word232">Arzu Ankara’da (yaşamak) </label>
+              <input type="text" id="word232" name="word232" />
+              <input type="text" id="word233" name="word233" />
+            </li>
+
+            <li class="inline">
+              <label for="word234">Semih saat kaçta (kalkmak) </label>
+              <input type="text" id="word234" name="word234" />
+            </li>
+
+            <li class="inline">
+              <label for="word235">Semih bankada (çalışmak)</label>
+              <input type="text" id="word235" name="word235" />
+              <input type="text" id="word236" name="word236" />
+            </li>
+
+            <li class="inline">
+              <label for="word237">Arzu akşamları neler (yapmak)</label>
+              <input type="text" id="word237" name="word237" />
+            </li>
+
+            <li class="inline">
+              <label for="word238">Arzu hafta sonu spor (yapmak) </label>
+              <input type="text" id="word238" name="word238" />
+              <input type="text" id="word239" name="word239" />
+            </li>
+
+            <li class="inline">
+              <label for="word240"
+                >Semih boş zamanlarında arkadaşları ile (buluşmak)
+              </label>
+              <input type="text" id="word240" name="word240" />
+              <input type="text" id="word241" name="word241" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="../test2/test2.html"> <button>Назад</button></a>
+
+      <a href="./ders7-2.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <script src="../slider-foto.js"></script>
+    <script src="../more-materials.js"></script>
+  </body>
+</html>
