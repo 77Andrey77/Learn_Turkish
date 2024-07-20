@@ -70,7 +70,7 @@
         <div class="word">Да</div>
         <div class="translation hidden">evet</div>
         <div class="image hidden">
-          <img class="item-img" src="./foto/" alt="doğru" />
+          <img class="item-img" src="./foto/daima.jpg" alt="öğrenmek" />
         </div>
       </div>
       <div class="controls">
@@ -112,32 +112,93 @@
 
     <!-- //////////////Дополнительный материал/////////// -->
 
-    <section class="task-section">
+    <!-- <section class="task-section">
       <div class="task-header">Дополнительный материал</div>
       <ul class="task-content task-more-material hidden">
         <li>
-          <button id="task-header-law1">Словообрательные аффиксы</button>
-          <div class="task-law hidden" id="task-content-law1-img">
-            <img src="./foto/ders6-moreinfo1.jpg" alt="МЕСТНЫЙ ПАДЕЖ" />
-          </div>
-        </li>
-
-        <li class="hidden">
-          <button id="task-header-alfabet">КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ</button>
+          <button id="task-header-alfabet">ИНФИНИТИВ</button>
           <div class="slider hidden" id="task-content-alfabet">
-            <div class="slides">
+            <div class="slides" id="alfabet-slides">
               <div class="slide">
-                <img src="" alt="КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ" />
+                <img
+                  src="./foto/ders7-moreinfo1-1.JPG"
+                  alt="КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ"
+                />
               </div>
               <div class="slide">
-                <img src="" alt="КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ" />
-              </div>
-              <div class="slide">
-                <img src="" alt="КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ" />
+                <img
+                  src="./foto/ders7-moreinfo1-2.JPG"
+                  alt="КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ"
+                />
               </div>
             </div>
             <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
             <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+
+        <li>
+          <button id="task-header-moreinfo-slider-2">НАСТОЯЩЕЕ ВРЕМЯ</button>
+          <div class="slider hidden" id="task-content-moreinfo-slider-2">
+            <div class="slides" id="moreinfo-slider-2-slides">
+              <div class="slide">
+                <img src="./foto/ders7-moreinfo2-1.JPG" alt="НАСТОЯЩЕЕ ВРЕМЯ" />
+              </div>
+
+              <div class="slide">
+                <img src="./foto/ders7-moreinfo2-2.JPG" alt="НАСТОЯЩЕЕ ВРЕМЯ" />
+              </div>
+
+              <div class="slide">
+                <img src="./foto/ders7-moreinfo2-3.JPG" alt="НАСТОЯЩЕЕ ВРЕМЯ" />
+              </div>
+
+              <div class="slide">
+                <img src="./foto/ders7-moreinfo2-4.JPG" alt="НАСТОЯЩЕЕ ВРЕМЯ" />
+              </div>
+
+              <div class="slide">
+                <img src="./foto/ders7-moreinfo2-5.JPG" alt="НАСТОЯЩЕЕ ВРЕМЯ" />
+              </div>
+
+              <div class="slide">
+                <img src="./foto/ders7-moreinfo2-6.JPG" alt="НАСТОЯЩЕЕ ВРЕМЯ" />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+
+        <li>
+          <button id="task-header-moreinfo-slider-3">
+            НАСТОЯЩЕЕ ВРЕМЯ. ОТРИЦАТЕЛЬЯНА ФОРМА
+          </button>
+          <div class="slider hidden" id="task-content-moreinfo-slider-3">
+            <div class="slides" id="task-content-moreinfo-slider-3-slides">
+              <div class="slide">
+                <img
+                  src="./foto/ders7-moreinfo3-1.JPG"
+                  alt="НАСТОЯЩЕЕ ВРЕМЯ. ОТРИЦАТЕЛЬЯНА ФОРМА"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders7-moreinfo3-2.JPG"
+                  alt="НАСТОЯЩЕЕ ВРЕМЯ. ОТРИЦАТЕЛЬЯНА ФОРМА"
+                />
+              </div>
+            </div>
+
+            <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law1">Словообрательные аффиксы</button>
+          <div class="task-law hidden" id="task-content-law1-img">
+            <img src="" alt="МЕСТНЫЙ ПАДЕЖ" />
           </div>
         </li>
 
@@ -148,336 +209,104 @@
           </div>
         </li>
 
-        <li class="hidden">
-          <button id="task-header-law3">заглушка</button>
+        <li>
+          <button id="task-header-law3">
+            НАСТОЯЩЕЕ ВРЕМЯ. ВОПРОСИТЕЛЬНАЯ ФОРМА
+          </button>
           <div class="task-law hidden" id="task-content-law3-img">
-            <img src="" alt="img-law" />
+            <img src="./foto/ders7-moreinfo4-1.JPG" alt="img-law" />
+          </div>
+        </li>
+      </ul>
+    </section> -->
+
+    <section class="task-section">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
+        <li>
+          <button id="infinitive-header">ИНФИНИТИВ</button>
+          <div class="slider hidden" id="infinitive-content">
+            <div class="slides" id="infinitive-slides">
+              <div class="slide">
+                <img
+                  src="./foto/ders7-moreinfo1-1.JPG"
+                  alt="КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders7-moreinfo1-2.JPG"
+                  alt="КОЛИЧЕСТВЕННЫЕ ЧИСЛИТЕЛЬНЫЕ"
+                />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1, 'infinitive-slides')">
+              &#10094;
+            </button>
+            <button class="next" onclick="moveSlides(1, 'infinitive-slides')">
+              &#10095;
+            </button>
+          </div>
+        </li>
+
+        <li>
+          <button id="present-header">НАСТОЯЩЕЕ ВРЕМЯ</button>
+          <div class="slider hidden" id="present-content">
+            <div class="slides" id="present-slides">
+              <div class="slide">
+                <img src="./foto/ders7-moreinfo2-1.JPG" alt="НАСТОЯЩЕЕ ВРЕМЯ" />
+              </div>
+              <div class="slide">
+                <img src="./foto/ders7-moreinfo2-2.JPG" alt="НАСТОЯЩЕЕ ВРЕМЯ" />
+              </div>
+              <div class="slide">
+                <img src="./foto/ders7-moreinfo2-3.JPG" alt="НАСТОЯЩЕЕ ВРЕМЯ" />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1, 'present-slides')">
+              &#10094;
+            </button>
+            <button class="next" onclick="moveSlides(1, 'present-slides')">
+              &#10095;
+            </button>
+          </div>
+        </li>
+
+        <li>
+          <button id="negative-present-header">
+            НАСТОЯЩЕЕ ВРЕМЯ. ОТРИЦАТЕЛЬНАЯ ФОРМА
+          </button>
+          <div class="slider hidden" id="negative-present-content">
+            <div class="slides" id="negative-present-slides">
+              <div class="slide">
+                <img
+                  src="./foto/ders7-moreinfo3-1.JPG"
+                  alt="НАСТОЯЩЕЕ ВРЕМЯ. ОТРИЦАТЕЛЬНАЯ ФОРМА"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders7-moreinfo3-2.JPG"
+                  alt="НАСТОЯЩЕЕ ВРЕМЯ. ОТРИЦАТЕЛЬНАЯ ФОРМА"
+                />
+              </div>
+            </div>
+            <button
+              class="prev"
+              onclick="moveSlides(-1, 'negative-present-slides')"
+            >
+              &#10094;
+            </button>
+            <button
+              class="next"
+              onclick="moveSlides(1, 'negative-present-slides')"
+            >
+              &#10095;
+            </button>
           </div>
         </li>
       </ul>
     </section>
-
-    <!-- //////////////Задание 1 c foto/////////// -->
-
-    <!-- <section class="task-section">
-      <div class="task-header">Задание 1. Образуйте следующие фразы</div>
-      <div class="task-content hidden">
-        <div class="image-container">
-          <img src="./foto/ders6-task1-1.jpg" alt="Eczane" />
-          <select class="answer-select" data-correct="Eczane">
-            <option value="">--Выберите ответ--</option>
-            <option value="Pastane">Pastane</option>
-            <option value="Banka">Banka</option>
-            <option value="Fırın">Fırın</option>
-            <option value="Manav">Manav</option>
-            <option value="Kuyumcu">Kuyumcu</option>
-            <option value="Mağaza">Mağaza</option>
-            <option value="Postane">Postane</option>
-            <option value="Market">Market</option>
-            <option value="Kuaför">Kuaför</option>
-            <option value="Eczane">Eczane</option>
-            <option value="Otel">Otel</option>
-            <option value="Kasap">Kasap</option>
-          </select>
-        </div>
-
-        <div class="image-container">
-          <img src="./foto/ders6-task1-2.jpg" alt="Fırın" />
-          <select class="answer-select" data-correct="Fırın">
-            <option value="">--Выберите ответ--</option>
-            <option value="Pastane">Pastane</option>
-            <option value="Banka">Banka</option>
-            <option value="Fırın">Fırın</option>
-            <option value="Manav">Manav</option>
-            <option value="Kuyumcu">Kuyumcu</option>
-            <option value="Mağaza">Mağaza</option>
-            <option value="Postane">Postane</option>
-            <option value="Market">Market</option>
-            <option value="Kuaför">Kuaför</option>
-            <option value="Eczane">Eczane</option>
-            <option value="Otel">Otel</option>
-            <option value="Kasap">Kasap</option>
-          </select>
-        </div>
-
-        <div class="image-container">
-          <img src="./foto/ders6-task1-3.jpg" alt="Market" />
-          <select class="answer-select" data-correct="Market">
-            <option value="">--Выберите ответ--</option>
-            <option value="Pastane">Pastane</option>
-            <option value="Banka">Banka</option>
-            <option value="Fırın">Fırın</option>
-            <option value="Manav">Manav</option>
-            <option value="Kuyumcu">Kuyumcu</option>
-            <option value="Mağaza">Mağaza</option>
-            <option value="Postane">Postane</option>
-            <option value="Market">Market</option>
-            <option value="Kuaför">Kuaför</option>
-            <option value="Eczane">Eczane</option>
-            <option value="Otel">Otel</option>
-            <option value="Kasap">Kasap</option>
-          </select>
-        </div>
-
-        <div class="image-container">
-          <img src="./foto/ders6-task1-4.jpg" alt="Kasap" />
-          <select class="answer-select" data-correct="Kasap">
-            <option value="">--Выберите ответ--</option>
-            <option value="Pastane">Pastane</option>
-            <option value="Banka">Banka</option>
-            <option value="Fırın">Fırın</option>
-            <option value="Manav">Manav</option>
-            <option value="Kuyumcu">Kuyumcu</option>
-            <option value="Mağaza">Mağaza</option>
-            <option value="Postane">Postane</option>
-            <option value="Market">Market</option>
-            <option value="Kuaför">Kuaför</option>
-            <option value="Eczane">Eczane</option>
-            <option value="Otel">Otel</option>
-            <option value="Kasap">Kasap</option>
-          </select>
-        </div>
-
-        <div class="image-container">
-          <img src="./foto/ders6-task1-5.jpg" alt="Manav" />
-          <select class="answer-select" data-correct="Manav">
-            <option value="">--Выберите ответ--</option>
-            <option value="Pastane">Pastane</option>
-            <option value="Banka">Banka</option>
-            <option value="Fırın">Fırın</option>
-            <option value="Manav">Manav</option>
-            <option value="Kuyumcu">Kuyumcu</option>
-            <option value="Mağaza">Mağaza</option>
-            <option value="Postane">Postane</option>
-            <option value="Market">Market</option>
-            <option value="Kuaför">Kuaför</option>
-            <option value="Eczane">Eczane</option>
-            <option value="Otel">Otel</option>
-            <option value="Kasap">Kasap</option>
-          </select>
-        </div>
-
-        <div class="image-container">
-          <img src="./foto/ders6-task1-6.jpg" alt="Mağaza" />
-          <select class="answer-select" data-correct="Mağaza">
-            <option value="">--Выберите ответ--</option>
-            <option value="Pastane">Pastane</option>
-            <option value="Banka">Banka</option>
-            <option value="Fırın">Fırın</option>
-            <option value="Manav">Manav</option>
-            <option value="Kuyumcu">Kuyumcu</option>
-            <option value="Mağaza">Mağaza</option>
-            <option value="Postane">Postane</option>
-            <option value="Market">Market</option>
-            <option value="Kuaför">Kuaför</option>
-            <option value="Eczane">Eczane</option>
-            <option value="Otel">Otel</option>
-            <option value="Kasap">Kasap</option>
-          </select>
-        </div>
-
-        <div class="image-container">
-          <img src="./foto/ders6-task1-7.jpg" alt="Kuaför" />
-          <select class="answer-select" data-correct="Kuaför">
-            <option value="">--Выберите ответ--</option>
-            <option value="Pastane">Pastane</option>
-            <option value="Banka">Banka</option>
-            <option value="Fırın">Fırın</option>
-            <option value="Manav">Manav</option>
-            <option value="Kuyumcu">Kuyumcu</option>
-            <option value="Mağaza">Mağaza</option>
-            <option value="Postane">Postane</option>
-            <option value="Market">Market</option>
-            <option value="Kuaför">Kuaför</option>
-            <option value="Eczane">Eczane</option>
-            <option value="Otel">Otel</option>
-            <option value="Kasap">Kasap</option>
-          </select>
-        </div>
-
-        <div class="image-container">
-          <img src="./foto/ders6-task1-8.jpg" alt="Pastane" />
-          <select class="answer-select" data-correct="Pastane">
-            <option value="">--Выберите ответ--</option>
-            <option value="Pastane">Pastane</option>
-            <option value="Banka">Banka</option>
-            <option value="Fırın">Fırın</option>
-            <option value="Manav">Manav</option>
-            <option value="Kuyumcu">Kuyumcu</option>
-            <option value="Mağaza">Mağaza</option>
-            <option value="Postane">Postane</option>
-            <option value="Market">Market</option>
-            <option value="Kuaför">Kuaför</option>
-            <option value="Eczane">Eczane</option>
-            <option value="Otel">Otel</option>
-            <option value="Kasap">Kasap</option>
-          </select>
-        </div>
-
-        <div class="image-container">
-          <img src="./foto/ders6-task1-9.jpg" alt="Otel" />
-          <select class="answer-select" data-correct="Otel">
-            <option value="">--Выберите ответ--</option>
-            <option value="Pastane">Pastane</option>
-            <option value="Banka">Banka</option>
-            <option value="Fırın">Fırın</option>
-            <option value="Manav">Manav</option>
-            <option value="Kuyumcu">Kuyumcu</option>
-            <option value="Mağaza">Mağaza</option>
-            <option value="Postane">Postane</option>
-            <option value="Market">Market</option>
-            <option value="Kuaför">Kuaför</option>
-            <option value="Eczane">Eczane</option>
-            <option value="Otel">Otel</option>
-            <option value="Kasap">Kasap</option>
-          </select>
-        </div>
-
-        <div class="image-container">
-          <img src="./foto/ders6-task1-10.jpg" alt="Kuyumcu" />
-          <select class="answer-select" data-correct="Kuyumcu">
-            <option value="">--Выберите ответ--</option>
-            <option value="Pastane">Pastane</option>
-            <option value="Banka">Banka</option>
-            <option value="Fırın">Fırın</option>
-            <option value="Manav">Manav</option>
-            <option value="Kuyumcu">Kuyumcu</option>
-            <option value="Mağaza">Mağaza</option>
-            <option value="Postane">Postane</option>
-            <option value="Market">Market</option>
-            <option value="Kuaför">Kuaför</option>
-            <option value="Eczane">Eczane</option>
-            <option value="Otel">Otel</option>
-            <option value="Kasap">Kasap</option>
-          </select>
-        </div>
-
-        <div class="image-container">
-          <img src="./foto/ders6-task1-11.jpg" alt="Postane" />
-          <select class="answer-select" data-correct="Postane">
-            <option value="">--Выберите ответ--</option>
-            <option value="Pastane">Pastane</option>
-            <option value="Banka">Banka</option>
-            <option value="Fırın">Fırın</option>
-            <option value="Manav">Manav</option>
-            <option value="Kuyumcu">Kuyumcu</option>
-            <option value="Mağaza">Mağaza</option>
-            <option value="Postane">Postane</option>
-            <option value="Market">Market</option>
-            <option value="Kuaför">Kuaför</option>
-            <option value="Eczane">Eczane</option>
-            <option value="Otel">Otel</option>
-            <option value="Kasap">Kasap</option>
-          </select>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- /////////////Задание 2 с картинк//////////// -->
-    <!-- <section class="task-section">
-      <div class="task-header">
-        Задание 2. Давайте сопоставим прилагательные ниже с картинками
-      </div>
-      <div class="task-content hidden">
-        <div class="image-container">
-          <img src="./foto/ders6-task2-1.jpg" alt="zengin x fakir" />
-          <select class="answer-select" data-correct="zengin x fakir">
-            <option value="">--Выберите ответ--</option>
-            <option value="sıcak x soğuk">sıcak x soğuk</option>
-            <option value="zengin x fakir">zengin x fakir</option>
-            <option value="iyi x kötü">iyi x kötü</option>
-            <option value="güzel x çirkin">güzel x çirkin</option>
-            <option value="büyük x küçük">büyük x küçük</option>
-            <option value="sakin x sinirli">sakin x sinirli</option>
-            <option value="yeni x eski">yeni x eski</option>
-          </select>
-        </div>
-
-        <div class="image-container">
-          <img src="./foto/ders6-task2-2.jpg" alt="iyi x kötü" />
-          <select class="answer-select" data-correct="iyi x kötü">
-            <option value="">--Выберите ответ--</option>
-            <option value="sıcak x soğuk">sıcak x soğuk</option>
-            <option value="zengin x fakir">zengin x fakir</option>
-            <option value="iyi x kötü">iyi x kötü</option>
-            <option value="güzel x çirkin">güzel x çirkin</option>
-            <option value="büyük x küçük">büyük x küçük</option>
-            <option value="sakin x sinirli">sakin x sinirli</option>
-            <option value="yeni x eski">yeni x eski</option>
-          </select>
-        </div>
-
-        <div class="image-container">
-          <img src="./foto/ders6-task2-3.png" alt="sıcak x soğuk" />
-          <select class="answer-select" data-correct="sıcak x soğuk">
-            <option value="">--Выберите ответ--</option>
-            <option value="sıcak x soğuk">sıcak x soğuk</option>
-            <option value="zengin x fakir">zengin x fakir</option>
-            <option value="iyi x kötü">iyi x kötü</option>
-            <option value="güzel x çirkin">güzel x çirkin</option>
-            <option value="büyük x küçük">büyük x küçük</option>
-            <option value="sakin x sinirli">sakin x sinirli</option>
-            <option value="yeni x eski">yeni x eski</option>
-          </select>
-        </div>
-
-        <div class="image-container">
-          <img src="./foto/ders6-task2-4.png" alt="büyük x küçük" />
-          <select class="answer-select" data-correct="büyük x küçük">
-            <option value="">--Выберите ответ--</option>
-            <option value="sıcak x soğuk">sıcak x soğuk</option>
-            <option value="zengin x fakir">zengin x fakir</option>
-            <option value="iyi x kötü">iyi x kötü</option>
-            <option value="güzel x çirkin">güzel x çirkin</option>
-            <option value="büyük x küçük">büyük x küçük</option>
-            <option value="sakin x sinirli">sakin x sinirli</option>
-            <option value="yeni x eski">yeni x eski</option>
-          </select>
-        </div>
-
-        <div class="image-container">
-          <img src="./foto/ders6-task2-5.jpg" alt="sakin x sinirli" />
-          <select class="answer-select" data-correct="sakin x sinirli">
-            <option value="">--Выберите ответ--</option>
-            <option value="sıcak x soğuk">sıcak x soğuk</option>
-            <option value="zengin x fakir">zengin x fakir</option>
-            <option value="iyi x kötü">iyi x kötü</option>
-            <option value="güzel x çirkin">güzel x çirkin</option>
-            <option value="büyük x küçük">büyük x küçük</option>
-            <option value="sakin x sinirli">sakin x sinirli</option>
-            <option value="yeni x eski">yeni x eski</option>
-          </select>
-        </div>
-
-        <div class="image-container">
-          <img src="./foto/ders6-task2-6.jpg" alt="güzel x çirkin" />
-          <select class="answer-select" data-correct="güzel x çirkin">
-            <option value="">--Выберите ответ--</option>
-            <option value="sıcak x soğuk">sıcak x soğuk</option>
-            <option value="zengin x fakir">zengin x fakir</option>
-            <option value="iyi x kötü">iyi x kötü</option>
-            <option value="güzel x çirkin">güzel x çirkin</option>
-            <option value="büyük x küçük">büyük x küçük</option>
-            <option value="sakin x sinirli">sakin x sinirli</option>
-            <option value="yeni x eski">yeni x eski</option>
-          </select>
-        </div>
-
-        <div class="image-container">
-          <img src="./foto/ders6-task2-7.jpg" alt="yeni x eski" />
-          <select class="answer-select" data-correct="yeni x eski">
-            <option value="">--Выберите ответ--</option>
-            <option value="sıcak x soğuk">sıcak x soğuk</option>
-            <option value="zengin x fakir">zengin x fakir</option>
-            <option value="iyi x kötü">iyi x kötü</option>
-            <option value="güzel x çirkin">güzel x çirkin</option>
-            <option value="büyük x küçük">büyük x küçük</option>
-            <option value="sakin x sinirli">sakin x sinirli</option>
-            <option value="yeni x eski">yeni x eski</option>
-          </select>
-        </div>
-      </div>
-    </section> -->
 
     <!-- /////////////Задание 1 без картинками//////////// -->
 
@@ -1033,7 +862,8 @@
     <script src="../writeText.js"></script>
     <script src="../words.js"></script>
     <script src="../scriptDers.js"></script>
-    <script src="../slider-foto.js"></script>
-    <script src="../more-materials.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <script src="../many-foto-slider.js"></script>
+    <!-- <script src="../more-materials.js"></script> -->
   </body>
 </html>

@@ -143,6 +143,15 @@ width:1000px;
 .hidden {
   display: none;
 }
+.slide {
+  display: none;
+  /* По умолчанию скрыто */
+}
+
+.slide:first-child {
+  display: flex;
+  /* Показывать первый слайд по умолчанию */
+}
 
 .image-container {
     display: flex;

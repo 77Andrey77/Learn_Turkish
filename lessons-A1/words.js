@@ -1264,6 +1264,282 @@ const wordsSets = {
         image: "./foto/uzak.jpg"
         }, 
     
+    ],
+    set8: [
+        {
+            word: "öğrenmek",
+            translation: "изучать",
+            image: "./foto/öğrenmek.jpg"
+        },
+
+     {
+            word: "okumak",
+            translation: "читать, учиться",
+            image: "./foto/okumak.jpg"
+        },
+      {
+            word: "yemek yemek",
+            translation: "кушать",
+            image: "./foto/yemek yemek.jpg"
+        },
+       {
+            word: "gitmek",
+            translation: "уходить, идти",
+            image: "./foto/gitmek.jpg"
+        },
+        {
+            word: "gelmek",
+            translation: "приходить, идти",
+            image: "./foto/gelmek.webp"
+        },
+         {
+            word: "dinlemek",
+            translation: "слушать",
+            image: "./foto/dinlemek.jpg"
+        },
+          {
+            word: "yapmak",
+            translation: "делать",
+            image: "./foto/yapmak.jpg"
+        },
+           {
+            word: "izlemek",
+            translation: "смотреть",
+            image: "./foto/izlemek.jpg"
+        },
+            {
+            word: "oynamak",
+            translation: "играть",
+            image: "./foto/oynamak.jpg"
+        },
+             {
+            word: "pişirmek",
+            translation: "готовить",
+            image: "./foto/pişirmek.jpg"
+        },
+              {
+            word: "almak",
+            translation: "брать, получать",
+            image: "./foto/almak.jpg"
+        },
+               {
+            word: "kullanmak",
+            translation: "использовать",
+            image: "./foto/kullanmak.webp"
+        },
+                {
+            word: "konuşmak",
+            translation: "разговаривать",
+            image: "./foto/konuşmak.jpg"
+        },
+                 {
+            word: "yaşamak",
+            translation: "жить",
+            image: "./foto/yaşamak.jpg"
+        },
+                  {
+            word: "kalkmak",
+            translation: "вставать",
+            image: "./foto/kalkmak.jpg"
+        },
+                   {
+            word: "geç",
+            translation: "поздно",
+            image: "./foto/geç.jpg"
+        },
+                    {
+            word: "yatmak",
+            translation: "лежать",
+            image: "./foto/yatmak.jpg"
+        },
+                     {
+            word: "konser",
+            translation: "концерт",
+            image: "./foto/konser.jpg"
+        },
+                      {
+            word: "boş zamanlarında",
+            translation: "в свободное время",
+            image: "./foto/boş zamanlarında.jpg"
+        },
+                       {
+            word: "hafta sonu",
+            translation: "выходные",
+            image: "./foto/hafta sonu.jpg"
+        },
+                        {
+            word: "işe",
+            translation: "на работу",
+            image: "./foto/işe.jpg"
+        },
+                         {
+            word: "hazır",
+            translation: "готов",
+            image: "./foto/hazır.jpg"
+        },
+                          {
+            word: "çabuk",
+            translation: "быстро",
+            image: "./foto/çabuk.jpg"
+        },
+                          
+         {
+            word: "yakışmak",
+            translation: "подходить (тебе это идет)",
+            image: "./foto/yakışmak.jpg"
+        },
+        {
+            word: "oturmak",
+            translation: "сидеть",
+            image: "./foto/oturmak.jpg"
+        },
+          {
+            word: "çalmak",
+            translation: "играть на муз.инструменте",
+            image: "./foto/çalmak.gif"
+        },
+           {
+            word: "taşınmak",
+            translation: "переезжать",
+            image: "./foto/taşınmak.jpg"
+        },
+            {
+            word: "beklemek",
+            translation: "ждать",
+            image: "./foto/beklemek.jpg"
+        },
+             {
+            word: "soru",
+            translation: "вопрос",
+            image: "./foto/soru.jpg"
+        },
+              {
+            word: "soru sormak",
+            translation: "задавать вопрос",
+            image: "./foto/soru sormak.jpg"
+        },
+              
+         {
+            word: "her",
+            translation: "каждый",
+            image: "../not-image.png"
+        }, {
+            word: "her akşam",
+            translation: "каждый вечер",
+            image: "../not-image.png"
+        },
+        
+          {
+            word: "dua etmek",
+            translation: "молиться",
+            image: "./foto/dua etmek.jpg"
+        },
+           {
+            word: "başlamak",
+            translation: "начинать",
+            image: "./foto/başlamak.jpg"
+        },
+            {
+            word: "gecikmek",
+            translation: "опаздывать",
+            image: "./foto/gecikmek.jpg"
+        },
+             {
+            word: "cömert",
+            translation: "щедрый",
+            image: "./foto/cömert.jpg"
+        },
+              {
+            word: "ısmarlamak",
+            translation: "угощать, заказывать",
+            image: "./foto/ısmarlamak.jpg"
+        },
+               {
+            word: "pişmek",
+            translation: "готовиться (о еде)",
+            image: "./foto/pişmek.jpg"
+        },
+                {
+            word: "yürümek",
+            translation: "ходить",
+            image: "./foto/yürümek.webp"
+        },
+                 {
+            word: "güneşlenmek",
+            translation: "загорать",
+            image: "./foto/güneşlenmek.jpg"
+        },
+                  {
+            word: "daima",
+            translation: "всегда",
+            image: "./foto/daima.jpg"
+        },
+                   {
+            word: "aile",
+            translation: "семья",
+            image: "./foto/aile.jpg"
+        },
+                    {
+            word: "defa",
+            translation: "раз",
+            image: "./foto/defa.jpg"
+        },
+                     {
+            word: "öpmek",
+            translation: "целовать",
+            image: "./foto/öpmek.jpg"
+        },
+                     
+         {
+            word: "kalın giyinmek",
+            translation: "одеваться тепло",
+            image: "../not-image.png"
+        },
+          {
+            word: "ince giyinmek",
+            translation: "одеваться легко",
+            image: "../not-image.png"
+        },
+           {
+            word: "kalın",
+            translation: "толстый (о предмете)",
+            image: "./foto/kalın.jpg"
+        },
+            {
+            word: "ince",
+            translation: "тонкий",
+            image: "./foto/ince.jpg"
+        },
+             {
+            word: "bol bol",
+            translation: "много",
+            image: "./foto/bol bol.jpg"
+        },
+              {
+            word: "meyve",
+            translation: "фрукт",
+            image: "./foto/meyve.jpg"
+        },
+               {
+            word: "sebze",
+            translation: "овощ",
+            image: "./foto/sebze.jpg"
+        },
+                {
+            word: "gelecek hafta",
+            translation: "на следующей неделе",
+            image: "./foto/gelecek hafta.webp"
+        },
+                 {
+            word: "tanımak",
+            translation: "узнавать",
+            image: "./foto/tanımak.jpg"
+        },
+                  {
+            word: "tatil",
+            translation: "каникулы, отпуск",
+            image: "./foto/tatil.jpg"
+        } 
     ]
 
 };
