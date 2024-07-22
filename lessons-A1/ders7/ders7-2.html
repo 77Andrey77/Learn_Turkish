@@ -1,0 +1,2301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_7</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 7 (BİR GÜNÜM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders7.html"><button>Настоящее время глагола</button></a>
+        </li>
+
+        <li>
+          <a href="./ders7-2.html"
+            ><button class="active">Спряжение глаголов по лицам</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders7-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders7-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders7-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Настоящее время глагола. Спряжения глаголов по лицам. На уроке вы
+      научитесь описывать свою повседневную жизнь и жизнь других людей. Вы
+      получите основы для приятного и, главное, непринужденного общения.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set8"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/öğrenmek.jpg" alt="öğrenmek" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+
+    <!-- /////////////Задание 6 без картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 6. Выберите подходящее личное местоимение
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="Ben">
+                <option value="">--Выберите ответ--</option>
+                <option value="Onlar">Onlar</option>
+                <option value="Biz">Biz</option>
+                <option value="Ben">Ben</option>
+                <option value="Sen">Sen</option>
+                <option value="O">O</option>
+                <option value="Siz">Siz</option>
+              </select>
+              <p>kitap okuyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="Sen">
+                <option value="">--Выберите ответ--</option>
+                <option value="Onlar">Onlar</option>
+                <option value="Biz">Biz</option>
+                <option value="Ben">Ben</option>
+                <option value="Sen">Sen</option>
+                <option value="O">O</option>
+                <option value="Siz">Siz</option>
+              </select>
+              <p>müzik dinliyorsun.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="Biz">
+                <option value="">--Выберите ответ--</option>
+                <option value="Onlar">Onlar</option>
+                <option value="Biz">Biz</option>
+                <option value="Ben">Ben</option>
+                <option value="Sen">Sen</option>
+                <option value="O">O</option>
+                <option value="Siz">Siz</option>
+              </select>
+              <p>ders çalışıyoruz.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="Sen">
+                <option value="">--Выберите ответ--</option>
+                <option value="Onlar">Onlar</option>
+                <option value="Biz">Biz</option>
+                <option value="Ben">Ben</option>
+                <option value="Sen">Sen</option>
+                <option value="O">O</option>
+                <option value="Siz">Siz</option>
+              </select>
+              <p>futbol oynuyorsun.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="Onlar">
+                <option value="">--Выберите ответ--</option>
+                <option value="Onlar">Onlar</option>
+                <option value="Biz">Biz</option>
+                <option value="Ben">Ben</option>
+                <option value="Sen">Sen</option>
+                <option value="O">O</option>
+                <option value="Siz">Siz</option>
+              </select>
+              <p>niçin ağlıyorlar?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="Ben">
+                <option value="">--Выберите ответ--</option>
+                <option value="Onlar">Onlar</option>
+                <option value="Biz">Biz</option>
+                <option value="Ben">Ben</option>
+                <option value="Sen">Sen</option>
+                <option value="O">O</option>
+                <option value="Siz">Siz</option>
+              </select>
+              <p>dinleniyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="Siz">
+                <option value="">--Выберите ответ--</option>
+                <option value="Onlar">Onlar</option>
+                <option value="Biz">Biz</option>
+                <option value="Ben">Ben</option>
+                <option value="Sen">Sen</option>
+                <option value="O">O</option>
+                <option value="Siz">Siz</option>
+              </select>
+              <p>mektup yazıyorsunuz.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="Onlar">
+                <option value="">--Выберите ответ--</option>
+                <option value="Onlar">Onlar</option>
+                <option value="Biz">Biz</option>
+                <option value="Ben">Ben</option>
+                <option value="Sen">Sen</option>
+                <option value="O">O</option>
+                <option value="Siz">Siz</option>
+              </select>
+              <p>çay içiyorlar.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="O">
+                <option value="">--Выберите ответ--</option>
+                <option value="Onlar">Onlar</option>
+                <option value="Biz">Biz</option>
+                <option value="Ben">Ben</option>
+                <option value="Sen">Sen</option>
+                <option value="O">O</option>
+                <option value="Siz">Siz</option>
+              </select>
+              <p>otobüs bekliyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="O">
+                <option value="">--Выберите ответ--</option>
+                <option value="Onlar">Onlar</option>
+                <option value="Biz">Biz</option>
+                <option value="Ben">Ben</option>
+                <option value="Sen">Sen</option>
+                <option value="O">O</option>
+                <option value="Siz">Siz</option>
+              </select>
+              <p>Türkçe öğreniyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="Siz">
+                <option value="">--Выберите ответ--</option>
+                <option value="Onlar">Onlar</option>
+                <option value="Biz">Biz</option>
+                <option value="Ben">Ben</option>
+                <option value="Sen">Sen</option>
+                <option value="O">O</option>
+                <option value="Siz">Siz</option>
+              </select>
+              <p>giyiniyorsunuz.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="Biz">
+                <option value="">--Выберите ответ--</option>
+                <option value="Onlar">Onlar</option>
+                <option value="Biz">Biz</option>
+                <option value="Ben">Ben</option>
+                <option value="Sen">Sen</option>
+                <option value="O">O</option>
+                <option value="Siz">Siz</option>
+              </select>
+              <p>hatırlıyoruz.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 7 без картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 7. Образуйте утвердительную форму настоящего времени
+      </div>
+      <div class="task-content hidden">
+        <ul style="display: flex; flex-wrap: wrap">
+          <li>
+            <div class="write-container">
+              <p>ben oku</p>
+              <select class="answer-select" data-correct="yorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorum">yorum</option>
+                <option value="ıyorum">ıyorum</option>
+                <option value="iyorum">iyorum</option>
+                <option value="uyorum">uyorum</option>
+                <option value="üyorum">üyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>ben yaz</p>
+              <select class="answer-select" data-correct="ıyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorum">yorum</option>
+                <option value="ıyorum">ıyorum</option>
+                <option value="iyorum">iyorum</option>
+                <option value="uyorum">uyorum</option>
+                <option value="üyorum">üyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>ben gel</p>
+              <select class="answer-select" data-correct="iyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorum">yorum</option>
+                <option value="ıyorum">ıyorum</option>
+                <option value="iyorum">iyorum</option>
+                <option value="uyorum">uyorum</option>
+                <option value="üyorum">üyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>ben gül</p>
+              <select class="answer-select" data-correct="üyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorum">yorum</option>
+                <option value="ıyorum">ıyorum</option>
+                <option value="iyorum">iyorum</option>
+                <option value="uyorum">uyorum</option>
+                <option value="üyorum">üyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>ben gid</p>
+              <select class="answer-select" data-correct="iyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorum">yorum</option>
+                <option value="ıyorum">ıyorum</option>
+                <option value="iyorum">iyorum</option>
+                <option value="uyorum">uyorum</option>
+                <option value="üyorum">üyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>ben otur</p>
+              <select class="answer-select" data-correct="uyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorum">yorum</option>
+                <option value="ıyorum">ıyorum</option>
+                <option value="iyorum">iyorum</option>
+                <option value="uyorum">uyorum</option>
+                <option value="üyorum">üyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>sen oku</p>
+              <select class="answer-select" data-correct="yorsun">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsun">yorsun</option>
+                <option value="ıyorsun">ıyorsun</option>
+                <option value="iyorsun">iyorsun</option>
+                <option value="uyorsun">uyorsun</option>
+                <option value="üyorsun">üyorsun</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>sen yaz</p>
+              <select class="answer-select" data-correct="ıyorsun">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsun">yorsun</option>
+                <option value="ıyorsun">ıyorsun</option>
+                <option value="iyorsun">iyorsun</option>
+                <option value="uyorsun">uyorsun</option>
+                <option value="üyorsun">üyorsun</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>sen gel</p>
+              <select class="answer-select" data-correct="iyorsun">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsun">yorsun</option>
+                <option value="ıyorsun">ıyorsun</option>
+                <option value="iyorsun">iyorsun</option>
+                <option value="uyorsun">uyorsun</option>
+                <option value="üyorsun">üyorsun</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>sen gül</p>
+              <select class="answer-select" data-correct="üyorsun">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsun">yorsun</option>
+                <option value="ıyorsun">ıyorsun</option>
+                <option value="iyorsun">iyorsun</option>
+                <option value="uyorsun">uyorsun</option>
+                <option value="üyorsun">üyorsun</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>sen gid</p>
+              <select class="answer-select" data-correct="iyorsun">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsun">yorsun</option>
+                <option value="ıyorsun">ıyorsun</option>
+                <option value="iyorsun">iyorsun</option>
+                <option value="uyorsun">uyorsun</option>
+                <option value="üyorsun">üyorsun</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>o oku</p>
+              <select class="answer-select" data-correct="yor">
+                <option value="">--Выберите ответ--</option>
+                <option value="yor">yor</option>
+                <option value="ıyor">ıyor</option>
+                <option value="iyor">iyor</option>
+                <option value="uyor">uyor</option>
+                <option value="üyor">üyor</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>o yaz</p>
+              <select class="answer-select" data-correct="ıyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="yor">yor</option>
+                <option value="ıyor">ıyor</option>
+                <option value="iyor">iyor</option>
+                <option value="uyor">uyor</option>
+                <option value="üyor">üyor</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>o gel</p>
+              <select class="answer-select" data-correct="iyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="yor">yor</option>
+                <option value="ıyor">ıyor</option>
+                <option value="iyor">iyor</option>
+                <option value="uyor">uyor</option>
+                <option value="üyor">üyor</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>o gül</p>
+              <select class="answer-select" data-correct="üyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="yor">yor</option>
+                <option value="ıyor">ıyor</option>
+                <option value="iyor">iyor</option>
+                <option value="uyor">uyor</option>
+                <option value="üyor">üyor</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>o gid</p>
+              <select class="answer-select" data-correct="iyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="yor">yor</option>
+                <option value="ıyor">ıyor</option>
+                <option value="iyor">iyor</option>
+                <option value="uyor">uyor</option>
+                <option value="üyor">üyor</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>o otur</p>
+              <select class="answer-select" data-correct="uyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="yor">yor</option>
+                <option value="ıyor">ıyor</option>
+                <option value="iyor">iyor</option>
+                <option value="uyor">uyor</option>
+                <option value="üyor">üyor</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>biz oku</p>
+              <select class="answer-select" data-correct="yoruz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yoruz">yoruz</option>
+                <option value="ıyoruz">ıyoruz</option>
+                <option value="iyoruz">iyoruz</option>
+                <option value="uyoruz">uyoruz</option>
+                <option value="üyoruz">üyoruz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>biz yaz</p>
+              <select class="answer-select" data-correct="ıyoruz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yoruz">yoruz</option>
+                <option value="ıyoruz">ıyoruz</option>
+                <option value="iyoruz">iyoruz</option>
+                <option value="uyoruz">uyoruz</option>
+                <option value="üyoruz">üyoruz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>biz gel</p>
+              <select class="answer-select" data-correct="iyoruz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yoruz">yoruz</option>
+                <option value="ıyoruz">ıyoruz</option>
+                <option value="iyoruz">iyoruz</option>
+                <option value="uyoruz">uyoruz</option>
+                <option value="üyoruz">üyoruz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>biz gül</p>
+              <select class="answer-select" data-correct="üyoruz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yoruz">yoruz</option>
+                <option value="ıyoruz">ıyoruz</option>
+                <option value="iyoruz">iyoruz</option>
+                <option value="uyoruz">uyoruz</option>
+                <option value="üyoruz">üyoruz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>biz gid</p>
+              <select class="answer-select" data-correct="iyoruz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yoruz">yoruz</option>
+                <option value="ıyoruz">ıyoruz</option>
+                <option value="iyoruz">iyoruz</option>
+                <option value="uyoruz">uyoruz</option>
+                <option value="üyoruz">üyoruz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>biz otur</p>
+              <select class="answer-select" data-correct="uyoruz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yoruz">yoruz</option>
+                <option value="ıyoruz">ıyoruz</option>
+                <option value="iyoruz">iyoruz</option>
+                <option value="uyoruz">uyoruz</option>
+                <option value="üyoruz">üyoruz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>siz oku</p>
+              <select class="answer-select" data-correct="yorsunuz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsunuz">yorsunuz</option>
+                <option value="ıyorsunuz">ıyorsunuz</option>
+                <option value="iyorsunuz">iyorsunuz</option>
+                <option value="uyorsunuz">uyorsunuz</option>
+                <option value="üyorsunuz">üyorsunuz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>siz yaz</p>
+              <select class="answer-select" data-correct="ıyorsunuz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsunuz">yorsunuz</option>
+                <option value="ıyorsunuz">ıyorsunuz</option>
+                <option value="iyorsunuz">iyorsunuz</option>
+                <option value="uyorsunuz">uyorsunuz</option>
+                <option value="üyorsunuz">üyorsunuz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>siz gel</p>
+              <select class="answer-select" data-correct="iyorsunuz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsunuz">yorsunuz</option>
+                <option value="ıyorsunuz">ıyorsunuz</option>
+                <option value="iyorsunuz">iyorsunuz</option>
+                <option value="uyorsunuz">uyorsunuz</option>
+                <option value="üyorsunuz">üyorsunuz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>siz gül</p>
+              <select class="answer-select" data-correct="üyorsunuz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsunuz">yorsunuz</option>
+                <option value="ıyorsunuz">ıyorsunuz</option>
+                <option value="iyorsunuz">iyorsunuz</option>
+                <option value="uyorsunuz">uyorsunuz</option>
+                <option value="üyorsunuz">üyorsunuz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>siz gid</p>
+              <select class="answer-select" data-correct="iyorsunuz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsunuz">yorsunuz</option>
+                <option value="ıyorsunuz">ıyorsunuz</option>
+                <option value="iyorsunuz">iyorsunuz</option>
+                <option value="uyorsunuz">uyorsunuz</option>
+                <option value="üyorsunuz">üyorsunuz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>siz otur</p>
+              <select class="answer-select" data-correct="uyorsunuz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsunuz">yorsunuz</option>
+                <option value="ıyorsunuz">ıyorsunuz</option>
+                <option value="iyorsunuz">iyorsunuz</option>
+                <option value="uyorsunuz">uyorsunuz</option>
+                <option value="üyorsunuz">üyorsunuz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>onlar oku</p>
+              <select class="answer-select" data-correct="yorlar">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorlar">yorlar</option>
+                <option value="ıyorlar">ıyorlar</option>
+                <option value="iyorlar">iyorlar</option>
+                <option value="uyorlar">uyorlar</option>
+                <option value="üyorlar">üyorlar</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>onlar yaz</p>
+              <select class="answer-select" data-correct="ıyorlar">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorlar">yorlar</option>
+                <option value="ıyorlar">ıyorlar</option>
+                <option value="iyorlar">iyorlar</option>
+                <option value="uyorlar">uyorlar</option>
+                <option value="üyorlar">üyorlar</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>onlar gel</p>
+              <select class="answer-select" data-correct="iyorlar">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorlar">yorlar</option>
+                <option value="ıyorlar">ıyorlar</option>
+                <option value="iyorlar">iyorlar</option>
+                <option value="uyorlar">uyorlar</option>
+                <option value="üyorlar">üyorlar</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>onlar gül</p>
+              <select class="answer-select" data-correct="üyorlar">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorlar">yorlar</option>
+                <option value="ıyorlar">ıyorlar</option>
+                <option value="iyorlar">iyorlar</option>
+                <option value="uyorlar">uyorlar</option>
+                <option value="üyorlar">üyorlar</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>onlar gid</p>
+              <select class="answer-select" data-correct="iyorlar">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorlar">yorlar</option>
+                <option value="ıyorlar">ıyorlar</option>
+                <option value="iyorlar">iyorlar</option>
+                <option value="uyorlar">uyorlar</option>
+                <option value="üyorlar">üyorlar</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>onlar otur</p>
+              <select class="answer-select" data-correct="uyorlar">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorlar">yorlar</option>
+                <option value="ıyorlar">ıyorlar</option>
+                <option value="iyorlar">iyorlar</option>
+                <option value="uyorlar">uyorlar</option>
+                <option value="üyorlar">üyorlar</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 8 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 8. Закончите предложение в настоящем времени. Обратите внимание
+        на личное окончание.(Писать с маленькой буквы)
+      </div>
+      <div class="task-content write hidden">
+        <form id="text-form-16">
+          <ul>
+            <li class="inline">
+              <label for="word242">Ben her gün spor yap</label>
+              <input type="text" id="word242" name="word242" />
+            </li>
+
+            <li class="inline">
+              <label for="word243">Biz her hafta sonu sinemaya gid</label>
+              <input type="text" id="word243" name="word243" />
+            </li>
+
+            <li class="inline">
+              <label for="word244">Onlar İstanbul’da yaş</label>
+              <input type="text" id="word244" name="word244" />
+            </li>
+
+            <li class="inline">
+              <label for="word245">Ben şimdi ders çalış</label>
+              <input type="text" id="word245" name="word245" />
+            </li>
+
+            <li class="inline">
+              <label for="word246">Onlar bugün evlen</label>
+              <input type="text" id="word246" name="word246" />
+            </li>
+
+            <li class="inline">
+              <label for="word247">Sen nerede çalış</label>
+              <input type="text" id="word247" name="word247" />
+            </li>
+
+            <li class="inline">
+              <label for="word248">Siz nereden gel</label>
+              <input type="text" id="word248" name="word248" />
+            </li>
+
+            <li class="inline">
+              <label for="word249">Siz nerede otur</label>
+              <input type="text" id="word249" name="word249" />
+            </li>
+
+            <li class="inline">
+              <label for="word250">Biz denizde yüz</label>
+              <input type="text" id="word250" name="word250" />
+            </li>
+
+            <li class="inline">
+              <label for="word251">Ben her sabah spor yap</label>
+              <input type="text" id="word251" name="word251" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 9 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 9. Напишите глагол в предложении в отрицательной форме, обратите
+        внимание, что отрицательная форма образуется от корня инфинитива.
+        (Писать с большой буквы)
+      </div>
+      <div class="task-content write hidden">
+        <form id="text-form-17">
+          <ul>
+            <li class="inline"><p>Öğrenciler okulda konuşuyorlar.</p></li>
+
+            <li class="inline">
+              <label for="word251">Öğrenciler okulda </label>
+              <input type="text" id="word251" name="word251" />
+            </li>
+
+            <li class="inline"><p>Ben İngilizce biliyorum.</p></li>
+
+            <li class="inline">
+              <label for="word252">Ben İngilizce </label>
+              <input type="text" id="word252" name="word252" />
+            </li>
+
+            <li class="inline"><p>Biz seni bahçede bekliyoruz</p></li>
+
+            <li class="inline">
+              <label for="word253">Biz seni bahçede</label>
+              <input type="text" id="word253" name="word253" />
+            </li>
+
+            <li class="inline"><p>Ben her hafta balık yiyorum.</p></li>
+
+            <li class="inline">
+              <label for="word254">Ben her hafta balık </label>
+              <input type="text" id="word254" name="word254" />
+            </li>
+
+            <li class="inline"><p>Çocuk odada uyuyor.</p></li>
+
+            <li class="inline">
+              <label for="word255">Çocuk odada </label>
+              <input type="text" id="word255" name="word255" />
+            </li>
+
+            <li class="inline"><p>Öğrenciler her akşam kitap okuyorlar.</p></li>
+
+            <li class="inline">
+              <label for="word256">Öğrenciler her akşam kitap</label>
+              <input type="text" id="word256" name="word256" />
+            </li>
+
+            <li class="inline"><p>Ben şimdi ders çalışıyorum.</p></li>
+
+            <li class="inline">
+              <label for="word257">Ben şimdi ders</label>
+              <input type="text" id="word257" name="word257" />
+            </li>
+
+            <li class="inline"><p>Onlar bu ay denizde yüzüyorlar.</p></li>
+
+            <li class="inline">
+              <label for="word258">Onlar bu ay denizde</label>
+              <input type="text" id="word258" name="word258" />
+            </li>
+
+            <li class="inline"><p>Bu akşam kafeye gidiyoruz.</p></li>
+
+            <li class="inline">
+              <label for="word259">Bu akşam kafeye</label>
+              <input type="text" id="word259" name="word259" />
+            </li>
+
+            <li class="inline"><p>Her zaman annesine yardım ediyor.</p></li>
+
+            <li class="inline">
+              <label for="word260">Annesine yardım</label>
+              <input type="text" id="word260" name="word260" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 10 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 10. Дополните предложения отрицательной формой глагола в
+        настоящем продолженном времени(Писать с большой буквы)
+      </div>
+      <div class="task-content write hidden">
+        <form id="text-form-18">
+          <ul>
+            <li class="inline">
+              <label for="word261">Adamlar sokakta konuş </label>
+              <input type="text" id="word261" name="word261" />
+            </li>
+
+            <li class="inline">
+              <label for="word262">Biz gazete oku </label>
+              <input type="text" id="word262" name="word262" />
+            </li>
+
+            <li class="inline">
+              <label for="word263">Yolcular bekle </label>
+              <input type="text" id="word263" name="word263" />
+            </li>
+
+            <li class="inline">
+              <label for="word264">Sen telefon et </label>
+              <input type="text" id="word264" name="word264" />
+            </li>
+
+            <li class="inline">
+              <label for="word265">Ayşe araba yıka </label>
+              <input type="text" id="word265" name="word265" />
+            </li>
+
+            <li class="inline">
+              <label for="word266">Genç kız gül </label>
+              <input type="text" id="word266" name="word266" />
+            </li>
+
+            <li class="inline">
+              <label for="word267">Onlar Almanca konuş </label>
+              <input type="text" id="word267" name="word267" />
+            </li>
+
+            <li class="inline">
+              <label for="word268">Ahmet Bey uyu </label>
+              <input type="text" id="word268" name="word268" />
+            </li>
+
+            <li class="inline">
+              <label for="word269">O yemek ye </label>
+              <input type="text" id="word269" name="word269" />
+            </li>
+
+            <li class="inline">
+              <label for="word270">Ben soru sor </label>
+              <input type="text" id="word270" name="word270" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 11 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 11. Образуйте вопросительные предложения, обратите внимание на
+        наличие/отсутствие вопросительного слова. (Писать с маленькой буквы)
+      </div>
+      <div class="task-content write hidden">
+        <form id="text-form-19">
+          <ul>
+            <li class="inline">
+              <label for="word271">Sen uyu</label>
+              <input type="text" id="word271" name="word271" />
+              <input type="text" id="word272" name="word272" />
+            </li>
+
+            <li class="inline">
+              <label for="word273">Siz nerede oturuyor</label>
+              <input type="text" id="word273" name="word273" />
+            </li>
+
+            <li class="inline">
+              <label for="word274">Sen beni anlıyor </label>
+              <input type="text" id="word274" name="word274" />
+            </li>
+
+            <li class="inline">
+              <label for="word275">Neden beni anla </label>
+              <input type="text" id="word275" name="word275" />
+            </li>
+
+            <li class="inline">
+              <label for="word276">Anna Türkçe bi</label>
+              <input type="text" id="word276" name="word276" />
+              <input type="text" id="word277" name="word277" />
+            </li>
+
+            <li class="inline">
+              <label for="word278">Siz bu diziyi izl</label>
+              <input type="text" id="word278" name="word278" />
+              <input type="text" id="word279" name="word279" />
+            </li>
+
+            <li class="inline">
+              <label for="word280">Otobüs Taksim’den geç</label>
+              <input type="text" id="word280" name="word280" />
+              <input type="text" id="word281" name="word281" />
+            </li>
+
+            <li class="inline">
+              <label for="word282">Sen ne zaman spor yap</label>
+              <input type="text" id="word282" name="word282" />
+            </li>
+
+            <li class="inline">
+              <label for="word283">Siz sigara iç</label>
+              <input type="text" id="word283" name="word283" />
+              <input type="text" id="word284" name="word284" />
+            </li>
+
+            <li class="inline">
+              <label for="word285">Şu an sen ne yap</label>
+              <input type="text" id="word285" name="word285" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 12 без картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 12. Найдите верный перевод предложений
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Что ты делаешь?</p>
+              <select class="answer-select" data-correct="Ne yapıyorsun?">
+                <option value="">--Выберите ответ--</option>
+                <option value="Ne yapıyorsun?">Ne yapıyorsun?</option>
+                <option value="Ne yapıyor musun?">Ne yapıyor musun?</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Я не сплю.</p>
+              <select class="answer-select" data-correct="Ben uyumuyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="Ben uyuyor muyum">Ben uyuyor muyum</option>
+                <option value="Ben uyumuyorum">Ben uyumuyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Куда вы идёте?</p>
+              <select class="answer-select" data-correct="Nereye gidiyorsunuz?">
+                <option value="">--Выберите ответ--</option>
+                <option value="Nereye gidiyorsunuz?">
+                  Nereye gidiyorsunuz?
+                </option>
+                <option value="Nereye gidiyoruz?">Nereye gidiyoruz?</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>С кем ты разговариваешь?</p>
+              <select
+                class="answer-select"
+                data-correct="Kiminle konuşuyorsun?"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Kiminle konuşmuyorsun?">
+                  Kiminle konuşmuyorsun?
+                </option>
+                <option value="Kiminle konuşuyorsun?">
+                  Kiminle konuşuyorsun?
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ты говоришь по-английски?</p>
+              <select
+                class="answer-select"
+                data-correct="İngilizce konuşuyor musun?"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="İngilizce konuşuyor musun?">
+                  İngilizce konuşuyor musun?
+                </option>
+                <option value="İngilizce biliyor musun?">
+                  İngilizce biliyor musun?
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Мы завтра идём в кино?</p>
+              <select
+                class="answer-select"
+                data-correct="Yarın sinemaya gidiyor muyuz?"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Yarın sinemaya gidiyor muyuz?">
+                  Yarın sinemaya gidiyor muyuz?
+                </option>
+                <option value="Ne zaman sinemaya gidiyoruz?">
+                  Ne zaman sinemaya gidiyoruz?
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ты меня понимаешь?</p>
+              <select
+                class="answer-select"
+                data-correct="Sen beni anlıyor musun?"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Sen beni anlamıyor musun?">
+                  Sen beni anlamıyor musun?
+                </option>
+                <option value="Sen beni anlıyor musun?">
+                  Sen beni anlıyor musun?
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ты по утрам пьешь кофе.</p>
+              <select
+                class="answer-select"
+                data-correct="Sen sabahları kahve içiyorsun"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Sen sabahları kahve içiyorsun">
+                  Sen sabahları kahve içiyorsun
+                </option>
+                <option value="Sen sabahları kahve içiyor">
+                  Sen sabahları kahve içiyor
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Почему ты не ешь?</p>
+              <select
+                class="answer-select"
+                data-correct="Neden yemek yemiyorsun?"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Neden yemek yemiyorsun?">
+                  Neden yemek yemiyorsun?
+                </option>
+                <option value="Neden yemek yimiyorsun?">
+                  Neden yemek yimiyorsun?
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Вы меня ждёте?</p>
+              <select
+                class="answer-select"
+                data-correct="Siz beni mi bekliyorsunuz?"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Siz beni mi bekliyorsunuz?">
+                  Siz beni mi bekliyorsunuz?
+                </option>
+                <option value="Siz beni mi bekliyor musunuz?">
+                  Siz beni mi bekliyor musunuz?
+                </option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 13 без картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 13. Давайте заполним пробелы ниже формами настоящего времени
+      </div>
+      <div class="task-content hidden">
+        <img
+          src="./foto/ders7-task13.png"
+          alt="foto ders7-task13"
+          width="600"
+        />
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Sen her gün kaç saat uyu</p>
+              <select class="answer-select" data-correct="yorsun?">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsun">yorsun</option>
+                <option value="iyorum">iyorum</option>
+                <option value="iyor musunuz">iyor musunuz</option>
+                <option value="miyorlar">miyorlar</option>
+                <option value="yoruz">yoruz</option>
+                <option value="iyorlar">iyorlar</option>
+                <option value="miyor musun">miyor musun</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ben her sabah bir fincan kahve iç</p>
+              <select class="answer-select" data-correct="iyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsun">yorsun</option>
+                <option value="iyorum">iyorum</option>
+                <option value="iyor musunuz">iyor musunuz</option>
+                <option value="miyorlar">miyorlar</option>
+                <option value="yoruz">yoruz</option>
+                <option value="iyorlar">iyorlar</option>
+                <option value="miyor musun">miyor musun</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Siz bu akşam konsere gel</p>
+              <select class="answer-select" data-correct="iyor musunuz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsun">yorsun</option>
+                <option value="iyorum">iyorum</option>
+                <option value="iyor musunuz">iyor musunuz</option>
+                <option value="miyorlar">miyorlar</option>
+                <option value="yoruz">yoruz</option>
+                <option value="iyorlar">iyorlar</option>
+                <option value="miyor musun">miyor musun</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Öğrenciler otobüse bin</p>
+              <select class="answer-select" data-correct="miyorlar">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsun">yorsun</option>
+                <option value="iyorum">iyorum</option>
+                <option value="iyor musunuz">iyor musunuz</option>
+                <option value="miyorlar">miyorlar</option>
+                <option value="yoruz">yoruz</option>
+                <option value="iyorlar">iyorlar</option>
+                <option value="miyor musun">miyor musun</option>
+              </select>
+              <p>. Yürüyorlar.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Biz akşamları parkta yürü</p>
+              <select class="answer-select" data-correct="yoruz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsun">yorsun</option>
+                <option value="iyorum">iyorum</option>
+                <option value="iyor musunuz">iyor musunuz</option>
+                <option value="miyorlar">miyorlar</option>
+                <option value="yoruz">yoruz</option>
+                <option value="iyorlar">iyorlar</option>
+                <option value="miyor musun">miyor musun</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ömer ile Gül her hafta sinemada film izl</p>
+              <select class="answer-select" data-correct="iyorlar">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsun">yorsun</option>
+                <option value="iyorum">iyorum</option>
+                <option value="iyor musunuz">iyor musunuz</option>
+                <option value="miyorlar">miyorlar</option>
+                <option value="yoruz">yoruz</option>
+                <option value="iyorlar">iyorlar</option>
+                <option value="miyor musun">miyor musun</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ben burada seni bekl</p>
+              <select class="answer-select" data-correct="iyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsun">yorsun</option>
+                <option value="iyorum">iyorum</option>
+                <option value="iyor musunuz">iyor musunuz</option>
+                <option value="miyorlar">miyorlar</option>
+                <option value="yoruz">yoruz</option>
+                <option value="iyorlar">iyorlar</option>
+                <option value="miyor musun">miyor musun</option>
+              </select>
+              <p>.Çabuk gel.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Hazır değilsin. Bizimle gel</p>
+              <select class="answer-select" data-correct="miyor musun">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsun">yorsun</option>
+                <option value="iyorum">iyorum</option>
+                <option value="iyor musunuz">iyor musunuz</option>
+                <option value="miyorlar">miyorlar</option>
+                <option value="yoruz">yoruz</option>
+                <option value="iyorlar">iyorlar</option>
+                <option value="miyor musun">miyor musun</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Siz Türkçe bil</p>
+              <select class="answer-select" data-correct="iyor musunuz">
+                <option value="">--Выберите ответ--</option>
+                <option value="yorsun">yorsun</option>
+                <option value="iyorum">iyorum</option>
+                <option value="iyor musunuz">iyor musunuz</option>
+                <option value="miyorlar">miyorlar</option>
+                <option value="yoruz">yoruz</option>
+                <option value="iyorlar">iyorlar</option>
+                <option value="miyor musun">miyor musun</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <!-- <li>
+            <div class="write-container">
+              <p></p>
+              <select class="answer-select" data-correct="">
+                <option value="">--Выберите ответ--</option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 14 без картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 14. Давайте выберем подходящие глаголы в правильных формах
+        настоящего времени
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Bu ceket ona çok</p>
+              <select class="answer-select" data-correct="yakışıyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Onlar bütün akşam evde</p>
+              <select class="answer-select" data-correct="oturuyorlar">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Sen çok güzel şarkı</p>
+              <select class="answer-select" data-correct="söylüyorsun">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ayşe gitar</p>
+              <select class="answer-select" data-correct="çalıyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Her hafta sonu alışverişe</p>
+              <select class="answer-select" data-correct="çıkıyoruz">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Her kahvaltıda çay</p>
+              <select class="answer-select" data-correct="içiyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Aslı her hafta e-posta</p>
+              <select class="answer-select" data-correct="yazıyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Biz gelecek hafta yeni bir eve</p>
+              <select class="answer-select" data-correct="taşınıyoruz">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ben durakta otobüs</p>
+              <select class="answer-select" data-correct="bekliyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ben her zaman öğretmene soru</p>
+              <select class="answer-select" data-correct="soruyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Biz sık sık film</p>
+              <select class="answer-select" data-correct="izliyoruz">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>O her akşam kitap</p>
+              <select class="answer-select" data-correct="okuyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Her sabah 7’de işe</p>
+              <select class="answer-select" data-correct="gidiyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Dersler 2 Aralık’ta</p>
+              <select class="answer-select" data-correct="başlıyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Derya her gün derse</p>
+              <select class="answer-select" data-correct="gecikiyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Biz her gece geç</p>
+              <select class="answer-select" data-correct="yatıyoruz">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Onlar her yaz tatil</p>
+              <select class="answer-select" data-correct="yapıyorlar">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>O çok cömert. Bize yemek</p>
+              <select class="answer-select" data-correct="ısmarlıyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Mehmet bu yurtta</p>
+              <select class="answer-select" data-correct="kalıyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ocakta yemek</p>
+              <select class="answer-select" data-correct="pişiyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Şimdi yağmur</p>
+              <select class="answer-select" data-correct="yağıyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Hastayım. Yatakta</p>
+              <select class="answer-select" data-correct="yatıyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Onlar her yaz sahilde</p>
+              <select class="answer-select" data-correct="güneşleniyorlar">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Burcu, her sabah kedilere</p>
+              <select class="answer-select" data-correct="yemek veriyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Füsun, bankadan</p>
+              <select class="answer-select" data-correct="para çekiyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="gecikiyor">gecikiyor</option>
+                <option value="izliyoruz">izliyoruz</option>
+                <option value="oturuyorlar">oturuyorlar</option>
+                <option value="soruyorum">soruyorum</option>
+                <option value="taşınıyoruz">taşınıyoruz</option>
+                <option value="yapıyorlar">yapıyorlar</option>
+                <option value="yakışıyor">yakışıyor</option>
+                <option value="çıkıyoruz">çıkıyoruz</option>
+                <option value="yatıyoruz">yatıyoruz</option>
+                <option value="içiyorum">içiyorum</option>
+                <option value="para çekiyor">para çekiyor</option>
+                <option value="çalıyor">çalıyor</option>
+                <option value="okuyor">okuyor</option>
+                <option value="güneşleniyorlar">güneşleniyorlar</option>
+                <option value="pişiyor">pişiyor</option>
+                <option value="kalıyor">kalıyor</option>
+                <option value="yazıyor">yazıyor</option>
+                <option value="yemek veriyor">yemek veriyor</option>
+                <option value="yağıyor">yağıyor</option>
+                <option value="gidiyor">gidiyor</option>
+                <option value="söylüyorsun">söylüyorsun</option>
+                <option value="başlıyor">başlıyor</option>
+                <option value="ısmarlıyor">ısmarlıyor</option>
+                <option value="yatıyorum">yatıyorum</option>
+                <option value="bekliyorum">bekliyorum</option>
+              </select>
+            </div>
+          </li>
+
+          <!-- <li>
+            <div class="write-container">
+              <p></p>
+              <select class="answer-select" data-correct="">
+                <option value="">--Выберите ответ--</option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders7.html"> <button>Назад</button></a>
+
+      <a href="./ders7-3.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

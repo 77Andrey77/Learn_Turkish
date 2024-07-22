@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_7</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 7 (BİR GÜNÜM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders7.html"><button>Настоящее время глагола</button></a>
+        </li>
+
+        <li>
+          <a href="./ders7-2.html"
+            ><button>Спряжение глаголов по лицам</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders7-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders7-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders7-5test.html"
+            ><button class="active">Итоговый тест</button></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Настоящее время глагола. Спряжения глаголов по лицам. На уроке вы
+      научитесь описывать свою повседневную жизнь и жизнь других людей. Вы
+      получите основы для приятного и, главное, непринужденного общения.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set8"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/öğrenmek.jpg" alt="öğrenmek" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////Задание 16 без картинками//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Итоговый тест к уроку 7</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>1. Образуйте настоящее время от глагола любить SEVMEK.</p>
+              <select class="answer-select" data-correct="Seviyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="Sevyor">Sevyor</option>
+                <option value="Seviyor">Seviyor</option>
+                <option value="Seveyor">Seveyor</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                2. Образуйте утвердительную и отрицательную формы настоящего
+                времени от глагола ждать BEKLEMEK
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Bekliyor – beklemiyor"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Bekleyor – beklemiyor">
+                  Bekleyor – beklemiyor
+                </option>
+                <option value="Bekliyor – beklimiyor">
+                  Bekliyor – beklimiyor
+                </option>
+                <option value="Bekliyor – beklemiyor">
+                  Bekliyor – beklemiyor
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                3. Образуйте вопросительную форму от глагола понимать ANLAMAK
+              </p>
+              <select class="answer-select" data-correct="Anlıyor mu">
+                <option value="">--Выберите ответ--</option>
+                <option value="Anlayor mu">Anlayor mu</option>
+                <option value="Anlayıyor mu">Anlayıyor mu</option>
+                <option value="Anlıyor mu">Anlıyor mu</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                4. Переведите на турецкий язык: Он не понимает, потому что не
+                знает
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Anlamıyor çünkü bilmiyor"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Anlıyor çünkü bilmiyor">
+                  Anlıyor çünkü bilmiyor
+                </option>
+                <option value="Anlamıyor çünkü bilimiyor">
+                  Anlamıyor çünkü bilimiyor
+                </option>
+                <option value="Anlamıyor çünkü bilmiyor">
+                  Anlamıyor çünkü bilmiyor
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>5. Переведите на турецкий язык: Ребенок спит?</p>
+              <select class="answer-select" data-correct="Çocuk uyuyor mu?">
+                <option value="">--Выберите ответ--</option>
+                <option value="Çocuk uyuyor mu?">Çocuk uyuyor mu?</option>
+                <option value="Çocuk uyumuyor mu?">Çocuk uyumuyor mu?</option>
+                <option value="Çocuk uyu muyor?">Çocuk uyu muyor?</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                6. Вставьте нужное окончание Biz Türkçe öğren.... Мы учим
+                турецкий язык
+              </p>
+              <select class="answer-select" data-correct="">
+                <option value="">--Выберите ответ--</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                7. Вставьте нужное окончание Sen Türkçe konuş.... ...? Ты
+                говоришь по-турецки?
+              </p>
+              <select class="answer-select" data-correct="İyoruz">
+                <option value="">--Выберите ответ--</option>
+                <option value="İyoruz">İyoruz</option>
+                <option value="Yorsunuz">Yorsunuz</option>
+                <option value="İyorsunuz">İyorsunuz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>8. Вставьте нужное окончание Ben anla... (-) Я не понимаю.</p>
+              <select class="answer-select" data-correct="Uyor musun">
+                <option value="">--Выберите ответ--</option>
+                <option value="Yor musun">Yor musun</option>
+                <option value="Uyorsun mu">Uyorsun mu</option>
+                <option value="Uyor musun">Uyor musun</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                9. Вставьте нужное окончание Siz nerede otur.... ? Где вы
+                живете?
+              </p>
+              <select class="answer-select" data-correct="Uyorsunuz">
+                <option value="">--Выберите ответ--</option>
+                <option value="Uyoruz">Uyoruz</option>
+                <option value="Uyorsunuz">Uyorsunuz</option>
+                <option value="Uyor musunuz">Uyor musunuz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                10. Переведите на турецкий язык: Я не спрашиваю, потому что
+                знаю.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Ben sormuyorum, çünkü biliyorum"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Ben sorumuyorum, çünkü biliyorum">
+                  Ben sorumuyorum, çünkü biliyorum
+                </option>
+                <option value="Ben sormuyorum, çünkü bilmiyorum">
+                  Ben sormuyorum, çünkü bilmiyorum
+                </option>
+                <option value="Ben sormuyorum, çünkü biliyorum">
+                  Ben sormuyorum, çünkü biliyorum
+                </option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders7-4.html"> <button>Назад</button></a>
+
+      <a href="./ders8.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

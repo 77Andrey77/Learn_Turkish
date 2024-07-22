@@ -68,4 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
     showSlides('infinitive-slides', 0);
     showSlides('present-slides', 0);
     showSlides('negative-present-slides', 0);
+    showSlides('negative-present-slides', 0);
+
 });

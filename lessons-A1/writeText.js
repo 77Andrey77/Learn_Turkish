@@ -126,7 +126,21 @@ const correctWordsSets = [
           //( 225             226       227         228          229            230          231)  
             ['Yaşıyor', 'Mu', 'Kalkıyor', 'Çalışıyor', 'Mu', 'Yapıyor', 'Yapıyor', 'Mu', 'Buluşuyor', 'Mu'],
           //(232         233     234        235         236    237         238      239     240        241)  
-];
+             ['ıyorum', 'iyoruz', 'ıyorlar', 'ıyorum', 'iyorlar', 'ıyorsun', 'iyorsunuz', 'uyorsunuz', 'üyoruz', 'ıyorum',],
+         //(     242      243       244        245         246       247        248         248           249      250)
+             ['Konuşmuyorlar', 'Bilmiyorum', 'Beklemiyoruz', 'Yemiyorum', 'Uyumuyor', 'Okumuyorlar', 'Çalışmıyorum', 'Yüzmüyorlar', 'Gitmiyoruz', 'Etmiyor'],
+      //(       251               252          253              254          255          256             257            258           259           260)  
+             ['Muyorlar', 'Muyoruz', 'Miyorlar', 'Miyorsun', 'Mıyor', 'Müyor ', 'Muyorlar', 'Muyor', 'Miyor', 'Muyorum'],
+         //(   261           262         263          264      265      266       267         268      269       270)    
+             ['yor', 'musun', 'sunuz', 'musun', 'mıyorsun', 'liyor', 'mu', 'iyor', 'musunuz', 'iyor', 'mu', 'ıyorsun', 'iyor', 'musunuz', 'ıyorsun']
+      //(      271      272     273      274       275         276    277     278     279       280    281     282       283     284         285   ) 
+             
+             
+             
+             
+             
+             
+] ;
 
         function checkWord(correctWords) {
             return function(event) {

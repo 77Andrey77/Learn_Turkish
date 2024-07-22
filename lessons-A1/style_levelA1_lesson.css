@@ -124,7 +124,7 @@ width:1000px;
   flex-direction: row;
   /* justify-content: space-between; */
   align-items: baseline;
-  padding: 15px 200px 15px 100px;
+  padding: 15px 100px 15px 50px;
   /* Поле сверху 10px, справа 15px, снизу 20px, слева 25px */
 }
 .answer-select{
