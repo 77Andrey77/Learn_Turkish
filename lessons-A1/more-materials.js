@@ -22,7 +22,7 @@ toggleContentVisibility('#task-header-law1', '#task-content-law1-img');
 toggleContentVisibility('#task-header-law2', '#task-content-law2-img');
 toggleContentVisibility('#task-header-law3', '#task-content-law3-img');
 
-toggleContentVisibility('#task-header-moreinfo-slider-2', '#task-content-moreinfo-slider-2');
+// toggleContentVisibility('#task-header-moreinfo-slider-2', '#task-content-moreinfo-slider-2');
 // toggleContentVisibility('#task-header-moreinfo-slider-3', '#task-content-moreinfo-slider-3');
 
 

@@ -133,11 +133,17 @@ const correctWordsSets = [
              ['Muyorlar', 'Muyoruz', 'Miyorlar', 'Miyorsun', 'Mıyor', 'Müyor ', 'Muyorlar', 'Muyor', 'Miyor', 'Muyorum'],
          //(   261           262         263          264      265      266       267         268      269       270)    
              ['yor', 'musun', 'sunuz', 'musun', 'mıyorsun', 'liyor', 'mu', 'iyor', 'musunuz', 'iyor', 'mu', 'ıyorsun', 'iyor', 'musunuz', 'ıyorsun']
-      //(      271      272     273      274       275         276    277     278     279       280    281     282       283     284         285   ) 
-             
-             
-             
-             
+      //(19    271      272     273      274       275         276    277     278     279       280    281     282       283     284         285   ) 
+             ['tatile', 'dolaba','mutfağa', 'okula', "türkiye'ye" , 'lokantaya', 'bana', 'size', 'uçağa', 'eve'],
+  //20    (   286        287       288       289        290           291          292     293     294     295 )     
+             ['otobüsten', 'işten', 'yataktan', 'okuldan', 'pencereden', "ıtalya'dan", 'sahilden', 'uçaktan', 'senden', "Antalya'dan"] ,
+    //21  (      296         297        298      299          300             301         302        303        304        305         )         
+             ['de', 'e', 'de', 'den', 'e', 'e', 'ta', 'de', 'den', 'tan', 'a', 'da', 'dan', 'e', 'e', 'a'],
+    //22(     306   307   308   309   310  311  312    313   314    315    316  317  318    319   320  321)         
+             ['Fincandan', 'Şişeden', 'Işten', 'Bardaktan', 'Bankadan', 'Okuldan'],
+    //23(       322          323         324     325         326         327  )         
+              ['da', 'de', 'ya', 'dan', 'da', 'da', 'ya', 'e', 'da', 'te', 'ten', 'den', 'ye', 'da']
+       //24(   328    329   330   331    332   333   334  335   336   337   338    339    340   341)      
              
              
 ] ;

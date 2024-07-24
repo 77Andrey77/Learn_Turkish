@@ -1540,6 +1540,133 @@ const wordsSets = {
             translation: "каникулы, отпуск",
             image: "./foto/tatil.jpg"
         } 
+    ],
+    set9: [
+    {
+            word: "erken",
+            translation: "рано",
+            image: "./foto/erken.jpg"
+    },
+    {
+            word: "alışveriş",
+            translation: "покупки",
+            image: "./foto/alışveriş.jpg"
+    },
+    {
+            word: "binmek",
+            translation: "садиться (в транспорт)",
+            image: "./foto/binmek.jpg"
+    },
+    {
+            word: "haber",
+            translation: "новость",
+            image: "./foto/haber.jpg"
+    },
+    {
+            word: "yarım saat",
+            translation: "полчаса",
+            image: "./foto/yarım saat.jpg"
+    },
+    {
+            word: "sık sık",
+            translation: "часто",
+            image: "../not-image.png"
+    },
+    {
+            word: "indirim",
+            translation: "скидка",
+            image: "./foto/indirim.webp"
+    },
+    {
+            word: "yem",
+            translation: "корм",
+            image: "./foto/yem.jpg"
+    },
+    {
+            word: "her zaman",
+            translation: "всегда",
+            image: "./foto/her zaman.jpg"
+    },
+    {
+            word: "beraber",
+            translation: "вместе",
+            image: "./foto/beraber.jpg"
+    },
+    {
+            word: "genellikle",
+            translation: "обычно",
+            image: "../not-image.png"
+    },
+    {
+            word: "öğleden sonra",
+            translation: "после обеда",
+            image: "./foto/öğleden sonra.jpg"
+    },
+    {
+            word: "hoşlanmak",
+            translation: "нравится",
+            image: "./foto/hoşlanmak.jpg"
+    },
+    {
+            word: "ayrılmak",
+            translation: "расставаться, уходить",
+            image: "./foto/ayrılmak.jpg"
+        },
+        {
+            word: "dönmek",
+            translation: "возвращаться",
+            image: "./foto/dönmek.jpg"
+        },
+        {
+            word: "girmek",
+            translation: "входить",
+            image: "./foto/girmek.jpg"
+    },
+        {
+            word: "sohbet etmek",
+            translation: "беседовать",
+            image: "./foto/sohbet etmek.jpg"
+    },
+        {
+            word: "farklı",
+            translation: "разные",
+            image: "./foto/farklı.jpg"
+    },
+        {
+            word: "önce",
+            translation: "сначала, до",
+            image: "./foto/önce.jpg"
+    },
+        {
+            word: "sonra",
+            translation: "потом, после",
+            image: "./foto/sonra.jpg"
+    },
+        {
+            word: "bazen",
+            translation: "иногда",
+            image: "../not-image.png"
+    },
+        {
+            word: "eş",
+            translation: "супруг, супруга",
+            image: "./foto/eş.jpg"
+    },
+        {
+            word: "işçi",
+            translation: "рабочий",
+            image: "./foto/işçi.webp"
+    },
+        {
+            word: "yoğun",
+            translation: "плотный, загруженный",
+            image: "./foto/yoğun.webp"
+    },
+        {
+            word: "değişik",
+            translation: "различный",
+            image: "./foto/değişik.jpg"
+    },
+        
     ]
-
 };
