@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_9</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 9 (İSTANBUL’DA GEZİYORUM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders9.html"
+            ><button>Использование глагола "Хотеть"</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders9-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders9-3.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders9-4test.html"
+            ><button class="active">Итоговый тест</button></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- <p class="text-description">
+      Использование глагола "хотеть". На уроке вы научитесь рассказывать о своих
+      желаниях и планах. Что пригодится, например, на собеседовании или на
+      свидании. И значительно повысит ваши шансы на получение работы мечты или
+      достижения нового этапа в отношениях.
+    </p> -->
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set10"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/istemek.jpg" alt="istemek" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <p class="text-description" style="margin-bottom: 30px">
+      <span>
+        Давайте пройдем итоговый тест, чтобы упорядочить знания и поскорей
+        перейти к контрольной работе третьего модуля. Обратите внимание, что
+        результат прохождения итогового теста будет влиять на прогресс урока.
+        Чтобы разблокировать контрольную работу, вам нужно ответить правильно с
+        минимальным количеством ошибок. Удачи! Выберите верный вариант падежа.
+      </span>
+    </p>
+
+    <!-- //////////////Задание 6 c foto/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Итоговый тест к уроку 9</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>
+                1. Найдите верный перевод на турецкий язык: Ребенок хочет спать
+              </p>
+
+              <select
+                class="answer-select"
+                data-correct="Çocuk uyumak istiyor."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Çocuk istiyor uyumak.">
+                  Çocuk istiyor uyumak.
+                </option>
+                <option value="Çocuk uyuyor istiyor.">
+                  Çocuk uyuyor istiyor.
+                </option>
+                <option value="Çocuk uyumak istiyor.">
+                  Çocuk uyumak istiyor.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                2. Найдите верный перевод на турецкий язык: Мы хотим отдыхать.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Biz dinlenmek istiyoruz"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Biz dinlenmeyi istiyoruz">
+                  Biz dinlenmeyi istiyoruz
+                </option>
+                <option value="Biz dinlenmek isteyoruz">
+                  Biz dinlenmek isteyoruz
+                </option>
+                <option value="Biz dinlenmek istiyoruz">
+                  Biz dinlenmek istiyoruz
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                3. Найдите верный перевод на турецкий язык: Они не хотят сидеть
+                дома.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Onlar evde oturmak istemiyorlar."
+              >
+                <option value="">--Выберите ответ--</option>
+
+                <option value="Onlar evde oturmak istiyorlar.">
+                  Onlar evde oturmak istiyorlar.
+                </option>
+                <option value="Siz evde oturmak istemiyorsunuz.">
+                  Siz evde oturmak istemiyorsunuz.
+                </option>
+                <option value="Onlar evde oturmak istemiyorlar.">
+                  Onlar evde oturmak istemiyorlar.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                4. Найдите верный перевод на турецкий язык: Ты хочешь выпить
+                чего-нибудь?
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Bir şey içmek istiyor musun?"
+              >
+                <option value="">--Выберите ответ--</option>
+
+                <option value="Bir şey içmek istemiyor mu?">
+                  Bir şey içmek istemiyor mu?
+                </option>
+                <option value="Bir şey içmek istiyormusun?">
+                  Bir şey içmek istiyormusun?
+                </option>
+                <option value="Bir şey içmek istiyor musun?">
+                  Bir şey içmek istiyor musun?
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                5. Найдите верный перевод на турецкий язык: Что ты хочешь от
+                меня?
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Benden ne istiyorsun?"
+              >
+                <option value="">--Выберите ответ--</option>
+
+                <option value="Benden ne istiyor musun?">
+                  Benden ne istiyor musun?
+                </option>
+                <option value="Benden ne istiyorsun?">
+                  Benden ne istiyorsun?
+                </option>
+                <option value="Bana ne istiyorsun?">Bana ne istiyorsun?</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                6. Найдите грамматически верный ответ на вопрос: Nerede yaşamak
+                istiyorsunuz?
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Benden ne istiyor musun?"
+              >
+                <option value="">--Выберите ответ--</option>
+
+                <option value="Türkiye’ye yaşamak istiyorum.">
+                  Türkiye’ye yaşamak istiyorum.
+                </option>
+                <option value="Benden ne istiyor musun?">
+                  Benden ne istiyor musun?
+                </option>
+                <option value="Antalya’da yaşamak isteyorum.">
+                  Antalya’da yaşamak isteyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                7. Найдите грамматически верный ответ на вопрос: Ne almak
+                istiyorsun?
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Bir elbise almak istiyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+
+                <option value="Bir elbise almak istiyorum.">
+                  Bir elbise almak istiyorum.
+                </option>
+                <option value="Bir çanta alıyorum.">Bir çanta alıyorum.</option>
+                <option value="Hiçbir şey almak istiyorum.">
+                  Hiçbir şey almak istiyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                8. Найдите верный перевод предложения: Size bir soru sormak
+                istiyorum.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Я хочу вам задать один вопрос."
+              >
+                <option value="">--Выберите ответ--</option>
+
+                <option value="Я хочу вам рассказать о проблеме.">
+                  Я хочу вам рассказать о проблеме.
+                </option>
+                <option value="Я хочу вам задать один вопрос.">
+                  Я хочу вам задать один вопрос.
+                </option>
+                <option value="Я хочу услышать ответ на вопрос.">
+                  Я хочу услышать ответ на вопрос.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                9. Выстроите предложение с нужным порядком слов. (1 istemiyor)
+                (2 musun) (3 bizimle) (4 lokantaya) (5 bugün) (6 gelmek)
+              </p>
+              <select class="answer-select" data-correct="534612">
+                <option value="">--Выберите ответ--</option>
+
+                <option value="534612">534612</option>
+                <option value="124536">124536</option>
+                <option value="235614">235614</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>10. Какой перевод соответствует предыдущему предложению.</p>
+              <select
+                class="answer-select"
+                data-correct="Не хочешь с нами пойти сегодня в ресторан?"
+              >
+                <option value="">--Выберите ответ--</option>
+
+                <option value="Не хочешь с нами пойти сегодня в ресторан?">
+                  Не хочешь с нами пойти сегодня в ресторан?
+                </option>
+                <option value="Хочешь с нами пойти сегодня в ресторан?">
+                  Хочешь с нами пойти сегодня в ресторан?
+                </option>
+                <option value="Не хочешь с нами покушать сегодня в ресторане?">
+                  Не хочешь с нами покушать сегодня в ресторане?
+                </option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders9-3.html"> <button>Назад</button></a>
+
+      <a href="#"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

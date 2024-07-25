@@ -1666,7 +1666,121 @@ const wordsSets = {
             word: "değişik",
             translation: "различный",
             image: "./foto/değişik.jpg"
-    },
+    }  
+    ],
+    set10: [
+        {
+            word: "istemek",
+            translation: "хотеть",
+            image: "./foto/istemek.jpg"
+        },
+        {
+            word: "taksit",
+            translation: "рассрочка",
+            image: "./foto/taksit.jpg"
+        },
+        {
+            word: "peşin",
+            translation: "заранее, аванс",
+            image: "./foto/peşin.jpg"
+        },
+        {
+            word: "ödemek",
+            translation: "оплачивать",
+            image: "./foto/ödemek.jpg"
+        },
+        {
+            word: "nakit",
+            translation: "наличные",
+            image: "./foto/nakit.jpg"
+        },
+        {
+            word: "bozuk para",
+            translation: "мелочь",
+            image: "./foto/bozuk para.jpg"
+    }  ,
+    {
+            word: "para üstü",
+            translation: "сдача",
+            image: "./foto/para üstü.jpg"
+        },
+    {
+            word: "indirim",
+            translation: "скидка",
+            image: "./foto/indirim.jpg"
+        },
+    {
+            word: "pazarlık",
+            translation: "торг",
+            image: "./foto/pazarlık.jpg"
+        },
+    
+    {
+            word: "kestirmek",
+            translation: "подстричь",
+            image: "./foto/kestirmek.jpg"
+        },
+    {
+            word: "kısa",
+            translation: "короткий, коротко",
+            image: "./foto/kısa.jpg"
+        },
+    {
+            word: "fazla",
+            translation: "много, слишком",
+            image: "./foto/fazla.jpg"
+        },
+    {
+            word: "boyamak",
+            translation: "покрасить",
+            image: "./foto/boyamak.jpg"
+        },
+    {
+            word: "hangi?",
+            translation: "какой?",
+            image: "./foto/hangi.jpg"
+        },
+    {
+            word: "kızıl",
+            translation: "красный (рыжий)",
+            image: "./foto/kızıl.jpg"
+        },
+    
+    
+        {
+            word: "mesela",
+            translation: "например",
+            image: "./foto/mesela.jpg"
+    }  ,{
+            word: "aç",
+            translation: "голодный",
+            image: "./foto/aç.jpg"
+        },
+        {
+            word: "sınav",
+            translation: "экзамен",
+            image: "./foto/sınav.jpg"
+        },
+        {
+            word: "yorgun",
+            translation: "уставший",
+            image: "./foto/yorgun.jpg"
+        },
         
+        {
+            word: "uykum var",
+            translation: "я хочу спать",
+            image: "./foto/uykum var.jpg"
+    }  ,
+    {
+            word: "uyku",
+            translation: "сон",
+            image: "./foto/uyku.jpg"
+        },
+    {
+            word: "beden",
+            translation: "размер",
+            image: "./foto/beden.jpg"
+    }  
     ]
 };

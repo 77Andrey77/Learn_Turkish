@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_9</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 9 (İSTANBUL’DA GEZİYORUM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders9.html"
+            ><button class="active">Использование глагола "Хотеть"</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders9-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders9-3.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders9-4test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Использование глагола "хотеть". На уроке вы научитесь рассказывать о своих
+      желаниях и планах. Что пригодится, например, на собеседовании или на
+      свидании. И значительно повысит ваши шансы на получение работы мечты или
+      достижения нового этапа в отношениях.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set10"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/istemek.jpg" alt="istemek" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+    <!-- /////////////dowloading//////////// -->
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/Модуль 3. Урок 9.pdf"
+        download
+        >Скачать Рабочая тетрадь. Урок 9</a
+      >
+    </div>
+
+    <!-- /////////////Задание 1 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 1. Давайте сопоставим слова с соответствующими глаголами
+      </div>
+      <div class="task-content hidden">
+        <p>
+          ОПЛАЧИВАТЬ ЗАРАНЕЕ, ПОКУПАТЬ В РАССРОЧКУ, ДАВАТЬ НАЛИЧНЫЕ ДЕНЬГИ,
+          ДАВАТЬ МЕЛОЧЬ, ПОЛЬЗОВАТЬСЯ КРЕДИТНОЙ КАРТОЙ, ДАВАТЬ СДАЧУ, ДЕЛАТЬ
+          СКИДКУ, ТОРГОВАТЬСЯ
+        </p>
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>peşin</p>
+              <select class="answer-select" data-correct="ödemek">
+                <option value="">--Выберите ответ--</option>
+                <option value="alışveriş yapmak">alışveriş yapmak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="yapmak">yapmak</option>
+                <option value="ödemek">ödemek</option>
+                <option value="vermek">vermek</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>taksitli</p>
+              <select class="answer-select" data-correct="alışveriş yapmak">
+                <option value="">--Выберите ответ--</option>
+                <option value="alışveriş yapmak">alışveriş yapmak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="yapmak">yapmak</option>
+                <option value="ödemek">ödemek</option>
+                <option value="vermek">vermek</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>nakit para</p>
+              <select class="answer-select" data-correct="vermek">
+                <option value="">--Выберите ответ--</option>
+                <option value="alışveriş yapmak">alışveriş yapmak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="yapmak">yapmak</option>
+                <option value="ödemek">ödemek</option>
+                <option value="vermek">vermek</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>bozuk para</p>
+              <select class="answer-select" data-correct="vermek">
+                <option value="">--Выберите ответ--</option>
+                <option value="alışveriş yapmak">alışveriş yapmak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="yapmak">yapmak</option>
+                <option value="ödemek">ödemek</option>
+                <option value="vermek">vermek</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>kredi kartı</p>
+              <select class="answer-select" data-correct="kullanmak">
+                <option value="">--Выберите ответ--</option>
+                <option value="alışveriş yapmak">alışveriş yapmak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="yapmak">yapmak</option>
+                <option value="ödemek">ödemek</option>
+                <option value="vermek">vermek</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>para üstü</p>
+              <select class="answer-select" data-correct="vermek">
+                <option value="">--Выберите ответ--</option>
+                <option value="alışveriş yapmak">alışveriş yapmak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="yapmak">yapmak</option>
+                <option value="ödemek">ödemek</option>
+                <option value="vermek">vermek</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>indirim</p>
+              <select class="answer-select" data-correct="yapmak">
+                <option value="">--Выберите ответ--</option>
+                <option value="alışveriş yapmak">alışveriş yapmak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="yapmak">yapmak</option>
+                <option value="ödemek">ödemek</option>
+                <option value="vermek">vermek</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>pazarlık</p>
+              <select class="answer-select" data-correct="yapmak">
+                <option value="">--Выберите ответ--</option>
+                <option value="alışveriş yapmak">alışveriş yapmak</option>
+                <option value="kullanmak">kullanmak</option>
+                <option value="yapmak">yapmak</option>
+                <option value="ödemek">ödemek</option>
+                <option value="vermek">vermek</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 2 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 2. Давайте дополним следующий диалог формами “-mAk istemek”
+      </div>
+      <div class="task-content hidden">
+        <img src="./foto/ders9-task2.jpg" alt="foto ders9-task2" width="1200" />
+
+        <ul>
+          <li>
+            <div class="write-container">
+              <p><span>Ceren Hanım:</span> İyi günler!</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Kuaför:</span>İyi günler, efendim!</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Ceren Hanım:</span>Saçımı kestir</p>
+              <select class="answer-select" data-correct="mek istiyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="mek istiyorum">mek istiyorum</option>
+                <option value="mek istiyor musunuz">mek istiyor musunuz</option>
+                <option value="mek istemiyorum">mek istemiyorum</option>
+                <option value="mak istiyor musunuz">mak istiyor musunuz</option>
+                <option value="mak istiyorum">mak istiyorum</option>
+                <option value="mak istiyorsunuz">mak istiyorsunuz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                <span>Kuaför:</span> Buyurun, şuraya oturun lütfen! Saçınızı
+                kısa kestir
+              </p>
+              <select class="answer-select" data-correct="mek istiyor musunuz">
+                <option value="">--Выберите ответ--</option>
+                <option value="mek istiyorum">mek istiyorum</option>
+                <option value="mek istiyor musunuz">mek istiyor musunuz</option>
+                <option value="mek istemiyorum">mek istemiyorum</option>
+                <option value="mak istiyor musunuz">mak istiyor musunuz</option>
+                <option value="mak istiyorum">mak istiyorum</option>
+                <option value="mak istiyorsunuz">mak istiyorsunuz</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Ceren Hanım:</span>Hayır, fazla kestir</p>
+              <select class="answer-select" data-correct="mek istemiyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="mek istiyorum">mek istiyorum</option>
+                <option value="mek istiyor musunuz">mek istiyor musunuz</option>
+                <option value="mek istemiyorum">mek istemiyorum</option>
+                <option value="mak istiyor musunuz">mak istiyor musunuz</option>
+                <option value="mak istiyorum">mak istiyorum</option>
+                <option value="mak istiyorsunuz">mak istiyorsunuz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Sadece uçlarını kestir</p>
+              <select class="answer-select" data-correct="mek istiyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="mek istiyorum">mek istiyorum</option>
+                <option value="mek istiyor musunuz">mek istiyor musunuz</option>
+                <option value="mek istemiyorum">mek istemiyorum</option>
+                <option value="mak istiyor musunuz">mak istiyor musunuz</option>
+                <option value="mak istiyorum">mak istiyorum</option>
+                <option value="mak istiyorsunuz">mak istiyorsunuz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Kuaför:</span>Saçınızı boyat</p>
+              <select class="answer-select" data-correct="mak istiyor musunuz">
+                <option value="">--Выберите ответ--</option>
+                <option value="mek istiyorum">mek istiyorum</option>
+                <option value="mek istiyor musunuz">mek istiyor musunuz</option>
+                <option value="mek istemiyorum">mek istemiyorum</option>
+                <option value="mak istiyor musunuz">mak istiyor musunuz</option>
+                <option value="mak istiyorum">mak istiyorum</option>
+                <option value="mak istiyorsunuz">mak istiyorsunuz</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Ceren Hanım:</span>Evet, saçımı boyat</p>
+              <select class="answer-select" data-correct="mak istiyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="mek istiyorum">mek istiyorum</option>
+                <option value="mek istiyor musunuz">mek istiyor musunuz</option>
+                <option value="mek istemiyorum">mek istemiyorum</option>
+                <option value="mak istiyor musunuz">mak istiyor musunuz</option>
+                <option value="mak istiyorum">mak istiyorum</option>
+                <option value="mak istiyorsunuz">mak istiyorsunuz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Kuaför:</span>Hangi renge boyat</p>
+              <select class="answer-select" data-correct="mak istiyorsunuz">
+                <option value="">--Выберите ответ--</option>
+                <option value="mek istiyorum">mek istiyorum</option>
+                <option value="mek istiyor musunuz">mek istiyor musunuz</option>
+                <option value="mek istemiyorum">mek istemiyorum</option>
+                <option value="mak istiyor musunuz">mak istiyor musunuz</option>
+                <option value="mak istiyorum">mak istiyorum</option>
+                <option value="mak istiyorsunuz">mak istiyorsunuz</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                <span>Ceren Hanım:</span> Saçımın rengini seviyorum ama daha
+                canlı bir renk istiyorum. Mesela kızıl.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Kuaför:</span>Tamam hemen boyuyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Ceren Hanım:</span> Lütfen boyayın!</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Kuaför:</span>Manikür, pedikür yaptır</p>
+              <select class="answer-select" data-correct="mak istiyor musunuz">
+                <option value="">--Выберите ответ--</option>
+                <option value="mek istiyorum">mek istiyorum</option>
+                <option value="mek istiyor musunuz">mek istiyor musunuz</option>
+                <option value="mek istemiyorum">mek istemiyorum</option>
+                <option value="mak istiyor musunuz">mak istiyor musunuz</option>
+                <option value="mak istiyorum">mak istiyorum</option>
+                <option value="mak istiyorsunuz">mak istiyorsunuz</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Ceren Hanım:</span>Evet, lütfen onlar da olsun!</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 3 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 3. Давайте сопоставим предложения ниже
+      </div>
+      <div class="task-content hidden">
+        <img src="./foto/ders9-task3.jpg" alt="foto ders9-task3" width="1200" />
+
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Açım.</p>
+              <select
+                class="answer-select"
+                data-correct="Yemek yemek istiyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Uyumak istiyorum.">Uyumak istiyorum.</option>
+                <option value="Eve gitmek istiyorum.">
+                  Eve gitmek istiyorum.
+                </option>
+                <option value="Yemek yemek istiyorum.">
+                  Yemek yemek istiyorum.
+                </option>
+                <option value="Zayıflamak istiyorum.">
+                  Zayıflamak istiyorum.
+                </option>
+                <option value="Alışveriş yapmak istiyorum.">
+                  Alışveriş yapmak istiyorum.
+                </option>
+                <option value="Onları aramak istiyorum.">
+                  Onları aramak istiyorum.
+                </option>
+                <option value="Doktora gitmek istiyorum.">
+                  Doktora gitmek istiyorum.
+                </option>
+                <option value="Onu izlemek istiyorum.">
+                  Onu izlemek istiyorum.
+                </option>
+                <option value="Ders çalışmak istiyorum.">
+                  Ders çalışmak istiyorum.
+                </option>
+                <option value="Dinlenmek istiyorum.">
+                  Dinlenmek istiyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Yarın sınav var.</p>
+              <select
+                class="answer-select"
+                data-correct="Ders çalışmak istiyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Uyumak istiyorum.">Uyumak istiyorum.</option>
+                <option value="Eve gitmek istiyorum.">
+                  Eve gitmek istiyorum.
+                </option>
+                <option value="Yemek yemek istiyorum.">
+                  Yemek yemek istiyorum.
+                </option>
+                <option value="Zayıflamak istiyorum.">
+                  Zayıflamak istiyorum.
+                </option>
+                <option value="Alışveriş yapmak istiyorum.">
+                  Alışveriş yapmak istiyorum.
+                </option>
+                <option value="Onları aramak istiyorum.">
+                  Onları aramak istiyorum.
+                </option>
+                <option value="Doktora gitmek istiyorum.">
+                  Doktora gitmek istiyorum.
+                </option>
+                <option value="Onu izlemek istiyorum.">
+                  Onu izlemek istiyorum.
+                </option>
+                <option value="Ders çalışmak istiyorum.">
+                  Ders çalışmak istiyorum.
+                </option>
+                <option value="Dinlenmek istiyorum.">
+                  Dinlenmek istiyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ailemi özlüyorum.</p>
+              <select
+                class="answer-select"
+                data-correct="Onları aramak istiyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Uyumak istiyorum.">Uyumak istiyorum.</option>
+                <option value="Eve gitmek istiyorum.">
+                  Eve gitmek istiyorum.
+                </option>
+                <option value="Yemek yemek istiyorum.">
+                  Yemek yemek istiyorum.
+                </option>
+                <option value="Zayıflamak istiyorum.">
+                  Zayıflamak istiyorum.
+                </option>
+                <option value="Alışveriş yapmak istiyorum.">
+                  Alışveriş yapmak istiyorum.
+                </option>
+                <option value="Onları aramak istiyorum.">
+                  Onları aramak istiyorum.
+                </option>
+                <option value="Doktora gitmek istiyorum.">
+                  Doktora gitmek istiyorum.
+                </option>
+                <option value="Onu izlemek istiyorum.">
+                  Onu izlemek istiyorum.
+                </option>
+                <option value="Ders çalışmak istiyorum.">
+                  Ders çalışmak istiyorum.
+                </option>
+                <option value="Dinlenmek istiyorum.">
+                  Dinlenmek istiyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Çok yorgunum.</p>
+              <select class="answer-select" data-correct="Dinlenmek istiyorum.">
+                <option value="">--Выберите ответ--</option>
+                <option value="Uyumak istiyorum.">Uyumak istiyorum.</option>
+                <option value="Eve gitmek istiyorum.">
+                  Eve gitmek istiyorum.
+                </option>
+                <option value="Yemek yemek istiyorum.">
+                  Yemek yemek istiyorum.
+                </option>
+                <option value="Zayıflamak istiyorum.">
+                  Zayıflamak istiyorum.
+                </option>
+                <option value="Alışveriş yapmak istiyorum.">
+                  Alışveriş yapmak istiyorum.
+                </option>
+                <option value="Onları aramak istiyorum.">
+                  Onları aramak istiyorum.
+                </option>
+                <option value="Doktora gitmek istiyorum.">
+                  Doktora gitmek istiyorum.
+                </option>
+                <option value="Onu izlemek istiyorum.">
+                  Onu izlemek istiyorum.
+                </option>
+                <option value="Ders çalışmak istiyorum.">
+                  Ders çalışmak istiyorum.
+                </option>
+                <option value="Dinlenmek istiyorum.">
+                  Dinlenmek istiyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Evde hiç yemek yok.</p>
+              <select
+                class="answer-select"
+                data-correct="Alışveriş yapmak istiyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Uyumak istiyorum.">Uyumak istiyorum.</option>
+                <option value="Eve gitmek istiyorum.">
+                  Eve gitmek istiyorum.
+                </option>
+                <option value="Yemek yemek istiyorum.">
+                  Yemek yemek istiyorum.
+                </option>
+                <option value="Zayıflamak istiyorum.">
+                  Zayıflamak istiyorum.
+                </option>
+                <option value="Alışveriş yapmak istiyorum.">
+                  Alışveriş yapmak istiyorum.
+                </option>
+                <option value="Onları aramak istiyorum.">
+                  Onları aramak istiyorum.
+                </option>
+                <option value="Doktora gitmek istiyorum.">
+                  Doktora gitmek istiyorum.
+                </option>
+                <option value="Onu izlemek istiyorum.">
+                  Onu izlemek istiyorum.
+                </option>
+                <option value="Ders çalışmak istiyorum.">
+                  Ders çalışmak istiyorum.
+                </option>
+                <option value="Dinlenmek istiyorum.">
+                  Dinlenmek istiyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Dersim yok.</p>
+              <select
+                class="answer-select"
+                data-correct=" Eve gitmek istiyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Uyumak istiyorum.">Uyumak istiyorum.</option>
+                <option value="Eve gitmek istiyorum.">
+                  Eve gitmek istiyorum.
+                </option>
+                <option value="Yemek yemek istiyorum.">
+                  Yemek yemek istiyorum.
+                </option>
+                <option value="Zayıflamak istiyorum.">
+                  Zayıflamak istiyorum.
+                </option>
+                <option value="Alışveriş yapmak istiyorum.">
+                  Alışveriş yapmak istiyorum.
+                </option>
+                <option value="Onları aramak istiyorum.">
+                  Onları aramak istiyorum.
+                </option>
+                <option value="Doktora gitmek istiyorum.">
+                  Doktora gitmek istiyorum.
+                </option>
+                <option value="Onu izlemek istiyorum.">
+                  Onu izlemek istiyorum.
+                </option>
+                <option value="Ders çalışmak istiyorum.">
+                  Ders çalışmak istiyorum.
+                </option>
+                <option value="Dinlenmek istiyorum.">
+                  Dinlenmek istiyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Hastayım.</p>
+              <select
+                class="answer-select"
+                data-correct="Doktora gitmek istiyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Uyumak istiyorum.">Uyumak istiyorum.</option>
+                <option value="Eve gitmek istiyorum.">
+                  Eve gitmek istiyorum.
+                </option>
+                <option value="Yemek yemek istiyorum.">
+                  Yemek yemek istiyorum.
+                </option>
+                <option value="Zayıflamak istiyorum.">
+                  Zayıflamak istiyorum.
+                </option>
+                <option value="Alışveriş yapmak istiyorum.">
+                  Alışveriş yapmak istiyorum.
+                </option>
+                <option value="Onları aramak istiyorum.">
+                  Onları aramak istiyorum.
+                </option>
+                <option value="Doktora gitmek istiyorum.">
+                  Doktora gitmek istiyorum.
+                </option>
+                <option value="Onu izlemek istiyorum.">
+                  Onu izlemek istiyorum.
+                </option>
+                <option value="Ders çalışmak istiyorum.">
+                  Ders çalışmak istiyorum.
+                </option>
+                <option value="Dinlenmek istiyorum.">
+                  Dinlenmek istiyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Uykum var.</p>
+              <select class="answer-select" data-correct="Uyumak istiyorum.">
+                <option value="">--Выберите ответ--</option>
+                <option value="Uyumak istiyorum.">Uyumak istiyorum.</option>
+                <option value="Eve gitmek istiyorum.">
+                  Eve gitmek istiyorum.
+                </option>
+                <option value="Yemek yemek istiyorum.">
+                  Yemek yemek istiyorum.
+                </option>
+                <option value="Zayıflamak istiyorum.">
+                  Zayıflamak istiyorum.
+                </option>
+                <option value="Alışveriş yapmak istiyorum.">
+                  Alışveriş yapmak istiyorum.
+                </option>
+                <option value="Onları aramak istiyorum.">
+                  Onları aramak istiyorum.
+                </option>
+                <option value="Doktora gitmek istiyorum.">
+                  Doktora gitmek istiyorum.
+                </option>
+                <option value="Onu izlemek istiyorum.">
+                  Onu izlemek istiyorum.
+                </option>
+                <option value="Ders çalışmak istiyorum.">
+                  Ders çalışmak istiyorum.
+                </option>
+                <option value="Dinlenmek istiyorum.">
+                  Dinlenmek istiyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Sinemada yeni bir film var.</p>
+              <select
+                class="answer-select"
+                data-correct="Onu izlemek istiyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Uyumak istiyorum.">Uyumak istiyorum.</option>
+                <option value="Eve gitmek istiyorum.">
+                  Eve gitmek istiyorum.
+                </option>
+                <option value="Yemek yemek istiyorum.">
+                  Yemek yemek istiyorum.
+                </option>
+                <option value="Zayıflamak istiyorum.">
+                  Zayıflamak istiyorum.
+                </option>
+                <option value="Alışveriş yapmak istiyorum.">
+                  Alışveriş yapmak istiyorum.
+                </option>
+                <option value="Onları aramak istiyorum.">
+                  Onları aramak istiyorum.
+                </option>
+                <option value="Doktora gitmek istiyorum.">
+                  Doktora gitmek istiyorum.
+                </option>
+                <option value="Onu izlemek istiyorum.">
+                  Onu izlemek istiyorum.
+                </option>
+                <option value="Ders çalışmak istiyorum.">
+                  Ders çalışmak istiyorum.
+                </option>
+                <option value="Dinlenmek istiyorum.">
+                  Dinlenmek istiyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Çok şişmanım.</p>
+              <select
+                class="answer-select"
+                data-correct="Zayıflamak istiyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Uyumak istiyorum.">Uyumak istiyorum.</option>
+                <option value="Eve gitmek istiyorum.">
+                  Eve gitmek istiyorum.
+                </option>
+                <option value="Yemek yemek istiyorum.">
+                  Yemek yemek istiyorum.
+                </option>
+                <option value="Zayıflamak istiyorum.">
+                  Zayıflamak istiyorum.
+                </option>
+                <option value="Alışveriş yapmak istiyorum.">
+                  Alışveriş yapmak istiyorum.
+                </option>
+                <option value="Onları aramak istiyorum.">
+                  Onları aramak istiyorum.
+                </option>
+                <option value="Doktora gitmek istiyorum.">
+                  Doktora gitmek istiyorum.
+                </option>
+                <option value="Onu izlemek istiyorum.">
+                  Onu izlemek istiyorum.
+                </option>
+                <option value="Ders çalışmak istiyorum.">
+                  Ders çalışmak istiyorum.
+                </option>
+                <option value="Dinlenmek istiyorum.">
+                  Dinlenmek istiyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="../ders8/ders8-4test.html"> <button>Назад</button></a>
+
+      <a href="./ders9-2.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

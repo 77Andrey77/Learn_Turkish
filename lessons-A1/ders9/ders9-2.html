@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_9</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 9 (İSTANBUL’DA GEZİYORUM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders9.html"
+            ><button>Использование глагола "Хотеть"</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders9-2.html"><button class="active">Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders9-3.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders9-4test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Использование глагола "хотеть". На уроке вы научитесь рассказывать о своих
+      желаниях и планах. Что пригодится, например, на собеседовании или на
+      свидании. И значительно повысит ваши шансы на получение работы мечты или
+      достижения нового этапа в отношениях.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set10"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/istemek.jpg" alt="istemek" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+
+    <!-- ////////////чтение//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">ЧТЕНИЕ</div>
+      <div class="task-content hidden">
+        <img
+          src="./foto/ders9-read.jpg"
+          alt="ders9-read"
+          style="margin-bottom: 20px"
+        />
+        <ul>
+          <p><span>ALIŞVERİŞTE</span></p>
+
+          <li><span>Meral:</span> Merhaba, iyi günler!</li>
+          <li><span>Satıcı:</span> Merhaba, hoş geldiniz!</li>
+          <li><span>Meral:</span> Bir kazak almak istiyorum.</li>
+          <li><span>Satıcı:</span> Kaç beden giyiyorsunuz?</li>
+          <li><span>Meral:</span> 36 beden giyiyorum.</li>
+          <li><span>Satıcı:</span> Ne renk istiyorsunuz?</li>
+          <li><span>Meral:</span> Kırmızı lütfen.</li>
+          <li>
+            <span>Satıcı:</span> Maalesef kırmızı yok. Başka renk istiyor
+            musunuz?
+          </li>
+          <li><span>Meral:</span> Başka hangi renk var?</li>
+          <li><span>Satıcı:</span> Buyurun, bütün kazaklar burada.</li>
+          <li><span>Meral:</span> Şu siyah kazak güzel, denemek istiyorum.</li>
+          <li><span>Satıcı:</span> Tabii efendim.</li>
+          <li><span>Meral:</span> Ama bu biraz küçük. 38 beden var mı?</li>
+          <li><span>Satıcı:</span> Bir dakika lütfen. Buyurun, 38 beden.</li>
+          <li><span>Meral:</span> Bu çok güzel. Alıyorum. Ne kadar?</li>
+          <li>
+            <span>Satıcı:</span> 50 lira. Nasıl ödemek istiyorsunuz? Kredi kartı
+            ile mi, nakit mi? Nakitte %10 indirimimiz var. 45 lira ediyor.
+          </li>
+          <li><span>Meral:</span> Kaç taksit yapıyorsunuz?</li>
+          <li><span>Satıcı:</span> Kredi kartına 2 taksit.</li>
+          <li><span>Meral:</span> Peşin ödemek istiyorum. Buyurun.</li>
+          <li><span>Satıcı:</span> Buyurun, para üstünüz. İyi günler!</li>
+          <li><span>Meral:</span> İyi günler!</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 4 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 4. Давайте отметим верно (Doğru) или неверно (Yanlış)
+        предложение
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Meral pantolon almak istiyor.</p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Yanlış">Yanlış</option>
+                <option value="Doğru">Doğru</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Meral siyah kazağı deniyor.</p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+                <option value="Yanlış">Yanlış</option>
+                <option value="Doğru">Doğru</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Mağazada 38 beden kazak yok.</p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Yanlış">Yanlış</option>
+                <option value="Doğru">Doğru</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Kazak 75 lira.</p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Yanlış">Yanlış</option>
+                <option value="Doğru">Doğru</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 5 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 5. Давайте вставим правильный глагол
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Meral mağazadan kırmızı bir kazak almak</p>
+              <select class="answer-select" data-correct="istiyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="istiyor">istiyor</option>
+                <option value="veriyor">veriyor</option>
+                <option value="deniyor">deniyor</option>
+                <option value="beğeniyor">beğeniyor</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Satıcı kazağı Meral’e</p>
+              <select class="answer-select" data-correct="veriyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="istiyor">istiyor</option>
+                <option value="veriyor">veriyor</option>
+                <option value="deniyor">deniyor</option>
+                <option value="beğeniyor">beğeniyor</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Meral kazağı</p>
+              <select class="answer-select" data-correct="deniyor">
+                <option value="">--Выберите ответ--</option>
+                <option value="istiyor">istiyor</option>
+                <option value="veriyor">veriyor</option>
+                <option value="deniyor">deniyor</option>
+                <option value="beğeniyor">beğeniyor</option>
+              </select>
+              <p>ama bu kazak Meral’e dar oluyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Meral satıcıdan 38 beden bir kazak</p>
+              <select class="answer-select" data-correct="istiyor">
+                <option value="">--Выберите ответ--</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Meral kazağı</p>
+              <select class="answer-select" data-correct="beğeniyor">
+                <option value="">--Выберите ответ--</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+              <p>ve alıyor.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders9.html"> <button>Назад</button></a>
+
+      <a href="./ders9-3.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

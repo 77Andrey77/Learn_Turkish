@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_9</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 9 (İSTANBUL’DA GEZİYORUM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders9.html"
+            ><button>Использование глагола "Хотеть"</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders9-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders9-3.html"
+            ><button class="active">Аудирование</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders9-4test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Использование глагола "хотеть". На уроке вы научитесь рассказывать о своих
+      желаниях и планах. Что пригодится, например, на собеседовании или на
+      свидании. И значительно повысит ваши шансы на получение работы мечты или
+      достижения нового этапа в отношениях.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set10"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/istemek.jpg" alt="istemek" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////audio//////////// -->
+
+    <img
+      class="icon-headphones"
+      src="../../icons/icon-headphones.svg"
+      alt="icon-headphones"
+    />
+    <p class="title-audio">АУДИРОВАНИЕ</p>
+    <div class="section-wrapper">
+      <audio
+        src="../../audio/ders9-page3.m4a"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></audio>
+    </div>
+
+    <section class="task-section">
+      <div class="task-header">ТЕКСТ АУДИО</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>İyi günler.</li>
+          <li>İyi günler efendim.</li>
+          <li>Saçımı kestirmek istiyorum.</li>
+          <li>Buyurun, şuraya oturun. Nasıl kestirmek istiyorsunuz?</li>
+          <li>Kısa olsun lütfen.</li>
+          <li>Başka bir şey istiyor musunuz ?</li>
+          <li>Evet, manikür de yaptırmak istiyorum.</li>
+          <br />
+
+          <li>Günaydın.</li>
+          <li>Günaydın. Buyurun. Ne almak istiyorsunuz ?</li>
+          <li>Bir ekmek, bir litre süt ve beş yumurta almak istiyorum.</li>
+          <li>Tamam, buyurun. Başka bir şey istiyor musunuz ?</li>
+          <li>Hayır, teşekkürler. Hepsi kaç lira ?</li>
+          <li>7 lira. Buyurun. Teşekkürler.</li>
+          <br />
+
+          <li>Merhaba. Hoş geldiniz.</li>
+          <li>Merhaba. Bir pantolon almak istiyorum.</li>
+          <li>Kaç beden giyiyorsunuz ?</li>
+          <li>36 beden giyiyorum.</li>
+          <li>Ne renk istiyorsunuz ?</li>
+          <li>Siyah lütfen.</li>
+          <li>Buyurun, denemek istiyor musunuz ?</li>
+          <li>Evet. Bu güzel. Bunu almak istiyorum. Ne kadar ?</li>
+          <li>Elli lira.</li>
+          <li>Buyurun.</li>
+          <br />
+
+          <li>Merhaba. ‘Gora’ filmine bilet almak istiyorum.</li>
+          <li>Hangi seans istiyorsunuz ?</li>
+          <li>Saat 15 seansında yer var mı?</li>
+          <li>Evet, var. Nereden seyretmek istiyorsunuz ? Ön, arka ?</li>
+          <li>Ön, lütfen. Öğrenci indirimi var mı?</li>
+          <li>Evet, var. Tam 15, öğrenci 12 lira.</li>
+          <li>İki öğrenci lütfen.</li>
+          <li>Buyurun biletiniz. Koltuk numaranız 34.</li>
+          <li>Teşekkürler.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- //////////////Задание 6 c foto/////////// -->
+
+    <section class="task-section">
+      <div class="task-header" id="task-header1">
+        Задание 6. Прослушайте аудио и упорядочьте картинки в той
+        последовательности, в которой происходят диалоги
+      </div>
+      <div class="task-content hidden" id="taskContent1">
+        <div class="image-container">
+          <img src="./foto/ders9-task6-1.jpeg" alt="Image 1" />
+          <select class="answer-select" data-correct="3">
+            <option value="">--Выберите ответ--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="./foto/ders9-task6-2.jpeg" alt="Image 2" />
+          <select class="answer-select" data-correct="4">
+            <option value="">--Выберите ответ--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="./foto/ders9-task6-3.jpeg" alt="Image 3" />
+          <select class="answer-select" data-correct="2">
+            <option value="">--Выберите ответ--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="image-container">
+          <img src="./foto/ders9-task6-4.jpeg" alt="Image 4" />
+          <select class="answer-select" data-correct="1">
+            <option value="">--Выберите ответ--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 7 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 7. Выберем, что хотят люди в разных местах
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Kuaförde</p>
+              <select
+                class="answer-select"
+                data-correct="Saçını kısa kestirmek ve manikür yaptırmak"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Gora filmine arka koltuktan bilet">
+                  Gora filmine arka koltuktan bilet
+                </option>
+                <option value="Bir ekmek, bir litre süt ve 10 yumurta almak">
+                  Bir ekmek, bir litre süt ve 10 yumurta almak
+                </option>
+                <option value="Bir ekmek, bir litre süt ve 5 yumurta almak">
+                  Bir ekmek, bir litre süt ve 5 yumurta almak
+                </option>
+                <option value="Saçını az kestirmek ve manikür yaptırmak">
+                  Saçını az kestirmek ve manikür yaptırmak
+                </option>
+                <option value="Gora filmine ön koltuktan bilet">
+                  Gora filmine ön koltuktan bilet
+                </option>
+                <option value="Gri pantolon almak">Gri pantolon almak</option>
+                <option value="Siyah pantolon almak">
+                  Siyah pantolon almak
+                </option>
+                <option value="Saçını kısa kestirmek ve manikür yaptırmak">
+                  Saçını kısa kestirmek ve manikür yaptırmak
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Markette</p>
+              <select
+                class="answer-select"
+                data-correct="Bir ekmek, bir litre süt ve 5 yumurta almak"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Gora filmine arka koltuktan bilet">
+                  Gora filmine arka koltuktan bilet
+                </option>
+                <option value="Bir ekmek, bir litre süt ve 10 yumurta almak">
+                  Bir ekmek, bir litre süt ve 10 yumurta almak
+                </option>
+                <option value="Bir ekmek, bir litre süt ve 5 yumurta almak">
+                  Bir ekmek, bir litre süt ve 5 yumurta almak
+                </option>
+                <option value="Saçını az kestirmek ve manikür yaptırmak">
+                  Saçını az kestirmek ve manikür yaptırmak
+                </option>
+                <option value="Gora filmine ön koltuktan bilet">
+                  Gora filmine ön koltuktan bilet
+                </option>
+                <option value="Gri pantolon almak">Gri pantolon almak</option>
+                <option value="Siyah pantolon almak">
+                  Siyah pantolon almak
+                </option>
+                <option value="Saçını kısa kestirmek ve manikür yaptırmak">
+                  Saçını kısa kestirmek ve manikür yaptırmak
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Mağazada</p>
+              <select class="answer-select" data-correct="Siyah pantolon almak">
+                <option value="">--Выберите ответ--</option>
+                <option value="Gora filmine arka koltuktan bilet">
+                  Gora filmine arka koltuktan bilet
+                </option>
+                <option value="Bir ekmek, bir litre süt ve 10 yumurta almak">
+                  Bir ekmek, bir litre süt ve 10 yumurta almak
+                </option>
+                <option value="Bir ekmek, bir litre süt ve 5 yumurta almak">
+                  Bir ekmek, bir litre süt ve 5 yumurta almak
+                </option>
+                <option value="Saçını az kestirmek ve manikür yaptırmak">
+                  Saçını az kestirmek ve manikür yaptırmak
+                </option>
+                <option value="Gora filmine ön koltuktan bilet">
+                  Gora filmine ön koltuktan bilet
+                </option>
+                <option value="Gri pantolon almak">Gri pantolon almak</option>
+                <option value="Siyah pantolon almak">
+                  Siyah pantolon almak
+                </option>
+                <option value="Saçını kısa kestirmek ve manikür yaptırmak">
+                  Saçını kısa kestirmek ve manikür yaptırmak
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Sinemada</p>
+              <select
+                class="answer-select"
+                data-correct="Gora filmine ön koltuktan bilet"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Gora filmine arka koltuktan bilet">
+                  Gora filmine arka koltuktan bilet
+                </option>
+                <option value="Bir ekmek, bir litre süt ve 10 yumurta almak">
+                  Bir ekmek, bir litre süt ve 10 yumurta almak
+                </option>
+                <option value="Bir ekmek, bir litre süt ve 5 yumurta almak">
+                  Bir ekmek, bir litre süt ve 5 yumurta almak
+                </option>
+                <option value="Saçını az kestirmek ve manikür yaptırmak">
+                  Saçını az kestirmek ve manikür yaptırmak
+                </option>
+                <option value="Gora filmine ön koltuktan bilet">
+                  Gora filmine ön koltuktan bilet
+                </option>
+                <option value="Gri pantolon almak">Gri pantolon almak</option>
+                <option value="Siyah pantolon almak">
+                  Siyah pantolon almak
+                </option>
+                <option value="Saçını kısa kestirmek ve manikür yaptırmak">
+                  Saçını kısa kestirmek ve manikür yaptırmak
+                </option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders9-2.html"> <button>Назад</button></a>
+
+      <a href="./ders9-4test.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>
