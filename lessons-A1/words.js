@@ -1782,5 +1782,129 @@ const wordsSets = {
             translation: "размер",
             image: "./foto/beden.jpg"
     }  
+    ],
+    set11: [
+         {
+            word: "aile",
+            translation: "семья",
+            image: "./foto/aile.jpg"
+        }, 
+         {
+            word: "anne",
+            translation: "мама",
+            image: "../not-image.png"
+        },
+          {
+            word: "baba",
+            translation: "папа",
+            image: "../not-image.png"
+        },
+           {
+            word: "abla",
+            translation: "старшая сестра",
+            image: "../not-image.png"
+        },
+            {
+            word: "abi",
+            translation: "старший брат",
+            image: "../not-image.png"
+        },
+             {
+            word: "erkek kardeş",
+            translation: "младший брат",
+            image: "../not-image.png"
+        },
+              {
+            word: "kız kardeş",
+            translation: "младшая сестра",
+            image: "../not-image.png"
+        },
+               {
+            word: "amca",
+            translation: "дядя (брат отца)",
+            image: "../not-image.png"
+        },
+                {
+            word: "dayı",
+            translation: "дядя (брат матери)",
+            image: "../not-image.png"
+        },
+                 {
+            word: "teyze",
+            translation: "тетя (по матери)",
+            image: "../not-image.png"
+        },
+                  {
+            word: "hala",
+            translation: "тетя (сестра отца)",
+            image: "../not-image.png"
+        },
+                   {
+            word: "anneanne",
+            translation: "бабушка по матери",
+            image: "./foto/anneanne.jpg"
+        },
+                    {
+            word: "babaanne",
+            translation: "бабушка по отцу",
+            image: "./foto/babaanne.jpg"
+        },
+                     {
+            word: "dede",
+            translation: "дедушка",
+            image: "./foto/dede.jpg"
+        },
+                      {
+            word: "torun",
+            translation: "внук",
+            image: "./foto/torun.jpg"
+        },
+                       {
+            word: "oğul",
+            translation: "сын",
+            image: "./foto/oğul.jpg"
+    } ,
+     {
+            word: "kız",
+            translation: "дочь, девочка",
+            image: "./foto/kız.jpg"
+    } ,
+     {
+            word: "aydınlık",
+            translation: "светло",
+            image: "./foto/aydınlık.jpg"
+    } ,
+     {
+            word: "hukuk",
+            translation: "право",
+            image: "./foto/hukuk.jpg"
+    } ,
+     {
+            word: "muhasebeci",
+            translation: "бухгалтер",
+            image: "./foto/muhasebeci.jpg"
+    } ,
+     {
+            word: "görünmek",
+            translation: "казаться",
+            image: "./foto/görünmek.jpg"
+        },
+      {
+            word: "sağılıklı",
+            translation: "здоровый",
+            image: "./foto/sağılıklı.jpg"
+        },
+       {
+            word: "gelin",
+            translation: "невеста",
+            image: "./foto/gelin.jpg"
+        },
+        {
+            word: "koca",
+            translation: "муж",
+            image: "./foto/koca.jpg"
+        }
+          
+
     ]
 };
