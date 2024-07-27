@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_10</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 10 (AİLEM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders10.html"
+            ><button>Притяжательные местоимения и аффиксы</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders10-2.html"
+            ><button class="active">Члены семьи</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders10-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders10-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders10-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Члены семьи. Притяжательные местоимения и аффиксы. На уроке вы научитесь
+      рассказывать о родственниках. И о том, какие предметы и кому принадлежат.
+      Эти знания выручат вас, если вы хотите, чтобы собеседник узнал вас чуточку
+      ближе.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set11"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/aile.jpg" alt="aile" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+
+    <!-- /////////////Задание 6 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Прочтите и переведите текст</div>
+      <div class="task-content write hidden">
+        <img src="./foto/ders10-p2-1.jpg" alt="foto ders10-p2-1" />
+
+        <ul style="width: 600px; margin-left: 15px">
+          <li>
+            <p>
+              Benim adım Sevim. Halil benim kocam. Suna bizim kızımız ve Mert
+              bizim oğlumuz. Ben 30 yaşındayım. Ben öğretmenim ve Beşiktaş’ta
+              bir lisede çalışıyorum.
+            </p>
+          </li>
+          <br />
+
+          <li>
+            <p>
+              Benim adım Halil. Sevim benim karım. Suna bizim kızımız ve Mert
+              bizim oğlumuz. Ben 34 yaşındayım. Ben doktorum ve Şişli’de bir
+              hastanede çalışıyorum.
+            </p>
+          </li>
+          <br />
+
+          <li>
+            <p>
+              Benim adım Suna. Sevim benim annem, Halil benim babam. Mert benim
+              ağabeyim. Ben 4 yaşındayım. Ben anaokuluna gidiyorum. Okulum
+              Beşiktaş’ta.
+            </p>
+          </li>
+          <br />
+
+          <li>
+            <p>
+              Benim adım Mert. Sevim benim annem, Halil benim babam. Suna benim
+              kız kardeşim. Ben 8 yaşındayım. Ben ilkokul 2. sınıfa gidiyorum.
+              Benim okulum Kabataş’ta.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /////////////Задание 7 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 7. Давайте отметим верно (Doğru) или неверно (Yanlış)
+        предложение
+      </div>
+      <div class="task-content hidden">
+        <!-- <img src="./foto/ders10-task2.jpg" alt="ders10-task2" width="1200" /> -->
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Suna, Sevim ve Halil’in kızı.</p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Mert, Suna’nın ağabeyi.</p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Sevim, Suna ve Mert’in ablası.</p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Mert, Suna’nın kocası.</p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Suna ve Mert, Halil ve Sevim’in çocukları</p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 8 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 8. Давайте укажем, от чьего имени написаны предложения ниже
+      </div>
+      <div class="task-content hidden">
+        <!-- <img src="./foto/ders10-task2.jpg" alt="ders10-task2" width="1200" /> -->
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Benim ablam yok, bir ağabeyim var.</p>
+              <select class="answer-select" data-correct="Suna">
+                <option value="">--Выберите ответ--</option>
+                <option value="Suna">Suna</option>
+                <option value="Sevim">Sevim</option>
+                <option value="Mert">Mert</option>
+                <option value="Halil">Halil</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Öğrencilerimi çok seviyorum.</p>
+              <select class="answer-select" data-correct="Sevim">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Evde en küçük benim.</p>
+              <select class="answer-select" data-correct="Suna">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Hastalara ilaç veriyorum.</p>
+              <select class="answer-select" data-correct="Halil">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Benim karım öğretmen.</p>
+              <select class="answer-select" data-correct="Halil">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Benim kocam doktor.</p>
+              <select class="answer-select" data-correct="Sevim">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Benim kız kardeşim çok yaramaz.</p>
+              <select class="answer-select" data-correct="Mert">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ağabeyim ile oyun oynuyorum.</p>
+              <select class="answer-select" data-correct="Suna">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 9 без картин//////////// -->
+    <section class="task-section">
+      <div class="task-header">
+        Задание 9. Давайте напишем недостающие аффиксы(Писать с маленькой
+        буквы).
+      </div>
+      <div class="task-content write hidden">
+        <img
+          src="./foto/ders10-task9.jpg"
+          alt="foto ders10-task9"
+          width="100%"
+        />
+        <form id="text-form-29">
+          <ul>
+            <li
+              class="inline"
+              style="flex-wrap: wrap; background-color: rgb(221, 212, 210)"
+            >
+              <label for="word392">Ben</label>
+              <input class="short" type="text" id="word392" name="word392" />
+              <label for="word393">ad</label>
+              <input class="short" type="text" id="word393" name="word393" />
+              <label for="word394"
+                >Öznur. Ben 21 yaşındayım ve Ankaralıyım. Ben İstanbul
+                Üniversitesi Hukuk Fakültesinde öğrenciyim. Ben</label
+              >
+              <input class="short" type="text" id="word394" name="word394" />
+              <label for="word395">okul</label>
+              <input class="short" type="text" id="word395" name="word395" />
+              <label for="word396">Beyazıt’ta. Haftada 5 gün okul</label>
+              <input class="short" type="text" id="word396" name="word396" />
+              <label for="word397"> gidiyorum. Ben</label>
+              <input class="short" type="text" id="word397" name="word397" />
+              <label for="word398"> ders</label>
+              <input class="short" type="text" id="word398" name="word398" />
+              <p>09.00’da başlıyor ve 15.30’da bitiyor.</p>
+            </li>
+
+            <li
+              class="inline"
+              style="flex-wrap: wrap; background-color: rgb(221, 212, 210)"
+            >
+              <label for="word399">Ben</label>
+              <input class="short" type="text" id="word399" name="word399" />
+              <label for="word400">ev</label>
+              <input class="short" type="text" id="word400" name="word400" />
+              <label for="word401">Fatih’te, okul</label>
+              <input class="short" type="text" id="word401" name="word401" />
+              <label for="word402"> yakın. Ben evde 2 arkadaş</label>
+              <input class="short" type="text" id="word402" name="word402" />
+              <label for="word403">ile kalıyorum. Onlar</label>
+              <input class="short" type="text" id="word403" name="word403" />
+              <label for="word404">ad</label>
+              <input class="short" type="text" id="word404" name="word404" />
+              <label for="word405"
+                >Sibel ve Demet. Sibel ile aynı sınıftayız. Demet ise Marmara
+                Üniversite</label
+              >
+              <input class="short" type="text" id="word405" name="word405" />
+              <p>öğrenci. Hepimiz çok iyi anlaşıyoruz.</p>
+            </li>
+
+            <li
+              class="inline"
+              style="flex-wrap: wrap; background-color: rgb(221, 212, 210)"
+            >
+              <label for="word406">Ben</label>
+              <input class="short" type="text" id="word406" name="word406" />
+              <label for="word407"> aile</label>
+              <input class="short" type="text" id="word407" name="word407" />
+              <label for="word408">Ankara’da. Ben</label>
+              <input class="short" type="text" id="word408" name="word408" />
+              <label for="word409"> iki erkek kardeş</label>
+              <input class="short" type="text" id="word409" name="word409" />
+              <label for="word410">var. Onlar</label>
+              <input class="short" type="text" id="word410" name="word410" />
+              <label for="word411">ad</label>
+              <input class="short" type="text" id="word411" name="word411" />
+              <label for="word412"
+                >Ömer ve Ozan. Ömer 17 yaşında. O lisede öğrenci ve o</label
+              >
+              <input class="short" type="text" id="word412" name="word412" />
+              <label for="word413">ders</label>
+              <input class="short" type="text" id="word413" name="word413" />
+              <p>
+                çok iyi. O şimdi üniversite sınavına hazırlanıyor. Ozan 12
+                yaşında. Ozan altıncı sınıfa gidiyor.
+              </p>
+            </li>
+
+            <li
+              class="inline"
+              style="flex-wrap: wrap; background-color: rgb(221, 212, 210)"
+            >
+              <label for="word414">Ben</label>
+              <input class="short" type="text" id="word414" name="word414" />
+              <label for="word415">anne</label>
+              <input class="short" type="text" id="word415" name="word415" />
+              <label for="word416"
+                >42 yaşında ve matematik öğretmeni. O Çankaya Lisesinde
+                çalışıyor. Baba</label
+              >
+              <input class="short" type="text" id="word416" name="word416" />
+              <label for="word417">44 yaşında ve eczacı. O</label>
+              <input class="short" type="text" id="word417" name="word417" />
+              <label for="word418">eczane</label>
+              <input class="short" type="text" id="word418" name="word418" />
+              <p>Kızılay’da.</p>
+            </li>
+
+            <li
+              class="inline"
+              style="flex-wrap: wrap; background-color: rgb(221, 212, 210)"
+            >
+              <label for="word419">Biz</label>
+              <input class="short" type="text" id="word419" name="word419" />
+              <label for="word420">bir de köpeğ</label>
+              <input class="short" type="text" id="word420" name="word420" />
+              <label for="word421"> var. O</label>
+              <input class="short" type="text" id="word421" name="word421" />
+              <label for="word422">ad</label>
+              <input class="short" type="text" id="word422" name="word422" />
+              <label for="word423">Boncuk. Boncuk’</label>
+              <input class="short" type="text" id="word423" name="word423" />
+              <label for="word424">tüyler</label>
+              <input class="short" type="text" id="word424" name="word424" />
+              <label for="word425">beyaz, göz</label>
+              <input class="short" type="text" id="word425" name="word425" />
+              <label for="word426">mavi. Boncuk, Ozan’</label>
+              <input class="short" type="text" id="word426" name="word426" />
+              <label for="word427">en iyi arkadaş</label>
+              <input class="short" type="text" id="word427" name="word427" />
+              <p>. Beraber oynuyorlar, parka gidiyorlar ve çok eğleniyorlar.</p>
+            </li>
+
+            <li
+              class="inline"
+              style="flex-wrap: wrap; background-color: rgb(221, 212, 210)"
+            >
+              <label for="word428"
+                >Ben İstanbul’da ailemi çok özlüyorum. Onlar</label
+              >
+              <input class="short" type="text" id="word428" name="word428" />
+              <label for="word429"
+                >her akşam telefon ediyorum. 2 hafta sonra sınavlar</label
+              >
+              <input class="short" type="text" id="word429" name="word429" />
+              <label for="word430">bitiyor ve ben Ankara’</label>
+              <input class="short" type="text" id="word430" name="word430" />
+              <p>gidiyorum.</p>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders10.html"> <button>Назад</button></a>
+
+      <a href="./ders10-3.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

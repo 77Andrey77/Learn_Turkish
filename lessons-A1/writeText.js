@@ -162,8 +162,9 @@ const correctWordsSets = [
 
                   ['sandalyemde','çantanda', 'köpeğinizden', 'evimizde', 'ofisinizde','evinde', 'evime','gözlerime', 'öğretmenlerimize','arkadaşlarıma'],
 //ders10-4  28   (    382           383            384           385          386        387      388      389           390                391)         
-              
-             
+                 
+                  ['im', 'ım', 'im', 'um', 'a', 'im', 'im', 'im', 'im', 'a', 'ım', 'ın', 'ları', 'sinde', 'im', 'm', 'im', 'im', 'ın', 'ları', 'nun', 'leri', 'im', 'm', 'm', 'nun', 'si', 'im', 'imiz', 'nun','ı', 'un','i', 'leri','ın', 'ı','a', 'ım','ya'],
+//ders10-t9  29 (   392  393    394   395   396 397   398    399   400   401  402  403    404     405      406   407  408   409   410    411    412     413    414  415  416   417     418  419    420    421  422  423   424   425   426  427  428  429  430      )
 ] ;
 
         function checkWord(correctWords) {

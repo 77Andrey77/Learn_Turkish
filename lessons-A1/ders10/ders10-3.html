@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_10</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 10 (AİLEM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders10.html"
+            ><button>Притяжательные местоимения и аффиксы</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders10-2.html"><button>Члены семьи</button></a>
+        </li>
+
+        <li>
+          <a href="./ders10-3.html"><button class="active">Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders10-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders10-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Члены семьи. Притяжательные местоимения и аффиксы. На уроке вы научитесь
+      рассказывать о родственниках. И о том, какие предметы и кому принадлежат.
+      Эти знания выручат вас, если вы хотите, чтобы собеседник узнал вас чуточку
+      ближе.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set11"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/aile.jpg" alt="aile" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////ЧТЕНИЕ //////////// -->
+
+    <section class="task-section">
+      <div class="task-header">ЧТЕНИЕ</div>
+      <div class="task-content write hidden">
+        <img
+          src="./foto/ders10-p3-read.jpg"
+          alt="foto ders10-p2-1"
+          width="100%"
+        />
+        <ul>
+          <li>
+            <p><span>AİLEM</span></p>
+          </li>
+
+          <li>
+            <p>
+              Benim adım Betül. Ben 22 yaşındayım. Ben İstanbul Üniversitesinde
+              öğrenciyim. Benim büyük ve mutlu bir ailem var. Dedem, babaannem,
+              annem, babam ve kardeşlerim hep beraber yaşıyoruz.
+            </p>
+          </li>
+          <br />
+
+          <li>
+            <p>
+              Biz 4 kardeşiz. Benim 1 ablam, 1 kız kardeşim ve 1 erkek kardeşim
+              var. Ablamın adı Suna. Ablam 25 yaşında ve evli. Ablamın bir kızı
+              var. Ablam diş doktoru. Kız kardeşimin adı Özlem ve o 19 yaşında.
+              Özlem üniversite birinci sınıfa gidiyor. Erkek kardeşimin adı
+              Mert. Mert 15 yaşında ve lisede öğrenci.
+            </p>
+          </li>
+          <br />
+
+          <li>
+            <p>
+              Babamın adı Adnan. Babam muhasebeci. O bir bankada çalışıyor.
+              Babam 45 yaşında. Babamın hiç kardeşi yok.
+            </p>
+          </li>
+          <br />
+
+          <li>
+            <p>
+              Annemin adı Filiz. Annem de muhasebeci. Annem ve babam aynı
+              bankada çalışıyor. Annem 42 yaşında ama çok genç görünüyor.
+              Annemin 2 kız kardeşi ve 1 erkek kardeşi var.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Dedemin adı Ömer. O emekli öğretmen. Dedem 75 yaşında ve çok
+              sağlıklı. Babaannemin adı Hatice. Babaannem ev hanımı ve 71
+              yaşında.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Benim ailem elbette bu kadar değil. Benim anneannem, dedem,
+              teyzelerim, dayım ve kuzenlerim de var. Ben çok şanslıyım. Çünkü
+              büyük ve mutlu bir ailem var.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 10 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 10. Отметим есть (Var) /нет (Yok) ответы в тексте на следующие
+        вопросы
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <p>
+              Это задание на общее понимание текста, который представлен выше.
+              Т.е. вам нужно прочитать текст выше и ответить - есть ли в тексте
+              ответы на эти вопросы или нет. Если есть информация - выбираете
+              var, если информации нет - выбираете yok.
+            </p>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Betül’ün kaç kardeşi var?</p>
+              <select class="answer-select" data-correct="Var">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yok">Yok</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Betül’ün evi nerede?</p>
+              <select class="answer-select" data-correct="Yok">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yok">Yok</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Betül’ün kardeşleri kaç yaşında?</p>
+              <select class="answer-select" data-correct="Var">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yok">Yok</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Betül’ün babaannesinin kaç çocuğu var?</p>
+              <select class="answer-select" data-correct="Var">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yok">Yok</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Mert kaçıncı sınıfa gidiyor?</p>
+              <select class="answer-select" data-correct="Yok">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yok">Yok</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Betül’ün dayısı kim?</p>
+              <select class="answer-select" data-correct="Yok">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yok">Yok</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Betül’ün annesi nerede çalışıyor?</p>
+              <select class="answer-select" data-correct="Var">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yok">Yok</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Betül nerede okuyor?</p>
+              <select class="answer-select" data-correct="Var">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yok">Yok</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Betül’ün evinde kaç kişi var?</p>
+              <select class="answer-select" data-correct="Var">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yok">Yok</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Betül’ün arkadaşları kim?</p>
+              <select class="answer-select" data-correct="Yok">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yok">Yok</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /////////////Задание 7 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 11. Давайте отметим верно (Doğru) или неверно (Yanlış)
+        предложение
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Betül evin ikinci çocuğu.</p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Betül’ün ablası bekâr.</p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Betül’ün ağabeyi var.</p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Betül’ün annesi ve babası aynı yerde çalışıyor.</p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Mert, evin en küçük çocuğu.</p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Betül’ün halası ve amcası var.</p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders10-2.html"> <button>Назад</button></a>
+
+      <a href="./ders10-4.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>
