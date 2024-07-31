@@ -28,7 +28,7 @@ const wordsSets = {
     {
         word: "büyük",
         translation: "большой",
-        image: "./foto/büyük.jpeg"
+        image: "./foto/büyük.jpg"
     },
     {
         word: "ceket",
@@ -43,7 +43,7 @@ const wordsSets = {
     {
         word: "çatal",
         translation: "вилка",
-        image: "./foto/çatal.jpeg"
+        image: "./foto/çatal.jpg"
     },
     {
         word: "çay",
