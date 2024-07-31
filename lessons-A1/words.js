@@ -38,7 +38,7 @@ const wordsSets = {
     {
         word: "çanta",
         translation: "сумка",
-        image: "./foto/trainer/çanta.jpg"
+        image: "./foto/trainer/çanta.jpg"
     },
     {
         word: "çatal",
@@ -141,7 +141,7 @@ const wordsSets = {
         image: "./foto/trainer/lamba.jpg"
     },
     {
-        word: "ldiven",
+        word: "Eldiven",
         translation: "перчатки",
         image: "./foto/trainer/ldiven.jpg"
     },
