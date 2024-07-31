@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_11</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 11 (ARKADAŞLARIM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders11.html"><button>Национальности и языки</button></a>
+        </li>
+
+        <li>
+          <a href="./ders11-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders11-3.html"
+            ><button class="active">Аудирование</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders11-4test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Национальности и языки. На уроке вы научитесь говорить о разных
+      национальностях и языках. Перед вами будет открыт весь мир на турецком
+      языке.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set12"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="../not-image.png" alt="yabancı" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////audio//////////// -->
+
+    <img
+      class="icon-headphones"
+      src="../../icons/icon-headphones.svg"
+      alt="icon-headphones"
+    />
+    <p class="title-audio">АУДИРОВАНИЕ</p>
+    <div class="section-wrapper">
+      <audio
+        src="../../audio/ders11-page3.m4a"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></audio>
+    </div>
+
+    <!-- /////////////Текст аудио //////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Текст аудио</div>
+      <div class="task-content write hidden">
+        <ul>
+          <li class="inline">
+            <p>
+              Benim adım Leyla. İranlıyım. Farsça konuşuyorum. Tahran’da
+              yaşıyorum. Ben matematik öğretmeniyim. İşimi ve öğrencilerimi çok
+              seviyorum. Boş zamanlarımda müzik dinliyorum ve gitar çalıyorum.
+            </p>
+          </li>
+          <li class="inline">
+            <p>
+              Benim adım Sofya. Ben Yunanım. Yunanca konuşuyorum. Atina’da
+              yaşıyorum. Ben bir mankenim. Reklam filmlerinde oynuyorum. İşim
+              çok eğlenceli. Her gün değişik elbiseler giyiyorum ve fotoğraf
+              çektiriyorum. Boş zamanlarımda spor yapıyorum.
+            </p>
+          </li>
+          <li class="inline">
+            <p>
+              Benim adım Masako. Ben Japonyalıyım. Japonca konuşuyorum. Tokyo’da
+              yaşıyorum. Ben öğrenciyim. Üniversite 3. sınıftayım. Tarih
+              bölümünde okuyorum. Derslerim çok iyi. Boş zamanlarımda dans
+              kurslarına gidiyorum. Dans etmeyi çok seviyorum.
+            </p>
+          </li>
+          <li class="inline">
+            <p>
+              Benim adım Osama. Ürdünlüyüm. Arapça konuşuyorum. Amman’da
+              yaşıyorum. Ben doktorum. Ben büyük bir hastanede çalışıyorum ve
+              çok yoruluyorum. Boş zamanlarımda resim yapıyorum.
+            </p>
+          </li>
+          <li class="inline">
+            <p>
+              Benim adım İgor. Rusyalıyım. Rusça konuşuyorum. Moskova’da
+              yaşıyorum. Ben iş adamıyım. Benim bir şirketim var. Boş
+              zamanlarımda golf oynuyorum.
+            </p>
+          </li>
+          <li class="inline">
+            <p>
+              Benim adım Kim. Koreliyim. Korece konuşuyorum. Seul’da yaşıyorum.
+              Ben inşaat mühendisiyim. Bir şirkette çalışıyorum. İşim çok yoğun
+              ama zevkli. Boş zamanlarımda satranç oynuyorum ve kitap okuyorum.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /////////////Задание 6 c картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 6. Прослушаем аудио и ответим на вопросы
+      </div>
+      <div class="task-content hidden">
+        <div class="item-task12">
+          <img src="./foto/ders11-task6-1.jpeg" alt="1" width="350" />
+          <div class="select-container">
+            <div class="write-container">
+              <p><span>Adı: Leyla</span></p>
+            </div>
+
+            <div class="write-container">
+              <p><span>Milliyeti</span></p>
+              <select class="answer-select" data-correct="İranlı">
+                <option value="">--Выберите ответ--</option>
+                <option value="Yunan">Yunan</option>
+                <option value="Japonyalı">Japonyalı</option>
+                <option value="Ürdünlü">Ürdünlü</option>
+                <option value="Koreli">Koreli</option>
+                <option value="İranlı">İranlı</option>
+                <option value="Rusyalı">Rusyalı</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Şehri</span></p>
+              <select class="answer-select" data-correct="Tahran">
+                <option value="">--Выберите ответ--</option>
+                <option value="Amman">Amman</option>
+                <option value="Seul">Seul</option>
+                <option value="Moskova">Moskova</option>
+                <option value="Tahran">Tahran</option>
+                <option value="Atina">Atina</option>
+                <option value="Tokyo">Tokyo</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Dili</span></p>
+              <select class="answer-select" data-correct="Farsça">
+                <option value="">--Выберите ответ--</option>
+                <option value="Rusça">Rusça</option>
+                <option value="Farsça">Farsça</option>
+                <option value="Japonca">Japonca</option>
+                <option value="Yunanca">Yunanca</option>
+                <option value="Arapça">Arapça</option>
+                <option value="Korece">Korece</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Mesleği</span></p>
+              <select class="answer-select" data-correct="matematik öğretmeni">
+                <option value="">--Выберите ответ--</option>
+                <option value="öğrenci">öğrenci</option>
+                <option value="iş adamı">iş adamı</option>
+                <option value="doktor">doktor</option>
+                <option value="inşaat mühendisi">inşaat mühendisi</option>
+                <option value="matematik öğretmeni">matematik öğretmeni</option>
+                <option value="manken">manken</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/ders11-task6-2.jpeg" alt="2" width="350" />
+          <div class="select-container">
+            <div class="write-container">
+              <p><span>Adı: Sofia</span></p>
+            </div>
+
+            <div class="write-container">
+              <p><span>Milliyeti</span></p>
+              <select class="answer-select" data-correct="Yunan">
+                <option value="">--Выберите ответ--</option>
+                <option value="Yunan">Yunan</option>
+                <option value="Japonyalı">Japonyalı</option>
+                <option value="Ürdünlü">Ürdünlü</option>
+                <option value="Koreli">Koreli</option>
+                <option value="İranlı">İranlı</option>
+                <option value="Rusyalı">Rusyalı</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Şehri</span></p>
+              <select class="answer-select" data-correct="Atina">
+                <option value="">--Выберите ответ--</option>
+                <option value="Amman">Amman</option>
+                <option value="Seul">Seul</option>
+                <option value="Moskova">Moskova</option>
+                <option value="Tahran">Tahran</option>
+                <option value="Atina">Atina</option>
+                <option value="Tokyo">Tokyo</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Dili</span></p>
+              <select class="answer-select" data-correct="Yunanca">
+                <option value="">--Выберите ответ--</option>
+                <option value="Rusça">Rusça</option>
+                <option value="Farsça">Farsça</option>
+                <option value="Japonca">Japonca</option>
+                <option value="Yunanca">Yunanca</option>
+                <option value="Arapça">Arapça</option>
+                <option value="Korece">Korece</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Mesleği</span></p>
+              <select class="answer-select" data-correct="manken">
+                <option value="">--Выберите ответ--</option>
+                <option value="öğrenci">öğrenci</option>
+                <option value="iş adamı">iş adamı</option>
+                <option value="doktor">doktor</option>
+                <option value="inşaat mühendisi">inşaat mühendisi</option>
+                <option value="matematik öğretmeni">matematik öğretmeni</option>
+                <option value="manken">manken</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/ders11-task6-3.jpg" alt="3" width="350" />
+          <div class="select-container">
+            <div class="write-container">
+              <p><span>Adı: Masako</span></p>
+            </div>
+
+            <div class="write-container">
+              <p><span>Milliyeti</span></p>
+              <select class="answer-select" data-correct="Japonyalı">
+                <option value="">--Выберите ответ--</option>
+                <option value="Yunan">Yunan</option>
+                <option value="Japonyalı">Japonyalı</option>
+                <option value="Ürdünlü">Ürdünlü</option>
+                <option value="Koreli">Koreli</option>
+                <option value="İranlı">İranlı</option>
+                <option value="Rusyalı">Rusyalı</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Şehri</span></p>
+              <select class="answer-select" data-correct="Tokyo">
+                <option value="">--Выберите ответ--</option>
+                <option value="Amman">Amman</option>
+                <option value="Seul">Seul</option>
+                <option value="Moskova">Moskova</option>
+                <option value="Tahran">Tahran</option>
+                <option value="Atina">Atina</option>
+                <option value="Tokyo">Tokyo</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Dili</span></p>
+              <select class="answer-select" data-correct="Japonca">
+                <option value="">--Выберите ответ--</option>
+                <option value="Rusça">Rusça</option>
+                <option value="Farsça">Farsça</option>
+                <option value="Japonca">Japonca</option>
+                <option value="Yunanca">Yunanca</option>
+                <option value="Arapça">Arapça</option>
+                <option value="Korece">Korece</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Mesleği</span></p>
+              <select class="answer-select" data-correct="öğrenci">
+                <option value="">--Выберите ответ--</option>
+                <option value="öğrenci">öğrenci</option>
+                <option value="iş adamı">iş adamı</option>
+                <option value="doktor">doktor</option>
+                <option value="inşaat mühendisi">inşaat mühendisi</option>
+                <option value="matematik öğretmeni">matematik öğretmeni</option>
+                <option value="manken">manken</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/ders11-task6-4.jpeg" alt="4" width="350" />
+          <div class="select-container">
+            <div class="write-container">
+              <p><span>Adı: Osama</span></p>
+            </div>
+
+            <div class="write-container">
+              <p><span>Milliyeti</span></p>
+              <select class="answer-select" data-correct="Ürdünlü">
+                <option value="">--Выберите ответ--</option>
+                <option value="Yunan">Yunan</option>
+                <option value="Japonyalı">Japonyalı</option>
+                <option value="Ürdünlü">Ürdünlü</option>
+                <option value="Koreli">Koreli</option>
+                <option value="İranlı">İranlı</option>
+                <option value="Rusyalı">Rusyalı</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Şehri</span></p>
+              <select class="answer-select" data-correct="Amman">
+                <option value="">--Выберите ответ--</option>
+                <option value="Amman">Amman</option>
+                <option value="Seul">Seul</option>
+                <option value="Moskova">Moskova</option>
+                <option value="Tahran">Tahran</option>
+                <option value="Atina">Atina</option>
+                <option value="Tokyo">Tokyo</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Dili</span></p>
+              <select class="answer-select" data-correct="Arapça">
+                <option value="">--Выберите ответ--</option>
+                <option value="Rusça">Rusça</option>
+                <option value="Farsça">Farsça</option>
+                <option value="Japonca">Japonca</option>
+                <option value="Yunanca">Yunanca</option>
+                <option value="Arapça">Arapça</option>
+                <option value="Korece">Korece</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Mesleği</span></p>
+              <select class="answer-select" data-correct="doktor">
+                <option value="">--Выберите ответ--</option>
+                <option value="öğrenci">öğrenci</option>
+                <option value="iş adamı">iş adamı</option>
+                <option value="doktor">doktor</option>
+                <option value="inşaat mühendisi">inşaat mühendisi</option>
+                <option value="matematik öğretmeni">matematik öğretmeni</option>
+                <option value="manken">manken</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/ders11-task6-5.jpeg" alt="5" width="350" />
+          <div class="select-container">
+            <div class="write-container">
+              <p><span>Adı: İgor</span></p>
+            </div>
+
+            <div class="write-container">
+              <p><span>Milliyeti</span></p>
+              <select class="answer-select" data-correct="Rusyalı">
+                <option value="">--Выберите ответ--</option>
+                <option value="Yunan">Yunan</option>
+                <option value="Japonyalı">Japonyalı</option>
+                <option value="Ürdünlü">Ürdünlü</option>
+                <option value="Koreli">Koreli</option>
+                <option value="İranlı">İranlı</option>
+                <option value="Rusyalı">Rusyalı</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Şehri</span></p>
+              <select class="answer-select" data-correct="Moskova">
+                <option value="">--Выберите ответ--</option>
+                <option value="Amman">Amman</option>
+                <option value="Seul">Seul</option>
+                <option value="Moskova">Moskova</option>
+                <option value="Tahran">Tahran</option>
+                <option value="Atina">Atina</option>
+                <option value="Tokyo">Tokyo</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Dili</span></p>
+              <select class="answer-select" data-correct="Rusça">
+                <option value="">--Выберите ответ--</option>
+                <option value="Rusça">Rusça</option>
+                <option value="Farsça">Farsça</option>
+                <option value="Japonca">Japonca</option>
+                <option value="Yunanca">Yunanca</option>
+                <option value="Arapça">Arapça</option>
+                <option value="Korece">Korece</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Mesleği</span></p>
+              <select class="answer-select" data-correct="iş adamı">
+                <option value="">--Выберите ответ--</option>
+                <option value="öğrenci">öğrenci</option>
+                <option value="iş adamı">iş adamı</option>
+                <option value="doktor">doktor</option>
+                <option value="inşaat mühendisi">inşaat mühendisi</option>
+                <option value="matematik öğretmeni">matematik öğretmeni</option>
+                <option value="manken">manken</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img src="./foto/ders11-task6-6.jpeg" alt="6" width="350" />
+          <div class="select-container">
+            <div class="write-container">
+              <p><span>Adı: Kim</span></p>
+            </div>
+
+            <div class="write-container">
+              <p><span>Milliyeti</span></p>
+              <select class="answer-select" data-correct="Koreli">
+                <option value="">--Выберите ответ--</option>
+                <option value="Yunan">Yunan</option>
+                <option value="Japonyalı">Japonyalı</option>
+                <option value="Ürdünlü">Ürdünlü</option>
+                <option value="Koreli">Koreli</option>
+                <option value="İranlı">İranlı</option>
+                <option value="Rusyalı">Rusyalı</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Şehri</span></p>
+              <select class="answer-select" data-correct="Seul">
+                <option value="">--Выберите ответ--</option>
+                <option value="Amman">Amman</option>
+                <option value="Seul">Seul</option>
+                <option value="Moskova">Moskova</option>
+                <option value="Tahran">Tahran</option>
+                <option value="Atina">Atina</option>
+                <option value="Tokyo">Tokyo</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Dili</span></p>
+              <select class="answer-select" data-correct="Korece">
+                <option value="">--Выберите ответ--</option>
+                <option value="Rusça">Rusça</option>
+                <option value="Farsça">Farsça</option>
+                <option value="Japonca">Japonca</option>
+                <option value="Yunanca">Yunanca</option>
+                <option value="Arapça">Arapça</option>
+                <option value="Korece">Korece</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p><span>Mesleği</span></p>
+              <select class="answer-select" data-correct="inşaat mühendisi">
+                <option value="">--Выберите ответ--</option>
+                <option value="öğrenci">öğrenci</option>
+                <option value="iş adamı">iş adamı</option>
+                <option value="doktor">doktor</option>
+                <option value="inşaat mühendisi">inşaat mühendisi</option>
+                <option value="matematik öğretmeni">matematik öğretmeni</option>
+                <option value="manken">manken</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders11-2.html"> <button>Назад</button></a>
+
+      <a href="./ders11-4test.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

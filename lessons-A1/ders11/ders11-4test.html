@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_11</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 11 (ARKADAŞLARIM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders11.html"><button>Национальности и языки</button></a>
+        </li>
+
+        <li>
+          <a href="./ders11-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders11-3.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders11-4test.html"
+            ><button class="active">Итоговый тест</button></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Национальности и языки. На уроке вы научитесь говорить о разных
+      национальностях и языках. Перед вами будет открыт весь мир на турецком
+      языке.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set12"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="../not-image.png" alt="yabancı" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////Test 11 not картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Итоговый тест к уроку 11</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>1. На каком языке говорят во Франции?</p>
+              <select class="answer-select" data-correct="Fransızca">
+                <option value="">--Выберите ответ--</option>
+                <option value="Farsça">Farsça</option>
+                <option value="Fransızca">Fransızca</option>
+                <option value="Fransızça">Fransızça</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>2. На каком языке говорят в КИТАЕ?</p>
+              <select class="answer-select" data-correct="Çince">
+                <option value="">--Выберите ответ--</option>
+                <option value="Çince">Çince</option>
+                <option value="Çinlice">Çinlice</option>
+                <option value="Pekince">Pekince</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>3. На каком языке говорят в Египте?</p>
+              <select class="answer-select" data-correct="Arapça">
+                <option value="">--Выберите ответ--</option>
+                <option value="Türkçe">Türkçe</option>
+                <option value="Mısırca">Mısırca</option>
+                <option value="Arapça">Arapça</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>4. Как будет по-турецки ТУРЕЦКАЯ ЕДА</p>
+              <select class="answer-select" data-correct="Türk yemeği">
+                <option value="">--Выберите ответ--</option>
+                <option value="Türk yemeği">Türk yemeği</option>
+                <option value="Türkçe yemeği">Türkçe yemeği</option>
+                <option value="Türkiyeli yemeği">Türkiyeli yemeği</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>5. Как спросить по-турецки откуда вы родом?</p>
+              <select class="answer-select" data-correct="Nerelisiniz">
+                <option value="">--Выберите ответ--</option>
+                <option value="Nerelisiniz">Nerelisiniz</option>
+                <option value="Neredesiniz">Neredesiniz</option>
+                <option value="Nereli misiniz">Nereli misiniz</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>6. Найдите верный перевод предложения: Я не из москвы.</p>
+              <select class="answer-select" data-correct="Moskova’lı değilim">
+                <option value="">--Выберите ответ--</option>
+                <option value="Moskova’lıyım değil">Moskova’lıyım değil</option>
+                <option value="Moskova’lı değilim">Moskova’lı değilim</option>
+                <option value="Moskova değilliyim">Moskova değilliyim</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>7. Найдите верный перевод предложения: Вы из Анталии?</p>
+              <select class="answer-select" data-correct="">
+                <option value="">--Выберите ответ--</option>
+                <option value="Antalya’lısınız mı">Antalya’lısınız mı</option>
+                <option value="Antalya’li misiniz?">Antalya’li misiniz?</option>
+                <option value="Antalya’lı mısınız?">Antalya’lı mısınız?</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                8. Найдите верный перевод предложения: Я родом из России, но в
+                данный момент в Турции.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Rusya’lıyım ama şu an Türkiye’deyim"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Rusya’lıyım ama şu an Türkiye’deyim">
+                  Rusya’lıyım ama şu an Türkiye’deyim
+                </option>
+                <option value="Rusya’lım ama şu an Türkiye’de">
+                  Rusya’lım ama şu an Türkiye’de
+                </option>
+                <option value="Rusya’dayım ama şu an Türkiye’liyim">
+                  Rusya’dayım ama şu an Türkiye’liyim
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                9. Найдите верный перевод предложения: Мы из Турции, но мы не
+                турки.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Türkiye'liyiz ama Türk değiliz."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Türkiye'liyiz ama Türkçe değiliz.">
+                  Türkiye'liyiz ama Türkçe değiliz.
+                </option>
+                <option value="Türkiye'liyiz ama Türk değiliz.">
+                  Türkiye'liyiz ama Türk değiliz.
+                </option>
+                <option value="Türkiye'liyiz ama Türküz değiliz.">
+                  Türkiye'liyiz ama Türküz değiliz.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                10. Найдите верный перевод предложения: Я немного знаю турецкий
+                язык.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Ben biraz Türkçe biliyorum"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Ben biraz Türk biliyorum">
+                  Ben biraz Türk biliyorum
+                </option>
+                <option value="Ben biraz Türkce biliyorum">
+                  Ben biraz Türkce biliyorum
+                </option>
+                <option value="Ben biraz Türkçe biliyorum">
+                  Ben biraz Türkçe biliyorum
+                </option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders11-3.html"> <button>Назад</button></a>
+
+      <a href="../ders12/ders12.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

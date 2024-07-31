@@ -165,6 +165,20 @@ const correctWordsSets = [
                  
                   ['im', 'ım', 'im', 'um', 'a', 'im', 'im', 'im', 'im', 'a', 'ım', 'ın', 'ları', 'sinde', 'im', 'm', 'im', 'im', 'ın', 'ları', 'nun', 'leri', 'im', 'm', 'm', 'nun', 'si', 'im', 'imiz', 'nun','ı', 'un','i', 'leri','ın', 'ı','a', 'ım','ya'],
 //ders10-t9  29 (   392  393    394   395   396 397   398    399   400   401  402  403    404     405      406   407  408   409   410    411    412     413    414  415  416   417     418  419    420    421  422  423   424   425   426  427  428  429  430      )
+                  
+                  ['Türk', 'Rus', 'Bulgar', 'Hollandalı', 'İspanyol', 'Çinli', 'Yunan', 'Mısırlı', 'İngiliz', 'İtalyan','Alman', 'Fransız'],
+ //ders11-t3  30 (  431     432    433        434            435        436      437        438      439        440       441       442   )               
+          
+                  ['kitabı', 'beni', 'oteli', 'filmi', 'sizi', 'konuyu', 'odayı', 'hesabı', "Ayşe'yi", "ıstanbul'u"],
+//ders12-t2  31 (    443       444     445       446     447     448       449      450       451          452)  
+                  ['de', 'ıyorum','te', 'ıyorum','ya', 'iyorum','ıyorum', 'da','yorum', 'da','den', 'e','ıyorum', 'de','ye', 'yi','iyorum', 'da','e', 'ten','ıyorum', 'de','yorum', 'da','de', 'a','uyorum', 'i'],
+//ders12-t3  32  ( 453     454     455     456    457    458      459      460   461     462  463   464   465      466 467    468   469      470  471   472   473      474   475     476  477  478   479     480      )              
+                  
+                  ['Görünüyorsun', 'Problemin', 'Problemim', 'Ailemi', 'Telefon', 'Et', 'Konuş', 'Yaz', 'Kendimi', 'Hepimiz', 'Istemiyorsun', 'Geliyorsun', 'Yatıyorsun', 'Istiyorsun', 'Özlüyorum', 'Telefon', 'Ediyorum', 'Bilgisayardan', 'Görüyorum', 'Kendimi'],
+//ders12-t3  33(       481            482           483         484       485     486     487      488    489         490         491              492          493          494            495          496      497           498             499          500                    )                 
+                  
+                 ['im', 'ımızda', 'ne', 'sından', 'ime', 'imiz', 'in', 'in', 'in', 'unuzda', 'ın', 'lerinde', 'sına', 'in', 'nda', 'ne', 'iniz'],
+//test4-t1  34  (501      502      503    504      505     506   507   508   509     510      511     512       513    514    515   516    517)                
 ] ;
 
         function checkWord(correctWords) {

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_11</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 11 (ARKADAŞLARIM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders11.html"
+            ><button class="active">Национальности и языки</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders11-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders11-3.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders11-4test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Национальности и языки. На уроке вы научитесь говорить о разных
+      национальностях и языках. Перед вами будет открыт весь мир на турецком
+      языке.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set12"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="../not-image.png" alt="yabancı" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+    <!-- /////////////dowloading//////////// -->
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/Модуль 4. Урок 11.pdf"
+        download
+        >Скачать Рабочая тетрадь. Урок 11</a
+      >
+    </div>
+
+    <!-- //////////////Дополнительный материал/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
+        <li>
+          <button id="task-header-law1">Nereli?</button>
+          <div class="task-law hidden" id="task-content-law1-img">
+            <img src="./foto/ders11-moreinfo1.JPG" alt="Nereli?" />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law2">ИСХОДНЫЙ ПАДЕЖ</button>
+          <div class="task-law hidden" id="task-content-law2-img">
+            <img src="" alt="ИСХОДНЫЙ ПАДЕЖ" />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law3">
+            НАСТОЯЩЕЕ ВРЕМЯ. ВОПРОСИТЕЛЬНАЯ ФОРМА
+          </button>
+          <div class="task-law hidden" id="task-content-law3-img">
+            <img src="" alt="img-law" />
+          </div>
+        </li>
+
+        <li>
+          <button id="task-header-alfabet">Аффиксы -ca/-ce</button>
+          <div class="slider hidden" id="task-content-alfabet">
+            <div class="slides" id="alfabet-slides">
+              <div class="slide">
+                <img
+                  src="./foto/ders11-moreinfo2-1.JPG"
+                  alt="Аффиксы -ca/-ce"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders11-moreinfo2-2.JPG"
+                  alt="Аффиксы -ca/-ce"
+                />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- /////////////Задание 1 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 1. Давайте дополним следующие предложения названиями языков
+      </div>
+      <div class="task-content hidden">
+        <img src="./foto/ders11-task1.jpg" alt="ders10-task2" />
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Benim adım Davin. Ben Fransızım ve benim anadilim Fransız</p>
+              <select class="answer-select short" data-correct="Ca">
+                <option value="">--</option>
+                <option value="Ce">Ce</option>
+                <option value="Ca">Ca</option>
+                <option value="Ça">Ça</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                Benim adım Natalia. Ben Gürcistanlıyım ve benim anadilim Gürcü
+              </p>
+              <select class="answer-select short" data-correct="Ce">
+                <option value="">--</option>
+                <option value="Ce">Ce</option>
+                <option value="Ca">Ca</option>
+                <option value="Ça">Ça</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Benim adım Najwa. Ben Suriyeliyim ve benim anadilim Arap</p>
+              <select class="answer-select short" data-correct="Ça">
+                <option value="">--</option>
+                <option value="Ce">Ce</option>
+                <option value="Ca">Ca</option>
+                <option value="Ça">Ça</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Benim adım Alex. Ben Avusturyalıyım ve benim anadilim Alman</p>
+              <select class="answer-select short" data-correct="Ca">
+                <option value="">--</option>
+                <option value="Ce">Ce</option>
+                <option value="Ca">Ca</option>
+                <option value="Ça">Ça</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Benim adım Lucca. Ben İtalyalıyım ve benim anadilim İtalyan</p>
+              <select class="answer-select short" data-correct="Ca">
+                <option value="">--</option>
+                <option value="Ce">Ce</option>
+                <option value="Ca">Ca</option>
+                <option value="Ça">Ça</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 2 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 2. Давайте выберем правильный вариант
+      </div>
+      <div class="task-content hidden">
+        <img src="./foto/ders11-task2.jpg" alt="ders10-task2" />
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>İtalya</p>
+              <select class="answer-select" data-correct="İtalyanca">
+                <option value="">--Выберите ответ--</option>
+                <option value="İtalyaca">İtalyaca</option>
+                <option value="İtalyanca">İtalyanca</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Kırgızistan</p>
+              <select class="answer-select" data-correct="Kırgızca">
+                <option value="">--Выберите ответ--</option>
+                <option value="Kırgızca">Kırgızca</option>
+                <option value="Kıgızça">Kıgızça</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Fas</p>
+              <select class="answer-select" data-correct="Arapça">
+                <option value="">--Выберите ответ--</option>
+                <option value="Fasça">Fasça</option>
+                <option value="Arapça">Arapça</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Hindistan</p>
+              <select class="answer-select" data-correct="Hintçe">
+                <option value="">--Выберите ответ--</option>
+                <option value="Hintçe">Hintçe</option>
+                <option value="Hindistanca">Hindistanca</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Kore</p>
+              <select class="answer-select" data-correct="Korece">
+                <option value="">--Выберите ответ--</option>
+                <option value="Korelice">Korelice</option>
+                <option value="Korece">Korece</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Fransa</p>
+              <select class="answer-select" data-correct="Fransızca">
+                <option value="">--Выберите ответ--</option>
+                <option value="Fransızca">Fransızca</option>
+                <option value="Fransaca">Fransaca</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ermenistan</p>
+              <select class="answer-select" data-correct="Ermenice">
+                <option value="">--Выберите ответ--</option>
+                <option value="Ermenistanlıca">Ermenistanlıca</option>
+                <option value="Ermenice">Ermenice</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Bulgaristan</p>
+              <select class="answer-select" data-correct="Bulgarca">
+                <option value="">--Выберите ответ--</option>
+                <option value="Bulgarca">Bulgarca</option>
+                <option value="Bulgarça">Bulgarça</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>İran</p>
+              <select class="answer-select" data-correct="Farsça">
+                <option value="">--Выберите ответ--</option>
+                <option value="İranca">İranca</option>
+                <option value="Farsça">Farsça</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 3 без картин//////////// -->
+    <section class="task-section">
+      <div class="task-header">
+        Задание 3. Впишите окончание принадлежности(Писать с большой буквы).
+      </div>
+      <div class="task-content write hidden">
+        <img src="./foto/ders11-task3.jpg" alt="ders11-task3" />
+        <form id="text-form-30">
+          <ul style="display: flex; flex-direction: row; flex-wrap: wrap">
+            <li class="inline">
+              <label for="word431">Türkiye </label>
+              <input type="text" id="word431" name="word431" />
+            </li>
+
+            <li class="inline">
+              <label for="word432">Rusya</label>
+              <input type="text" id="word432" name="word432" />
+            </li>
+
+            <li class="inline">
+              <label for="word433">Bulgaristan </label>
+              <input type="text" id="word433" name="word433" />
+            </li>
+            <li class="inline">
+              <label for="word434">Hollanda </label>
+              <input type="text" id="word434" name="word434" />
+            </li>
+
+            <li class="inline">
+              <label for="word435">İspanya </label>
+              <input type="text" id="word435" name="word435" />
+            </li>
+
+            <li class="inline">
+              <label for="word436">Çin </label>
+              <input type="text" id="word436" name="word436" />
+            </li>
+
+            <li class="inline">
+              <label for="word437">Yunanistan </label>
+              <input type="text" id="word437" name="word437" />
+            </li>
+
+            <li class="inline">
+              <label for="word438">Mısır </label>
+              <input type="text" id="word438" name="word438" />
+            </li>
+
+            <li class="inline">
+              <label for="word439">İngiltere </label>
+              <input type="text" id="word439" name="word439" />
+            </li>
+
+            <li class="inline">
+              <label for="word440">İtalya </label>
+              <input type="text" id="word440" name="word440" />
+            </li>
+
+            <li class="inline">
+              <label for="word441">Almanya </label>
+              <input type="text" id="word441" name="word441" />
+            </li>
+
+            <li class="inline">
+              <label for="word442">Fransa </label>
+              <input type="text" id="word442" name="word442" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="../ders10/ders10-5test.html"> <button>Назад</button></a>
+
+      <a href="./ders11-2.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <script src="../slider-foto.js"></script>
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <script src="../more-materials.js"></script>
+  </body>
+</html>

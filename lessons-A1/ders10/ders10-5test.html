@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_10</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 10 (AİLEM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders10.html"
+            ><button>Притяжательные местоимения и аффиксы</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders10-2.html"><button>Члены семьи</button></a>
+        </li>
+
+        <li>
+          <a href="./ders10-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders10-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders10-5test.html"
+            ><button class="active">Итоговый тест</button></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Члены семьи. Притяжательные местоимения и аффиксы. На уроке вы научитесь
+      рассказывать о родственниках. И о том, какие предметы и кому принадлежат.
+      Эти знания выручат вас, если вы хотите, чтобы собеседник узнал вас чуточку
+      ближе.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set11"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/aile.jpg" alt="aile" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////Test без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Итоговый тест к уроку 10</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>1. Как спросить по-турецки: Сколько у вас братьев и сестер?</p>
+              <select class="answer-select" data-correct="Kaç kardeşsiniz?">
+                <option value="">--Выберите ответ--</option>
+                <option value="Kaç kardeşsiniz?">Kaç kardeşsiniz?</option>
+                <option value="Kardeşiniz var mı?">Kardeşiniz var mı?</option>
+                <option value="Kaç arkadaşsınız?">Kaç arkadaşsınız?</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>2. Как сказать по-турецки: У меня нет братьев и сестер.</p>
+              <select class="answer-select" data-correct="Kardeşim yok.">
+                <option value="">--Выберите ответ--</option>
+                <option value="Kardeşim var.">Kardeşim var.</option>
+                <option value="Kardeşim yok.">Kardeşim yok.</option>
+                <option value="Arkadaşım yok.">Arkadaşım yok.</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>3. Как сказать по-турецки: Моя мама вкусно готовит</p>
+              <select
+                class="answer-select"
+                data-correct="Annem çok güzel yemek yapıyor"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Annem çok güzel yemek yapyor">
+                  Annem çok güzel yemek yapyor
+                </option>
+                <option value="Annem çok güzel yemek yapmıyor">
+                  Annem çok güzel yemek yapmıyor
+                </option>
+                <option value="Annem çok güzel yemek yapıyor">
+                  Annem çok güzel yemek yapıyor
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>4. Как сказать по-турецки: Мой папа работает в больнице.</p>
+              <select
+                class="answer-select"
+                data-correct="Babam hastanede çalışıyor"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Babam hastane çalışıyor">
+                  Babam hastane çalışıyor
+                </option>
+                <option value="Babam hastanede çalışıyor">
+                  Babam hastanede çalışıyor
+                </option>
+                <option value="Babam hasta çalışmıyor">
+                  Babam hasta çalışmıyor
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>5. Как сказать по-турецки: Моему дедушке 97 лет.</p>
+              <select
+                class="answer-select"
+                data-correct="Dedem doksan yedi yaşında"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Dedem dokuz yedi yaşında">
+                  Dedem dokuz yedi yaşında
+                </option>
+                <option value="Dedem doksan yedi yaşında">
+                  Dedem doksan yedi yaşında
+                </option>
+                <option value="Dedem doksan yedi yıl">
+                  Dedem doksan yedi yıl
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>6. Как сказать по-турецки: Мой старший брат живет в Москве.</p>
+              <select
+                class="answer-select"
+                data-correct="Benim abim Moskova’da yaşıyor."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Benim abim Moskova’da yaşıyor.">
+                  Benim abim Moskova’da yaşıyor.
+                </option>
+                <option value="Benim amcam Moskova’da yaşıyor.">
+                  Benim amcam Moskova’da yaşıyor.
+                </option>
+                <option value="Benim kardeşim Moskova’da yaşıyor.">
+                  Benim kardeşim Moskova’da yaşıyor.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>7. Переведите фразу: В Турции семья очень важна.</p>
+              <select
+                class="answer-select"
+                data-correct="Aile Türkiye’de çok önemli"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Aile Türkiye çok önemli.">
+                  Aile Türkiye çok önemli.
+                </option>
+                <option value="Aile Türkiye’de çok önemli">
+                  Aile Türkiye’de çok önemli
+                </option>
+                <option value="Aile Türkiye’de çok önemsiz">
+                  Aile Türkiye’de çok önemsiz
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                8. Найдите соответствующий перевод на турецкий язык: Моя мама
+                очень умная.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Benim annem çok akıllı"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Benim annem çok akıllı">
+                  Benim annem çok akıllı
+                </option>
+                <option value="Benim anneyim çok akıllı">
+                  Benim anneyim çok akıllı
+                </option>
+                <option value="Benim annem çok akıllım">
+                  Benim annem çok akıllım
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                9. Найдите соответствующий перевод на турецкий язык: Я смотрю на
+                мою маму.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Benim anneme bakıyorum"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Benim annemi bakıyorum">
+                  Benim annemi bakıyorum
+                </option>
+                <option value="Benim anneme bakıyorum">
+                  Benim anneme bakıyorum
+                </option>
+                <option value="Benim anneyime bakıyorum">
+                  Benim anneyime bakıyorum
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                10. Найдите соответствующий перевод на турецкий язык: В твоем
+                телефоне есть эта картинка?
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Senin telefonunda bu resim var mı?"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Senin telefonunde bu resim var mı?">
+                  Senin telefonunde bu resim var mı?
+                </option>
+                <option value="Senin telefonunda bu resim var mı?">
+                  Senin telefonunda bu resim var mı?
+                </option>
+                <option value="Senin telefonun bu resim var mı?">
+                  Senin telefonun bu resim var mı?
+                </option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders10-4.html"> <button>Назад</button></a>
+
+      <a href="../ders11/ders11.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

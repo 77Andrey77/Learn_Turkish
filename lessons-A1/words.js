@@ -28,7 +28,7 @@ const wordsSets = {
     {
         word: "büyük",
         translation: "большой",
-        image: "./foto/trainer/büyük.jpg"
+        image: "./foto/trainer/büyük.jpeg"
     },
     {
         word: "ceket",
@@ -1905,6 +1905,259 @@ const wordsSets = {
             image: "./foto/koca.jpg"
         }
           
+
+    ],
+    set12: [
+        {
+            word: "ana dili",
+            translation: "родной язык",
+            image: "../not-image.png"
+        },
+{
+            word: "yabancı",
+            translation: "иностранный",
+            image: "./foto/yabancı.webp"
+        },
+        {
+            word: "yabancı dili",
+            translation: "иностранный язык",
+            image: "./foto/yabancı dili.webp"
+        },
+        {
+            word: "dil",
+            translation: "язык",
+            image: "./foto/dil.jpg"
+        },
+        {
+            word: "ne demek?",
+            translation: "что значит?",
+            image: "./foto/ne demek.jpg"
+        },
+        {
+            word: "bu yüzden",
+            translation: "поэтому",
+            image: "./foto/bu yüzden.jpg"
+        },
+        {
+            word: "iktisat",
+            translation: "экономика",
+            image: "./foto/iktisat.webp"
+        },
+        {
+            word: "temizlik yapmak",
+            translation: "делать уборку",
+            image: "./foto/temizlik yapmak.jpg"
+        },
+        {
+            word: "kişi",
+            translation: "человек, персона",
+            image: "./foto/kişi.jpg"
+        },
+        {
+            word: "yalnız",
+            translation: "один",
+            image: "./foto/yalnız.jpg"
+        },
+        {
+            word: "meslek",
+            translation: "профессия",
+            image: "./foto/meslek.jpg"
+        },
+        {
+            word: "millet",
+            translation: "нация",
+            image: "./foto/millet.jpg"
+        }
+
+    ],
+    set13: [
+        {
+            word: "beğenmek",
+            translation: "нравиться",
+            image: "./foto/beğenmek.jpg"
+        },
+        {
+            word: "hediye",
+            translation: "подарок",
+            image: "./foto/hediye.jpg"
+        },
+        {
+            word: "gramer",
+            translation: "грамматика",
+            image: "./foto/gramer.jpeg"
+        },
+
+        {
+            word: "ödev",
+            translation: "задание",
+            image: "./foto/ödev.jpg"
+        },
+        {
+            word: "mektup",
+            translation: "письмо",
+            image: "./foto/mektup.jpg"
+        },
+        {
+            word: "diş fırçalamak",
+            translation: "чистить зубы",
+            image: "./foto/diş fırçalamak.jpg"
+        },
+        {
+            word: "kek",
+            translation: "кекс",
+            image: "./foto/kek.jpg"
+        },
+        {
+            word: "kendi",
+            translation: "сам",
+            image: "./foto/kendi.webp"
+        },
+        {
+            word: "kendim",
+            translation: "я сам",
+            image: "./foto/kendim.webp"
+        },
+        {
+            word: "kendin",
+            translation: "ты сам",
+            image: "../not-image.png"
+        },
+        {
+            word: "kendiniz",
+            translation: "вы сами",
+            image: "../not-image.png"
+        },
+        {
+            word: "hepsi",
+            translation: "все",
+            image: "./foto/hepsi.jpg"
+        },
+        {
+            word: "hepimiz",
+            translation: "мы все",
+            image: "./foto/hepimiz.jpg"
+        },
+        {
+            word: "hepiniz",
+            translation: "вы все",
+            image: "../not-image.png"
+        },
+        {
+            word: "izin almak",
+            translation: "брать разрешение",
+            image: "./foto/izin almak.jpeg"
+        },
+        {
+            word: "izin",
+            translation: "разрешение",
+            image: "./foto/izin.jpg"
+        },
+        {
+            word: "davet etmek",
+            translation: "приглашать",
+            image: "./foto/davet etmek.webp"
+        },
+        {
+            word: "üzüntü",
+            translation: "огорчение",
+            image: "./foto/üzüntü.jpg"
+        },
+        {
+            word: "sevinç",
+            translation: "радость",
+            image: "./foto/sevinç.jpg"
+        },
+        {
+            word: "paylaşmak",
+            translation: "делиться",
+            image: "./foto/paylaşmak.jpg"
+        },
+        {
+            word: "hissetmek",
+            translation: "чувствовать",
+            image: "./foto/hissetmek.jpg"
+        },
+        {
+            word: "sıkıcı",
+            translation: "скучный",
+            image: "./foto/sıkıcı.jpg"
+        },
+        {
+            word: "şiir",
+            translation: "стих",
+            image: "./foto/şiir.jpg"
+        },
+        {
+            word: "lazım",
+            translation: "надо",
+            image: "../not-image.png"
+        },
+        {
+            word: "merak etmek",
+            translation: "переживать, любопытствовать",
+            image: "../not-image.png"
+        },
+        {
+            word: "müze",
+            translation: "музей",
+            image: "./foto/müze.jpg"
+        },
+        {
+            word: "saray",
+            translation: "дворец",
+            image: "./foto/saray.jpg"
+        },
+        {
+            word: "cami",
+            translation: "мечеть",
+            image: "./foto/cami.jpg"
+        },
+
+        {
+            word: "kilise",
+            translation: "церковь",
+            image: "./foto/kilise.jpg"
+        },
+        {
+            word: "tarihi",
+            translation: "исторический",
+            image: "./foto/tarihi.jpg"
+        },
+        {
+            word: "tarih",
+            translation: "история",
+            image: "./foto/tarih.jpg"
+        },
+        {
+            word: "eğlenceli",
+            translation: "веселый",
+            image: "./foto/eğlenceli.jpg"
+        },
+        {
+            word: "fikir",
+            translation: "идея",
+            image: "./foto/fikir.webp"
+        },
+        {
+            word: "duymak",
+            translation: "слышать",
+            image: "./foto/fikir.webp"
+        },
+        {
+            word: "yüksek",
+            translation: "высокий",
+            image: "./foto/yüksek.jpg"
+        },
+        {
+            word: "ses",
+            translation: "звук, голос",
+            image: "./foto/ses.jpg"
+        },
+        {
+            word: "yüksek sesle",
+            translation: "громко",
+            image: "./foto/yüksek sesle.webp"
+        }
 
     ]
 };

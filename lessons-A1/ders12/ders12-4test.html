@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_12</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 12 (AİLEMDEN UZAKTA)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders12.html"><button>Винительный падеж</button></a>
+        </li>
+
+        <li>
+          <a href="./ders12-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders12-3.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders12-4test.html"
+            ><button class="active">Итоговый тест</button></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Винительный падеж. На уроке вы узнаете, как использовать слова в
+      винительном падеже. И сможете говорить о том, кого и что мы любим.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set13"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/beğenmek.jpg" alt="beğenmek" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////Test 12 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Итоговый тест к уроку 12</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>
+                1. Переведите на турецкий язык, обратите внимание на возможность
+                опущения винительного падежа: Каждый вечер я смотрю телевизор.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Her akşam televizyon izliyorum"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Her akşam televizyonu izliyorum">
+                  Her akşam televizyonu izliyorum
+                </option>
+                <option value="Her akşam televizyon izliyorum">
+                  Her akşam televizyon izliyorum
+                </option>
+                <option value="Her akşam televizyonı izliyorum">
+                  Her akşam televizyonı izliyorum
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                2. Переведите на турецкий язык, обратите внимание на возможность
+                опущения винительного падежа: Я смотрю эту программу в первый
+                раз.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Bu programı birinci defa izliyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Bu programı birinci defa izliyorum.">
+                  Bu programı birinci defa izliyorum.
+                </option>
+                <option value="Bu program birinci defa izliyorum.">
+                  Bu program birinci defa izliyorum.
+                </option>
+                <option value="Bu programını birinci defa izliyorum">
+                  Bu programını birinci defa izliyorum
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                3. Переведите на турецкий язык, обратите внимание на возможность
+                опущения винительного падежа: Каждый вечер я читаю книгу.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Her akşam kitap okuyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Her akşam kitap okuyorum.">
+                  Her akşam kitap okuyorum.
+                </option>
+                <option value="Her akşam kitabı okuyorum.">
+                  Her akşam kitabı okuyorum.
+                </option>
+                <option value="Her akşam kitapı okuyorum.">
+                  Her akşam kitapı okuyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                4. Переведите на турецкий язык, обратите внимание на возможность
+                опущения винительного падежа: Я читаю эту книгу, она очень
+                интересная.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Bu kitabı okuyorum, o çok enteresan."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Bu kitabı okuyorum, o çok enteresan.">
+                  Bu kitabı okuyorum, o çok enteresan.
+                </option>
+                <option value="Bu katab okuyorum, o çok enteresan.">
+                  Bu katab okuyorum, o çok enteresan.
+                </option>
+                <option value="Bunu kitabı okuyorum, o çok enteresan.">
+                  Bunu kitabı okuyorum, o çok enteresan.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                5. Найдите правильный ответ на вопрос: Sen beni dinliyor musun?
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Evet, seni dinliyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Evet, sen dinliyorum.">
+                  Evet, sen dinliyorum.
+                </option>
+                <option value="Evet, seni dinliyorsun.">
+                  Evet, seni dinliyorsun.
+                </option>
+                <option value="Evet, seni dinliyorum.">
+                  Evet, seni dinliyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                6. Найдите правильный ответ на вопрос: Sen Ahmet’i seviyor
+                musun?
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Hayır, onu sevmiyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Hayır, onu sevmiyorum.">
+                  Hayır, onu sevmiyorum.
+                </option>
+                <option value="Hayır, oyu sevimiyorum.">
+                  Hayır, oyu sevimiyorum.
+                </option>
+                <option value="Hayır, onun sevmiyorum.">
+                  Hayır, onun sevmiyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                7. Переведите на турецкий язык, обратите внимание на аффиксы
+                принадлежности: Я люблю свою школу.
+              </p>
+              <select class="answer-select" data-correct="Okulumu seviyorum">
+                <option value="">--Выберите ответ--</option>
+                <option value="Okuluyu seviyorum">Okuluyu seviyorum</option>
+                <option value="Okulumu seviyorum">Okulumu seviyorum</option>
+                <option value="Benim okulu seviyorum">
+                  Benim okulu seviyorum
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                8. Переведите на турецкий язык, обратите внимание на аффиксы
+                принадлежности: Мы открываем наши тетради.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Defterlerimizi açıyoruz."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Defterimizleri açıyoruz.">
+                  Defterimizleri açıyoruz.
+                </option>
+                <option value="Defterlerimizi açıyoruz.">
+                  Defterlerimizi açıyoruz.
+                </option>
+                <option value="Defterimizi açıyoruz.">
+                  Defterimizi açıyoruz.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                9. Найдите правильный ответ на вопрос: Çocuklarınızı seviyor
+                musunuz?
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Çocuklarımızı çok seviyoruz."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Çocuklarımızı çok seviyoruz.">
+                  Çocuklarımızı çok seviyoruz.
+                </option>
+                <option value="Çocuklarınızı çok seviyoruz.">
+                  Çocuklarınızı çok seviyoruz.
+                </option>
+                <option value="Çocuklarımızı çok seviyorsunuz.">
+                  Çocuklarımızı çok seviyorsunuz.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                10. Найдите правильный ответ на вопрос: Derste telefonunu
+                kapatıyor musun?
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Derste telefonumu kapatıyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Derste telefonu kapatıyorum.">
+                  Derste telefonu kapatıyorum.
+                </option>
+                <option value="Derste telefonumu kapatıyorum.">
+                  Derste telefonumu kapatıyorum.
+                </option>
+                <option value="Dertse telefonmu kapatıyorum.">
+                  Dertse telefonmu kapatıyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders12-3.html"> <button>Назад</button></a>
+
+      <a href="../test4/test4.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

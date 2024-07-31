@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_10</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 10 (AİLEM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders10.html"
+            ><button>Притяжательные местоимения и аффиксы</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders10-2.html"><button>Члены семьи</button></a>
+        </li>
+
+        <li>
+          <a href="./ders10-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders10-4.html"
+            ><button class="active">Аудирование</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders10-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Члены семьи. Притяжательные местоимения и аффиксы. На уроке вы научитесь
+      рассказывать о родственниках. И о том, какие предметы и кому принадлежат.
+      Эти знания выручат вас, если вы хотите, чтобы собеседник узнал вас чуточку
+      ближе.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set11"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/aile.jpg" alt="aile" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////audio//////////// -->
+
+    <img
+      class="icon-headphones"
+      src="../../icons/icon-headphones.svg"
+      alt="icon-headphones"
+    />
+    <p class="title-audio">АУДИРОВАНИЕ</p>
+    <div class="section-wrapper">
+      <audio
+        src="../../audio/ders10-page4.m4a"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></audio>
+    </div>
+
+    <!-- /////////////Текст аудио //////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Текст аудио</div>
+      <div class="task-content write hidden">
+        <p>
+          Ben Zehra. Ben 57 yaşındayım. Emekli öğretmenim. Benim kocamın adı
+          Mesut. O 62 yaşında. Mesut emekli veteriner. Bizim bir oğlumuz var.
+          Kızımız yok. Oğlumuzun adı Ömer. O Tarih öğretmeni. Ömer 38 yaşında ve
+          evli. Ömer’in karısının adı Dilek. Dilek bizim gelinimiz. Dilek 36
+          yaşında. O resim öğretmeni. Dilek ve Ömer’in 2 çocukları var. Büyük
+          çocuklarının adı Suna, küçük çocuklarının adı Derya. Suna 16 yaşında.
+          O lise son sınıfta öğrenci. Derya ise 9 yaşında. Derya ilkokula
+          gidiyor. Ben bütün vaktimi torunlarımla geçiriyorum. Beraber oyun
+          oynuyoruz, televizyon izliyoruz, yemek yapıyoruz ve geziyoruz.
+          Torunlarımı, yani genç arkadaşlarımı çok seviyorum.
+        </p>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 12 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 12. Прослушаем аудио и ответим на вопросы
+      </div>
+      <div class="task-content hidden">
+        <img src="./foto/ders10-task12.jpg" alt="ders10-task12" />
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Mesut kaç yaşında?</p>
+              <select class="answer-select" data-correct="62">
+                <option value="">--Выберите ответ--</option>
+                <option value="26">26</option>
+                <option value="62">62</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ömer ne iş yapıyor?</p>
+              <select class="answer-select" data-correct="tarih öğretmeni">
+                <option value="">--Выберите ответ--</option>
+                <option value="tarih öğretmeni">tarih öğretmeni</option>
+                <option value="resim öğretmeni">resim öğretmeni</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Dilek kaç yaşında ve ne iş yapıyor?</p>
+              <select
+                class="answer-select"
+                data-correct="36 yaşında, resim öğretmeni"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="35 yaşında, tarih öğretmeni">
+                  35 yaşında, tarih öğretmeni
+                </option>
+                <option value="36 yaşında, resim öğretmeni">
+                  36 yaşında, resim öğretmeni
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Zehra Hanım’ın torunları kim?</p>
+              <select class="answer-select" data-correct="Suna, Derya">
+                <option value="">--Выберите ответ--</option>
+                <option value="Suna, Derya">Suna, Derya</option>
+                <option value="Derya, Dilek">Derya, Dilek</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /////////////Задание 13 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 13. Выберем кем приходятся перечисленные люди рассказчику
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Suna</p>
+              <select class="answer-select" data-correct="torun">
+                <option value="">--Выберите ответ--</option>
+                <option value="gelin">gelin</option>
+                <option value="torun">torun</option>
+                <option value="koca">koca</option>
+                <option value="oğul">oğul</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Derya</p>
+              <select class="answer-select" data-correct="torun">
+                <option value="">--Выберите ответ--</option>
+                <option value="gelin">gelin</option>
+                <option value="torun">torun</option>
+                <option value="koca">koca</option>
+                <option value="oğul">oğul</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Mesut</p>
+              <select class="answer-select" data-correct="koca">
+                <option value="">--Выберите ответ--</option>
+                <option value="gelin">gelin</option>
+                <option value="torun">torun</option>
+                <option value="koca">koca</option>
+                <option value="oğul">oğul</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ömer</p>
+              <select class="answer-select" data-correct="oğul">
+                <option value="">--Выберите ответ--</option>
+                <option value="gelin">gelin</option>
+                <option value="torun">torun</option>
+                <option value="koca">koca</option>
+                <option value="oğul">oğul</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Dilek</p>
+              <select class="answer-select" data-correct="gelin">
+                <option value="">--Выберите ответ--</option>
+                <option value="gelin">gelin</option>
+                <option value="torun">torun</option>
+                <option value="koca">koca</option>
+                <option value="oğul">oğul</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders10-3.html"> <button>Назад</button></a>
+
+      <a href="./ders10-5test.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

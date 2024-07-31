@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_11</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 11 (ARKADAŞLARIM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders11.html"><button>Национальности и языки</button></a>
+        </li>
+
+        <li>
+          <a href="./ders11-2.html"><button class="active">Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders11-3.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders11-4test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Национальности и языки. На уроке вы научитесь говорить о разных
+      национальностях и языках. Перед вами будет открыт весь мир на турецком
+      языке.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set12"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="../not-image.png" alt="yabancı" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////ЧТЕНИЕ //////////// -->
+
+    <section class="task-section">
+      <div class="task-header">ЧТЕНИЕ</div>
+      <div class="task-content write hidden">
+        <img src="./foto/ders11-p2-read.jpg" alt="foto ders11-p2-read" />
+        <ul style="width: 600px; margin: 40px">
+          <li>
+            <p><span>EV ARKADAŞLARIM</span></p>
+          </li>
+
+          <li>
+            <p>
+              Benim adım Serpil. Ben İstanbul Üniversitesinde öğrenciyim.
+              İzmirliyim ve ailem İzmir’de yaşıyor. Ben burada arkadaşlarımla
+              kalıyorum. Benim 2 ev arkadaşım var. Ev arkadaşlarım yabancı.
+              Onlar da İstanbul Üniversitesinde öğrenciler. Onların adları
+              Marjan ve Milena.
+            </p>
+          </li>
+          <br />
+
+          <li>
+            <p>
+              Marjan Kazakistanlı ve onun anadili Kazakça. Marjan, İstanbul
+              Üniversitesinde Türkçe öğreniyor. Evde ben onun derslerine yardım
+              ediyorum. O bana her zaman “Bu ne demek, bu ne demek?” diye
+              soruyor. Biz onunla bazen Türkçe, bazen İngilizce konuşuyoruz.
+            </p>
+          </li>
+          <br />
+
+          <li>
+            <p>
+              Milena, Arnavut ve onun anadili Arnavutça. Milena çok güzel Türkçe
+              konuşuyor. O şimdi İktisat Fakültesi birinci sınıfa gidiyor. Onun
+              sınıf arkadaşları Türk, onun sınıfında hiç yabancı öğrenci yok. Bu
+              yüzden Milena her zaman Türkçe konuşuyor.
+            </p>
+          </li>
+          <br />
+
+          <li>
+            <p>
+              Biz hepimiz çok iyi anlaşıyoruz. Evde iş bölümü yapıyoruz. Marjan
+              yemek yapıyor, Milena ve ben temizlik yapıyoruz. Alışverişe ise
+              beraber gidiyoruz. Akşamları beraber yemek yiyoruz, ders
+              çalışıyoruz ve televizyon izliyoruz. Hafta sonları İstanbul’da
+              geziyoruz, bazen sinemaya gidiyoruz, bazen bir lokantaya gidiyoruz
+              ve Türk yemekleri yiyoruz. Ev arkadaşlarım Türk yemeklerini çok
+              seviyorlar.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 4 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 4. Давайте выберем правильный вариант ответа
+      </div>
+      <div class="task-content hidden">
+        <!-- <img src="./foto/ders11-task1.jpg" alt="ders10-task2" /> -->
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Serpil’in ev arkadaşları nereli?</p>
+              <select
+                class="answer-select"
+                data-correct="Marjan Kazakistanlı,Milena Arnavut."
+              >
+                <option value="">--</option>
+                <option value="Marjan Arnavut,Milena Kazakistanlı.">
+                  Marjan Arnavut,Milena Kazakistanlı.
+                </option>
+                <option value="Marjan Kazakistanlı,Milena Arnavut.">
+                  Marjan Kazakistanlı,Milena Arnavut.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Arkadaşları hangi dilleri konuşuyorlar?</p>
+              <select
+                class="answer-select"
+                data-correct="Marjan Kazakça, Milena Arnavutça."
+              >
+                <option value="">--</option>
+                <option value="Marjan Kazakça, Milena Arnavutça.">
+                  Marjan Kazakça, Milena Arnavutça.
+                </option>
+                <option value="Marjan Kazakçe, Milena Arnavutçe.">
+                  Marjan Kazakçe, Milena Arnavutçe.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>İş bölümü” ne demektir?</p>
+              <select
+                class="answer-select"
+                data-correct="İş bölümü, işleri paylaşmak demektir."
+              >
+                <option value="">--</option>
+                <option value="İş bölümü, işleri paylaşmak demektir.">
+                  İş bölümü, işleri paylaşmak demektir.
+                </option>
+                <option value="İş bölümü, kızların çalıştığı yer.">
+                  İş bölümü, kızların çalıştığı yer.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Serpil ve arkadaşları hafta sonları neler yapıyorlar?</p>
+              <select
+                class="answer-select"
+                data-correct="Onlar İstanbul’da geziyor, bazen sinemaya bazen lokantaya gidiyorlar."
+              >
+                <option value="">--</option>
+                <option
+                  value="Onlar İstanbul’da geziyor, bazen tiyatroya bazen kafeye gidiyorlar."
+                >
+                  Onlar İstanbul’da geziyor, bazen tiyatroya bazen kafeye
+                  gidiyorlar.
+                </option>
+                <option
+                  value="Onlar İstanbul’da geziyor, bazen sinemaya bazen lokantaya gidiyorlar."
+                >
+                  Onlar İstanbul’da geziyor, bazen sinemaya bazen lokantaya
+                  gidiyorlar.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Milena niçin her zaman Türkçe konuşuyor?</p>
+              <select
+                class="answer-select"
+                data-correct="Çünkü Milena’nın bütün arkadaşları Türk."
+              >
+                <option value="">--</option>
+                <option value="Çünkü Milena Türkçe’yi çok seviyor.">
+                  Çünkü Milena Türkçe’yi çok seviyor.
+                </option>
+                <option value="Çünkü Milena’nın bütün arkadaşları Türk.">
+                  Çünkü Milena’nın bütün arkadaşları Türk.
+                </option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 5 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 5. Давайте отметим верно (Doğru) или неверно (Yanlış)
+        предложение
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Serpil’in evinde 3 kişi var.</p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Serpil, Milena ve Marjan aynı sınıftalar.</p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Marjan İngilizce biliyor.</p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Milena’nın sınıfında başka yabancı öğrenciler de var.</p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Marjan alışverişe yalnız gidiyor.</p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders11.html"> <button>Назад</button></a>
+
+      <a href="./ders11-3.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>
