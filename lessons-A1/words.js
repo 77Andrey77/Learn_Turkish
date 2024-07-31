@@ -28,7 +28,7 @@ const wordsSets = {
     {
         word: "büyük",
         translation: "большой",
-        image: "./foto/büyük.jpg"
+        image: "./foto/buyuk.jpg"
     },
     {
         word: "ceket",
@@ -38,17 +38,17 @@ const wordsSets = {
     {
         word: "çanta",
         translation: "сумка",
-        image: "./foto/çanta.jpg"
+        image: "./foto/canta.jpg"
     },
     {
         word: "çatal",
         translation: "вилка",
-        image: "./foto/çatal.jpg"
+        image: "./foto/catal.jpg"
     },
     {
         word: "çay",
         translation: "чай",
-        image: "./foto/çay.jpg"
+        image: "./foto/cay.jpg"
     },
     {
         word: "çaydanlık",
@@ -83,7 +83,7 @@ const wordsSets = {
     {
         word: "fırça",
         translation: "щетка",
-        image: "./foto/fırça.jpg"
+        image: "./foto/firca.jpg"
     },
     {
         word: "fıstık",
