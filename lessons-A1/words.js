@@ -355,7 +355,7 @@ const wordsSets = {
     {
         word: "kaç yaşındasın?",
         translation: "сколько тебе лет?",
-        image: "./foto/kaç yasındasın.jpg"
+        image: "./foto/kac yasındasın.jpg"
     },
     {
         word: "otuz yaşındayım",
@@ -563,7 +563,7 @@ const wordsSets = {
      {
         word: "şarkıcı",
         translation: "певец",
-        image: "./foto/şarkıcı.jpg"
+        image: "./foto/sarkıcı.jpg"
         },  
       {
         word: "sandalye",
