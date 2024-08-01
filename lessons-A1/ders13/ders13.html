@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_13</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 13 (SAATLER)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders13.html"
+            ><button class="active">
+              Сообщение времени в часах и минутах
+            </button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders13-2.html"
+            ><button>Время в Турции vs другие страны</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders13-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders13-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders13-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Время суток. На уроке вы сможете говорить о времени в часах и минутах,
+      научитесь задавать вопрос: “Который час?”. И отвечать на него. Что,
+      кстати, отличный способ завязать знакомство.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set14"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/bucuk.jpg" alt="bucuk" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+    <!-- /////////////dowloading//////////// -->
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/Словарь к модулю 5.pdf"
+        download
+        >Скачать Словарь к модулю 5</a
+      >
+    </div>
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/Модуль 5. Урок 13.pdf"
+        download
+        >Скачать Рабочая тетрадь. Урок 12</a
+      >
+    </div>
+
+    <!-- //////////////Дополнительный материал/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
+        <li>
+          <button id="infinitive-header">Который час?</button>
+          <div class="slider hidden" id="infinitive-content">
+            <div class="slides" id="infinitive-slides">
+              <div class="slide">
+                <img
+                  src="./foto/ders13-moreinfo1-1.JPG"
+                  alt="слайд1 Который час?"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="./foto/ders13-moreinfo1-2.JPG"
+                  alt="слайд2 Который час?"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="./foto/ders13-moreinfo1-3.JPG"
+                  alt="слайд3 Который час?"
+                />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1, 'infinitive-slides')">
+              &#10094;
+            </button>
+            <button class="next" onclick="moveSlides(1, 'infinitive-slides')">
+              &#10095;
+            </button>
+          </div>
+        </li>
+
+        <li>
+          <button id="present-header">В котором часу?</button>
+          <div class="slider hidden" id="present-content">
+            <div class="slides" id="present-slides">
+              <div class="slide">
+                <img
+                  src="./foto/ders13-moreinfo2-1.JPG"
+                  alt="В котором часу?"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders13-moreinfo2-2.JPG"
+                  alt="В котором часу?"
+                />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1, 'present-slides')">
+              &#10094;
+            </button>
+            <button class="next" onclick="moveSlides(1, 'present-slides')">
+              &#10095;
+            </button>
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="negative-present-header">заглушка</button>
+          <div class="slider hidden" id="negative-present-content">
+            <div class="slides" id="negative-present-slides">
+              <div class="slide">
+                <img src="" alt="НАСТОЯЩЕЕ ВРЕМЯ. ОТРИЦАТЕЛЬНАЯ ФОРМА" />
+              </div>
+              <div class="slide">
+                <img src="" alt="НАСТОЯЩЕЕ ВРЕМЯ. ОТРИЦАТЕЛЬНАЯ ФОРМА" />
+              </div>
+            </div>
+            <button
+              class="prev"
+              onclick="moveSlides(-1, 'negative-present-slides')"
+            >
+              &#10094;
+            </button>
+            <button
+              class="next"
+              onclick="moveSlides(1, 'negative-present-slides')"
+            >
+              &#10095;
+            </button>
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="interrogativeForm-header">
+            НАСТОЯЩЕЕ ВРЕМЯ. ВОПРОСИТЕЛЬНАЯ ФОРМА
+          </button>
+          <div class="task-law hidden" id="nterrogativeForm-content">
+            <img src="" alt="img-law" />
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- /////////////Задание 1 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Задание 1. Давайте сопоставим время</div>
+      <div class="task-content hidden">
+        <img src="./foto/ders13-task1.jpg" alt="ders13-task1" />
+        <ul>
+          <li>
+            <div class="write-container">
+              <p><span>12.30</span></p>
+              <select class="answer-select short" data-correct="On iki buçuk">
+                <option value="">--Выберите ответ--</option>
+                <option value="Dokuza yirmi var.">Dokuza yirmi var.</option>
+                <option value="Üçe çeyrek var.">Üçe çeyrek var.</option>
+                <option value="Dokuzu yirmi geçiyor.">
+                  Dokuzu yirmi geçiyor.
+                </option>
+                <option value="Üçü çeyrek geçiyor.">Üçü çeyrek geçiyor.</option>
+                <option value="On iki buçuk">On iki buçuk</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>14.45</span></p>
+              <select
+                class="answer-select short"
+                data-correct="Üçe çeyrek var."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Dokuza yirmi var.">Dokuza yirmi var.</option>
+                <option value="Üçe çeyrek var.">Üçe çeyrek var.</option>
+                <option value="Dokuzu yirmi geçiyor.">
+                  Dokuzu yirmi geçiyor.
+                </option>
+                <option value="Üçü çeyrek geçiyor.">Üçü çeyrek geçiyor.</option>
+                <option value="On iki buçuk">On iki buçuk</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>03.15</span></p>
+              <select
+                class="answer-select short"
+                data-correct="Üçü çeyrek geçiyor."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Dokuza yirmi var.">Dokuza yirmi var.</option>
+                <option value="Üçe çeyrek var.">Üçe çeyrek var.</option>
+                <option value="Dokuzu yirmi geçiyor.">
+                  Dokuzu yirmi geçiyor.
+                </option>
+                <option value="Üçü çeyrek geçiyor.">Üçü çeyrek geçiyor.</option>
+                <option value="On iki buçuk">On iki buçuk</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>09.20</span></p>
+              <select
+                class="answer-select short"
+                data-correct="Dokuzu yirmi geçiyor."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Dokuza yirmi var.">Dokuza yirmi var.</option>
+                <option value="Üçe çeyrek var.">Üçe çeyrek var.</option>
+                <option value="Dokuzu yirmi geçiyor.">
+                  Dokuzu yirmi geçiyor.
+                </option>
+                <option value="Üçü çeyrek geçiyor.">Üçü çeyrek geçiyor.</option>
+                <option value="On iki buçuk">On iki buçuk</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>20.40</span></p>
+              <select
+                class="answer-select short"
+                data-correct="Dokuza yirmi var."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Dokuza yirmi var.">Dokuza yirmi var.</option>
+                <option value="Üçe çeyrek var.">Üçe çeyrek var.</option>
+                <option value="Dokuzu yirmi geçiyor.">
+                  Dokuzu yirmi geçiyor.
+                </option>
+                <option value="Üçü çeyrek geçiyor.">Üçü çeyrek geçiyor.</option>
+                <option value="On iki buçuk">On iki buçuk</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 2 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Задание 2. Давайте сопоставим время</div>
+      <div class="task-content hidden">
+        <img src="./foto/ders13-task2.jpg" alt="ders13-task2" />
+        <ul>
+          <li>
+            <div class="write-container">
+              <p><span>Saat on ikiyi beş geçiyor.</span></p>
+              <select class="answer-select" data-correct="12.05">
+                <option value="">--Выберите ответ--</option>
+                <option value="12.05">12.05</option>
+                <option value="23.00">23.00</option>
+                <option value="08.40">08.40</option>
+                <option value="19.30">19.30</option>
+                <option value="15.25">15.25</option>
+                <option value="09.15">09.15</option>
+                <option value="20.50">20.50</option>
+                <option value="11.45">11.45</option>
+                <option value="18.55">18.55</option>
+                <option value="04.45">04.45</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Saat dokuzu çeyrek geçiyor.</span></p>
+              <select class="answer-select" data-correct="09.15">
+                <option value="">--Выберите ответ--</option>
+                <option value="12.05">12.05</option>
+                <option value="23.00">23.00</option>
+                <option value="08.40">08.40</option>
+                <option value="19.30">19.30</option>
+                <option value="15.25">15.25</option>
+                <option value="09.15">09.15</option>
+                <option value="20.50">20.50</option>
+                <option value="11.45">11.45</option>
+                <option value="18.55">18.55</option>
+                <option value="04.45">04.45</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Saat üçü yirmi beş geçiyor.</span></p>
+              <select class="answer-select" data-correct="15.25">
+                <option value="">--Выберите ответ--</option>
+                <option value="12.05">12.05</option>
+                <option value="23.00">23.00</option>
+                <option value="08.40">08.40</option>
+                <option value="19.30">19.30</option>
+                <option value="15.25">15.25</option>
+                <option value="09.15">09.15</option>
+                <option value="20.50">20.50</option>
+                <option value="11.45">11.45</option>
+                <option value="18.55">18.55</option>
+                <option value="04.45">04.45</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Saat yedi buçuk.</span></p>
+              <select class="answer-select" data-correct="19.30">
+                <option value="">--Выберите ответ--</option>
+                <option value="12.05">12.05</option>
+                <option value="23.00">23.00</option>
+                <option value="08.40">08.40</option>
+                <option value="19.30">19.30</option>
+                <option value="15.25">15.25</option>
+                <option value="09.15">09.15</option>
+                <option value="20.50">20.50</option>
+                <option value="11.45">11.45</option>
+                <option value="18.55">18.55</option>
+                <option value="04.45">04.45</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Saat on ikiye çeyrek var.</span></p>
+              <select class="answer-select" data-correct="11.45">
+                <option value="">--Выберите ответ--</option>
+                <option value="12.05">12.05</option>
+                <option value="23.00">23.00</option>
+                <option value="08.40">08.40</option>
+                <option value="19.30">19.30</option>
+                <option value="15.25">15.25</option>
+                <option value="09.15">09.15</option>
+                <option value="20.50">20.50</option>
+                <option value="11.45">11.45</option>
+                <option value="18.55">18.55</option>
+                <option value="04.45">04.45</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Saat dokuza yirmi var.</span></p>
+              <select class="answer-select" data-correct="08.40">
+                <option value="">--Выберите ответ--</option>
+                <option value="12.05">12.05</option>
+                <option value="23.00">23.00</option>
+                <option value="08.40">08.40</option>
+                <option value="19.30">19.30</option>
+                <option value="15.25">15.25</option>
+                <option value="09.15">09.15</option>
+                <option value="20.50">20.50</option>
+                <option value="11.45">11.45</option>
+                <option value="18.55">18.55</option>
+                <option value="04.45">04.45</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Saat yediye beş var.</span></p>
+              <select class="answer-select" data-correct="18.55">
+                <option value="">--Выберите ответ--</option>
+                <option value="12.05">12.05</option>
+                <option value="23.00">23.00</option>
+                <option value="08.40">08.40</option>
+                <option value="19.30">19.30</option>
+                <option value="15.25">15.25</option>
+                <option value="09.15">09.15</option>
+                <option value="20.50">20.50</option>
+                <option value="11.45">11.45</option>
+                <option value="18.55">18.55</option>
+                <option value="04.45">04.45</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Saat beşe çeyrek var.</span></p>
+              <select class="answer-select" data-correct="04.45">
+                <option value="">--Выберите ответ--</option>
+                <option value="12.05">12.05</option>
+                <option value="23.00">23.00</option>
+                <option value="08.40">08.40</option>
+                <option value="19.30">19.30</option>
+                <option value="15.25">15.25</option>
+                <option value="09.15">09.15</option>
+                <option value="20.50">20.50</option>
+                <option value="11.45">11.45</option>
+                <option value="18.55">18.55</option>
+                <option value="04.45">04.45</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Saat dokuza on var.</span></p>
+              <select class="answer-select" data-correct="20.50">
+                <option value="">--Выберите ответ--</option>
+                <option value="12.05">12.05</option>
+                <option value="23.00">23.00</option>
+                <option value="08.40">08.40</option>
+                <option value="19.30">19.30</option>
+                <option value="15.25">15.25</option>
+                <option value="09.15">09.15</option>
+                <option value="20.50">20.50</option>
+                <option value="11.45">11.45</option>
+                <option value="18.55">18.55</option>
+                <option value="04.45">04.45</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Saat on bir.</span></p>
+              <select class="answer-select" data-correct="23.00">
+                <option value="">--Выберите ответ--</option>
+                <option value="12.05">12.05</option>
+                <option value="23.00">23.00</option>
+                <option value="08.40">08.40</option>
+                <option value="19.30">19.30</option>
+                <option value="15.25">15.25</option>
+                <option value="09.15">09.15</option>
+                <option value="20.50">20.50</option>
+                <option value="11.45">11.45</option>
+                <option value="18.55">18.55</option>
+                <option value="04.45">04.45</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="../test4/test4.html"> <button>Назад</button></a>
+
+      <a href="./ders13.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <script src="../many-foto-slider.js"></script>
+    <script src="../more-materials.js"></script>
+  </body>
+</html>

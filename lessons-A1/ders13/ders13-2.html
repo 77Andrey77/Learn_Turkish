@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_13</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 13 (SAATLER)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders13.html"
+            ><button>Сообщение времени в часах и минутах</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders13-2.html"
+            ><button class="active">Время в Турции vs другие страны</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders13-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders13-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders13-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Время суток. На уроке вы сможете говорить о времени в часах и минутах,
+      научитесь задавать вопрос: “Который час?”. И отвечать на него. Что,
+      кстати, отличный способ завязать знакомство.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set14"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/bucuk.jpg" alt="bucuk" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////диалог //////////// -->
+
+    <section class="task-section">
+      <div class="task-header">ВРЕМЯ В ТУРЦИИ vs ДРУГИЕ СТРАНЫ</div>
+      <div class="task-content hidden">
+        <img src="./foto/ders13-p2.jpg" alt="foto ders13-p2 read" width="600"/>
+        
+        <ul style="margin: 50px">
+          <li style="margin: 5px;">
+            <p><span>ALMANYA: </span>1 saat geri</p>
+          </li>
+
+          <li style="margin: 5px;">
+            <p><span>ARJANTİN: </span>5 saat geri</p>
+          </li>
+
+            <li style="margin: 5px;">
+            <p><span>AZERBAYCAN: </span>2 buçuk saat ileri</p>
+          </li>
+         
+          <li style="margin: 5px;">
+            <p><span>BULGARİSTAN: </span>Saat farkı yok.</p>
+          </li>
+
+          <li style="margin: 5px;">
+            <p><span>ÇİN: </span> 6 saat ileri</p>
+          </li>
+
+          <li style="margin: 5px;">
+            <p><span>FAS: </span>2 saat geri</p>
+          </li>
+
+          <li style="margin: 5px;">
+            <p><span>GÜNEY KORE: </span>7 saat ileri</p>
+          </li>
+
+          <li style="margin: 5px;">
+            <p><span>İNGİLTERE: </span>2 saat geri</p>
+          </li>
+
+          <li style="margin: 5px;">
+            <p><span>İRAN:  </span>1 buçuk saat ileri</p>
+          </li>
+
+          <li style="margin: 5px;">
+            <p><span>JAPONYA: </span>7 saat ileri</p>
+          </li>
+
+          <li style="margin: 5px;">
+            <p><span>KENYA: </span>1 saat ileri</p>
+          </li>
+
+          <li style="margin: 5px;">
+            <p><span>PERU: </span> 7 saat geri</p>
+          </li>
+
+           <li style="margin: 5px;">
+            <p><span>SURİYE: </span>Saat farkı yok.</p>
+          </li>
+
+           <li style="margin: 5px;">
+            <p><span>URUGUAY: </span> 5 saat geri</p>
+          </li>
+
+           <li style="margin: 5px;">
+            <p><span>ALASKA:  </span>11 saat geri</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 3 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">	Задание 3. Выше приведены списки других стран и указана
+         разница во времени с Турцией. Давайте посмотрим на список и ответим на вопросы</div>
+      <div class="task-content hidden">
+        
+        <ul>
+          <li>
+            <div class="write-container">-Saat 10.30’da İngilitere’de saat kaç?</div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>-Saat </p>
+              <select class="answer-select short" data-correct="08">
+                <option value="">--</option>
+                <option value="08">08</option>
+                <option value="40">40</option>
+                <option value="14">14</option>
+                <option value="07">07</option>
+                <option value="20">20</option>
+        
+              </select>
+              <p>.30.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">-Saat 12.00’da Uruguay’da saat kaç?</div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>-Saat </p>
+              <select
+                class="answer-select short"
+                data-correct="07"
+              >
+                <option value="">--</option>
+                 <option value="08">08</option>
+                <option value="40">40</option>
+                <option value="14">14</option>
+                <option value="07">07</option>
+                <option value="20">20</option>
+                
+              </select>
+              <p>.00</p>
+            </div>
+          </li>
+
+           <li>
+            <div class="write-container">-Saat 08.15’te Çin’de saat kaç?</div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>-Saat </p>
+              <select class="answer-select short" data-correct="14">
+                <option value="">--</option>
+                <option value=""></option>
+                 <option value="08">08</option>
+                <option value="40">40</option>
+                <option value="14">14</option>
+                <option value="07">07</option>
+                <option value="20">20</option>
+        
+              </select>
+              <p>.15.</p>
+            </div>
+          </li>
+
+           <li>
+            <div class="write-container">Saat 14.10’da İran’da saat kaç?</div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>-Saat 15.</p>
+              <select class="answer-select short" data-correct="40">
+                <option value="">--</option>
+                <option value=""></option>
+                 <option value="08">08</option>
+                <option value="40">40</option>
+                <option value="14">14</option>
+                <option value="07">07</option>
+                <option value="20">20</option>
+        
+              </select>
+              <p>.</p>
+            </div>
+          </li>
+
+           <li>
+            <div class="write-container">-Saat 21.40’ta Almanya’da saat kaç?</div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>-Saat </p>
+              <select class="answer-select short" data-correct="20">
+                <option value="">--</option>
+                <option value=""></option>
+                 <option value="08">08</option>
+                <option value="40">40</option>
+                <option value="14">14</option>
+                <option value="07">07</option>
+                <option value="20">20</option>
+        
+              </select>
+              <p>.40.</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 4 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 4. В настоящее время в Турции время 18:20. Давайте посмотрим на
+        список выше и отметим верно (Doğru) или неверно (Yanlış) указано текущее
+        время ниже
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p><span>Fas’ta saat 20.20.</span></p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Yanlış">Yanlış</option>
+                <option value="Doğru">Doğru</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Azerbaycan’da saat 13.50.</span></p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Yanlış">Yanlış</option>
+                <option value="Doğru">Doğru</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Japonya’da saat 01.20.</span></p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+               <option value="Yanlış">Yanlış</option>
+                <option value="Doğru">Doğru</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Peru’da saat 11.20.</span></p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+               <option value="Yanlış">Yanlış</option>
+                <option value="Doğru">Doğru</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>Suriye’de saat 19.30.</span></p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Yanlış">Yanlış</option>
+                <option value="Doğru">Doğru</option>
+              </select>
+              </select>
+            </div>
+          </li>
+
+         
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="../test4/test4.html"> <button>Назад</button></a>
+
+      <a href="./ders13.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

@@ -1,3 +1,5 @@
+//первое использование ders7, ders13
+
 // Универсальная функция для переключения видимости
 function toggleSliderVisibility(contentSelector) {
     console.log(`Trying to toggle visibility for selector: ${contentSelector}`);

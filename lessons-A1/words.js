@@ -2160,5 +2160,59 @@ const wordsSets = {
             image: "./foto/yuksek sesle.webp"
         }
 
+    ],
+    set14: [
+        {
+            word: "saat kaç?",
+            translation: "который час?",
+            image: ""
+        },
+
+    {
+            word: "çeyrek",
+            translation: "четверть",
+            image: ""
+        },
+    {
+            word: "buçuk",
+            translation: "половина",
+            image: ""
+        },
+    {
+            word: "yarım",
+            translation: "половина",
+            image: ""
+        },
+    {
+            word: "geri",
+            translation: "назад",
+            image: ""
+        },
+    {
+            word: "fark",
+            translation: "разница",
+            image: ""
+        },
+    {
+            word: "ileri",
+            translation: "вперед",
+            image: ""
+        },
+    {
+            word: "mola",
+            translation: "перерыв",
+            image: ""
+        },
+    {
+            word: "toplantı",
+            translation: "собрание",
+            image: ""
+        },
+    {
+            word: "randevu",
+            translation: "встреча",
+            image: ""
+        }
+
     ]
 };
