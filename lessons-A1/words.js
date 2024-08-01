@@ -53,7 +53,7 @@ const wordsSets = {
     {
         word: "çaydanlık",
         translation: "чайник",
-        image: "./foto/çaydanlık.jpg"
+        image: "./foto/caydanlik.jpg"
     },
     {
         word: "deniz",
@@ -88,22 +88,22 @@ const wordsSets = {
     {
         word: "fıstık",
         translation: "фисташки",
-        image: "./foto/fıstık.jpg"
+        image: "./foto/fistik.jpg"
     },
     {
         word: "gömlek",
         translation: "рубашка",
-        image: "./foto/gömlek.jpg"
+        image: "./foto/gomlek.jpg"
     },
     {
         word: "göz",
         translation: "глаз",
-        image: "./foto/göz.jpg"
+        image: "./foto/goz.jpg"
     },
     {
         word: "gözlük",
         translation: "очки",
-        image: "./foto/gözlük.jpg"
+        image: "./foto/gozluk.jpg"
     },
     {
         word: "hamam",
@@ -113,12 +113,12 @@ const wordsSets = {
     {
         word: "havuç",
         translation: "морковь",
-        image: "./foto/havuç.jpg"
+        image: "./foto/havuc.jpg"
     },
     {
         word: "iğne",
         translation: "иголка",
-        image: "./foto/iğne.jpg"
+        image: "./foto/igne.jpg"
     },
     {
         word: "inek",
@@ -133,7 +133,7 @@ const wordsSets = {
     {
         word: "köpek",
         translation: "собака",
-        image: "./foto/köpek.jpg"
+        image: "./foto/kopek.jpg"
     },
     {
         word: "lamba",
@@ -173,22 +173,22 @@ const wordsSets = {
     {
         word: "otobüs",
         translation: "автобус",
-        image: "./foto/otobüs.jpg"
+        image: "./foto/otobus.jpg"
     },
     {
         word: "öğretmen",
         translation: "учитель",
-        image: "./foto/öğretmen.jpg"
+        image: "./foto/ogretmen.jpg"
     },
     {
         word: "ördek",
         translation: "утка",
-        image: "./foto/ördek.jpg"
+        image: "./foto/ordek.jpg"
     },
     {
         word: "örnek",
         translation: "пример",
-        image: "./foto/örnek.jpg"
+        image: "./foto/ornek.jpg"
     },
     {
         word: "para",
@@ -213,12 +213,12 @@ const wordsSets = {
     {
         word: "şemsiye",
         translation: "зонт",
-        image: "./foto/şemsiye.jpg"
+        image: "./foto/semsiye.jpg"
     },
     {
         word: "şişe",
         translation: "бутылка",
-        image: "./foto/şişe.jpg"
+        image: "./foto/sise.jpg"
     },
     {
         word: "tabak",
@@ -238,22 +238,22 @@ const wordsSets = {
     {
         word: "uçak",
         translation: "самолет",
-        image: "./foto/uçak.jpg"
+        image: "./foto/ucak.jpg"
     },
     {
         word: "ütü",
         translation: "утюг",
-        image: "./foto/ütü.jpg"
+        image: "./foto/utu.jpg"
     },
     {
         word: "üzgün",
         translation: "грустный",
-        image: "./foto/üzgün.jpg"
+        image: "./foto/uzgun.jpg"
     },
     {
         word: "üzüm",
         translation: "виноград",
-        image: "./foto/üzüm.jpg"
+        image: "./foto/uzum.jpg"
     },
     {
         word: "vagon",
@@ -263,12 +263,12 @@ const wordsSets = {
     {
         word: "yüzük",
         translation: "кольцо",
-        image: "./foto/yüzük.jpg"
+        image: "./foto/yuzuk.jpg"
     },
     {
         word: "yıldız",
         translation: "звезда",
-        image: "./foto/yıldız.jpg"
+        image: "./foto/yildiz.jpg"
     },
     {
         word: "zeytin",
@@ -278,7 +278,7 @@ const wordsSets = {
         {
         word: "zürafa",
         translation: "жираф",
-        image: "./foto/zürafa.jpg"
+        image: "./foto/zurafa.jpg"
     }
 ],
     set2: [
