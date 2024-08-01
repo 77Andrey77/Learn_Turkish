@@ -310,7 +310,7 @@ const wordsSets = {
     {
         word: "günaydın",
         translation: "доброе утро",
-        image: "./foto/günaydın.jpg"
+        image: "./foto/gunaydın.jpg"
     },
     {
         word: "nasılsın?",
@@ -330,12 +330,12 @@ const wordsSets = {
     {
         word: "hoşça kal",
         translation: "до свидания",
-        image: "./foto/hoşça kal.jpeg"
+        image: "./foto/hosca kal.jpeg"
     },
     {
         word: "güle güle",
         translation: "до свидания (уходящему)",
-        image: "./foto/güle güle.jpeg"
+        image: "./foto/gule gule.jpeg"
     },
     {
         word: "memnun oldum",
@@ -345,7 +345,7 @@ const wordsSets = {
     {
         word: "teşekkür ederim",
         translation: "спасибо",
-        image: "./foto/teşekkür ederim.jpg"
+        image: "./foto/tesekkur ederim.jpg"
     },
     {
         word: "evli",
@@ -355,12 +355,12 @@ const wordsSets = {
     {
         word: "kaç yaşındasın?",
         translation: "сколько тебе лет?",
-        image: "./foto/kaç yaşındasın.jpg"
+        image: "./foto/kaç yasındasın.jpg"
     },
     {
         word: "otuz yaşındayım",
         translation: "мне тридцать лет",
-        image: "./foto/otuz yaşındayım.jpg"
+        image: "./foto/otuz yasındayım.jpg"
     },
     {
         word: "senin adın ne?",
@@ -375,12 +375,12 @@ const wordsSets = {
     {
         word: "iyi günler",
         translation: "добрый день",
-        image: "./foto/iyi günler.jpg"
+        image: "./foto/iyi gunler.jpg"
     },
     {
         word: "iyi akşamlar",
         translation: "добрый вечер",
-        image: "./foto/iyi akşamlar.jpg"
+        image: "./foto/iyi aksamlar.jpg"
     },
     {
         word: "iyi geceler",
@@ -478,7 +478,7 @@ const wordsSets = {
     {
         word: "mühendis",
         translation: "инженер",
-        image: "./foto/mühendis.jpg"
+        image: "./foto/muhendis.jpg"
     },  
     {
         word: "ressam",
@@ -498,7 +498,7 @@ const wordsSets = {
     {
         word: "kuş",
         translation: "птица",
-        image: "./foto/kuş.jpg"
+        image: "./foto/kus.jpg"
     },  
 {
         word: "kasap",
@@ -538,17 +538,17 @@ const wordsSets = {
     {
         word: "çilek",
         translation: "клубника",
-        image: "./foto/çilek.jpg"
+        image: "./foto/cilek.jpg"
         },  
     {
         word: "şoför",
         translation: "водитель",
-        image: "./foto/şoför.jpeg"
+        image: "./foto/sofor.jpeg"
         },  
     {
         word: "hemşire",
         translation: "медсестра",
-        image: "./foto/hemşire.jpg"
+        image: "./foto/hemsire.jpg"
         },  
     {
         word: "perde",
@@ -578,7 +578,7 @@ const wordsSets = {
         {
         word: "sözlük",
         translation: "словарь",
-        image: "./foto/sözlük.jpg"
+        image: "./foto/sozluk.jpg"
         },  
          {
         word: "ev hanımı",
@@ -593,12 +593,12 @@ const wordsSets = {
            {
         word: "çocuk",
         translation: "ребенок",
-        image: "./foto/çocuk.jpg"
+        image: "./foto/cocuk.jpg"
         },  
             {
         word: "çarşı",
         translation: "рынок",
-        image: "./foto/çarşı.jpg"
+        image: "./foto/carsı.jpg"
         } 
     ],
     set4: [
