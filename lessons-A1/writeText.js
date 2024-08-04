@@ -193,7 +193,25 @@ const correctWordsSets = [
 //test4-t1  38(     554       555    556    557     558           559      560         561     562    563      564        )
    
                  ['Ten', 'Beri', 'Tan', 'A', 'Kadar', 'Tıktan', 'Sonra', 'Den', 'Önce', 'Tıktan', 'Sonra', 'Meden', 'Önce', 'Madan', 'Önce', 'Dikten', 'Sonra', 'Tikten','Sonra', 'Dır'],
-//test4-t1  39(   565      566     567  568    569       570       571     572    573      574      575      576      577     578     579       580      581      582      583      584             
+//test4-t1  39(   565      566     567  568    569       570       571     572    573      574      575      576      577     578     579       580      581      582      583      584 )
+                
+                 ['Arabanın', 'Kapısı', 'Evin', 'Adresi', 'Filmin', 'Adı', 'Okulun', 'Bahçesi', "Moskova'nın", 'Metrosu', "Türkiye'nin", 'Başkenti', 'Otobüsün', 'Numarası', "Antalya'nın", 'Sahilleri', 'Gömleğin', 'Fiyatı', 'Şehrin', 'Havası'],
+//ders16-t2  40(    585         586       587      588       589     590     591       592        593            594         595           596          597         598         599            600          601         602       603      604                    )                
+                 
+                 ['','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '',''],
+//ders16-t3  41(               
+                 
+                 ['Arkadaşımın', 'Bisikleti', 'Onun', 'Eşi', 'Bu', 'Okulun', 'Girişi', 'Ablanın', 'Işi', 'Annemin', 'Çantası', 'Evimizin', 'Bahçesi'],
+//ders16-t4  42(    
+
+                 ['sında', 'ın', 'sından', 'inden', 'sinde', 'ın', 'ine', 'ine', 'ın', 'ini', 'inde', 'una', 'ını' ],
+//ders16-t6  43 ( 
+
+                 ['in', 'inizin', 'ini', 'im', 'ımın', 'ından', 'in', 'nin', 'sına', 'im', 'imizin', 'sinde', 'nun', 'inin', 'ini', 'ın', 'sinin', 'ı', 'im', 'muzun', 'inin', 'undan', 'nin', 'inin', 'undan', 'e', '', '', '', 'ı', 'im', 'imizin', 'ının', 'ini'],
+//ders16-t7  44 (      
+
+                ['arabamın', 'kapısı', 'dolabının', 'rengi', 'okulumuzun', 'bahçesi', 'evinizin', 'çatısı', 'kitabının', 'sayfaları'],
+//ders16-t8 45 (                 
                  
 ] ;
 

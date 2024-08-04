@@ -2642,5 +2642,93 @@ const wordsSets = {
             translation: "какого плана?",
             image: "./foto/ne tur.webp"
         }
+    ],
+    set17: [
+         {
+            word: "kuzen",
+            translation: "кузен",
+            image: "./foto/kuzen.jpg"
+        },
+         {
+            word: "yeğen",
+            translation: "племянник",
+            image: "./foto/yegen.webp"
+        },
+          {
+            word: "kayınpeder",
+            translation: "тесть",
+            image: "./foto/kayınpeder.jpg"
+        },
+           {
+            word: "kayınvalide",
+            translation: "теща",
+            image: "./foto/kayınvalide.jpg"
+        },
+            {
+            word: "baldız",
+            translation: "золовка",
+            image: "./foto/baldız.jpg"
+        },
+             {
+            word: "kayınbirader",
+            translation: "шурин",
+            image: "./foto/kayınbirader.jpg"
+        },
+              {
+            word: "enişte",
+            translation: "зять",
+            image: "./foto/eniste.jpg"
+        },
+               {
+            word: "yakışıklı",
+            translation: "красивый",
+            image: "./foto/yakısıklı.jpg"
+        },
+                {
+            word: "zeki",
+            translation: "умный",
+            image: "./foto/zeki.jpg"
+        },
+         {
+            word: "dürüst",
+            translation: "честный",
+            image: "./foto/durust.jpg"
+        },
+          {
+            word: "iş adamı",
+            translation: "бизнесмен",
+            image: "./foto/is adamı.jpg"
+        },
+
+         {
+            word: "becerikli",
+            translation: "способный",
+            image: "./foto/becerikli.jpeg"
+        },
+         {
+            word: "güler yüzlü",
+            translation: "улыбчивый",
+            image: "./foto/guler yuzlu.jpg"
+        },
+         {
+            word: "tek",
+            translation: "один",
+            image: "./foto/tek.jpg"
+        },
+         {
+            word: "tek katlı",
+            translation: "одноэтажный",
+            image: "../not-image.png"
+        },
+         {
+            word: "boğaz",
+            translation: "пролив",
+            image: "./foto/bogaz.webp"
+        },
+         {
+            word: "avukat",
+            translation: "адвокат",
+            image: "./foto/avukat.jpg"
+        }
     ]
 };

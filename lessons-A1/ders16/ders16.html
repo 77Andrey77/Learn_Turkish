@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_16</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 16 (AKRABALARIM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders16.html"
+            ><button class="active">Изафетная цепь. Вопрос "Чей"?</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders16-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders16-3.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders16-4test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Изафетная цепь. Вопрос "Чей?" На уроке вы поймёте, как строить
+      словосочетания, обозначающие принадлежность предмета к чему-либо или
+      кому-либо. Ваш турецкий станет ещё на ступень выше.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set16"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/kuzen.jpg" alt="kuzen" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <!-- <iframe
+      width="640"
+      height="400"
+      src="https://www.youtube.com/watch?v=u179ssScQ3c"
+      frameborder="0"
+      allowfullscreen
+    ></iframe> -->
+    <div class="section-wrapper">
+      <iframe
+        class="ders1-video"
+        width="845"
+        height="475"
+        src="https://www.youtube.com/embed/u179ssScQ3c"
+        title="Эпичный прыжок )"
+        frameborder="0"
+        allow=""
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+    <!-- /////////////dowloading//////////// -->
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/Словарь к модулю 6.pdf"
+        download
+        >Скачать Словарь к модулю 6</a
+      >
+    </div>
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/Модуль 6. Урок 16.pdf"
+        download
+        >Скачать Рабочая тетрадь. Урок 16</a
+      >
+    </div>
+
+    <!-- //////////////Дополнительный материал/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
+        <li>
+          <button id="task-header-law1">Родительный падеж</button>
+          <div class="task-law hidden" id="task-content-law1-img">
+            <img src="./foto/ders16-moreinfo1.JPG" alt="Родительный падеж" />
+          </div>
+        </li>
+
+        <li>
+          <button id="task-header-law2">Притяжательный изафет</button>
+          <div class="task-law hidden" id="task-content-law2-img">
+            <img
+              src="./foto/ders16-moreinfo2.JPG"
+              alt="Притяжательный изафет"
+            />
+          </div>
+        </li>
+
+        <li>
+          <button id="task-header-law3">Относительный изафет</button>
+          <div class="task-law hidden" id="task-content-law3-img">
+            <img src="./foto/ders16-moreinfo3.JPG" alt="Относительный изафет" />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-alfabet">ПОСЛЕЛОГ DAN(DEN) BERI, DIR</button>
+          <div class="slider hidden" id="task-content-alfabet">
+            <div class="slides" id="alfabet-slides">
+              <div class="slide">
+                <img src="" alt="ОЗВОНЧЕНИЕ СОГЛАСНЫХ" />
+              </div>
+              <div class="slide">
+                <img src="" alt="ОЗВОНЧЕНИЕ СОГЛАСНЫХ" />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- /////////////Задание 1 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 1. Выберите правильный вариант аффикса родительного падежа
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Rusya’</p>
+              <select class="answer-select" data-correct="nın">
+                <option value="">--Выберите ответ--</option>
+                <option value="nın">nın</option>
+                <option value="nin">nin</option>
+                <option value="nun">nun</option>
+                <option value="nün">nün</option>
+                <option value="ın">ın</option>
+                <option value="in">in</option>
+                <option value="un">un</option>
+                <option value="ün">ün</option>
+              </select>
+              <p>başkenti Moskova mı?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Türkiye’</p>
+              <select class="answer-select" data-correct="nin">
+                <option value="">--Выберите ответ--</option>
+                <option value="nın">nın</option>
+                <option value="nin">nin</option>
+                <option value="nun">nun</option>
+                <option value="nün">nün</option>
+                <option value="ın">ın</option>
+                <option value="in">in</option>
+                <option value="un">un</option>
+                <option value="ün">ün</option>
+              </select>
+              <p>başkenti Ankara mı?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Almanya’</p>
+              <select class="answer-select" data-correct="nın">
+                <option value="">--Выберите ответ--</option>
+                <option value="nın">nın</option>
+                <option value="nin">nin</option>
+                <option value="nun">nun</option>
+                <option value="nün">nün</option>
+                <option value="ın">ın</option>
+                <option value="in">in</option>
+                <option value="un">un</option>
+                <option value="ün">ün</option>
+              </select>
+              <p>başkenti Berlin mi?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Fransa’</p>
+              <select class="answer-select" data-correct="nın">
+                <option value="">--Выберите ответ--</option>
+                <option value="nın">nın</option>
+                <option value="nin">nin</option>
+                <option value="nun">nun</option>
+                <option value="nün">nün</option>
+                <option value="ın">ın</option>
+                <option value="in">in</option>
+                <option value="un">un</option>
+                <option value="ün">ün</option>
+              </select>
+              <p>başkenti Paris mi?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>İngiltere’</p>
+              <select class="answer-select" data-correct="nin">
+                <option value="">--Выберите ответ--</option>
+                <option value="nın">nın</option>
+                <option value="nin">nin</option>
+                <option value="nun">nun</option>
+                <option value="nün">nün</option>
+                <option value="ın">ın</option>
+                <option value="in">in</option>
+                <option value="un">un</option>
+                <option value="ün">ün</option>
+              </select>
+              <p>başkenti Londra mı?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Singapur’</p>
+              <select class="answer-select" data-correct="un">
+                <option value="">--Выберите ответ--</option>
+                <option value="nın">nın</option>
+                <option value="nin">nin</option>
+                <option value="nun">nun</option>
+                <option value="nün">nün</option>
+                <option value="ın">ın</option>
+                <option value="in">in</option>
+                <option value="un">un</option>
+                <option value="ün">ün</option>
+              </select>
+              <p>başkenti Singapur mu?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Tunus’</p>
+              <select class="answer-select" data-correct="un">
+                <option value="">--Выберите ответ--</option>
+                <option value="nın">nın</option>
+                <option value="nin">nin</option>
+                <option value="nun">nun</option>
+                <option value="nün">nün</option>
+                <option value="ın">ın</option>
+                <option value="in">in</option>
+                <option value="un">un</option>
+                <option value="ün">ün</option>
+              </select>
+              <p>başkenti Tunus mu?</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 2 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 2. Образуйте двухаффиксный изафет из данных слов. Соблюдайте
+        правильный порядок слов (Писать с большой буквы).
+      </div>
+      <div class="task-content write hidden">
+        <form id="text-form-40">
+          <ul>
+            <li class="inline">
+              <label for="word585">Araba, kapı </label>
+              <input type="text" id="word585" name="word585" />
+              <input type="text" id="word586" name="word586" />
+            </li>
+
+            <li class="inline">
+              <label for="word587">Adres, ev </label>
+              <input type="text" id="word587" name="word587" />
+              <input type="text" id="word588" name="word588" />
+            </li>
+
+            <li class="inline">
+              <label for="word589">Ad, film </label>
+              <input type="text" id="word589" name="word589" />
+              <input type="text" id="word590" name="word590" />
+            </li>
+
+            <li class="inline">
+              <label for="word591">Bahçe, okul </label>
+              <input type="text" id="word591" name="word591" />
+              <input type="text" id="word592" name="word592" />
+            </li>
+
+            <li class="inline">
+              <label for="word593">Moskova, metro </label>
+              <input type="text" id="word593" name="word593" />
+              <input type="text" id="word594" name="word594" />
+            </li>
+
+            <li class="inline">
+              <label for="word595">Başkent, Türkiye </label>
+              <input type="text" id="word595" name="word595" />
+              <input type="text" id="word596" name="word596" />
+            </li>
+
+            <li class="inline">
+              <label for="word597">Numara, otobüs </label>
+              <input type="text" id="word597" name="word597" />
+              <input type="text" id="word598" name="word598" />
+            </li>
+
+            <li class="inline">
+              <label for="word599">Antalya, sahiller </label>
+              <input type="text" id="word599" name="word599" />
+              <input type="text" id="word600" name="word600" />
+            </li>
+
+            <li class="inline">
+              <label for="word601">Gömlek, fiyat </label>
+              <input type="text" id="word601" name="word601" />
+              <input type="text" id="word602" name="word602" />
+            </li>
+
+            <li class="inline">
+              <label for="word603">Hava, şehir </label>
+              <input type="text" id="word603" name="word603" />
+              <input type="text" id="word604" name="word604" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 3 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 3. Давайте заполним следующие пробелы соответствующими аффиксами
+        (Писать с большой буквы).
+      </div>
+      <div class="task-content write hidden">
+        <img src="./foto/ders16-task3.jpg" alt="ders16-task3" />
+        <form id="text-form-41">
+          <ul>
+            <li class="inline">
+              <label for="word">Ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">ad</label>
+              <input type="text" id="word" name="word" />
+              <p>Hakan</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Ercan Bey; ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">baba</label>
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Necla Hanım; ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">anne</label>
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Metin amcam; ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">baba</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">erkek kardeş</label>
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Mustafa; ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">amca</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">oğl</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">. O ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">kuzen</label>
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Zeynep halam; ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">baba</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">kız kardeş</label>
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Cemil dedem; ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word"> baba</label>
+              <input type="text" id="word" name="word" />
+              <label for="word"> baba</label>
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Fatma babaannem; ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word"> baba</label>
+              <input type="text" id="word" name="word" />
+              <label for="word"> anne</label>
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">İsmail bey; ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word"> teyze</label>
+              <input type="text" id="word" name="word" />
+              <label for="word"> koca</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">. O ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">enişte</label>
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Özgür; ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word"> kız kardeş</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">çocuğ</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">O ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word"> yeğen</label>
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Ayşe; ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">eş</label>
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Erol Bey; Ayşe’</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">baba</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">. O ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">kayınpeder</label>
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Perihan Hanım; Ayşe’</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">anne</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">. O ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">kayınvalide</label>
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Nesrin; Ayşe’</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">kız kardeş</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">. O ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">baldız</label>
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Adem; Ayşe’</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">erkek kardeş</label>
+              <input type="text" id="word" name="word" />
+              <label for="word"> . O ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">kayınbirader</label>
+              <input type="text" id="word" name="word" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 4 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 4. Давайте составим словосочетания из указанных ниже пар (Писать
+        с большой буквы).
+      </div>
+      <div class="task-content write hidden">
+        <img src="./foto/ders16-task4.jpg" alt="ders16-task4" width="600" />
+
+        <form id="text-form-42">
+          <ul>
+            <li class="inline">
+              <label for="word">Arkadaşım– bisiklet </label>
+              <input type="text" id="word" name="word" />
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">O – eş </label>
+              <input type="text" id="word" name="word" />
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Bu okul – giriş </label>
+              <input type="text" id="word" name="word" />
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Ablan – iş </label>
+              <input type="text" id="word" name="word" />
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Annem – çanta</label>
+              <input type="text" id="word" name="word" />
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Evimiz – bahçe </label>
+              <input type="text" id="word" name="word" />
+              <input type="text" id="word" name="word" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 5 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 5. Выберите, какой изафет используется для выражения данного
+        словосочетания
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Стамбульский университет</p>
+              <select
+                class="answer-select"
+                data-correct="İstanbul Üniversitesi"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="İstanbul Üniversitesi">
+                  İstanbul Üniversitesi
+                </option>
+                <option value="İstanbul’un Üniversitesi">
+                  İstanbul’un Üniversitesi
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Отель Хилтон</p>
+              <select class="answer-select" data-correct="Hilton oteli">
+                <option value="">--Выберите ответ--</option>
+                <option value="Hilton oteli">Hilton oteli</option>
+                <option value="Hilton’un oteli    ">Hilton’un oteli</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Комната ребенка</p>
+              <select class="answer-select" data-correct="çocuğun odası">
+                <option value="">--Выберите ответ--</option>
+                <option value="Çocuk odası">Çocuk odası</option>
+                <option value="çocuğun odası">çocuğun odası</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Женский врач</p>
+              <select class="answer-select" data-correct="Kadın doktoru">
+                <option value="">--Выберите ответ--</option>
+                <option value="Kadın doktoru">Kadın doktoru</option>
+                <option value="kadının doktoru">kadının doktoru</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Рабочий телефон</p>
+              <select class="answer-select" data-correct="İş telefonu">
+                <option value="">--Выберите ответ--</option>
+                <option value="İş telefonu">İş telefonu</option>
+                <option value="işin telefonu">işin telefonu</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Учитель турецкого языка</p>
+              <select class="answer-select" data-correct="Türkçe öğretmeni">
+                <option value="">--Выберите ответ--</option>
+                <option value="Türkçe öğretmeni">Türkçe öğretmeni</option>
+                <option value="Türkçenin öğretmeni">Türkçenin öğretmeni</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Мебельный магазин</p>
+              <select class="answer-select" data-correct="Mobilya mağazası">
+                <option value="">--Выберите ответ--</option>
+                <option value="Mobilya mağazası">Mobilya mağazası</option>
+                <option value="mobilyanın mağazası">mobilyanın mağazası</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Директор магазина</p>
+              <select class="answer-select" data-correct="mağazanın müdürü">
+                <option value="">--Выберите ответ--</option>
+                <option value="Mağaza müdürü">Mağaza müdürü</option>
+                <option value="mağazanın müdürü">mağazanın müdürü</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Чечевичный суп</p>
+              <select class="answer-select" data-correct="Mercimek çorbası">
+                <option value="">--Выберите ответ--</option>
+                <option value="Mercimek çorbası">Mercimek çorbası</option>
+                <option value="mercimeğin çorbası">mercimeğin çorbası</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Название ресторана</p>
+              <select class="answer-select" data-correct="lokantanın adı">
+                <option value="">--Выберите ответ--</option>
+                <option value="Lokanta adı">Lokanta adı</option>
+                <option value="lokantanın adı">lokantanın adı</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 6 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 6. Впишите окончание изафета и падежа. Помните, что падежи к
+        изафетам всегда присоединяются через вставную букву n (Писать с
+        маленькой буквы).
+      </div>
+      <div class="task-content write hidden">
+        <form id="text-form-43">
+          <ul>
+            <li class="inline">
+              <label for="word">Yemek oda</label>
+              <input type="text" id="word" name="word" />
+              <p>yemek yiyoruz.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Babam</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">araba</label>
+              <input type="text" id="word" name="word" />
+              <p>iniyoruz.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Aşk filmler</label>
+              <input type="text" id="word" name="word" />
+              <p>hoşlanıyorum.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Çay bahçe</label>
+              <input type="text" id="word" name="word" />
+              <p>oturuyoruz.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Bu hafta sonu arkadaşım</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">ev</label>
+              <input type="text" id="word" name="word" />
+              <p>gidiyoruz.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Türkçe öğretmen</label>
+              <input type="text" id="word" name="word" />
+              <p>soru soruyorum.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Arkadaş</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">defter</label>
+              <input type="text" id="word" name="word" />
+              <p>evde unuttum.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Şehir merkez</label>
+              <input type="text" id="word" name="word" />
+              <p>oturuyorum.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Hava durum</label>
+              <input type="text" id="word" name="word" />
+              <p>baktın mı?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Gün batım</label>
+              <input type="text" id="word" name="word" />
+              <p>izlemeyi seviyorum.</p>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 7 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 7. Изафетные цепочки. Впишите окончание изафета, принадлежности
+        и падежа, где это требуется (Писать с маленькой буквы).
+      </div>
+      <div class="task-content write hidden">
+        <form id="text-form-44">
+          <ul>
+            <li class="inline">
+              <label for="word">Siz</label>
+              <input class="short" type="text" id="word" name="word" />
+              <label for="word">ev</label>
+              <input class="short" type="text" id="word" name="word" />
+              <label for="word"> adres</label>
+              <input class="short" type="text" id="word" name="word" />
+              <p>bilmiyorum.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">arkadaş</label>
+              <input type="text" id="word" name="word" />
+              <label for="word"> arkadaş</label>
+              <input type="text" id="word" name="word" />
+              <p>hoşlanıyorum.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Sen</label>
+              <input type="text" id="word" name="word" />
+              <label for="word"> anne</label>
+              <input type="text" id="word" name="word" />
+              <label for="word"> baba</label>
+              <input type="text" id="word" name="word" />
+              <p>kitap veriyorum.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Biz</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">ev</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">bahçe</label>
+              <input type="text" id="word" name="word" />
+              <p>oturuyoruz.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">O</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">eş</label>
+              <input type="text" id="word" name="word" />
+              <label for="word"> kardeş</label>
+              <input type="text" id="word" name="word" />
+              <p>tanımıyorum.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Arkadaş</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">kedi</label>
+              <input type="text" id="word" name="word" />
+              <label for="word"> kulaklar</label>
+              <input type="text" id="word" name="word" />
+              <p>beyaz.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Kedi biz</label>
+              <input type="text" id="word" name="word" />
+              <label for="word"> komşu</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">ev</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">balkon</label>
+              <input type="text" id="word" name="word" />
+              <p>atlıyor.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Ali’</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">ev</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">balkon</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">deniz</label>
+              <input type="text" id="word" name="word" />
+              <p>bakıyoruz.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Ben</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">anne</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">arkadaş</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">kız</label>
+              <input type="text" id="word" name="word" />
+              <p>ile tanışmak istiyorum.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word">Biz</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">kardeş</label>
+              <input type="text" id="word" name="word" />
+              <label for="word">arkadaş</label>
+              <input type="text" id="word" name="word" />
+              <label for="word"> köpeğ</label>
+              <input type="text" id="word" name="word" />
+              <p>sokakta gördük.</p>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 8 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 8. Давайте сделаем перевод следующих выражений(Писать с
+        маленькой буквы).
+      </div>
+      <div class="task-content write hidden">
+        <img src="./foto/ders16-task8.jpg" alt="ders16-task8" width="600" />
+
+        <form id="text-form-45">
+          <ul>
+            <li class="inline">
+              <label for="word">Дверь моей машины </label>
+              <input type="text" id="word" name="word" />
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Цвет твоего шкафа </label>
+              <input type="text" id="word" name="word" />
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Сад нашей школы </label>
+              <input type="text" id="word" name="word" />
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Крыша вашего дома </label>
+              <input type="text" id="word" name="word" />
+              <input type="text" id="word" name="word" />
+            </li>
+
+            <li class="inline">
+              <label for="word">Страницы его книги </label>
+              <input type="text" id="word" name="word" />
+              <input type="text" id="word" name="word" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="../ders14/ders14-5test.html"> <button>Назад</button></a>
+
+      <a href="./ders15-2.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <script src="../more-materials.js"></script>
+  </body>
+</html>
