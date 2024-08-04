@@ -178,7 +178,23 @@ const correctWordsSets = [
 //ders12-t3  33(       481            482           483         484       485     486     487      488    489         490         491              492          493          494            495          496      497           498             499          500                    )                 
                   
                  ['im', 'ımızda', 'ne', 'sından', 'ime', 'imiz', 'in', 'in', 'in', 'unuzda', 'ın', 'lerinde', 'sına', 'in', 'nda', 'ne', 'iniz'],
-//test4-t1  34  (501      502      503    504      505     506   507   508   509     510      511     512       513    514    515   516    517)                
+ //test4-t1  34  (501      502      503    504      505     506   507   508   509     510      511     512       513    514    515   516    517) 
+                 
+                 ['azartesi','ralık','alı','cak','uma','isan','erşembe','aziran','ylül','asım'],
+//test4-t1  35(     518       519     520   521   522   523     524       525     526    527   )  
+ 
+                 ['Tan','Beri','Dır','Dür','Tan','Beri','Dir','Den','Beri','Tan','Beri'],
+//test4-t1  36(   528     529   530   531   532   533    534   535   536    537    538     )                
+                 
+                 ['Madan', 'Önce','Duktan ', 'Sonra','NDan', 'Önce','Den', 'A','Kadar', 'Tıktan','Sonra', 'Ndan','Sonra', 'Madan','Önce'],
+//test4-t1  37(    539       540    541        542     543     544   545   546   547      548      549     550    551      552       553       ) 
+                 
+                 ['Günden', 'Beri', 'Ne', 'Kadar', 'Senelerdir', 'Uzun', 'Zamandan', 'Beri', 'Yeni', 'Bir', 'Oyun'],
+//test4-t1  38(     554       555    556    557     558           559      560         561     562    563      564        )
+   
+                 ['Ten', 'Beri', 'Tan', 'A', 'Kadar', 'Tıktan', 'Sonra', 'Den', 'Önce', 'Tıktan', 'Sonra', 'Meden', 'Önce', 'Madan', 'Önce', 'Dikten', 'Sonra', 'Tikten','Sonra', 'Dır'],
+//test4-t1  39(   565      566     567  568    569       570       571     572    573      574      575      576      577     578     579       580      581      582      583      584             
+                 
 ] ;
 
         function checkWord(correctWords) {

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_15</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 15 (ÖZEL GÜNLER)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders15.html"><button>С тех пор как..в течение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders15-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders15-3.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders15-4test.html"
+            ><button class="active">Итоговый тест</button></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      “С тех пор как” и “В течение”. На уроке вы научитесь говорить о том, с
+      каких пор длится то или иное действие. Например, как долго вы мечтали
+      выучить турецкий и как быстро это у вас получилось.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set16"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img
+            class="item-img"
+            src="./foto/sabahtan beri.jpg"
+            alt="pazartesi"
+          />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////test 15 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Итоговый тест к уроку 15</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>
+                1. Переведите на турецкий язык: Со вчерашнего дня идет дождь.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Dünden beri yağmur yağıyor."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Dünden beri yağmur yağıyor.">
+                  Dünden beri yağmur yağıyor.
+                </option>
+                <option value="Dündün beri yağmur yağıyor.">
+                  Dündün beri yağmur yağıyor.
+                </option>
+                <option value="Dündır beri yağmur yağıyor.">
+                  Dündır beri yağmur yağıyor.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                2. Переведите на турецкий язык: Я работаю в этой фирме с
+                прошлого года.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Geçen yıldan beri bu şirkette çalışıyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Geçen yıldan beri bu şirkette çalışıyorum.">
+                  Geçen yıldan beri bu şirkette çalışıyorum.
+                </option>
+                <option value="Geçen senedan beri bu şirkette çalışıyorum.">
+                  Geçen senedan beri bu şirkette çalışıyorum.
+                </option>
+                <option value="Geçenden yıldan beri bu şirkette çalışıyorum.">
+                  Geçenden yıldan beri bu şirkette çalışıyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                3. Переведите на турецкий язык: С самого утра я ничего не ел.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Sabahtan beri hiçbir şey yemedim."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Sabahdan beri hiçbir şey yemedim.">
+                  Sabahdan beri hiçbir şey yemedim.
+                </option>
+                <option value="Sabahtır hiçbir şey yemedim.">
+                  Sabahtır hiçbir şey yemedim.
+                </option>
+                <option value="Sabahtan beri hiçbir şey yemedim.">
+                  Sabahtan beri hiçbir şey yemedim.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                4. Переведите на турецкий язык: От Ахмета уже несколько месяцев
+                нет новостей.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Ahmet’ten aylardır haber yok."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Ahmet’ten aylardır haber yok.">
+                  Ahmet’ten aylardır haber yok.
+                </option>
+                <option value="Ahmet’ten aydır haber yok.">
+                  Ahmet’ten aydır haber yok.
+                </option>
+                <option value="Ahmet’ten bu aydan beri haber yok.">
+                  Ahmet’ten bu aydan beri haber yok.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                5. Переведите на турецкий язык: Они живут в этом доме уже 30
+                лет.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Onlar bu evde 30 yıldır oturuyorlar."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Onlar bu evde 30 yıldır oturuyorlar.">
+                  Onlar bu evde 30 yıldır oturuyorlar.
+                </option>
+                <option value="Onlar bu evde 30 yıldir oturuyorlar.">
+                  Onlar bu evde 30 yıldir oturuyorlar.
+                </option>
+                <option value="Onlar bu evde 30 yıllardır oturuyorlar.">
+                  Onlar bu evde 30 yıllardır oturuyorlar.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                6. Вставьте нужный аффикс: Ben Ayşe'yi epey... görmüyorum. Я не
+                вижу Айше уже достаточно много времени.
+              </p>
+              <select class="answer-select" data-correct="Dir">
+                <option value="">--Выберите ответ--</option>
+                <option value="Dir">Dir</option>
+                <option value="Tir">Tir</option>
+                <option value="Den beri">Den beri</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                7. Вставьте нужный аффикс: Kaç yıl... gözlük takıyorsun? Сколько
+                лет ты носишь очки?
+              </p>
+              <select class="answer-select" data-correct="Dır">
+                <option value="">--Выберите ответ--</option>
+                <option value="Lardır">Lardır</option>
+                <option value="Dır">Dır</option>
+                <option value="Den beri">Den beri</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                8. Вставьте нужный аффикс: Hafta sonu… buna çalışıyorum. С
+                выходных я над этим работаю.
+              </p>
+              <select class="answer-select" data-correct="Ndan beri">
+                <option value="">--Выберите ответ--</option>
+                <option value="Ndan beri">Ndan beri</option>
+                <option value="Dan beri">Dan beri</option>
+                <option value="Dur">Dur</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                9. Выберите <span>невозможный</span> вариант ответа на вопрос:
+                Ne zamandan beri tatile gitmiyorsun?
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Bu hafta tatile gitmiyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Geçen yıldan beri tatile gitmiyorum.">
+                  Geçen yıldan beri tatile gitmiyorum.
+                </option>
+                <option value="İki yıldır tatile gitmiyorum.">
+                  İki yıldır tatile gitmiyorum.
+                </option>
+                <option value="Bu hafta tatile gitmiyorum.">
+                  Bu hafta tatile gitmiyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                10. Выберите <span>невозможный</span> вариант ответа на вопрос:
+                Ne zamandır uyuyor?
+              </p>
+              <select class="answer-select" data-correct="Saat 5te uyudu.">
+                <option value="">--Выберите ответ--</option>
+                <option value="5 saattir uyuyor.">5 saattir uyuyor.</option>
+                <option value="Saat 5ten uyuyor.">Saat 5ten uyuyor.</option>
+                <option value="Saat 5te uyudu.">Saat 5te uyudu.</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders15-3.html"> <button>Назад</button></a>
+
+      <a href="../test5/test5.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

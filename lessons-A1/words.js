@@ -2165,54 +2165,482 @@ const wordsSets = {
         {
             word: "saat kaç?",
             translation: "который час?",
-            image: ""
+            image: "./foto/saat kac.jpg"
         },
 
     {
             word: "çeyrek",
             translation: "четверть",
-            image: ""
+            image: "./foto/ceyrek.webp"
         },
     {
             word: "buçuk",
             translation: "половина",
-            image: ""
+            image: "./foto/bucuk.jpg"
         },
     {
             word: "yarım",
             translation: "половина",
-            image: ""
+            image: "./foto/yarım.jpg"
         },
     {
             word: "geri",
             translation: "назад",
-            image: ""
+            image: "./foto/geri.jpg"
         },
     {
             word: "fark",
             translation: "разница",
-            image: ""
+            image: "./foto/fark.jpg"
         },
     {
             word: "ileri",
             translation: "вперед",
-            image: ""
+            image: "./foto/ileri.jpg"
         },
     {
             word: "mola",
             translation: "перерыв",
-            image: ""
+            image: "./foto/mola.jpg"
         },
     {
             word: "toplantı",
             translation: "собрание",
-            image: ""
+            image: "./foto/toplantı.jpg"
         },
     {
             word: "randevu",
             translation: "встреча",
-            image: ""
+            image: "./foto/randevu.jpg"
         }
 
+    ],
+    set15: [
+       {
+            word: "pazartesi",
+            translation: "понедельник",
+            image: "./foto/pazartesi.jpg"
+        }, 
+        {
+            word: "salı",
+            translation: "вторник",
+            image: "./foto/salı.jpg"
+        }, 
+          {
+            word: "çarşamba",
+            translation: "среда",
+            image: "./foto/carsamba.jpg"
+        },
+            {
+            word: "perşembe",
+            translation: "четверг",
+            image: "./foto/persembe.jpg"
+        },
+              {
+            word: "cuma",
+            translation: "пятница",
+            image: "./foto/cuma.jpg"
+        },
+                {
+            word: "cumartesi",
+            translation: "суббота",
+            image: "./foto/cumartesi.jpg"
+        },
+                  {
+            word: "pazar",
+            translation: "воскресенье",
+            image: "./foto/pazar.jpg"
+        },
+                  
+        {
+            word: "hafta",
+            translation: "неделя",
+            image: "./foto/hafta.jpg"
+        }, 
+          {
+            word: "ay",
+            translation: "месяц",
+            image: "./foto/ay.jpg"
+        },
+            {
+            word: "yıl",
+            translation: "год",
+            image: "./foto/yıl.jpg"
+        },
+              {
+            word: "sene",
+            translation: "год",
+            image: "./foto/yıl.jpg"
+        },
+                {
+            word: "mevsim",
+            translation: "время года, сезон",
+            image: "./foto/mevsim.jpg"
+        },
+                  {
+            word: "kış",
+            translation: "зима",
+            image: "./foto/kıs.jpg"
+        },
+                  
+        {
+            word: "ilkbahar",
+            translation: "весна",
+            image: "./foto/ilkbahar.jpg"
+        }, 
+          {
+            word: "yaz",
+            translation: "лето",
+            image: "./foto/yaz.jpg"
+        },
+            {
+            word: "sonbahar",
+            translation: "осень",
+            image: "./foto/sonbahar.jpg"
+        },
+              {
+            word: "kışın",
+            translation: "зимой",
+            image: "./foto/kısın.jpg"
+        },
+                {
+            word: "yazın",
+            translation: "летом",
+            image: ""
+        },
+                  {
+            word: "ocak",
+            translation: "январь",
+            image: "./foto/ocak.jpg"
+        },
+                   
+        {
+            word: "şubat",
+            translation: "февраль",
+            image: "./foto/subat.webp"
+        }, 
+          {
+            word: "mart",
+            translation: "март",
+            image: "./foto/mart.jpg"
+        },
+            {
+            word: "nisan",
+            translation: "апрель",
+            image: "./foto/nisan.jpg"
+        },
+              {
+            word: "mayıs",
+            translation: "май",
+            image: "./foto/mayıs.webp"
+        },
+                {
+            word: "haziran",
+            translation: "июнь",
+            image: "./foto/haziran.webp"
+        },
+                  {
+            word: "temmuz",
+            translation: "июль",
+            image: "./foto/temmuz.jpg"
+        },
+                  
+        {
+            word: "ağustos",
+            translation: "август",
+            image: "./foto/agustos.webp"
+        }, 
+          {
+            word: "eylül",
+            translation: "сентябрь",
+            image: "./foto/eylul.jpg"
+        },
+            {
+            word: "ekim",
+            translation: "октябрь",
+            image: "./foto/ekim.jpg"
+        },
+              {
+            word: "kasım",
+            translation: "ноябрь",
+            image: "./foto/kasım.webp"
+        },
+                {
+            word: "aralık",
+            translation: "декабрь",
+            image: "./foto/aralık.jpg"
+        },
+                  {
+            word: "düşünmek",
+            translation: "думать",
+            image: "./foto/dusunmek.webp"
+        },
+                  
+        {
+            word: "cevap",
+            translation: "ответ",
+            image: "./foto/cevap.jpg"
+        }, 
+          {
+            word: "evlenmek",
+            translation: "жениться",
+            image: "./foto/evlenmek.jpg"
+        },
+            {
+            word: "mutlaka",
+            translation: "обязательно",
+            image: "../not-image.png"
+        },
+              {
+            word: "ayırtmak",
+            translation: "бронировать",
+            image: "./foto/ayırtmak.jpg"
+        },
+                {
+            word: "ulusal",
+            translation: "народный",
+            image: "./foto/ulusal.jpg"
+        },
+                  {
+            word: "egemenlik",
+            translation: "суверенитет",
+            image: "./foto/egemenlik.jpg"
+        },
+                  
+        {
+            word: "tören",
+            translation: "церемония",
+            image: "./foto/toren.jpg"
+        }, 
+          {
+            word: "prova",
+            translation: "репетиция",
+            image: "./foto/prova.jpg"
+        },
+            {
+            word: "milli marşı",
+            translation: "национальный гимн",
+            image: "../not-image.png"
+        },
+              {
+            word: "birlikte",
+            translation: "вместе",
+            image: "./foto/birlikte.jpg"
+        },
+                {
+            word: "halk dansı",
+            translation: "народный танец",
+            image: "./foto/halk dansı.webp"
+        },
+                  {
+            word: "halk",
+            translation: "народ",
+            image: "./foto/halk.jpg"
+        },
+                  
+        {
+            word: "gösteri",
+            translation: "выступление",
+            image: "./foto/gosteri.jpg"
+        }, 
+          {
+            word: "vali",
+            translation: "губернатор",
+            image: "./foto/vali.jpg"
+        },
+            {
+            word: "yıl başı",
+            translation: "новый год",
+            image: "./foto/yıl bası.webp"
+        },
+              {
+            word: "karar vermek",
+            translation: "принимать решение",
+            image: "./foto/karar vermek.jpg"
+        }
+                  
+                  
+    ],
+    set16: [
+        {
+            word: "sabahtan beri",
+            translation: "с утра",
+            image: "./foto/sabahtan beri.jpg"
+        },
+        {
+            word: "5 yıldan beri",
+            translation: "в течение 5 лет",
+            image: "../not-image.png"
+        },
+{
+            word: "5 yıldır",
+            translation: "5 лет",
+            image: "../not-image.png"
+        },
+        {
+            word: "pis",
+            translation: "грязно",
+            image: "./foto/pis.jpg"
+        },
+        {
+            word: "yurt dışında",
+            translation: "за границей",
+            image: "./foto/yurt dısında.jpg"
+        },
+        {
+            word: "bağırmak",
+            translation: "кричать",
+            image: "./foto/bagırmak.jpg"
+        },
+        {
+            word: "çağırmak",
+            translation: "звать",
+            image: "./foto/cagırmak.webp"
+        },
+        {
+            word: "epey",
+            translation: "довольно много",
+            image: "./foto/epey.jpg"
+        },
+        {
+            word: "çeşitli",
+            translation: "различный",
+            image: "./foto/cesitli.jpg"
+        },
+        {
+            word: "bölge",
+            translation: "область",
+            image: "./foto/bolge.jpg"
+        },
+        {
+            word: "ilginç",
+            translation: "интересный",
+            image: "./foto/ilginc.jpg"
+        },
+        {
+            word: "inanış",
+            translation: "поверие",
+            image: "./foto/inanıs.jpg"
+        },
+
+        {
+            word: "inanmak",
+            translation: "верить",
+            image: "./foto/inanmak.jpg"
+        },
+        {
+            word: "kutlama",
+            translation: "празднование",
+            image: "./foto/kutlama.webp"
+        },
+
+        {
+            word: "ruh",
+            translation: "дух",
+            image: "./foto/ruh.jpg"
+        },
+        {
+            word: "kovmak",
+            translation: "выгонять",
+            image: "./foto/kovmak.jpg"
+        },
+        {
+            word: "kahkaha",
+            translation: "смех",
+            image: "./foto/kahkaha.jpg"
+        },
+        {
+            word: "neşeli",
+            translation: "радостный",
+            image: "./foto/neseli.jpg"
+        },
+        {
+            word: "ateş",
+            translation: "огонь",
+            image: "./foto/ates.jpg"
+        },
+
+        {
+            word: "yakmak",
+            translation: "жечь",
+            image: "../not-image.png"
+        },
+        {
+            word: "ip",
+            translation: "веревка",
+            image: "./foto/ip.jpg"
+        },
+        {
+            word: "asmak",
+            translation: "вешать",
+            image: "./foto/asmak.jpg"
+        },
+
+        {
+            word: "kırmak",
+            translation: "ломать",
+            image: "./foto/kırmak.webp"
+        },{
+            word: "gelenek",
+            translation: "обычай",
+            image: "./foto/gelenek.jpg"
+        },
+        {
+            word: "gece yarısı",
+            translation: "полночь",
+            image: "./foto/gece yarısı.jpg"
+        },
+
+        {
+            word: "tam",
+            translation: "точно, ровно",
+            image: "./foto/tam.jpg"
+        },
+        {
+            word: "doğum günü",
+            translation: "день рождения",
+            image: "./foto/dogum gunu.jpg"
+        },
+        {
+            word: "evlilik yıl dönümü",
+            translation: "годовщина свадьбы",
+            image: "./foto/evlilik yıl donumu.jpg"
+        },
+        {
+            word: "hatırlamak",
+            translation: "помнить",
+            image: "./foto/hatırlamak.jpg"
+        },
+        {
+            word: "ama",
+            translation: "но",
+            image: "../not-image.png"
+        },
+        {
+            word: "bir araya gelmek",
+            translation: "собираться",
+            image: "./foto/bir araya gelmek.jpg"
+        },
+
+        {
+            word: "hakkında",
+            translation: "про, о",
+            image: "./foto/hakkında.jpg"
+        },
+        {
+            word: "tat",
+            translation: "вкус",
+            image: "./foto/tat.jpg"
+        },
+        {
+            word: "değer",
+            translation: "ценность",
+            image: "./foto/deger.jpg"
+        },
+        {
+            word: "ne tür?",
+            translation: "какого плана?",
+            image: "./foto/ne tur.webp"
+        }
     ]
 };

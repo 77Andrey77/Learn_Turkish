@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_15</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 15 (ÖZEL GÜNLER)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders15.html"
+            ><button class="active">С тех пор как..в течение</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders15-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders15-3.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders15-4test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      “С тех пор как” и “В течение”. На уроке вы научитесь говорить о том, с
+      каких пор длится то или иное действие. Например, как долго вы мечтали
+      выучить турецкий и как быстро это у вас получилось.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set16"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="" alt="pazartesi" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+    <!-- /////////////dowloading//////////// -->
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/Модуль 5. Урок 15.pdf"
+        download
+        >Скачать Рабочая тетрадь. Урок 15</a
+      >
+    </div>
+
+    <!-- //////////////Дополнительный материал/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
+        <li class="hidden">
+          <button id="task-header-law1">НАПРАВИТЕЛЬНЫЙ ПАДЕЖ</button>
+          <div class="task-law hidden" id="task-content-law1-img">
+            <img src="" alt="НАПРАВИТЕЛЬНЫЙ ПАДЕЖ" />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law2">ИСХОДНЫЙ ПАДЕЖ</button>
+          <div class="task-law hidden" id="task-content-law2-img">
+            <img src="" alt="ИСХОДНЫЙ ПАДЕЖ" />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law3">
+            НАСТОЯЩЕЕ ВРЕМЯ. ВОПРОСИТЕЛЬНАЯ ФОРМА
+          </button>
+          <div class="task-law hidden" id="task-content-law3-img">
+            <img src="" alt="img-law" />
+          </div>
+        </li>
+
+        <li>
+          <button id="task-header-alfabet">ПОСЛЕЛОГ DAN(DEN) BERI, DIR</button>
+          <div class="slider hidden" id="task-content-alfabet">
+            <div class="slides" id="alfabet-slides">
+              <div class="slide">
+                <img
+                  src="./foto/ders15-moreinfo1.jpg"
+                  alt="ОЗВОНЧЕНИЕ СОГЛАСНЫХ"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./foto/ders15-moreinfo2.jpg"
+                  alt="ОЗВОНЧЕНИЕ СОГЛАСНЫХ"
+                />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- /////////////Задание 1 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 1. Давайте заполним следующие пробелы “-DIr’’ и ‘‘-DAn beri”
+      </div>
+      <div class="task-content hidden">
+        <img src="./foto/ders15-task1.jpg" alt="foto for ders15-task1" />
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Onu yıllar</p>
+              <select class="answer-select" data-correct="dan beri/dır">
+                <option value="">--Выберите ответ--</option>
+                <option value="dan beri/dır">dan beri/dır</option>
+                <option value="dan beri">dan beri</option>
+                <option value="den beri/dir">den beri/dir</option>
+                <option value="den beri">den beri</option>
+                <option value="ten beri/tir">ten beri/tir</option>
+              </select>
+              <p>görmüyorum . Onu çok özledim.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>2009’</p>
+              <select class="answer-select" data-correct="dan beri">
+                <option value="">--Выберите ответ--</option>
+                <option value="dan beri/dır">dan beri/dır</option>
+                <option value="dan beri">dan beri</option>
+                <option value="den beri/dir">den beri/dir</option>
+                <option value="den beri">den beri</option>
+                <option value="ten beri/tir">ten beri/tir</option>
+              </select>
+              <p>evliyim.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>2 sene</p>
+              <select class="answer-select" data-correct="den beri/dir">
+                <option value="">--Выберите ответ--</option>
+                <option value="dan beri/dır">dan beri/dır</option>
+                <option value="dan beri">dan beri</option>
+                <option value="den beri/dir">den beri/dir</option>
+                <option value="den beri">den beri</option>
+                <option value="ten beri/tir">ten beri/tir</option>
+              </select>
+              <p>bu şirkette sekreterlik yapıyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Günler</p>
+              <select class="answer-select" data-correct="den beri/dir">
+                <option value="">--Выберите ответ--</option>
+                <option value="dan beri/dır">dan beri/dır</option>
+                <option value="dan beri">dan beri</option>
+                <option value="den beri/dir">den beri/dir</option>
+                <option value="den beri">den beri</option>
+                <option value="ten beri/tir">ten beri/tir</option>
+              </select>
+              <p>bu sınav için çalısıyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Sabah saat 9’</p>
+              <select class="answer-select" data-correct="dan beri">
+                <option value="">--Выберите ответ--</option>
+                <option value="dan beri/dır">dan beri/dır</option>
+                <option value="dan beri">dan beri</option>
+                <option value="den beri/dir">den beri/dir</option>
+                <option value="den beri">den beri</option>
+                <option value="ten beri/tir">ten beri/tir</option>
+              </select>
+              <p>buradayım.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>3 saat</p>
+              <select class="answer-select" data-correct="ten beri/tir">
+                <option value="">--Выберите ответ--</option>
+                <option value="dan beri/dır">dan beri/dır</option>
+                <option value="dan beri">dan beri</option>
+                <option value="den beri/dir">den beri/dir</option>
+                <option value="den beri">den beri</option>
+                <option value="ten beri/tir">ten beri/tir</option>
+              </select>
+              <p>toplantıdalar.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ev çok pis. Ne zaman</p>
+              <select class="answer-select" data-correct="dan beri/dır">
+                <option value="">--Выберите ответ--</option>
+                <option value="dan beri/dır">dan beri/dır</option>
+                <option value="dan beri">dan beri</option>
+                <option value="den beri/dir">den beri/dir</option>
+                <option value="den beri">den beri</option>
+                <option value="ten beri/tir">ten beri/tir</option>
+              </select>
+              <p>temizlik yapmıyorsun?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Uzun süre</p>
+              <select class="answer-select" data-correct="den beri/dir">
+                <option value="">--Выберите ответ--</option>
+                <option value="dan beri/dır">dan beri/dır</option>
+                <option value="dan beri">dan beri</option>
+                <option value="den beri/dir">den beri/dir</option>
+                <option value="den beri">den beri</option>
+                <option value="ten beri/tir">ten beri/tir</option>
+              </select>
+              <p>tatile çıkmıyoruz.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Kaç ay</p>
+              <select class="answer-select" data-correct="dan beri/dır">
+                <option value="">--Выберите ответ--</option>
+                <option value="dan beri/dır">dan beri/dır</option>
+                <option value="dan beri">dan beri</option>
+                <option value="den beri/dir">den beri/dir</option>
+                <option value="den beri">den beri</option>
+                <option value="ten beri/tir">ten beri/tir</option>
+              </select>
+              <p>yurt dışındasın?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ekim</p>
+              <select class="answer-select" data-correct="den beri">
+                <option value="">--Выберите ответ--</option>
+                <option value="dan beri/dır">dan beri/dır</option>
+                <option value="dan beri">dan beri</option>
+                <option value="den beri/dir">den beri/dir</option>
+                <option value="den beri">den beri</option>
+                <option value="ten beri/tir">ten beri/tir</option>
+              </select>
+              <p>İstanbul’da yaşıyorum.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 2 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 2. Давайте заполним пропуски соответствующими послелогами(Писать
+        с большой буквы).
+      </div>
+      <div class="task-content write hidden">
+        <form id="text-form-36">
+          <ul>
+            <li class="inline">
+              <label for="word528">Ayla sabah</label>
+              <input class="short" type="text" id="word528" name="word528" />
+              <input class="short" type="text" id="word529" name="word529" />
+              <p>çok sinirli, herkese bağırıp çağırıyor.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word530">Çok çalışıyorsun, aylar</label>
+              <input class="short" type="text" id="word530" name="word530" />
+              <p>dinlenemedin.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word531"
+                >Yoğun kar yağışı sebebiyle bazı semtlere bir kaç gün</label
+              >
+              <input class="short" type="text" id="word531" name="word531" />
+
+              <p>elektrik verilemiyor.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word532">Şu güneş gözlüklü adam park</label>
+              <input class="short" type="text" id="word532" name="word532" />
+              <input class="short" type="text" id="word533" name="word533" />
+              <p>bizi takip ediyor.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word534">Ahmet'i çok merak ediyoruz. Epey</label>
+              <input class="short" type="text" id="word534" name="word534" />
+              <p>bizi aramıyor.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word535">Yağmur dün gece</label>
+              <input class="short" type="text" id="word535" name="word535" />
+              <input class="short" type="text" id="word536" name="word536" />
+              <p>hiç durmadı.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word537">Çok</label>
+              <input class="short" type="text" id="word537" name="word537" />
+              <input class="short" type="text" id="word538" name="word538" />
+              <p>sinemaya gidemiyorum.</p>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 3 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 3. Выберите правильный вариант в предложении
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Seni burada</p>
+              <select class="answer-select" data-correct="dört saattir">
+                <option value="">--Выберите ответ--</option>
+                <option value="dört saattir">dört saattir</option>
+                <option value="dört saattır">dört saattır</option>
+              </select>
+              <p>bekliyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ali sekiz</p>
+              <select class="answer-select" data-correct="seneden beri">
+                <option value="">--Выберите ответ--</option>
+                <option value="seneden beri">seneden beri</option>
+                <option value="senedir beri">senedir beri</option>
+              </select>
+              <p>Rusya’da yaşıyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="dünden beri">
+                <option value="">--Выберите ответ--</option>
+                <option value="dünden beri">dünden beri</option>
+                <option value="dünden">dünden</option>
+              </select>
+              <p>hiç uyumadım.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>O</p>
+              <select class="answer-select" data-correct="senelerdir">
+                <option value="">--Выберите ответ--</option>
+                <option value="senelerdir">senelerdir</option>
+                <option value="seneden beri">seneden beri</option>
+              </select>
+              <p>ondan mektup bekledi.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Mustafa</p>
+              <select class="answer-select" data-correct="günlerdir">
+                <option value="">--Выберите ответ--</option>
+                <option value="günlerdir">günlerdir</option>
+                <option value="günlerden beri">günlerden beri</option>
+              </select>
+              <p>kimseyle görüşmüyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Polisler</p>
+              <select class="answer-select" data-correct="sabahtan beri">
+                <option value="">--Выберите ответ--</option>
+                <option value="sabahtan beri">sabahtan beri</option>
+                <option value="bütün sabahtır">bütün sabahtır</option>
+              </select>
+              <p>hırsızı yakalamaya çalışıyorlar.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ben 2019</p>
+              <select class="answer-select" data-correct="yılından beri">
+                <option value="">--Выберите ответ--</option>
+                <option value="yılından beri">yılından beri</option>
+                <option value="yıldan beri">yıldan beri</option>
+              </select>
+              <p>İstanbul’da yaşıyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Akşam oldu, kalk artık.</p>
+              <select class="answer-select" data-correct="sabahtan beri">
+                <option value="">--Выберите ответ--</option>
+                <option value="sabahtan beri">sabahtan beri</option>
+                <option value="sabahtandır">sabahtandır</option>
+              </select>
+              <p>uyuyorsun.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <select class="answer-select" data-correct="ne zamandan beri">
+                <option value="">--Выберите ответ--</option>
+                <option value="ne zamandan beri">ne zamandan beri</option>
+                <option value="kaç zamandır">kaç zamandır</option>
+              </select>
+              <p>keman çalıyorsun?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Geçen</p>
+              <select class="answer-select" data-correct="seneden beri">
+                <option value="">--Выберите ответ--</option>
+                <option value="seneden beri">seneden beri</option>
+                <option value="senedir">senedir</option>
+              </select>
+              <p>tatlı yemiyorum.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 4 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 4. Выберите необходимые окончания падежа c послелогом beri
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Dün</p>
+              <select class="answer-select" data-correct="Den">
+                <option value="">--Выберите ответ--</option>
+                <option value="Dan">Dan</option>
+                <option value="Den">Den</option>
+                <option value="Tan">Tan</option>
+              </select>
+              <p>beri yağmur yağıyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>2015 yılın</p>
+              <select class="answer-select" data-correct="Dan">
+                <option value="">--Выберите ответ--</option>
+                <option value="Dan">Dan</option>
+                <option value="Den">Den</option>
+                <option value="Tan">Tan</option>
+              </select>
+              <p>beri İstanbul’da oturuyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Sabah</p>
+              <select class="answer-select" data-correct="Tan">
+                <option value="">--Выберите ответ--</option>
+                <option value="Dan">Dan</option>
+                <option value="Den">Den</option>
+                <option value="Tan">Tan</option>
+              </select>
+              <p>beri hiçbir şey yemedim.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Şubat</p>
+              <select class="answer-select" data-correct="Tan">
+                <option value="">--Выберите ответ--</option>
+                <option value="Dan">Dan</option>
+                <option value="Den">Den</option>
+                <option value="Tan">Tan</option>
+              </select>
+              <p>beri Türkçe öğreniyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Çocukluğum</p>
+              <select class="answer-select" data-correct="Dan">
+                <option value="">--Выберите ответ--</option>
+                <option value="Dan">Dan</option>
+                <option value="Den">Den</option>
+                <option value="Tan">Tan</option>
+              </select>
+              <p>beri Türkiye’ye gidiyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Çok</p>
+              <select class="answer-select" data-correct="Tan">
+                <option value="">--Выберите ответ--</option>
+                <option value="Dan">Dan</option>
+                <option value="Den">Den</option>
+                <option value="Tan">Tan</option>
+              </select>
+              <p>beri onunla görüşmedik.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Saat altı</p>
+              <select class="answer-select" data-correct="Dan">
+                <option value="">--Выберите ответ--</option>
+                <option value="Dan">Dan</option>
+                <option value="Den">Den</option>
+                <option value="Tan">Tan</option>
+              </select>
+              <p>beri seni bekliyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Mart</p>
+              <select class="answer-select" data-correct="Tan">
+                <option value="">--Выберите ответ--</option>
+                <option value="Dan">Dan</option>
+                <option value="Den">Den</option>
+                <option value="Tan">Tan</option>
+              </select>
+              <p>beri havalar sıcak.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Geçen hafta</p>
+              <select class="answer-select" data-correct="Dan">
+                <option value="">--Выберите ответ--</option>
+                <option value="Dan">Dan</option>
+                <option value="Den">Den</option>
+                <option value="Tan">Tan</option>
+              </select>
+              <p>beri kar yağıyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Nisan</p>
+              <select class="answer-select" data-correct="Dan">
+                <option value="">--Выберите ответ--</option>
+                <option value="Dan">Dan</option>
+                <option value="Den">Den</option>
+                <option value="Tan">Tan</option>
+              </select>
+              <p>beri evliyiz.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 5 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 5. Давайте дополним следующие предложения “-DAn -A kadar, -DAn
+        önce/sonra, -mAdAn önce, -DIktAn sonra, -DIr, -DAn beri”(Писать с
+        большой буквы).
+      </div>
+      <div class="task-content write hidden">
+        <img src="./foto/ders15-task5.jpg" alt="foto ders15-task5" />
+
+        <form id="text-form-37">
+          <ul>
+            <li class="inline">
+              <p><span>DÜNYADA İLGİNÇ YILBAŞI KUTLAMALARI</span></p>
+            </li>
+
+            <li
+              class="inline"
+              style="flex-wrap: wrap; background-color: rgb(221, 212, 210)"
+            >
+              <p>
+                Dünyanın çeşitli bölgelerinde insanlar yıllardır yeni yıl için
+                ilginç kutlamalar yapıyor. Bütün insanların iyi bir yıl geçirmek
+                için ilginç inanışları var. İşte dünyadaki ilginç yılbaşı
+                inanışları:
+              </p>
+            </li>
+
+            <li
+              class="inline"
+              style="flex-wrap: wrap; background-color: rgb(221, 212, 210)"
+            >
+              <label for="word539">“Çinliler kutlamalara başla</label>
+              <input class="short" type="text" id="word539" name="word539" />
+              <input class="short" type="text" id="word540" name="word540" />
+              <p>
+                bir önceki yılın kötü şansını göndermek için evlerini iyice
+                temizliyorlar. Ayrıca şans ve bolluk
+              </p>
+              <label for="word541">
+                için evlerine çeşitli çiçek ve bitkiler satın alıyor ve kırmızı
+                zarflara para koy</label
+              >
+              <input class="short" type="text" id="word541" name="word541" />
+              <input class="short" type="text" id="word542" name="word542" />
+              <p>çocuklara şans parası dağıtıyorlar.</p>
+            </li>
+
+            <li
+              class="inline"
+              style="flex-wrap: wrap; background-color: rgb(221, 212, 210)"
+            >
+              <label for="word543"
+                >Japonlar hem kötü ruhları kovmak hem de mutluluk ve iyi şans
+                için yılbaşı</label
+              >
+              <input class="short" type="text" id="word543" name="word543" />
+              <input class="short" type="text" id="word544" name="word544" />
+              <label for="word545">kapılarının önüne ip asıyor. Gece 12’</label>
+              <input class="short" type="text" id="word545" name="word545" />
+              <label for="word546"> sabah</label>
+              <input class="short" type="text" id="word546" name="word546" />
+              <input class="short" type="text" id="word547" name="word547" />
+              <p>
+                kahkaha atıyorlar. Bunun nedeni de neşeli ve şanslı bir yıl
+                geçirmek.
+              </p>
+            </li>
+
+            <li
+              class="inline"
+              style="flex-wrap: wrap; background-color: rgb(221, 212, 210)"
+            >
+              <label for="word548"
+                >Hollanda’da hem bir önceki yılın ruhlarını göndermek hem de
+                yeni yılı karşılamak için insanlar sokaklarda ateş yak</label
+              >
+              <input class="short" type="text" id="word548" name="word548" />
+              <input class="short" type="text" id="word549" name="word549" />
+              <p>yılbaşı</p>
+              <p>
+                ağaçlarını ateşe veriyor. İsviçre’de yeni yılda insanlar çeşitli
+                kostümler ve şapkalar giyiyor ve yeni yılı karşılıyorlar. Bu
+                kostümler iyi ve kötü ruhları simgeliyor.
+              </p>
+            </li>
+
+            <li
+              class="inline"
+              style="flex-wrap: wrap; background-color: rgb(221, 212, 210)"
+            >
+              <label for="word550"
+                >Danimarkalılar eski tabaklarını yılbaşı gecesi için saklıyor ve
+                gece yarısı</label
+              >
+              <input class="short" type="text" id="word550" name="word550" />
+              <input class="short" type="text" id="word551" name="word551" />
+              <p>en yakın arkadaşlarının kapılarının önünde kırıyorlar.</p>
+              <p>
+                Bunu hem sevgilerini göstermek hem de kötü şansı kovmak için
+                yapıyorlar.
+              </p>
+            </li>
+
+            <li
+              class="inline"
+              style="flex-wrap: wrap; background-color: rgb(221, 212, 210)"
+            >
+              <label for="word552"
+                >İspanya’da en önemli gelenek, yılbaşında üzüm yemek. Saatler
+                gece yarısı ol</label
+              >
+              <input class="short" type="text" id="word552" name="word552" />
+              <input class="short" type="text" id="word553" name="word553" />
+              <p>herkes 12 üzüm tanesini hazırlıyor</p>
+              <p>ve gece tam 00.00’da üzümlerini yiyor.</p>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="../ders14/ders14-5test.html"> <button>Назад</button></a>
+
+      <a href="./ders15-2.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <script src="../slider-foto.js"></script>
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <script src="../more-materials.js"></script>
+  </body>
+</html>

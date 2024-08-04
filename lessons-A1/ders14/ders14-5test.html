@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_14</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 14 (BAYRAMLAR)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders14.html"><button>Особые дни</button></a>
+        </li>
+
+        <li>
+          <a href="./ders14-2.html"><button>До и после</button></a>
+        </li>
+
+        <li>
+          <a href="./ders14-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders14-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders14-5test.html"
+            ><button class="active">Итоговый тест</button></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Особые дни. “После” и “До”. На уроке вы узнает об особых днях Турции. И
+      сможете рассказывать о событиях, произошедших до и после. Например, каким
+      сложным вам казался турецкий язык до изучения курса и каким лёгким он
+      покажется вам после.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set15"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/pazartesi.jpg" alt="pazartesi" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////Test 12 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Итоговый тест к уроку 14</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>1. Найдите верный перевод: Увидимся через неделю.</p>
+              <select
+                class="answer-select"
+                data-correct="Bir hafta sonra görüşürüz."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Bir hafta sonra görüşürüz.">
+                  Bir hafta sonra görüşürüz.
+                </option>
+                <option value="Bir haftadan sonra görüşürüz.">
+                  Bir haftadan sonra görüşürüz.
+                </option>
+                <option value="Bir haftatan sonra görüşürüz.">
+                  Bir haftatan sonra görüşürüz.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                2. Найдите верный перевод: Я переехала в Москву 5 лет назад.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Beş yıl önce Moskova’ya taşındım."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Beş yıldan önce Moskova’ya taşındım.">
+                  Beş yıldan önce Moskova’ya taşındım.
+                </option>
+                <option value="Beş yıl önce Moskova’ya taşındım.">
+                  Beş yıl önce Moskova’ya taşındım.
+                </option>
+                <option value="Beş yıl önce Moskova’da taşındım.">
+                  Beş yıl önce Moskova’da taşındım.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>3. Найдите верный перевод: Мы пьем чай перед уроком</p>
+              <select
+                class="answer-select"
+                data-correct="Dersten önce çay içiyoruz."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Dersden önce çay içiyoruz.">
+                  Dersden önce çay içiyoruz.
+                </option>
+                <option value="Ders önce çay içiyoruz.">
+                  Ders önce çay içiyoruz.
+                </option>
+                <option value="Dersten önce çay içiyoruz.">
+                  Dersten önce çay içiyoruz.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                4. Найдите верный перевод: После работы я хочу встретиться со
+                своими друзьями.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="İşten sonra arkadaşlarım ile buluşmak istiyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option
+                  value="İşten sonra arkadaşlarım ile buluşmak istiyorum."
+                >
+                  İşten sonra arkadaşlarım ile buluşmak istiyorum.
+                </option>
+                <option
+                  value="İştikten sonra arkadaşlarım ile buluşmak istiyorum."
+                >
+                  İştikten sonra arkadaşlarım ile buluşmak istiyorum.
+                </option>
+                <option value="İş sonra arkadaşlarım ile buluşmak istiyorum.">
+                  İş sonra arkadaşlarım ile buluşmak istiyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                5. Найдите верный перевод: Я собираю сумку, перед тем как
+                отправиться в дорогу.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Yola çıkmadan önce valiz hazırlıyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Yola çıkmadan önce valiz hazırlıyorum.">
+                  Yola çıkmadan önce valiz hazırlıyorum.
+                </option>
+                <option value="Valiz hazırlamadan önce yola çıkıyorum.">
+                  Valiz hazırlamadan önce yola çıkıyorum.
+                </option>
+                <option value="Yola çıkmaktan önce valiz hazırlıyorum.">
+                  Yola çıkmaktan önce valiz hazırlıyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                6. Найдите верный перевод: После того как мы поужинаем, я пью
+                чай.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Biz akşam yemeği yedikten sonra ben çay içiyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option
+                  value="Biz akşam yemeği yedikimizden sonra ben çay içiyorum."
+                >
+                  Biz akşam yemeği yedikimizden sonra ben çay içiyorum.
+                </option>
+                <option
+                  value="Biz akşam yemeği yedikten sonra ben çay içiyorum."
+                >
+                  Biz akşam yemeği yedikten sonra ben çay içiyorum.
+                </option>
+                <option
+                  value="Biz akşam yemeği yediktan sonra ben çay içiyorum."
+                >
+                  Biz akşam yemeği yediktan sonra ben çay içiyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>7. Найдите верное утверждение.</p>
+              <select
+                class="answer-select"
+                data-correct="Perşembe Çarşambadan sonra geliyor."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Pazartesi Salıdan sonra geliyor.">
+                  Pazartesi Salıdan sonra geliyor.
+                </option>
+                <option value="Pazar Cumadan önce geliyor.">
+                  Pazar Cumadan önce geliyor.
+                </option>
+                <option value="Perşembe Çarşambadan sonra geliyor.">
+                  Perşembe Çarşambadan sonra geliyor.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>8. Найдите верное утверждение.</p>
+              <select
+                class="answer-select"
+                data-correct="Haftanın son günü Pazar."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Haftanın son günü Pazar.">
+                  Haftanın son günü Pazar.
+                </option>
+                <option value="Haftanın ilk günü Salı.">
+                  Haftanın ilk günü Salı.
+                </option>
+                <option value="Haftanın üçüncü günü Perşembe.">
+                  Haftanın üçüncü günü Perşembe.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>9. Найдите верное утверждение.</p>
+              <select
+                class="answer-select"
+                data-correct="Hazirandan sonra Temmuz geliyor."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Marttan sonra Ocak geliyor.">
+                  Marttan sonra Ocak geliyor.
+                </option>
+                <option value="Ocaktan sonra Ekim geliyor.">
+                  Ocaktan sonra Ekim geliyor.
+                </option>
+                <option value="Hazirandan sonra Temmuz geliyor.">
+                  Hazirandan sonra Temmuz geliyor.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>10. Yılın en sıcak ayları...</p>
+              <select
+                class="answer-select"
+                data-correct="Haziran, Temmuz, Ağustos"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Nisan, Mayıs, Haziran">
+                  Nisan, Mayıs, Haziran
+                </option>
+                <option value="Eylül, Ekim, Kasım">Eylül, Ekim, Kasım</option>
+                <option value="Haziran, Temmuz, Ağustos">
+                  Haziran, Temmuz, Ağustos
+                </option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders14-4.html"> <button>Назад</button></a>
+
+      <a href=""> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

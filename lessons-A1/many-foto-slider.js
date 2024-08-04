@@ -1,4 +1,4 @@
-//первое использование ders7, ders13
+//первое использование ders7, ders13-1, ders14-2,
 
 // Универсальная функция для переключения видимости
 function toggleSliderVisibility(contentSelector) {

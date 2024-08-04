@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_14</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 14 (BAYRAMLAR)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders14.html"><button>Особые дни</button></a>
+        </li>
+
+        <li>
+          <a href="./ders14-2.html"
+            ><button class="active">До и после</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders14-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders14-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders14-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Особые дни. “После” и “До”. На уроке вы узнает об особых днях Турции. И
+      сможете рассказывать о событиях, произошедших до и после. Например, каким
+      сложным вам казался турецкий язык до изучения курса и каким лёгким он
+      покажется вам после.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set15"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/pazartesi.jpg" alt="pazartesi" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+
+    <!-- //////////////Дополнительный материал/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
+        <li>
+          <button id="infinitive-header">Употребление слова Sonra</button>
+          <div class="slider hidden" id="infinitive-content">
+            <div class="slides" id="infinitive-slides">
+              <div class="slide">
+                <img
+                  src="./foto/ders13-moreinfo1-1.JPG"
+                  alt="слайд1 Употребление слова Sonra"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="./foto/ders13-moreinfo1-2.JPG"
+                  alt="слайд2 Употребление слова Sonra"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="./foto/ders13-moreinfo1-3.JPG"
+                  alt="слайд3 Употребление слова Sonra"
+                />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1, 'infinitive-slides')">
+              &#10094;
+            </button>
+            <button class="next" onclick="moveSlides(1, 'infinitive-slides')">
+              &#10095;
+            </button>
+          </div>
+        </li>
+
+        <li>
+          <button id="present-header">Употребление слова Önce</button>
+          <div class="slider hidden" id="present-content">
+            <div class="slides" id="present-slides">
+              <div class="slide">
+                <img
+                  src="./foto/ders13-moreinfo2-1.JPG"
+                  alt="Употребление слова Önce"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="./foto/ders13-moreinfo2-2.JPG"
+                  alt="Употребление слова Önce"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="./foto/ders13-moreinfo2-2.JPG"
+                  alt="Употребление слова Önce"
+                />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1, 'present-slides')">
+              &#10094;
+            </button>
+            <button class="next" onclick="moveSlides(1, 'present-slides')">
+              &#10095;
+            </button>
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="negative-present-header">заглушка</button>
+          <div class="slider hidden" id="negative-present-content">
+            <div class="slides" id="negative-present-slides">
+              <div class="slide">
+                <img src="" alt="НАСТОЯЩЕЕ ВРЕМЯ. ОТРИЦАТЕЛЬНАЯ ФОРМА" />
+              </div>
+              <div class="slide">
+                <img src="" alt="НАСТОЯЩЕЕ ВРЕМЯ. ОТРИЦАТЕЛЬНАЯ ФОРМА" />
+              </div>
+            </div>
+            <button
+              class="prev"
+              onclick="moveSlides(-1, 'negative-present-slides')"
+            >
+              &#10094;
+            </button>
+            <button
+              class="next"
+              onclick="moveSlides(1, 'negative-present-slides')"
+            >
+              &#10095;
+            </button>
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="interrogativeForm-header">
+            НАСТОЯЩЕЕ ВРЕМЯ. ВОПРОСИТЕЛЬНАЯ ФОРМА
+          </button>
+          <div class="task-law hidden" id="nterrogativeForm-content">
+            <img src="" alt="img-law" />
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- /////////////Задание 2 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Задание 2. Дополните предложения</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Ders</p>
+              <select class="answer-select short" data-correct="ten">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>sonra eve gidiyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Sinema</p>
+              <select class="answer-select short" data-correct="dan">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>sonra arkadaşıma gidiyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Duş</p>
+              <select class="answer-select short" data-correct="tan">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>sonra bir kola içiyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Film</p>
+              <select class="answer-select short" data-correct="den">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>sonra reklamlar var.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ahmet’</p>
+              <select class="answer-select short" data-correct="ten">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>sonra Ayşe gidiyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>İş</p>
+              <select class="answer-select short" data-correct="ten">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>sonra kafeye gidiyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>İstanbul’</p>
+              <select class="answer-select short" data-correct="dan">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>sonra İzmir’e gidiyoruz.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Parti</p>
+              <select class="answer-select short" data-correct="den">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>sonra uyuyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Pantolon</p>
+              <select class="answer-select short" data-correct="dan">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>sonra gömlek yıkıyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ahmet ben</p>
+              <select class="answer-select short" data-correct="den">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>sonra konuşuyor</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 3 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Задание 3. Дополните предложения</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Öğrenciler ders</p>
+              <select class="answer-select short" data-correct="ten">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>önce çay içiyorlar.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ayşe ev</p>
+              <select class="answer-select short" data-correct="den">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>önce markete gidiyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Oğrenciler sınav</p>
+              <select class="answer-select short" data-correct="dan">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>önce ders calışıyorlar.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ben kahvaltı</p>
+              <select class="answer-select short" data-correct="dan">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>önce dişlerimi fırçalarım.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Okul</p>
+              <select class="answer-select short" data-correct="dan">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>önce çantamı hazırlıyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Büroya Ahmet’</p>
+              <select class="answer-select short" data-correct="ten">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>önce sekreter geliyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Sinema</p>
+              <select class="answer-select short" data-correct="dan">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>önce restorana gidiyoruz.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Kızlar parti</p>
+              <select class="answer-select short" data-correct="den">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>önce makyaj yapıyorlar.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Yemek</p>
+              <select class="answer-select short" data-correct="ten">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>önce ellerini yıka.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Antalya’</p>
+              <select class="answer-select short" data-correct="dan">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+              <p>önce İstanbul’a geldik.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 4 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 4. Выберите необходимый послелог (sonra, önce) и падеж
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Spor salonun</p>
+              <select class="answer-select short" data-correct="dan">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+
+              <select class="answer-select" data-correct="sonra">
+                <option value="">--</option>
+                <option value="sonra">sonra</option>
+                <option value="önce">önce</option>
+              </select>
+              <p>duşa gidiyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ders</p>
+              <select class="answer-select short" data-correct="ten">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+
+              <select class="answer-select" data-correct="önce">
+                <option value="">--</option>
+                <option value="sonra">sonra</option>
+                <option value="önce">önce</option>
+              </select>
+              <p>kahve içiyorum ve bilgisayar açıyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Yemek</p>
+              <select class="answer-select short" data-correct="ten">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+
+              <select class="answer-select" data-correct="önce">
+                <option value="">--</option>
+                <option value="sonra">sonra</option>
+                <option value="önce">önce</option>
+              </select>
+              <p>ellerimi yıkıyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Tatil</p>
+              <select class="answer-select short" data-correct="den">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+
+              <select class="answer-select" data-correct="sonra">
+                <option value="">--</option>
+                <option value="sonra">sonra</option>
+                <option value="önce">önce</option>
+              </select>
+              <p>işe dönüyoruz.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ayşe düğün</p>
+              <select class="answer-select short" data-correct="den">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+
+              <select class="answer-select" data-correct="önce">
+                <option value="">--</option>
+                <option value="sonra">sonra</option>
+                <option value="önce">önce</option>
+              </select>
+              <p>gelinlik alıyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ben Ahmet’</p>
+              <select class="answer-select short" data-correct="ten">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+
+              <select class="answer-select" data-correct="sonra">
+                <option value="">--</option>
+                <option value="sonra">sonra</option>
+                <option value="önce">önce</option>
+              </select>
+              <p>
+                sınava gireceğim, çünkü onun soyadı A harfi ile başlıyor,
+                benimki ise Bostan.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Reklam</p>
+              <select class="answer-select short" data-correct="dan">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+
+              <select class="answer-select" data-correct="sonra">
+                <option value="">--</option>
+                <option value="sonra">sonra</option>
+                <option value="önce">önce</option>
+              </select>
+              <p>film başlayacak.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>İstanbul’</p>
+              <select class="answer-select short" data-correct="dan">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+
+              <select class="answer-select" data-correct="sonra">
+                <option value="">--</option>
+                <option value="sonra">sonra</option>
+                <option value="önce">önce</option>
+              </select>
+              <p>Ankara’ya gideceğiz.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Her sabah kahvaltı</p>
+              <select class="answer-select short" data-correct="dan">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+
+              <select class="answer-select" data-correct="önce">
+                <option value="">--</option>
+                <option value="sonra">sonra</option>
+                <option value="önce">önce</option>
+              </select>
+              <p>bir bardak limonlu su içiyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>İş</p>
+              <select class="answer-select short" data-correct="ten">
+                <option value="">--</option>
+                <option value="tan">tan</option>
+                <option value="ten">ten</option>
+                <option value="dan">dan</option>
+                <option value="den">den</option>
+              </select>
+
+              <select class="answer-select" data-correct="sonra">
+                <option value="">--</option>
+                <option value="sonra">sonra</option>
+                <option value="önce">önce</option>
+              </select>
+              <p>markete gidiyorum.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 5 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 5. Давайте дополним следующие предложения “-DAn önce/sonra ,
+        -mAdAn önce, -DIktAn sonra”
+      </div>
+      <div class="task-content hidden">
+        <img src="./foto/ders14-task5.jpg" alt="ders14-task5" />
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Filme gir</p>
+              <select class="answer-select" data-correct="meden önce">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden önce">meden önce</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dan sonra">dan sonra</option>
+                <option value="tıktan sonra">tıktan sonra</option>
+                <option value="dikten sonra">dikten sonra</option>
+              </select>
+              <p>bilet alıyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Çocuklar yat</p>
+              <select class="answer-select" data-correct="madan önce">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden önce">meden önce</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dan sonra">dan sonra</option>
+                <option value="tıktan sonra">tıktan sonra</option>
+                <option value="dikten sonra">dikten sonra</option>
+              </select>
+              <p>süt içiyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Yağmur</p>
+              <select class="answer-select" data-correct="dan sonra">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden önce">meden önce</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dan sonra">dan sonra</option>
+                <option value="tıktan sonra">tıktan sonra</option>
+                <option value="dikten sonra">dikten sonra</option>
+              </select>
+              <p>bahçemiz çok güzel kokuyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Spor yap</p>
+              <select class="answer-select" data-correct="tıktan sonra">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden önce">meden önce</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dan sonra">dan sonra</option>
+                <option value="tıktan sonra">tıktan sonra</option>
+                <option value="dikten sonra">dikten sonra</option>
+              </select>
+              <p>duş alıyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ben otobüse bin</p>
+              <select class="answer-select" data-correct="dikten sonra">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden önce">meden önce</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dan sonra">dan sonra</option>
+                <option value="tıktan sonra">tıktan sonra</option>
+                <option value="dikten sonra">dikten sonra</option>
+              </select>
+              <p>okula gidiyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Sınav ol</p>
+              <select class="answer-select" data-correct="madan önce">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden önce">meden önce</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dan sonra">dan sonra</option>
+                <option value="tıktan sonra">tıktan sonra</option>
+                <option value="dikten sonra">dikten sonra</option>
+              </select>
+              <p>ders çalışıyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Cevap ver</p>
+              <select class="answer-select" data-correct="meden önce">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden önce">meden önce</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dan sonra">dan sonra</option>
+                <option value="tıktan sonra">tıktan sonra</option>
+                <option value="dikten sonra">dikten sonra</option>
+              </select>
+              <p>iyi düşün.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Hiç param yok. Alışverişe git</p>
+              <select class="answer-select" data-correct="meden önce">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden önce">meden önce</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dan sonra">dan sonra</option>
+                <option value="tıktan sonra">tıktan sonra</option>
+                <option value="dikten sonra">dikten sonra</option>
+              </select>
+              <p>bankaya gidiyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Dışarıya çık</p>
+              <select class="answer-select" data-correct="madan önce">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden önce">meden önce</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dan sonra">dan sonra</option>
+                <option value="tıktan sonra">tıktan sonra</option>
+                <option value="dikten sonra">dikten sonra</option>
+              </select>
+              <p>palto giy. Hava çok soğuk.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Kahvaltı</p>
+              <select class="answer-select" data-correct="dan sonra">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden önce">meden önce</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dan sonra">dan sonra</option>
+                <option value="tıktan sonra">tıktan sonra</option>
+                <option value="dikten sonra">dikten sonra</option>
+              </select>
+              <p>dişlerimi fırçalıyorum.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 6 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 6. Выберите необходимые окончания глагола c послелогами
+        sonra/önce
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Sinemaya git</p>
+              <select class="answer-select" data-correct="meden">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden">meden</option>
+                <option value="dikten">dikten</option>
+                <option value="madan">madan</option>
+                <option value="tıktan">tıktan</option>
+                <option value="dükten">dükten</option>
+              </select>
+              <p>önce bilet alıyoruz.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Uyu</p>
+              <select class="answer-select" data-correct="madan">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden">meden</option>
+                <option value="dikten">dikten</option>
+                <option value="madan">madan</option>
+                <option value="tıktan">tıktan</option>
+                <option value="dükten">dükten</option>
+              </select>
+              <p>önce biraz kitap okuyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Bu kız konuş</p>
+              <select class="answer-select" data-correct="madan">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden">meden</option>
+                <option value="dikten">dikten</option>
+                <option value="madan">madan</option>
+                <option value="tıktan">tıktan</option>
+                <option value="dükten">dükten</option>
+              </select>
+              <p>önce uzun uzun düşünüyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Biz işe başla</p>
+              <select class="answer-select" data-correct="madan">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden">meden</option>
+                <option value="dikten">dikten</option>
+                <option value="madan">madan</option>
+                <option value="tıktan">tıktan</option>
+                <option value="dükten">dükten</option>
+              </select>
+              <p>önce plan yapıyoruz.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Yemek ye</p>
+              <select class="answer-select" data-correct="meden">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden">meden</option>
+                <option value="dikten">dikten</option>
+                <option value="madan">madan</option>
+                <option value="tıktan">tıktan</option>
+                <option value="dükten">dükten</option>
+              </select>
+              <p>önce bir şey içmek istiyor musun?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Çalış</p>
+              <select class="answer-select" data-correct="tıktan">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden">meden</option>
+                <option value="dikten">dikten</option>
+                <option value="madan">madan</option>
+                <option value="tıktan">tıktan</option>
+                <option value="dükten">dükten</option>
+              </select>
+              <p>sonra biraz dinlenmekte fayda var.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Eve dön</p>
+              <select class="answer-select" data-correct="dükten">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden">meden</option>
+                <option value="dikten">dikten</option>
+                <option value="madan">madan</option>
+                <option value="tıktan">tıktan</option>
+                <option value="dükten">dükten</option>
+              </select>
+              <p>hemen sonra akşam yemeğimi yiyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ders bit</p>
+              <select class="answer-select" data-correct="tikten">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden">meden</option>
+                <option value="dikten">dikten</option>
+                <option value="madan">madan</option>
+                <option value="tıktan">tıktan</option>
+                <option value="dükten">dükten</option>
+              </select>
+              <p>sonra ne yapmak istiyorsun?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Tatile git</p>
+              <select class="answer-select" data-correct="meden">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden">meden</option>
+                <option value="dikten">dikten</option>
+                <option value="madan">madan</option>
+                <option value="tıktan">tıktan</option>
+                <option value="dükten">dükten</option>
+              </select>
+              <p>önce oteli aramak lazım.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Uçak in</p>
+              <select class="answer-select" data-correct="dikten">
+                <option value="">--Выберите ответ--</option>
+                <option value="meden">meden</option>
+                <option value="dikten">dikten</option>
+                <option value="madan">madan</option>
+                <option value="tıktan">tıktan</option>
+                <option value="dükten">dükten</option>
+              </select>
+              <p>sonra mutlaka bana mesaj at!</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 7 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 7. Давайте дополним следующие предложения “-DAn önce/sonra ,
+        -mAdAn önce, -DIktAn sonra”
+      </div>
+      <div class="task-content hidden">
+        <img src="./foto/ders14-task7.jpg" alt="ders14-task7" />
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Uyu</p>
+              <select class="answer-select" data-correct="madan önce">
+                <option value="">--Выберите ответ--</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dükten sonra">dükten sonra</option>
+                <option value="ten sonra">ten sonra</option>
+                <option value="dan önce">dan önce</option>
+                <option value="meden önce">meden önce</option>
+              </select>
+              <p>mutlaka kitap okuyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Mert, askerden dön</p>
+              <select class="answer-select" data-correct="dükten sonra">
+                <option value="">--Выберите ответ--</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dükten sonra">dükten sonra</option>
+                <option value="ten sonra">ten sonra</option>
+                <option value="dan önce">dan önce</option>
+                <option value="meden önce">meden önce</option>
+              </select>
+              <p>evleniyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Derya sınıfa herkes</p>
+              <select class="answer-select" data-correct="ten sonra">
+                <option value="">--Выберите ответ--</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dükten sonra">dükten sonra</option>
+                <option value="ten sonra">ten sonra</option>
+                <option value="dan önce">dan önce</option>
+                <option value="meden önce">meden önce</option>
+              </select>
+              <p>giriyor. O hep geç kalıyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Bayram</p>
+              <select class="answer-select" data-correct="dan önce">
+                <option value="">--Выберите ответ--</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dükten sonra">dükten sonra</option>
+                <option value="ten sonra">ten sonra</option>
+                <option value="dan önce">dan önce</option>
+                <option value="meden önce">meden önce</option>
+              </select>
+              <p>alışveriş yapıyoruz.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ofise patronum</p>
+              <select class="answer-select" data-correct="dan önce">
+                <option value="">--Выберите ответ--</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dükten sonra">dükten sonra</option>
+                <option value="ten sonra">ten sonra</option>
+                <option value="dan önce">dan önce</option>
+                <option value="meden önce">meden önce</option>
+              </select>
+              <p>geliyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Türkiye’ye gel</p>
+              <select class="answer-select" data-correct="meden önce">
+                <option value="">--Выберите ответ--</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dükten sonra">dükten sonra</option>
+                <option value="ten sonra">ten sonra</option>
+                <option value="dan önce">dan önce</option>
+                <option value="meden önce">meden önce</option>
+              </select>
+              <p>Türkçe öğrendim.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Tatile çık</p>
+              <select class="answer-select" data-correct="madan önce">
+                <option value="">--Выберите ответ--</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dükten sonra">dükten sonra</option>
+                <option value="ten sonra">ten sonra</option>
+                <option value="dan önce">dan önce</option>
+                <option value="meden önce">meden önce</option>
+              </select>
+              <p>mutlaka yer ayırt.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Sütü satın al</p>
+              <select class="answer-select" data-correct="madan önce">
+                <option value="">--Выберите ответ--</option>
+                <option value="madan önce">madan önce</option>
+                <option value="dükten sonra">dükten sonra</option>
+                <option value="ten sonra">ten sonra</option>
+                <option value="dan önce">dan önce</option>
+                <option value="meden önce">meden önce</option>
+              </select>
+              <p>son kullanma tarihine bak.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders14.html"> <button>Назад</button></a>
+
+      <a href="./ders14-3.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

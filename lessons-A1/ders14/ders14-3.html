@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_14</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 14 (BAYRAMLAR)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders14.html"><button>Особые дни</button></a>
+        </li>
+
+        <li>
+          <a href="./ders14-2.html"><button>До и после</button></a>
+        </li>
+
+        <li>
+          <a href="./ders14-3.html"><button class="active">Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders14-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders14-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Особые дни. “После” и “До”. На уроке вы узнает об особых днях Турции. И
+      сможете рассказывать о событиях, произошедших до и после. Например, каким
+      сложным вам казался турецкий язык до изучения курса и каким лёгким он
+      покажется вам после.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set15"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/pazartesi.jpg" alt="pazartesi" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- ////////////ЧТЕНИЕ //////////// -->
+
+    <section class="task-section">
+      <div class="task-header">ЧТЕНИЕ</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <p><span>23 NİSAN</span></p>
+          </li>
+
+          <li>
+            <p>
+              Merhaba ben Can. Ben 11 yaşındayım. Bir hafta sonra 23 Nisan
+              Ulusal Egemenlik ve Çocuk Bayramı. Ben çok heyecanlıyım. Biz her
+              sene bu bayrama hazırlanıyoruz. Bir hafta sonra bütün okullar ile
+              birlikte stadyumda büyük bir törene katılıyoruz. Bu bayram için
+              ülkemize bayramdan önce farklı ülkelerden çocuklar geliyor. Onlar
+              bizim evimizde kalıyor. Bazen birbirimizin dilini bilmiyoruz ve
+              hareketlerle anlaşıyoruz. Bu çok komik ve eğlenceli oluyor. Onlar
+              bize ülkesinden çeşitli hediyeler getiriyor. Biz de onlara
+              hediyeler veriyoruz. Onlara kültürümüzü ve şehrimizi tanıtıyoruz.
+              Onlarla müzeleri geziyoruz.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              23 Nisan günü tören başlamadan önce stadyum insanlarla doluyor.
+              Biz son provalarımızı yapıyoruz. Tören millî marşımızı söyledikten
+              sonra başlıyor. Vali bugün için bir konuşma yapıyor. Konuşmadan
+              sonra diğer okullardan öğrenciler ile birlikte şiirler, şarkılar
+              söylüyoruz ve dans ediyoruz. Bizim gösterimiz bittikten sonra
+              yabancı arkadaşlarımız kendi halk danslarını yapıyorlar. Törenden
+              sonra yabancı arkadaşımızla beraber yemeğe çıkıyoruz ve geziyoruz.
+              Ben bu günü çok seviyorum. Çocuk olmak çok güzel.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 8 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Задание 8. Давайте выберем верный вариант</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Can neden çok heyecanlı?</p>
+              <select
+                class="answer-select"
+                data-correct="Çünkü bir hafta sonra bütün okullar ile birlikte stadyumda büyük bir törene katılıyor."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option
+                  value="Çünkü bir hafta sonra bütün okullar ile birlikte stadyumda büyük bir törene katılıyor."
+                >
+                  Çünkü bir hafta sonra bütün okullar ile birlikte stadyumda
+                  büyük bir törene katılıyor.
+                </option>
+                <option
+                  value="Çünkü bir hafta sonra bütün okullar tatil oluyorlar."
+                >
+                  Çünkü bir hafta sonra bütün okullar tatil oluyorlar.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Can yabancı arkadaşları ile neler yapıyor?</p>
+              <select
+                class="answer-select"
+                data-correct="Onlar müzeleri geziyorlar."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Onlar sahilleri geziyorlar.">
+                  Onlar sahilleri geziyorlar.
+                </option>
+                <option value="Onlar müzeleri geziyorlar.">
+                  Onlar müzeleri geziyorlar.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Tören başlamadan önce neler oluyor?</p>
+              <select
+                class="answer-select"
+                data-correct="Çocuklar son provalarını yapıyorlar."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Çocuklar son provalarını yapıyorlar.">
+                  Çocuklar son provalarını yapıyorlar.
+                </option>
+                <option value="Çocuklar banklara oturuyorlar.">
+                  Çocuklar banklara oturuyorlar.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Törende neler yapıyorlar?</p>
+              <select
+                class="answer-select"
+                data-correct="Diğer okullardan öğrenciler ile birlikte şiirler, şarkılar söylüyorlar ve dans ediyorlar."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Can yabancı arkadaşlar ile şarkılar söylüyor.">
+                  Can yabancı arkadaşlar ile şarkılar söylüyor.
+                </option>
+                <option
+                  value="Diğer okullardan öğrenciler ile birlikte şiirler, şarkılar söylüyorlar ve dans ediyorlar."
+                >
+                  Diğer okullardan öğrenciler ile birlikte şiirler, şarkılar
+                  söylüyorlar ve dans ediyorlar.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Can ve arkadaşları ne zaman yemek yiyorlar?</p>
+              <select
+                class="answer-select"
+                data-correct="Törenden sonra Can ve arkadaşları yemek yiyor."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Törenden sonra Can ve arkadaşları yemek yiyor.">
+                  Törenden sonra Can ve arkadaşları yemek yiyor.
+                </option>
+                <option value="Törenden önce Can ve arkadaşları yemek yiyor.">
+                  Törenden önce Can ve arkadaşları yemek yiyor.
+                </option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 9 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 9. Что они делают на церемонии? Давайте упорядочим следующие
+        предложения
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p><span>1.</span></p>
+              <select
+                class="answer-select"
+                data-correct="Millî marşı söylüyorlar."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Yabancı arkadaşları halk danslarını yapıyor.">
+                  Yabancı arkadaşları halk danslarını yapıyor.
+                </option>
+                <option value="Vali konuşma yapıyor.">
+                  Vali konuşma yapıyor.
+                </option>
+                <option value="Dans ediyorlar.">Dans ediyorlar.</option>
+                <option value="Şiirler, şarkılar söylüyorlar.">
+                  Şiirler, şarkılar söylüyorlar.
+                </option>
+                <option value="Millî marşı söylüyorlar.">
+                  Millî marşı söylüyorlar.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>2.</span></p>
+              <select
+                class="answer-select"
+                data-correct="Vali konuşma yapıyor."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Yabancı arkadaşları halk danslarını yapıyor.">
+                  Yabancı arkadaşları halk danslarını yapıyor.
+                </option>
+                <option value="Vali konuşma yapıyor.">
+                  Vali konuşma yapıyor.
+                </option>
+                <option value="Dans ediyorlar.">Dans ediyorlar.</option>
+                <option value="Şiirler, şarkılar söylüyorlar.">
+                  Şiirler, şarkılar söylüyorlar.
+                </option>
+                <option value="Millî marşı söylüyorlar.">
+                  Millî marşı söylüyorlar.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>3.</span></p>
+              <select
+                class="answer-select"
+                data-correct="Şiirler, şarkılar söylüyorlar."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Yabancı arkadaşları halk danslarını yapıyor.">
+                  Yabancı arkadaşları halk danslarını yapıyor.
+                </option>
+                <option value="Vali konuşma yapıyor.">
+                  Vali konuşma yapıyor.
+                </option>
+                <option value="Dans ediyorlar.">Dans ediyorlar.</option>
+                <option value="Şiirler, şarkılar söylüyorlar.">
+                  Şiirler, şarkılar söylüyorlar.
+                </option>
+                <option value="Millî marşı söylüyorlar.">
+                  Millî marşı söylüyorlar.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>4.</span></p>
+              <select class="answer-select" data-correct="Dans ediyorlar.">
+                <option value="">--Выберите ответ--</option>
+                <option value="Yabancı arkadaşları halk danslarını yapıyor.">
+                  Yabancı arkadaşları halk danslarını yapıyor.
+                </option>
+                <option value="Vali konuşma yapıyor.">
+                  Vali konuşma yapıyor.
+                </option>
+                <option value="Dans ediyorlar.">Dans ediyorlar.</option>
+                <option value="Şiirler, şarkılar söylüyorlar.">
+                  Şiirler, şarkılar söylüyorlar.
+                </option>
+                <option value="Millî marşı söylüyorlar.">
+                  Millî marşı söylüyorlar.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>5.</span></p>
+              <select
+                class="answer-select"
+                data-correct="Yabancı arkadaşları halk danslarını yapıyor."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Yabancı arkadaşları halk danslarını yapıyor.">
+                  Yabancı arkadaşları halk danslarını yapıyor.
+                </option>
+                <option value="Vali konuşma yapıyor.">
+                  Vali konuşma yapıyor.
+                </option>
+                <option value="Dans ediyorlar.">Dans ediyorlar.</option>
+                <option value="Şiirler, şarkılar söylüyorlar.">
+                  Şiirler, şarkılar söylüyorlar.
+                </option>
+                <option value="Millî marşı söylüyorlar.">
+                  Millî marşı söylüyorlar.
+                </option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders14-2.html"> <button>Назад</button></a>
+
+      <a href="./ders14-4.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>
