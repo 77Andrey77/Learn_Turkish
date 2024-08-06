@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_16</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 16 (AKRABALARIM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders16.html"
+            ><button>Изафетная цепь. Вопрос "Чей"?</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders16-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders16-3.html"
+            ><button class="active">Аудирование</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders16-4test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Изафетная цепь. Вопрос "Чей?" На уроке вы поймёте, как строить
+      словосочетания, обозначающие принадлежность предмета к чему-либо или
+      кому-либо. Ваш турецкий станет ещё на ступень выше.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set17"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/kuzen.jpg" alt="kuzen" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////audio//////////// -->
+
+    <img
+      class="icon-headphones"
+      src="../../icons/icon-headphones.svg"
+      alt="icon-headphones"
+    />
+    <p class="title-audio">АУДИРОВАНИЕ</p>
+    <div class="section-wrapper">
+      <audio
+        src="../../audio/ders16-page3.m4a"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></audio>
+    </div>
+
+    <!-- ////////////ЧТЕНИЕ///////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Текст аудио</div>
+      <div class="task-content write hidden">
+        <ul>
+          <li class="inline">
+            <p>
+              Benim en yakın arkadaşım Anna. O 25 yaşında. O bir okulda Tarih
+              öğretmeni. Onunla beş seneden beri arkadaşız. Liseyi beraber
+              okuduk. Onun ailesini çok seviyorum. Onun babası mühendis, annesi
+              mimar. Onların bir inşaat şirketi var. Onun iki kız kardeşi var.
+              Onların adları Judi ve Sara. O üç ay sonra evleniyor. Şimdi
+              nişanlı. Onun nişanlısı da öğretmen. O boş zamanlarında bol bol
+              tarih kitabı okuyor. Biz onunla beraber çok güzel vakit
+              geçiriyoruz. Beraber tatile çıkıp, değişik ülkeleri geziyoruz.
+              Şimdi onunla ayrıyız. O Almanya’da. Onunla telefonla veya
+              İnternette konuşuyoruz. Onu çok özlüyorum.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              Benim en yakın arkadaşım Hassan. O 21 yaşında. O üniversitede
+              Hukuk okuyor ve avukat olmak istiyor. O şimdi Mısır’da. O benim
+              çocukluktan beri arkadaşım. Benim babamla onun babası da çok yakın
+              arkadaş. Biz bütün aile sık sık görüşüyoruz. Beraber tatile
+              gidiyoruz. Onun babası bir şirketin müdürü. Annesi ev hanımı. Onun
+              bir kardeşi var. Onun adı Leen. O da İstanbul’da Türkçe kursuna
+              gidiyor ve İstanbul’da üniversitede okumak istiyor. Ben ona yardım
+              ediyorum. O benim kardeşim gibi. Hassan boş zamanlarında İnernete
+              gidiyor. Biz onunla birlikte genellikle dışarıda geziyoruz ve bol
+              bol sohbet ediyoruz. O çok akıllı biri. Eminim çok iyi bir avukat
+              olacak.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 11 c картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 11. Кейт и Моханад говорят о своих ближайших друзьях в своей
+        стране. Давайте послушаем их и заполним анкеты
+      </div>
+      <div class="task-content hidden">
+        <div class="item-task12">
+          <img
+            src="./foto/ders16-task11-1.jpg"
+            alt="ders16-task11-1"
+            width="650"
+          />
+          <div class="select-container">
+            <div class="write-container">
+              <p><span>Kate’nin arkadaşı</span></p>
+            </div>
+
+            <div class="write-container">
+              <p>Adı:</p>
+              <select class="answer-select" data-correct="Anna">
+                <option value="">--Выберите ответ--</option>
+                <option value="Judie">Judie</option>
+                <option value="Anna">Anna</option>
+                <option value="Mehmet">Mehmet</option>
+                <option value="Hassan">Hassan</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p>Yaşı:</p>
+              <select class="answer-select" data-correct="25">
+                <option value="">--Выберите ответ--</option>
+                <option value="27">27</option>
+                <option value="25">25</option>
+                <option value="28">28</option>
+                <option value="21">21</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p>Ülkesi:</p>
+              <select class="answer-select" data-correct="Almanya">
+                <option value="">--Выберите ответ--</option>
+                <option value="Türkiye">Türkiye</option>
+                <option value="Rusya">Rusya</option>
+                <option value="Mısır">Mısır</option>
+                <option value="Almanya">Almanya</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p>Mesleği:</p>
+              <select class="answer-select" data-correct="tarih öğretmeni">
+                <option value="">--Выберите ответ--</option>
+                <option value="tarih öğretmeni">tarih öğretmeni</option>
+                <option value="iş adamı">iş adamı</option>
+                <option value="avukat">avukat</option>
+                <option value="öğrenci">öğrenci</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p>Ailesi:</p>
+              <select
+                class="answer-select"
+                data-correct="babası mühendis, annesi mimar"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="babası mühendis, annesi ev hanımı">
+                  babası mühendis, annesi ev hanımı
+                </option>
+                <option value="babası bir şirketin müdürü, annesi mimar">
+                  babası bir şirketin müdürü, annesi mimar
+                </option>
+                <option value="babası bir şirketin müdürü,annesi ev hanımı">
+                  babası bir şirketin müdürü,annesi ev hanımı
+                </option>
+                <option value="babası mühendis, annesi mimar">
+                  babası mühendis, annesi mimar
+                </option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p>Hobileri:</p>
+              <select class="answer-select" data-correct="tarih kitabı okumak">
+                <option value="">--Выберите ответ--</option>
+                <option value="spor yapmak">spor yapmak</option>
+                <option value="basketbol oynamak">basketbol oynamak</option>
+                <option value="tarih kitabı okumak">tarih kitabı okumak</option>
+                <option value="internete girmek">internete girmek</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p>Onlar ne zamandan beri arkadaşlar?</p>
+              <select class="answer-select" data-correct="beş seneden beri">
+                <option value="">--Выберите ответ--</option>
+                <option value="liseden beri">liseden beri</option>
+                <option value="üç seneden beri ">üç seneden beri</option>
+                <option value="çocukluktan beri">çocukluktan beri</option>
+                <option value="beş seneden beri">beş seneden beri</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-task12">
+          <img
+            src="./foto/ders16-task11-2.jpg"
+            alt="ders16-task11-2"
+            width="650"
+          />
+          <div class="select-container">
+            <div class="write-container">
+              <p><span>Mohanad’ın arkadaşı</span></p>
+            </div>
+
+            <div class="write-container">
+              <p>Adı:</p>
+              <select class="answer-select" data-correct="Hassan">
+                <option value="">--Выберите ответ--</option>
+                <option value="Judie">Judie</option>
+                <option value="Anna">Anna</option>
+                <option value="Mehmet">Mehmet</option>
+                <option value="Hassan">Hassan</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p>Yaşı:</p>
+              <select class="answer-select" data-correct="21">
+                <option value="">--Выберите ответ--</option>
+                <option value="27">27</option>
+                <option value="25">25</option>
+                <option value="28">28</option>
+                <option value="21">21</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p>Ülkesi:</p>
+              <select class="answer-select" data-correct="Mısır">
+                <option value="">--Выберите ответ--</option>
+                <option value="Türkiye">Türkiye</option>
+                <option value="Rusya">Rusya</option>
+                <option value="Mısır">Mısır</option>
+                <option value="Almanya">Almanya</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p>Mesleği:</p>
+              <select class="answer-select" data-correct="öğrenci">
+                <option value="">--Выберите ответ--</option>
+                <option value="tarih öğretmeni">tarih öğretmeni</option>
+                <option value="iş adamı">iş adamı</option>
+                <option value="avukat">avukat</option>
+                <option value="öğrenci">öğrenci</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p>Ailesi:</p>
+              <select
+                class="answer-select"
+                data-correct="babası bir şirketin müdürü,annesi ev hanımı"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="babası mühendis, annesi ev hanımı">
+                  babası mühendis, annesi ev hanımı
+                </option>
+                <option value="babası bir şirketin müdürü, annesi mimar">
+                  babası bir şirketin müdürü, annesi mimar
+                </option>
+                <option value="babası bir şirketin müdürü,annesi ev hanımı">
+                  babası bir şirketin müdürü,annesi ev hanımı
+                </option>
+                <option value="babası mühendis, annesi mimar">
+                  babası mühendis, annesi mimar
+                </option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p>Hobileri:</p>
+              <select class="answer-select" data-correct="internete girmek">
+                <option value="">--Выберите ответ--</option>
+                <option value="spor yapmak">spor yapmak</option>
+                <option value="basketbol oynamak">basketbol oynamak</option>
+                <option value="tarih kitabı okumak">tarih kitabı okumak</option>
+                <option value="internete girmek">internete girmek</option>
+              </select>
+            </div>
+
+            <div class="write-container">
+              <p>Onlar ne zamandan beri arkadaşlar?</p>
+              <select class="answer-select" data-correct="çocukluktan beri">
+                <option value="">--Выберите ответ--</option>
+                <option value="liseden beri">liseden beri</option>
+                <option value="üç seneden beri ">üç seneden beri</option>
+                <option value="çocukluktan beri">çocukluktan beri</option>
+                <option value="beş seneden beri">beş seneden beri</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders16-2.html"> <button>Назад</button></a>
+
+      <a href="./ders16-4test.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

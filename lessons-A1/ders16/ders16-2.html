@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_16</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 16 (AKRABALARIM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders16.html"
+            ><button>Изафетная цепь. Вопрос "Чей"?</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders16-2.html"><button class="active">Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders16-3.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders16-4test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Изафетная цепь. Вопрос "Чей?" На уроке вы поймёте, как строить
+      словосочетания, обозначающие принадлежность предмета к чему-либо или
+      кому-либо. Ваш турецкий станет ещё на ступень выше.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set17"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/kuzen.jpg" alt="kuzen" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- ////////////ЧТЕНИЕ///////////// -->
+
+    <section class="task-section">
+      <div class="task-header">ЧТЕНИЕ (Писать с маленькой буквы).</div>
+      <div class="task-content write hidden">
+        <img src="./foto/ders16-p2.jpg" alt="ders16-p2 read" />
+        <form id="text-form-46">
+          <ul>
+            <li class="inline">
+              <label for="word725">Ben</label>
+              <input class="short" type="text" id="word725" name="word725" />
+              <label for="word726"
+                >adım Alper. Benim bir arkadaşım var. O</label
+              >
+              <input class="short" type="text" id="word726" name="word726" />
+              <p>
+                adı Murat. Murat uzun boylu, sarı saçlı, mavi gözlü, yakışıklı
+                bir genç
+              </p>
+            </li>
+
+            <li class="inline" style="flex-wrap: wrap">
+              <label for="word727">Murat’</label>
+              <input class="short" type="text" id="word727" name="word727" />
+              <label for="word728">baba</label>
+              <input class="short" type="text" id="word728" name="word728" />
+              <label for="word729">çok zengin. Murat’</label>
+              <input class="short" type="text" id="word729" name="word729" />
+              <label for="word730">baba</label>
+              <input class="short" type="text" id="word730" name="word730" />
+              <label for="word731">büyük bir fabrika</label>
+              <input class="short" type="text" id="word731" name="word731" />
+              <label for="word732">var. Murat’</label>
+              <input class="short" type="text" id="word732" name="word732" />
+              <label for="word733">baba</label>
+              <input class="short" type="text" id="word733" name="word733" />
+              <p>çok iyi bir insan. O zeki, çalışkan ve dürüst bir iş adamı.</p>
+            </li>
+
+            <li class="inline" style="flex-wrap: wrap">
+              <label for="word734">Murat’</label>
+              <input class="short" type="text" id="word734" name="word734" />
+              <label for="word735">anne</label>
+              <input class="short" type="text" id="word735" name="word735" />
+              <label for="word736">ev hanımı. Murat’</label>
+              <input class="short" type="text" id="word736" name="word736" />
+              <label for="word737">anne</label>
+              <input class="short" type="text" id="word737" name="word737" />
+              <label for="word738"
+                >çok güler yüzlü, becerikli bir kadın. Murat’</label
+              >
+              <input class="short" type="text" id="word738" name="word738" />
+              <label for="word739">anne</label>
+              <input class="short" type="text" id="word739" name="word739" />
+              <label for="word740">yemekler</label>
+              <input class="short" type="text" id="word740" name="word740" />
+              <p>çok meşhur. O çok güzel yemekler yapıyor.</p>
+            </li>
+
+            <li class="inline" style="flex-wrap: wrap">
+              <label for="word741">Murat’</label>
+              <input class="short" type="text" id="word741" name="word741" />
+              <label for="word742">aile</label>
+              <input class="short" type="text" id="word742" name="word742" />
+              <label for="word743"
+                >Levent’te büyük, tek katlı, bahçeli bir ev</label
+              >
+              <input class="short" type="text" id="word743" name="word743" />
+              <label for="word744">var. Onlar</label>
+              <input class="short" type="text" id="word744" name="word744" />
+              <label for="word745">ev</label>
+              <input class="short" type="text" id="word745" name="word745" />
+              <p>6 tane geniş oda var.</p>
+            </li>
+
+            <li class="inline" style="flex-wrap: wrap">
+              <label for="word746">Murat’</label>
+              <input class="short" type="text" id="word746" name="word746" />
+              <label for="word747"
+                >bir de çok güzel, pahalı, hızlı ve son model bir araba</label
+              >
+              <input class="short" type="text" id="word747" name="word747" />
+              <label for="word748">var. Araba</label>
+              <input class="short" type="text" id="word748" name="word748" />
+              <label for="word749">iki kapı</label>
+              <input class="short" type="text" id="word749" name="word749" />
+              <label for="word750">var. Araba</label>
+              <input class="short" type="text" id="word750" name="word750" />
+              <label for="word751">reng</label>
+              <input class="short" type="text" id="word751" name="word751" />
+              <p>kırmızı.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word752"
+                >Bazen ben, Murat ve arkadaşlarımız ile birlikte Murat’</label
+              >
+              <input class="short" type="text" id="word752" name="word752" />
+              <label for="word753">spor araba</label>
+              <input class="short" type="text" id="word753" name="word753" />
+              <p>biniyoruz ve Boğaz’a gidiyoruz.</p>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 9 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 9. Давайте отметим верно (Doğru) или неверно (Yanlış)
+        предложение
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Murat’ın saçları sarı.</p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Murat’ın babasının bir çiftliği var.</p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Murat’ın annesi çok becerikli.</p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Murat’ın ailesinin evi Kadıköy’de.</p>
+              <select class="answer-select" data-correct="Yanlış">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Alper, Murat ile beraber Boğaz‘a gidiyorlar.</p>
+              <select class="answer-select" data-correct="Doğru">
+                <option value="">--Выберите ответ--</option>
+                <option value="Doğru">Doğru</option>
+                <option value="Yanlış">Yanlış</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 10 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Задание 10. Давайте отметим верный вариант</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Alper’in arkadaşının adı ne?</p>
+              <select class="answer-select" data-correct="Murat">
+                <option value="">--Выберите ответ--</option>
+                <option value="Murat">Murat</option>
+                <option value="Mert">Mert</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Murat’ın babasının işi ne?</p>
+              <select class="answer-select" data-correct="iş adamı">
+                <option value="">--Выберите ответ--</option>
+                <option value="işçi">işçi</option>
+                <option value="iş adamı">iş adamı</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Murat’ın ailesinin evi nerede?</p>
+              <select class="answer-select" data-correct="Levent’te">
+                <option value="">--Выберите ответ--</option>
+                <option value="Kadıköy’de">Kadıköy’de</option>
+                <option value="Levent’te">Levent’te</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Murat’ın bir arabası var mı?</p>
+              <select class="answer-select" data-correct="Evet">
+                <option value="">--Выберите ответ--</option>
+                <option value="Evet">Evet</option>
+                <option value="Hayır">Hayır</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Murat’ın arabasının kaç kapısı var?</p>
+              <select class="answer-select" data-correct="İki kapısı">
+                <option value="">--Выберите ответ--</option>
+                <option value="İki kapısı">İki kapısı</option>
+                <option value="Dört kapısı">Dört kapısı</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders16.html"> <button>Назад</button></a>
+
+      <a href="./ders16-3.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

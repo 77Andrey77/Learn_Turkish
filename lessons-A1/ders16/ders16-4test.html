@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_16</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 16 (AKRABALARIM)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders16.html"
+            ><button>Изафетная цепь. Вопрос "Чей"?</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders16-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders16-3.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders16-4test.html"
+            ><button class="active">Итоговый тест</button></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Изафетная цепь. Вопрос "Чей?" На уроке вы поймёте, как строить
+      словосочетания, обозначающие принадлежность предмета к чему-либо или
+      кому-либо. Ваш турецкий станет ещё на ступень выше.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set17"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/kuzen.jpg" alt="kuzen" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////test 16 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Итоговый тест к уроку 16</div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>
+                1. Найдите правильный перевод на турецкий язык: книги нашего
+                учителя
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Bizim öğretmenimizin kitapları"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Bizim öğretmenin kitapları">
+                  Bizim öğretmenin kitapları
+                </option>
+                <option value="Bizim öğretmenimizin kitapları">
+                  Bizim öğretmenimizin kitapları
+                </option>
+                <option value="Bizim öğretmenin kitaplarımız">
+                  Bizim öğretmenin kitaplarımız
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                2. Найдите правильный перевод на турецкий язык: собака наших
+                друзей
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Bizim arkadaşlarımızın köpeği"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Bizim arkadaşlarımızın köpeği">
+                  Bizim arkadaşlarımızın köpeği
+                </option>
+                <option value="Bizim arkadaşlarımızın köpeki">
+                  Bizim arkadaşlarımızın köpeki
+                </option>
+                <option value="Bizim arkadaşlarımın köpeği">
+                  Bizim arkadaşlarımın köpeği
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                3. Найдите правильный перевод на турецкий язык: новая книга его
+                ученика
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Onun öğrencisinin yeni kitabı"
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Onun öğrencinin yeni kitabı">
+                  Onun öğrencinin yeni kitabı
+                </option>
+                <option value="Onun öğrencisinin yeni kitapı">
+                  Onun öğrencisinin yeni kitapı
+                </option>
+                <option value="Onun öğrencisinin yeni kitabı">
+                  Onun öğrencisinin yeni kitabı
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                4. Найдите правильный перевод на турецкий язык: красивая детская
+                комната
+              </p>
+              <select class="answer-select" data-correct="Güzel çocuk odası">
+                <option value="">--Выберите ответ--</option>
+                <option value="Güzel çocuk odası">Güzel çocuk odası</option>
+                <option value="Güzel çocuğun odası">Güzel çocuğun odası</option>
+                <option value="Çocuğun güzel odası">Çocuğun güzel odası</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                5. Найдите правильный перевод на турецкий язык: Сегодня вечером
+                мы идем в дом наших соседей.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Bu akşam bizim komşularımızın evine gidiyoruz."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Bu akşam bizim komşularımızın evine gidiyoruz.">
+                  Bu akşam bizim komşularımızın evine gidiyoruz.
+                </option>
+                <option value="Bu akşam bizim komşularımızın eviye gidiyoruz.">
+                  Bu akşam bizim komşularımızın eviye gidiyoruz.
+                </option>
+                <option value="Bu akşam bizim komşularımın evine gidiyoruz.">
+                  Bu akşam bizim komşularımın evine gidiyoruz.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                6. Найдите правильный перевод на турецкий язык: Собака друга
+                моего папы черная.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Benim babamın arkadaşının köpeği siyah."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Benim babamın arkadaşın köpeği siyah.">
+                  Benim babamın arkadaşın köpeği siyah.
+                </option>
+                <option value="Benim babamın arkadaşının köpeği siyah.">
+                  Benim babamın arkadaşının köpeği siyah.
+                </option>
+                <option value="Benim babanın arkadaşının köpeği siyah.">
+                  Benim babanın arkadaşının köpeği siyah.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                7. Найдите правильный перевод на турецкий язык: Мы сидим в
+                гостиной комнате.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Biz misafir odasında oturuyoruz."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Biz misafir odasına oturuyoruz.">
+                  Biz misafir odasına oturuyoruz.
+                </option>
+                <option value="Biz misafir odasında oturuyoruz.">
+                  Biz misafir odasında oturuyoruz.
+                </option>
+                <option value="Biz misafirlerin odasında oturuyoruz.">
+                  Biz misafirlerin odasında oturuyoruz.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                8. Найдите правильный перевод на турецкий язык: Мне очень
+                нравится папина новая машина.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Babamın yeni arabasından çok hoşlanıyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option value="Babamın yeni arabasıdan çok hoşlanıyorum.">
+                  Babamın yeni arabasıdan çok hoşlanıyorum.
+                </option>
+                <option value="Babamın yeni arabasından çok hoşlanıyorum.">
+                  Babamın yeni arabasından çok hoşlanıyorum.
+                </option>
+                <option value="Babamın yeni arabasını çok hoşlanıyorum.">
+                  Babamın yeni arabasını çok hoşlanıyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                9. Найдите правильный перевод на турецкий язык: Друзья наших
+                друзей – наши друзья.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Bizim arkadaşlarımızın arkadaşları bizim arkadaşımızdır."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option
+                  value="Bizim arkadaşlarımızın arkadaşları bizim arkadaşımızdır."
+                >
+                  Bizim arkadaşlarımızın arkadaşları bizim arkadaşımızdır.
+                </option>
+                <option
+                  value="Bizim arkadaşlarımın arkadaşları bizim arkadaşımızdır."
+                >
+                  Bizim arkadaşlarımın arkadaşları bizim arkadaşımızdır.
+                </option>
+                <option
+                  value="Bizim arkadaşlarımızın arkadaşlar bizim arkadaşımızdır."
+                >
+                  Bizim arkadaşlarımızın arkadaşlar bizim arkadaşımızdır.
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>
+                10. Найдите правильный перевод на турецкий язык: Я хочу учится в
+                Стамбульском университете.
+              </p>
+              <select
+                class="answer-select"
+                data-correct="Ben İstanbul üniversitesinde okumak istiyorum."
+              >
+                <option value="">--Выберите ответ--</option>
+                <option
+                  value="Ben İstanbul’un üniversitesinde okumak istiyorum."
+                >
+                  Ben İstanbul’un üniversitesinde okumak istiyorum.
+                </option>
+                <option value="Ben İstanbul üniversitesinde okumak istiyorum.">
+                  Ben İstanbul üniversitesinde okumak istiyorum.
+                </option>
+                <option value="Ben İstanbul üniversiteside okumak istiyorum.">
+                  Ben İstanbul üniversiteside okumak istiyorum.
+                </option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders16-3.html"> <button>Назад</button></a>
+
+      <a href="../ders17/ders17.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

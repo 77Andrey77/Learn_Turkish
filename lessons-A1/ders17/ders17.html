@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_17</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 17 (NEREDE?)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders17.html"
+            ><button class="active">Словообразовательный аффикс - ki</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders17-2.html"
+            ><button>Пространственные предлоги</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders17-3.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders17-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders17-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Словообразовательный аффикс - ki. На уроке вы научитесь делать из
+      существительных прилагательные. Ещё плюс миллион баллов к вашему
+      словарному запасу и красноречию.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set18"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/alt.webp" alt="alt" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+    <!-- /////////////video//////////// -->
+
+    <!-- <iframe
+      width="640"
+      height="400"
+      src="https://www.youtube.com/watch?v=u179ssScQ3c"
+      frameborder="0"
+      allowfullscreen
+    ></iframe> -->
+    <!-- <div class="section-wrapper">
+      <iframe
+        class="ders1-video"
+        width="845"
+        height="475"
+        src="https://www.youtube.com/embed/u179ssScQ3c"
+        title="Эпичный прыжок )"
+        frameborder="0"
+        allow=""
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div> -->
+
+    <div class="section-wrapper">
+      <video
+        class="ders1-video"
+        src="../../video/video-ders1.mp4"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></video>
+    </div>
+    <!-- /////////////dowloading//////////// -->
+
+    <div class="section-wrapper section-download">
+      <a
+        class="link-download"
+        href="../../materials/Модуль 6. Урок 17.pdf"
+        download
+        >Скачать Рабочая тетрадь. Урок 17</a
+      >
+    </div>
+
+    <!-- //////////////Дополнительный материал/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Дополнительный материал</div>
+      <ul class="task-content task-more-material hidden">
+        <li class="hidden">
+          <button id="task-header-law1">Родительный падеж</button>
+          <div class="task-law hidden" id="task-content-law1-img">
+            <img src="" alt="Родительный падеж" />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law2">Притяжательный изафет</button>
+          <div class="task-law hidden" id="task-content-law2-img">
+            <img src="" alt="Притяжательный изафет" />
+          </div>
+        </li>
+
+        <li class="hidden">
+          <button id="task-header-law3">Относительный изафет</button>
+          <div class="task-law hidden" id="task-content-law3-img">
+            <img src="" alt="Относительный изафет" />
+          </div>
+        </li>
+
+        <li>
+          <button id="task-header-alfabet">Аффикс -ki</button>
+          <div class="slider hidden" id="task-content-alfabet">
+            <div class="slides" id="alfabet-slides">
+              <div class="slide">
+                <img src="./foto/ders17-moreinfo1.JPG" alt="Аффикс -ki" />
+              </div>
+              <div class="slide">
+                <img src="./foto/ders17-moreinfo2.JPG" alt="Аффикс -ki" />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlides(1)">&#10095;</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- /////////////Задание 1 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 1. Давайте заполним следующие пробелы формами -DAkİ ve –kİ
+      </div>
+      <div class="task-content hidden">
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Geceleri uyuyamıyorum. Alt kat</p>
+              <select class="answer-select" data-correct="taki">
+                <option value="">--Выберите ответ--</option>
+                <option value="ki">ki</option>
+                <option value="kü">kü</option>
+                <option value="taki">taki</option>
+                <option value="deki">deki</option>
+              </select>
+              <p>komşum çok ses yapıyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Sınıf</p>
+              <select class="answer-select" data-correct="taki">
+                <option value="">--Выберите ответ--</option>
+                <option value="ki">ki</option>
+                <option value="kü">kü</option>
+                <option value="taki">taki</option>
+                <option value="deki">deki</option>
+              </select>
+              <p>herkes öğretmeni dinliyor.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Yarın</p>
+              <select class="answer-select" data-correct="ki">
+                <option value="">--Выберите ответ--</option>
+                <option value="ki">ki</option>
+                <option value="kü">kü</option>
+                <option value="taki">taki</option>
+                <option value="deki">deki</option>
+              </select>
+              <p>toplantıya katılıyor musun?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Dergi</p>
+              <select class="answer-select" data-correct="deki">
+                <option value="">--Выберите ответ--</option>
+                <option value="ki">ki</option>
+                <option value="kü">kü</option>
+                <option value="taki">taki</option>
+                <option value="deki">deki</option>
+              </select>
+              <p>resimlere bakıyorum.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Bengü’nün yanında</p>
+              <select class="answer-select" data-correct="ki">
+                <option value="">--Выберите ответ--</option>
+                <option value="ki">ki</option>
+                <option value="kü">kü</option>
+                <option value="taki">taki</option>
+                <option value="deki">deki</option>
+              </select>
+              <p>kız kim?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Bugün</p>
+              <select class="answer-select" data-correct="kü">
+                <option value="">--Выберите ответ--</option>
+                <option value="ki">ki</option>
+                <option value="kü">kü</option>
+                <option value="taki">taki</option>
+                <option value="deki">deki</option>
+              </select>
+              <p>derse geldin mi?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Benim elbisem kırmızı, senin</p>
+              <select class="answer-select" data-correct="ki">
+                <option value="">--Выберите ответ--</option>
+                <option value="ki">ki</option>
+                <option value="kü">kü</option>
+                <option value="taki">taki</option>
+                <option value="deki">deki</option>
+              </select>
+              <p>ne renk?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Bugün benim dersim az, ya senin</p>
+              <select class="answer-select" data-correct="ki">
+                <option value="">--Выберите ответ--</option>
+                <option value="ki">ki</option>
+                <option value="kü">kü</option>
+                <option value="taki">taki</option>
+                <option value="deki">deki</option>
+              </select>
+              <p>?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Lale’nin saçları uzun, Deniz’in</p>
+              <select class="answer-select" data-correct="ki">
+                <option value="">--Выберите ответ--</option>
+                <option value="ki">ki</option>
+                <option value="kü">kü</option>
+                <option value="taki">taki</option>
+                <option value="deki">deki</option>
+              </select>
+              <p>kısa.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Benim evim senin</p>
+              <select class="answer-select" data-correct="ki">
+                <option value="">--Выберите ответ--</option>
+                <option value="ki">ki</option>
+                <option value="kü">kü</option>
+                <option value="taki">taki</option>
+                <option value="deki">deki</option>
+              </select>
+              <p>gibi büyük değil.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 2 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 2. Давайте преобразуем следующие предложения в одно предложение
+        с аффиксами -DAki и -ki (Писать с большой буквы).
+      </div>
+      <div class="task-content write hidden">
+        <form id="text-form-47">
+          <ul>
+            <li class="inline">
+              <p><span>ПРИМЕР:</span></p>
+            </li>
+
+            <li class="inline">
+              <p>Sınıfta öğrenciler var. Onlar Türkçe öğreniyorlar.</p>
+            </li>
+
+            <li class="inline">
+              <p>Sınıftaki öğrenciler Türkçe öğreniyor.</p>
+            </li>
+
+            <li class="inline">
+              <p>Parkta bir çocuk var. O çok yaramazdır.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word754"></label>
+              <input type="text" id="word754" name="word754" />
+              <p>çocuk çok yaramazdır.</p>
+            </li>
+
+            <li class="inline">
+              <p>Evde bir çalışma odam var. O çok küçük.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word755"></label>
+              <input type="text" id="word755" name="word755" />
+              <p>çalışma odam çok küçük.</p>
+            </li>
+
+            <li class="inline">
+              <p>Dün ders vardı. O derste çok çalıştım.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word756"></label>
+              <input type="text" id="word756" name="word756" />
+              <p>derste çok çalıştım.</p>
+            </li>
+
+            <li class="inline">
+              <p>Türkçe kursunda bir öğretmen var. O çok iyidir.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word757">Türkçe </label>
+              <input type="text" id="word757" name="word757" />
+              <p>öğretmen çok iyi.</p>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="../ders16/ders16-4test.html"> <button>Назад</button></a>
+
+      <a href="./ders17-2.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <script src="../slider-foto.js"></script>
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <script src="../more-materials.js"></script>
+  </body>
+</html>

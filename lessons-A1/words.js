@@ -2730,5 +2730,178 @@ const wordsSets = {
             translation: "адвокат",
             image: "./foto/avukat.jpg"
         }
+    ],
+    set18: [
+        {
+            word: "alt",
+            translation: "нижний",
+            image: "./foto/alt.webp"
+        },
+        {
+            word: "kat",
+            translation: "этаж",
+            image: "./foto/kat.webp"
+        },
+        {
+            word: "komşu",
+            translation: "сосед",
+            image: "./foto/komsu.jpg"
+        },
+        {
+            word: "yarın",
+            translation: "завтра",
+            image: "./foto/yarın.jpg"
+        },
+        {
+            word: "dergi",
+            translation: "журнал",
+            image: "./foto/dergi.jpg"
+        },
+        {
+            word: "yaramaz",
+            translation: "непослушный",
+            image: "./foto/yaramaz.jpg"
+        },
+        {
+            word: "karşısında",
+            translation: "напротив",
+            image: "./foto/karsısında.webp"
+        },
+
+        {
+            word: "arasında",
+            translation: "между",
+            image: "./foto/arasında.jpg"
+        },
+        {
+            word: "arkasında",
+            translation: "за",
+            image: "./foto/arkasında.jpg"
+        },
+        {
+            word: "sağında",
+            translation: "справа",
+            image: "./foto/sagında.jpg"
+        },
+
+        {
+            word: "solunda",
+            translation: "слева",
+            image: "./foto/solunda.jpg"
+        },
+        {
+            word: "önünde",
+            translation: "перед",
+            image: "./foto/onunde.jpg"
+        },
+        {
+            word: "üstünde",
+            translation: "на",
+            image: "./foto/ustunde.jpg"
+        },
+        {
+            word: "içinde",
+            translation: "в, внутри",
+            image: "./foto/icinde.jpg"
+        },
+        {
+            word: "dışında",
+            translation: "снаружи",
+            image: "./foto/dısında.jpg"
+        },
+        {
+            word: "altında",
+            translation: "под",
+            image: "./foto/altında.jpg"
+        },
+        {
+            word: "üzerinde",
+            translation: "над",
+            image: "./foto/uzerinde.jpg"
+        },
+
+        {
+            word: "köşesinde",
+            translation: "в углу",
+            image: "./foto/kosesinde.jpg"
+        },
+        {
+            word: "ortasında",
+            translation: "по середине",
+            image: "./foto/ortasında.jpg"
+        },
+        {
+            word: "yol",
+            translation: "путь",
+            image: "../not-image.png"
+        },
+        {
+            word: "kıta",
+            translation: "материк",
+            image: "./foto/kıta.jpg"
+        },
+        {
+            word: "bulunmak",
+            translation: "находиться",
+            image: "./foto/bulunmak.jpg"
+        },
+
+        {
+            word: "kuzey",
+            translation: "север",
+            image: "./foto/kuzey.jpg"
+        },
+        {
+            word: "güney",
+            translation: "юг",
+            image: "./foto/guney.jpg"
+        },
+        {
+            word: "batı",
+            translation: "запад",
+            image: "./foto/batı.jpg"
+        },
+        {
+            word: "doğu",
+            translation: "восток",
+            image: "./foto/dogu.jpg"
+        },
+        {
+            word: "ılık",
+            translation: "тепло",
+            image: "./foto/ılık.webp"
+        },
+        {
+            word: "tarım",
+            translation: "сельское хозяйство",
+            image: "./foto/tarım.jpg"
+        },
+        {
+            word: "yağışlı",
+            translation: "дождливый",
+            image: "./foto/yagıslı.jpg"
+        },
+
+        {
+            word: "doğa",
+            translation: "природа",
+            image: "./foto/doga.jpg"
+        },
+        {
+            word: "güzellik",
+            translation: "красота",
+            image: "./foto/guzellik.jpg"
+        },
+
+        {
+            word: "deniz kenarı",
+            translation: "морской берег",
+            image: "./foto/deniz kenarı.jpg"
+        },
+        {
+            word: "cennet",
+            translation: "рай",
+            image: "./foto/cennet.jpg"
+        }
     ]
 };

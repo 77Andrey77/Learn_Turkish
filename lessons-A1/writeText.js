@@ -198,21 +198,31 @@ const correctWordsSets = [
                  ['Arabanın', 'Kapısı', 'Evin', 'Adresi', 'Filmin', 'Adı', 'Okulun', 'Bahçesi', "Moskova'nın", 'Metrosu', "Türkiye'nin", 'Başkenti', 'Otobüsün', 'Numarası', "Antalya'nın", 'Sahilleri', 'Gömleğin', 'Fiyatı', 'Şehrin', 'Havası'],
 //ders16-t2  40(    585         586       587      588       589     590     591       592        593            594         595           596          597         598         599            600          601         602       603      604                    )                
                  
-                 ['','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '','', '',''],
-//ders16-t3  41(               
+                 ['im','ım', 'im', 'm', 'im', 'm', 'im', 'mın', 'i', 'im', 'mın', 'u', 'im','im', 'im','mın', 'i','im', 'mın','sı', 'im','mın', 'si','im', 'min','sı', 'im','m', 'im','imin', 'u','im', 'im','im', 'im','nin', 'sı','im', 'im','nin', 'si','im','m', 'nin','i', 'im','ım', 'nin','i','im', 'im'],
+//ders16-t3  41(  605  606    607  608  609   610  611   612    613   614   615   616   617 618   619  620    621  622   623   624   625  626    627  628  629  630    631  632   633   634   635  636   637  638  639   640    641  642  643   644    645  646  647  648  649  650  651   652   653  654   655   
                  
                  ['Arkadaşımın', 'Bisikleti', 'Onun', 'Eşi', 'Bu', 'Okulun', 'Girişi', 'Ablanın', 'Işi', 'Annemin', 'Çantası', 'Evimizin', 'Bahçesi'],
-//ders16-t4  42(    
+//ders16-t4  42(    656              657         658   659   660     661        662      663       664      665       666         667       668
 
                  ['sında', 'ın', 'sından', 'inden', 'sinde', 'ın', 'ine', 'ine', 'ın', 'ini', 'inde', 'una', 'ını' ],
-//ders16-t6  43 ( 
+//ders16-t6  43 (  669      670     671      672      673     674    675   676    677   678    679     680     681
 
-                 ['in', 'inizin', 'ini', 'im', 'ımın', 'ından', 'in', 'nin', 'sına', 'im', 'imizin', 'sinde', 'nun', 'inin', 'ini', 'ın', 'sinin', 'ı', 'im', 'muzun', 'inin', 'undan', 'nin', 'inin', 'undan', 'e', '', '', '', 'ı', 'im', 'imizin', 'ının', 'ini'],
-//ders16-t7  44 (      
+                 ['in', 'inizin', 'ini', 'im', 'ımın', 'ından', 'in', 'nin', 'sına', 'im', 'imizin', 'sinde', 'nun', 'inin', 'ini', 'ın', 'sinin', 'ı', 'im', 'muzun', 'inin', 'undan', 'nin', 'inin', 'undan', 'e', 'im', 'min', 'ının', 'ı', 'im', 'imizin', 'ının', 'ini'],
+//ders16-t7  44 ( 681    692       693    694    695    696      697    698    699    700    701       702     703     704     705   706    707     708   709   710      711     712     713     714     715     716   717  718    719    720   721   722       723      724     
 
                 ['arabamın', 'kapısı', 'dolabının', 'rengi', 'okulumuzun', 'bahçesi', 'evinizin', 'çatısı', 'kitabının', 'sayfaları'],
-//ders16-t8 45 (                 
+//ders16-t8 45 (  715          716       717         718        719          720          721        722       723         724               
                  
+                   ['im', 'nun', 'ın', 'sı', 'ın', 'sının', 'sı', 'ın', 'sı', 'ın', 'si', 'ın', 'si', 'ın', 'sinin', 'i', 'ın', 'sinin', 'i', 'ın', 'inde', 'ın', 'sı', 'sının', 'sı', 'sının', 'i', 'ın', 'sına'],
+//ders16-p2read 46( 725   726     727   728  729    730      731   732   733   734   735   736   737   738  739      740  741     742    743   744   745     746   747     748    749    750    751   752   753             )              
+                
+                  ['Parktaki', 'Evdeki', 'Dünkü', 'Kursundaki'],
+//ders17-t2  47(  754           755       756        757           )       
+
+                  ['arkasında', 'köşesinde', 'yanında', 'karşısında', 'önünde'],
+//ders17-t3  48(      758          759          760         761         762           
+                  
+                   
 ] ;
 
         function checkWord(correctWords) {

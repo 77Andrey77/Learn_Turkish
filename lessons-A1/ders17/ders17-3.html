@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_17</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 17 (NEREDE?)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders17.html"
+            ><button>Словообразовательный аффикс - ki</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders17-2.html"
+            ><button>Пространственные предлоги</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders17-3.html"><button class="active">Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders17-4.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders17-5test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Словообразовательный аффикс - ki. На уроке вы научитесь делать из
+      существительных прилагательные. Ещё плюс миллион баллов к вашему
+      словарному запасу и красноречию.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set18"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/alt.webp" alt="alt" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- ////////////ЧТЕНИЕ///////////// -->
+
+    <section class="task-section">
+      <div class="task-header">ЧТЕНИЕ</div>
+      <div class="task-content write hidden">
+        <ul>
+          <li class="inline">
+            <p>TÜRKİYE</p>
+          </li>
+
+          <li class="inline">
+            <p>
+              Türkiye, Asya ve Avrupa kıtasını birbirine bağlıyor. Türkiye’de
+              yaklaşık 75 milyon insan yaşıyor. Türkiye’nin başkenti Ankara’dır.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              En kalabalık şehri İstanbul’dur. Türkiye’de dört deniz bulunuyor.
+              Bunlar Akdeniz, Karadeniz, Ege Denizi ve Marmara Denizi’dir.
+              Akdeniz Türkiye’nin güneyinde, Karadeniz Türkiye’nin kuzeyinde,
+              Ege denizi Türkiye’nin batısında, Marmara Denizi Türkiye’nin
+              kuzeybatısındadır.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              Türkiye’nin birçok komşusu vardır. Türkiye’nin kuzeybatısındaki
+              ülkeler Yunanistan ve Bulgaristan, doğusundaki ülkeler İran ve
+              Ermenistan, kuzeydoğusundaki ülke Gürcistan, güneyindeki ülke
+              Suriye, güneydoğusundaki ülke Irak’tır.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              Türkiye’nin yedi bölgesi bulunuyor. Bunlar: Marmara, İç Anadolu,
+              Ege, Karadeniz, Akdeniz, Doğu Anadolu, Güneydoğu Anadolu
+              Bölgesidir. Bu bölgelerin dördü adını denizlerden üçü adını
+              yerlerinden alıyor.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              Marmara Bölgesi, Türkiye’deki en kalabalık bölgedir. İstanbul
+              bölgenin içindedir. Burası yazları sıcak, kışları ılık oluyor. Bu
+              bölge Türkiye’nin endüstri bölgesidir.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              İç Anadolu Bölgesi Türkiye’nin ortasındadır. Türkiye’nin başkenti
+              Ankara bu bölgededir. Burada yazları sıcak, kışları soğuk ve
+              karlıdır. Burada insanlar genellikle tarım yapıyor.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              Ege Bölgesi Türkiye’nin batısındadır. İzmir bu bölgededir. Burada
+              hava Marmara Bölgesi’ndeki gibidir. Bu bölgede zeytincilik çok
+              meşhurdur.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              Karadeniz Bölgesi Türkiye’nin kuzeyindedir. Burası çok yağışlı bir
+              bölgedir. Bunun için burada çok orman ve doğa güzellikleri vardır.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              Akdeniz Bölgesi Türkiye’nin güneyindedir. Burası dağlık bir
+              bölgedir. Burada insanlar genellikle deniz kenarındaki bölgelerde
+              yaşıyor. Türkiye’nin turizm cenneti Antalya bu bölgededir.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              Doğu Anadolu Bölgesi Türkiye’nin en büyük ve en dağlık bölgesidir.
+              Burada kışlar çok soğuktur. İnsanlar burada genellikle hayvancılık
+              yapıyor.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              Güneydoğu Anadolu Bölgesi Türkiye’deki en küçük ve en sıcak
+              bölgedir. Buradaki insanlar da İç Anadolu’dakiler gibi tarım
+              yapıyorlar.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 6 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 6. Давайте отметим есть (Var) или нет (Yок) информация в тексте
+        выше
+      </div>
+      <div class="task-content hidden">
+        <img src="./foto/ders17-p3-read.jpg" alt="ders17-p3 read" />
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>Türkiye’nin kuzeyinde hangi deniz var?</p>
+              <select class="answer-select" data-correct="Var">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yок">Yок</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Türkiye’de kaç bölge var?</p>
+              <select class="answer-select" data-correct="Var">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yок">Yок</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Karadeniz Bölgesi’ndeki insanlar genellikle ne iş yapıyor?</p>
+              <select class="answer-select" data-correct="Yок">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yок">Yок</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Akdeniz Bölgesi’ndeki hava nasıldır?</p>
+              <select class="answer-select" data-correct="Yок">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yок">Yок</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Doğu Anadolu Bölgesi’ndeki en meşhur şehir neresidir?</p>
+              <select class="answer-select" data-correct="Yок">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yок">Yок</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Türkiye’nin komşuları hangi ülkelerdir?</p>
+              <select class="answer-select" data-correct="Var">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yок">Yок</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Türkiye’nin kuzeyinde hangi ülke var?</p>
+              <select class="answer-select" data-correct="Yок">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yок">Yок</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ankara, Türkiye’nin neresindedir?</p>
+              <select class="answer-select" data-correct="Var">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yок">Yок</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Türkiye’nin en kalabalık bölgesi neresidir?</p>
+              <select class="answer-select" data-correct="Var">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yок">Yок</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Türkiye’de kaç şehir var?</p>
+              <select class="answer-select" data-correct="Yок">
+                <option value="">--Выберите ответ--</option>
+                <option value="Var">Var</option>
+                <option value="Yок">Yок</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders17-2.html"> <button>Назад</button></a>
+
+      <a href="./ders17-4.html"> <button>Далее</button></a>
+    </div>
+
+    <!-- <script src="../writeText.js"></script> -->
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>
