@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_18</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 18 (VÜCUDUMUZ)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders18.html"
+            ><button>Степени сравнения прилагательных</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders18-2.html"><button class="active">Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders18-3.html"><button>Аудирование</button></a>
+        </li>
+
+        <li>
+          <a href="./ders18-4test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Сравнительная степень прилагательных. На уроке вы научитесь говорить о то,
+      что лучше, а что самое лучшее. Ваш язык станет еще легче и богаче.
+      Попробуйте описать наш курс после изучения основных правил.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set19"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/ilac.jpg" alt="ilac" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////video//////////// -->
+
+    <!-- <iframe
+      width="640"
+      height="400"
+      src="https://www.youtube.com/watch?v=u179ssScQ3c"
+      frameborder="0"
+      allowfullscreen
+    ></iframe> -->
+    <!-- <div class="section-wrapper">
+      <iframe
+        class="ders1-video"
+        width="845"
+        height="475"
+        src="https://www.youtube.com/embed/u179ssScQ3c"
+        title="Эпичный прыжок )"
+        frameborder="0"
+        allow=""
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div> -->
+
+    <!-- ////////////ЧТЕНИЕ///////////// -->
+
+    <section class="task-section">
+      <div class="task-header">ЧТЕНИЕ</div>
+      <div class="task-content write hidden">
+        <img src="./foto/ders18-p2-read.jpg" alt="ders18-p2-read" />
+        <ul style="width: 600px">
+          <li class="inline">
+            <p><span>VÜCUDUMUZ</span></p>
+          </li>
+
+          <li class="inline">
+            <p>
+              Merhaba, benim adım Ahmet. Ben 13 yaşındayım. Beyaz tenliyim. Orta
+              boyluyum ve 60 kiloyum. Benim saçlarım siyah ve kısadır. Alnım
+              dar; kulaklarım, burnum ve ağzım küçüktür. Ayak ve el bileklerim
+              ince; parmaklarım uzundur. Kaşlarım siyah, gözlerim mavidir. Benim
+              bir ağabeyim var. O 16 yaşında. O benden büyük ama ben ondan daha
+              uzunum. Herkes beni onun ağabeyi sanıyor.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              Ben her gün dışarıda oyun oynuyorum ve terli terli su içiyorum.
+              Meyve ve sebzeleri sevmiyorum. Hamburger ve cipse bayılıyorum.
+              Sağlığıma hiç dikkat etmiyorum. Bu yüzden annem bana çok kızıyor.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              Ama ben şimdi hastayım ve yatıyorum. Çok öksürüyorum, burnum
+              akıyor ve biraz ateşim var. Galiba gribim. Her yerim ağrıyor.
+              Başım, boynum, omuzlarım, kollarım, bacaklarım, bileklerim,
+              göğsüm, dizlerim, midem… En çok da ciğerlerim. İyileşmek için
+              ilaçlarımı içiyorum ve dinleniyorum. Dengeli besleniyorum, bol bol
+              sebze ve meyve yiyorum.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              Ben şimdi okula ve parka gitmiyorum; çünkü evde yatıyorum. Evde
+              çok sıkılıyorum. Hemen iyileşmek ve arkadaşlarımla oynamak
+              istiyorum. Arkadaşlarım beni her gün ziyaret ediyorlar. Bana çiçek
+              ve kitap getiriyorlar. Bana “Bir daha hasta olma. Sağlığına daha
+              çok dikkat et!” diyorlar. Sağlığımız her şeyden daha önemli.
+              Hastalık bu dünyadaki en kötü şey.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 5 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 5. Давайте заполним пробелы ниже в соответствии с текстом
+        (Писать с маленькой буквы).
+      </div>
+      <div class="task-content write hidden">
+        <form id="text-form-51">
+          <ul>
+            <li class="inline">
+              <label for="word794">Ahmet’</label>
+              <input type="text" id="word794" name="word794" />
+              <input type="text" id="word795" name="word795" />
+              <p>siyah ve kısa.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word796">Ahmet ağabey</label>
+              <input type="text" id="word796" name="word796" />
+              <input type="text" id="word797" name="word797" />
+              <p>uzun.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word798">Ahmet </label>
+              <input type="text" id="word798" name="word798" />
+              <input type="text" id="word799" name="word799" />
+              <input type="text" id="word800" name="word800" />
+              <p>seviyor.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word801">Ahmet grip çünkü o sağlığına </label>
+              <input type="text" id="word801" name="word801" />
+              <input type="text" id="word802" name="word802" />
+              <input type="text" id="word803" name="word803" />
+            </li>
+
+            <li class="inline">
+              <label for="word804">Ahmet’in en çok </label>
+              <input type="text" id="word804" name="word804" />
+              <p>ağrıyor.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word805">Ahmet hasta, bunun için </label>
+              <input type="text" id="word805" name="word805" />
+            </li>
+
+            <li class="inline">
+              <label for="word806">Ahmet iyileşmek istiyor bunun için </label>
+              <input type="text" id="word806" name="word806" />
+              <label for="word807"> içiyor, dinleniyor, </label>
+              <input type="text" id="word807" name="word807" />
+              <p>besleniyor, bol bol sebze ve meyve yiyor.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word808">Ahmet’e göre bu dünyadaki </label>
+              <input type="text" id="word808" name="word808" />
+              <input type="text" id="word809" name="word809" />
+              <input type="text" id="word810" name="word810" />
+              <p>hastalık.</p>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 3 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 3. Давайте заполним пробелы в вопросах (Писать с большой буквы).
+      </div>
+      <div class="task-content write hidden">
+        <img src="./foto/ders18-task3.jpg" alt="ders18-task3" />
+        <form id="text-form-50">
+          <ul>
+            <li class="inline">
+              <label for="word780">Sence çiçekler</label>
+              <input class="short" type="text" id="word780" name="word780" />
+              <label for="word781">en güzel</label>
+              <input class="short" type="text" id="word781" name="word781" />
+              <p>hangisidir?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word782">Bu sınıf</label>
+              <input class="short" type="text" id="word782" name="word782" />
+              <label for="word783">en çalışkan öğrenci</label>
+              <input class="short" type="text" id="word783" name="word783" />
+              <p>kim?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word784">Dünya</label>
+              <input class="short" type="text" id="word784" name="word784" />
+              <label for="word785">en soğuk ülke</label>
+              <input class="short" type="text" id="word785" name="word785" />
+              <p>neresi?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word786">Sence en iyi sinema oyuncu</label>
+              <input class="short" type="text" id="word786" name="word786" />
+              <p>kim?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word787">Siz</label>
+              <input class="short" type="text" id="word787" name="word787" />
+              <label for="word788">ülke</label>
+              <input class="short" type="text" id="word788" name="word788" />
+              <label for="word789">en güzel şehr</label>
+              <input class="short" type="text" id="word789" name="word789" />
+              <p>neresi?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word790">Bu okul</label>
+              <input class="short" type="text" id="word790" name="word790" />
+              <label for="word791">en iyi öğretmen</label>
+              <input class="short" type="text" id="word791" name="word791" />
+              <p>kim?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word792">Türkiye’</label>
+              <input class="short" type="text" id="word792" name="word792" />
+              <label for="word793">en güzel şehr</label>
+              <input class="short" type="text" id="word793" name="word793" />
+              <p>neresidir?</p>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 4 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 4. Давайте сравним подруг и заполним пробелы, обращая внимания
+        на пункт (в скобках), по которому сравниваем
+      </div>
+      <div class="task-content hidden">
+        <img src="./foto/ders18-task4-1.png" alt="ders18-task4-1" width="400" />
+        <img src="./foto/ders18-task4-2.png" alt="ders18-task4-2" width="400" />
+        <img src="./foto/ders18-task4-3.png" alt="ders18-task4-3" width="400" />
+
+        <ul>
+          <li>
+            <div class="write-container">
+              <p><span>ПРИМЕР:</span></p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p><span>(Yaş) Selin, Demet ve Berna’dan daha genç.</span></p>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>(Boy) Selin en</p>
+              <select class="answer-select" data-correct="kısa">
+                <option value="">--Выберите ответ--</option>
+                <option value="genç">genç</option>
+                <option value="kısa">kısa</option>
+                <option value="uzun">uzun</option>
+                <option value="kilolu">kilolu</option>
+                <option value="koyu">koyu</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>(Kilo) Berna, Selin ve Demet’ten daha</p>
+              <select class="answer-select" data-correct="kilolu">
+                <option value="">--Выберите ответ--</option>
+                <option value="genç">genç</option>
+                <option value="kısa">kısa</option>
+                <option value="uzun">uzun</option>
+                <option value="kilolu">kilolu</option>
+                <option value="koyu">koyu</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>(Saç) Demet’in saçı en</p>
+              <select class="answer-select" data-correct="uzun">
+                <option value="">--Выберите ответ--</option>
+                <option value="genç">genç</option>
+                <option value="kısa">kısa</option>
+                <option value="uzun">uzun</option>
+                <option value="kilolu">kilolu</option>
+                <option value="koyu">koyu</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>(Ten) Berna’nın ten rengi daha</p>
+              <select class="answer-select" data-correct="koyu">
+                <option value="">--Выберите ответ--</option>
+                <option value="genç">genç</option>
+                <option value="kısa">kısa</option>
+                <option value="uzun">uzun</option>
+                <option value="kilolu">kilolu</option>
+                <option value="koyu">koyu</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>(Yaş) Demet Berna’dan daha</p>
+              <select class="answer-select" data-correct="genç">
+                <option value="">--Выберите ответ--</option>
+                <option value="genç">genç</option>
+                <option value="kısa">kısa</option>
+                <option value="uzun">uzun</option>
+                <option value="kilolu">kilolu</option>
+                <option value="koyu">koyu</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders18.html"> <button>Назад</button></a>
+
+      <a href="./ders18-3.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

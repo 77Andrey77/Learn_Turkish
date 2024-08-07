@@ -2903,5 +2903,206 @@ const wordsSets = {
             translation: "рай",
             image: "./foto/cennet.jpg"
         }
+    ],
+    set19: [
+      {
+            word: "ilaç",
+            translation: "лекарство",
+            image: "./foto/ilac.jpg"
+        },  
+         {
+            word: "bas",
+            translation: "голова",
+            image: "./foto/bas.webp"
+        }, 
+          {
+            word: "burun",
+            translation: "нос",
+            image: "./foto/burun.jpg"
+        }, 
+           {
+            word: "kol",
+            translation: "рука",
+            image: "./foto/kol.jpg"
+        }, 
+            {
+            word: "kaş",
+            translation: "бровь",
+            image: "./foto/kas.jpg"
+        }, 
+             {
+            word: "yanak",
+            translation: "щека",
+            image: "./foto/yanak.jpg"
+        }, 
+              {
+            word: "ağız",
+            translation: "рот",
+            image: "./foto/agız.jpg"
+        }, 
+               {
+            word: "kulak",
+            translation: "ухо",
+            image: "./foto/kulak.webp"
+        }, 
+                {
+            word: "boğaz",
+            translation: "горло",
+            image: "./foto/bogaz.jpg"
+        }, 
+         {
+            word: "parmak",
+            translation: "палец",
+            image: "./foto/parmak.jpg"
+        }, 
+          {
+            word: "öksürük",
+            translation: "кашель",
+            image: "./foto/oksuruk.webp"
+        }, 
+           {
+            word: "acımak",
+            translation: "болеть",
+            image: "./foto/acımak.jpg"
+        }, 
+            {
+            word: "kaşınmak",
+            translation: "чесаться",
+            image: "./foto/kasnmak.jpg"
+        }, 
+             {
+            word: "kırık",
+            translation: "сломанный",
+            image: "./foto/kırık.webp"
+        }, 
+              {
+            word: "burnum akıyor",
+            translation: "нос течет",
+            image: "./foto/burnum akıyor.webp"
+        }, 
+               {
+            word: "kalabalık",
+            translation: "многолюдно",
+            image: "./foto/kalabalık.jpg"
+        }, 
+         {
+            word: "kilolu",
+            translation: "полный (о человеке)",
+            image: "./foto/kilolu.jpg"
+        }, 
+
+         {
+            word: "koyu",
+            translation: "темный",
+            image: ""
+        }, 
+         {
+            word: "vücut",
+            translation: "тело",
+            image: "./foto/vucut.jpg"
+        }, 
+         {
+            word: "alın",
+            translation: "лоб",
+            image: "./foto/alın.jpg"
+        }, 
+          {
+            word: "orta",
+            translation: "средний",
+            image: "./foto/orta.webp"
+        }, 
+          
+           {
+            word: "dar",
+            translation: "узкий",
+            image: "./foto/dar.jpg"
+        }, 
+            {
+            word: "bilek",
+            translation: "запястье",
+            image: "./foto/bilek.webp"
+        }, 
+             {
+            word: "sanmak",
+            translation: "предполагать",
+            image: "./foto/sanmak.jpg"
+        }, 
+              {
+            word: "galiba",
+            translation: "наверное",
+            image: "./foto/galiba.webp"
+        }, 
+              
+         {
+            word: "omuz",
+            translation: "плечо",
+            image: "./foto/omuz.webp"
+        }, 
+         {
+            word: "bacak",
+            translation: "нога",
+            image: "./foto/bacak.jpg"
+        }, 
+         {
+            word: "göğüs",
+            translation: "грудь",
+            image: "./foto/gogus.jpg"
+        }, 
+          {
+            word: "diz",
+            translation: "колено",
+            image: "./foto/diz.png"
+        }, 
+         {
+            word: "mide",
+            translation: "желудок",
+            image: "./foto/mide.jpg"
+        }, 
+         {
+            word: "ciğer",
+            translation: "печень",
+            image: "./foto/ciger.jpg"
+        }, 
+         {
+            word: "iyileşmek",
+            translation: "выздороветь",
+            image: "./foto/iyilesmek.jpg"
+        }, 
+         {
+            word: "sıkılmak",
+            translation: "заскучать",
+            image: "./foto/sıkılmak.jpg"
+        }, 
+         {
+            word: "ziyaret etmek",
+            translation: "навещать",
+            image: "./foto/ziyaret etmek.jpg"
+        }, 
+         {
+            word: "getirmek",
+            translation: "приносить",
+            image: "./foto/getirmek.jpg"
+        }, 
+         {
+            word: "hemen",
+            translation: "сейчас же",
+            image: "./foto/hemen.jpg"
+        }, 
+         {
+            word: "beslenmek",
+            translation: "питаться",
+            image: "./foto/beslenmek.jpg"
+        }, 
+         {
+            word: "tansiyon",
+            translation: "давление",
+            image: "./foto/tansiyon.jpg"
+        }, 
+         {
+            word: "ölçmek",
+            translation: "измерять",
+            image: "./foto/olcmek.jpg"
+        }
+         
     ]
 };

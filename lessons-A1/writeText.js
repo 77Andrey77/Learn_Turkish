@@ -220,8 +220,27 @@ const correctWordsSets = [
 //ders17-t2  47(  754           755       756        757           )       
 
                   ['arkasında', 'köşesinde', 'yanında', 'karşısında', 'önünde'],
-//ders17-t3  48(      758          759          760         761         762           
+//ders17-t3  48(      758          759          760         761         762
                   
+                  ['Dan', 'Daha', 'En', 'Dan', 'Daha', 'Dan', 'Daha', 'Dan', 'Daha', 'Nın', 'En', 'Dan', 'Daha', 'Daha', 'Nden', 'Daha', 'En'],
+//ders18-t2  49(    763     764    765    766    767     768     769   770     771    772   773    774    775     776      777    778     779
+
+                  [' In', 'I', 'İn', 'Si', 'Nın', 'Si', 'Su', 'In', 'Nizin', 'I', 'Un', 'I', 'Nin', 'I'],
+//ders18-t3  50(     780   781  782   783   784   785    786  787     788    789  790   791  792    793      
+
+                   ['in', 'saçları', 'inden', 'daha', 'hamburgeri', 've', 'cipsi', 'hiç', 'dikkat', 'etmiyor', 'ciğerleri', 'yatıyor', 'ilaçlarını', 'dengeli', 'en', 'kötü', 'şey'],
+//ders18-t5  51(    794     795       796       797      798         799    800      801     802     803         804           805         806          807      808     809     810    
+
+                   ['reçetedeki', 'ilaçlarınız', 'ağrı', 'tok', 'güçlü', 'öksürük', 'defa', 'başım', 'yüksek', 'ılaçlarınız'],
+//ders18-t6  52(         811           812         813     814    815      816       817      818       819       820
+
+                   ['imin', 'inde', 'in', 'ine', 'ınım', 'inden', 'ın', 'sının', 'i', 'imin', 'una', 'ın', 'ü', 'nun', 'inde', 'ın', 'nın', 'ünde', 'nın', 'i'],
+//test6-t1  53(       821
+
+                  ['daki', 'ki', 'kü', 'deki', 'daki', 'deki', 'ki', 'deki', 'kü', 'taki'],
+//test6-t2  54(      841            
+
+
                    
 ] ;
 

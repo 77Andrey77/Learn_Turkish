@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERS_18</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">DERS 18 (VÜCUDUMUZ)</h3>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./ders18.html"
+            ><button>Степени сравнения прилагательных</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders18-2.html"><button>Чтение</button></a>
+        </li>
+
+        <li>
+          <a href="./ders18-3.html"
+            ><button class="active">Аудирование</button></a
+          >
+        </li>
+
+        <li>
+          <a href="./ders18-4test.html"><button>Итоговый тест</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="text-description">
+      Сравнительная степень прилагательных. На уроке вы научитесь говорить о то,
+      что лучше, а что самое лучшее. Ваш язык станет еще легче и богаче.
+      Попробуйте описать наш курс после изучения основных правил.
+    </p>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set19"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="./foto/ilac.jpg" alt="ilac" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////video//////////// -->
+
+    <!-- <iframe
+      width="640"
+      height="400"
+      src="https://www.youtube.com/watch?v=u179ssScQ3c"
+      frameborder="0"
+      allowfullscreen
+    ></iframe> -->
+    <!-- <div class="section-wrapper">
+      <iframe
+        class="ders1-video"
+        width="845"
+        height="475"
+        src="https://www.youtube.com/embed/u179ssScQ3c"
+        title="Эпичный прыжок )"
+        frameborder="0"
+        allow=""
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div> -->
+
+    <!-- /////////////audio//////////// -->
+
+    <img
+      class="icon-headphones"
+      src="../../icons/icon-headphones.svg"
+      alt="icon-headphones"
+    />
+    <p class="title-audio">АУДИРОВАНИЕ</p>
+    <div class="section-wrapper">
+      <audio
+        src="../../audio/ders18-page3.m4a"
+        width="640"
+        controls
+        loop
+        preload="none"
+      ></audio>
+    </div>
+
+    <!-- ////////////ЧТЕНИЕ///////////// -->
+
+    <section class="task-section">
+      <div class="task-header">Текст аудио</div>
+      <div class="task-content write hidden">
+        <ul>
+          <li class="inline">
+            <p><span>Eczacı:</span>Merhaba hoş geldiniz!</p>
+          </li>
+
+          <li class="inline">
+            <p>
+              <span>Sibel Hanım: </span>Merhaba hoş bulduk. Reçetedeki bu
+              ilaçları almak istiyorum. Buyurun.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              <span>Eczacı:</span>Tamam ben ilaçlarınız var mı, bir bakayım.
+              İlaçlarınızın tamamı var. Burada 3 tane ilaç var. Biri ağrı
+              kesici, bunu sabah akşam tok karnına içiyorsunuz. Bir tanesi soğuk
+              algınlığınız için antibiyotik. Bu antibiyotik en güçlü
+              antibiyotiklerden biridir, bunu 12 saatte bir içiyorsunuz. Daha
+              fazlasını almıyorsunuz. Burada bir de öksürük şurubunuz var. Bunu
+              günde 3 defa yemeklerden sonra içiyorsunuz.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              <span>Sibel Hanım: </span> Peki. Benim biraz başım dönüyor.
+              Tansiyonumu ölçebilir misiniz?
+            </p>
+          </li>
+
+          <li class="inline">
+            <p><span>Eczacı:</span>Tabiki. Tansiyonunuz biraz yüksek.</p>
+          </li>
+
+          <li class="inline">
+            <p>
+              <span>Sibel Hanım: </span>Hastalık yüzünden sanırım. İki gündür
+              uyumuyorum.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p>
+              <span>Eczacı:</span>Biraz burada dinlenin. Daha iyi olacaksınız.
+              İlaçlarınız burada. Geçmiş olsun.
+            </p>
+          </li>
+
+          <li class="inline">
+            <p><span>Sibel Hanım: </span>Teşekkür ederim.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 6 без картин//////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        Задание 6. Давайте послушаем аудио и заполним пробелы (Писать с
+        маленькой буквы).
+      </div>
+      <div class="task-content write hidden">
+        <img src="./foto/ders18-task6.jpg" alt="ders18-task6" />
+        <form id="text-form-52">
+          <ul>
+            <li class="inline">
+              <p><span>Eczacı: </span> Merhaba hoş geldiniz!</p>
+            </li>
+            <li class="inline">
+              <label for="word811"
+                ><span>Sibel Hanım: </span> Merhaba hoş bulduk</label
+              >
+              <input type="text" id="word811" name="word811" />
+              <p>bu ilaçları almak istiyorum. Buyurun.</p>
+            </li>
+
+            <li class="inline" style="flex-wrap: wrap">
+              <label for="word812"><span>Eczacı: </span> Tamam ben </label>
+              <input type="text" id="word812" name="word812" />
+              <label for="word813"
+                >var mı, bir bakayım. Tamam ilaçlarınızın tamamı var. Burada 3
+                tane ilaç var. Biri</label
+              >
+              <input type="text" id="word813" name="word813" />
+              <label for="word814">kesici, bunu sabah akşam </label>
+              <input type="text" id="word814" name="word814" />
+              <label for="word815"
+                >karnına içiyorsunuz. Bir tanesi soğuk algınlığınız için
+                antibiyotik. Bu antibiyotik en</label
+              >
+              <input type="text" id="word815" name="word815" />
+              <label for="word816"
+                >antibiyotiklerden biridir, bunu 12 saatte bir içiyorsunuz. Daha
+                fazlasını almıyorsunuz. Burada bir de</label
+              >
+              <input type="text" id="word816" name="word816" />
+              <label for="word817"> şurubunuz var. Bunu günde 3 </label>
+              <input type="text" id="word817" name="word817" />
+              <p>yemeklerden sonra içiyorsunuz.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word818"
+                ><span>Sibel Hanım: </span> Peki. Benim biraz</label
+              >
+              <input type="text" id="word818" name="word818" />
+              <p>dönüyor. Tansiyonumu ölçebilir misiniz?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word819"
+                ><span>Eczacı: </span> Tabiki. Tansiyonunuz biraz</label
+              >
+              <input type="text" id="word819" name="word819" />
+            </li>
+
+            <li class="inline">
+              <p>
+                <span>Sibel Hanım: </span> Hastalık yüzünden sanırım. İki gündür
+                iyi uyumuyorum.
+              </p>
+            </li>
+
+            <li class="inline">
+              <label for="word820"
+                ><span>Eczacı: </span> Biraz burada dinlenin. Daha iyi
+                olacaksınız.</label
+              >
+              <input type="text" id="word820" name="word820" />
+              <p>burada. Geçmiş olsun.</p>
+            </li>
+
+            <li class="inline">
+              <p><span>Sibel Hanım: </span> Teşekkür ederim.</p>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="./ders18-2.html"> <button>Назад</button></a>
+
+      <a href="./ders18-4test.html"> <button>Далее</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../many-foto-slider.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>

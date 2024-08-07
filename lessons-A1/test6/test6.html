@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST 6</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../lessons-A1/style_levelA1_lesson.css" />
+    <style>
+      table {
+        width: 600px;
+        height: 200px;
+        border-collapse: collapse;
+        margin: 30px;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img src="../../logo.png" alt="logo" /> -->
+    <a class="icon-at-home" href="../../index.html"
+      ><img
+        src="../../icons/icon-at-home.svg"
+        alt="Вернутся на главную страницу"
+    /></a>
+    <a class="icon-at-home" href="../../index_levelA1.html">Level A1 </a>
+
+    <h3 class="titel-ders">TEST 6</h3>
+
+    <!-- ////////////Словарный тренажер///////////// -->
+
+    <div class="section-wrapper hidden">
+      <button class="trainer-button" id="task-header-trainer">
+        Словарный тренажер
+      </button>
+    </div>
+
+    <div
+      class="task-content-trainer hidden"
+      id="task-content-trainer"
+      data-set="set4"
+    >
+      <div id="card" class="card" onclick="flipCard()">
+        <div class="word">Да</div>
+        <div class="translation hidden">evet</div>
+        <div class="image hidden">
+          <img class="item-img" src="../not-image.png" alt="akraba" />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevWord()">Предыдущее</button>
+        <button onclick="nextWord()">Следующее</button>
+      </div>
+    </div>
+
+    <!-- /////////////Задание 1 без картинками//////////// -->
+    <section class="task-section">
+      <div class="task-header">
+        1. Давайте заполним пробелы ниже соответствующими аффиксами(Начинать с
+        маленькой буквы)
+      </div>
+      <div class="task-content hidden">
+        <img src="./test6-task1.jpg" alt="test6-task1" />
+
+        <form id="text-form-53">
+          <ul>
+            <li class="inline">
+              <label for="word821">Eş</label>
+              <input class="short" type="text" id="word821" name="word821" />
+              <label for="word822">ofis</label>
+              <input class="short" type="text" id="word822" name="word822" />
+              <p>çalışıyoruz.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word823">Deniz’</label>
+              <input class="short" type="text" id="word823" name="word823" />
+              <label for="word824">bebeğ</label>
+              <input class="short" type="text" id="word824" name="word824" />
+              <p>bakıyorum.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word825">Arkadaş</label>
+              <input class="short" type="text" id="word825" name="word825" />
+              <label for="word826">köpeğ</label>
+              <input class="short" type="text" id="word826" name="word826" />
+              <p>korkuyorum.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word827">O kız</label>
+              <input class="short" type="text" id="word827" name="word827" />
+              <label for="word828">ayakkabı</label>
+              <input class="short" type="text" id="word828" name="word828" />
+              <label for="word829">model</label>
+              <input class="short" type="text" id="word829" name="word829" />
+              <p>çok güzel.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word830">Yarın kardeş</label>
+              <input class="short" type="text" id="word830" name="word830" />
+              <label for="word831">okul</label>
+              <input class="short" type="text" id="word831" name="word831" />
+              <p>gidiyorum.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word832">Onlar</label>
+              <input class="short" type="text" id="word832" name="word832" />
+              <label for="word833">otobüs</label>
+              <input class="short" type="text" id="word833" name="word833" />
+              <p>iki saat sonra geliyor.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word834">O</label>
+              <input class="short" type="text" id="word834" name="word834" />
+              <label for="word835">ev</label>
+              <input class="short" type="text" id="word835" name="word835" />
+              <p>havuz var.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word836">Çocuklar</label>
+              <input class="short" type="text" id="word836" name="word836" />
+              <p>hiç kitabı yok.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word837">Masa</label>
+              <input class="short" type="text" id="word837" name="word837" />
+              <label for="word838">üst</label>
+              <input class="short" type="text" id="word838" name="word838" />
+              <p>neler var?</p>
+            </li>
+
+            <li class="inline">
+              <label for="word839">Semra’</label>
+              <input class="short" type="text" id="word839" name="word839" />
+              <label for="word840">saat</label>
+              <input class="short" type="text" id="word840" name="word840" />
+              <p>yeni mi?</p>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- /////////////Задание 2 без картинками//////////// -->
+    <section class="task-section">
+      <div class="task-header">
+        2. Давайте заполним пробелы ниже аффиксами –DAki и -kİ (Начинать с
+        маленькой буквы)
+      </div>
+      <div class="task-content hidden">
+        <img src="./test6-task2.jpg" alt="test6-task2" />
+
+        <form id="text-form-54">
+          <ul>
+            <li class="inline">
+              <label for="word841">Benim çantam</label>
+              <input class="short" type="text" id="word841" name="word841" />
+              <p>kitaplar çok ilginç.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word842">Berna’nın okulu Merter’de Aynur’un</label>
+              <input class="short" type="text" id="word842" name="word842" />
+              <p>Fatih’te.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word843">Bugün</label>
+              <input class="short" type="text" id="word843" name="word843" />
+              <p>derse geliyorum.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word844">Ben</label>
+              <input class="short" type="text" id="word844" name="word844" />
+              <p>kitap Ahmet’in.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word845">Mağaza</label>
+              <input class="short" type="text" id="word845" name="word845" />
+              <p>elbise çok güzel.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word846">Ev</label>
+              <input class="short" type="text" id="word846" name="word846" />
+              <p>koltukları değiştirmek istiyorum.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word847">Akşam</label>
+              <input class="short" type="text" id="word847" name="word847" />
+              <p>dizi çok güzeldi.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word848">İzmir’</label>
+              <input class="short" type="text" id="word848" name="word848" />
+              <p>evimi satıyorum.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word849">Ömer dün</label>
+              <input class="short" type="text" id="word849" name="word849" />
+              <p>ödevini yapmadı.</p>
+            </li>
+
+            <li class="inline">
+              <label for="word850">Öğretmen sınıf</label>
+              <input class="short" type="text" id="word850" name="word850" />
+              <p>gürültüye çok kızıyor.</p>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- //////////////Задание 3  без foto/////////// -->
+
+    <section class="task-section">
+      <div class="task-header">
+        3. Давайте посмотрим на таблицу и выберем подходящие ответы
+      </div>
+      <div class="task-content hidden">
+        <img src="./test6-task3.jpg" alt="test6-task3" />
+        <table>
+          <tr>
+            <th></th>
+            <th>Kerim</th>
+            <th>Gözde</th>
+            <th>İrem</th>
+            <th>Ferdi</th>
+          </tr>
+          <tr>
+            <td>Yaşı</td>
+            <td>25</td>
+            <td>19</td>
+            <td>20</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>Boyu</td>
+            <td>170</td>
+            <td>175</td>
+            <td>162</td>
+            <td>180</td>
+          </tr>
+          <tr>
+            <td>Kilosu</td>
+            <td>70</td>
+            <td>60</td>
+            <td>52</td>
+            <td>80</td>
+          </tr>
+        </table>
+        <ul>
+          <li>
+            <div class="write-container">
+              <p>En uzun boylu kim?</p>
+              <select class="answer-select" data-correct="Ferdi">
+                <option value="">--Выберите ответ--</option>
+                <option value="Kerim">Kerim</option>
+                <option value="İrem">İrem</option>
+                <option value="Gözde">Gözde</option>
+                <option value="Ferdi">Ferdi</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Gözde Kerim’den daha mı şişman?</p>
+              <select class="answer-select" data-correct="Hayır">
+                <option value="">--Выберите ответ--</option>
+                <option value="Evet">Evet</option>
+                <option value="Hayır">Hayır</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Kimler İrem’den daha uzun?</p>
+              <select
+                class="answer-select"
+                data-correct="Kerim, Gözde ve Ferdi"
+              >
+                <option value="">--Выберите ответ--</option>
+
+                <option value="Kerim ve Gözde">Kerim ve Gözde</option>
+                <option value="Gözde ve Ferdi">Gözde ve Ferdi</option>
+                <option value="Kerim, Gözde ve Ferdi">
+                  Kerim, Gözde ve Ferdi
+                </option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>En zayıf kim?</p>
+              <select class="answer-select" data-correct="İrem">
+                <option value="">--Выберите ответ--</option>
+                <option value="Kerim">Kerim</option>
+                <option value="İrem">İrem</option>
+                <option value="Gözde">Gözde</option>
+                <option value="Ferdi">Ferdi</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="write-container">
+              <p>Ferdi mi daha yaşlı İrem mi?</p>
+              <select class="answer-select" data-correct="Ferdi">
+                <option value="">--Выберите ответ--</option>
+                <option value="İrem">İrem</option>
+                <option value="Ferdi">Ferdi</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="controls">
+      <a href="../ders18/ders18-4test.html"> <button>Назад</button></a>
+
+      <a href="../../index.html"> <button>На главную</button></a>
+    </div>
+
+    <script src="../writeText.js"></script>
+    <script src="../words.js"></script>
+    <script src="../scriptDers.js"></script>
+    <!-- <script src="../slider-foto.js"></script> -->
+    <!-- <script src="../more-materials.js"></script> -->
+  </body>
+</html>
