@@ -244,27 +244,51 @@ const correctWordsSets = [
                    
 ] ;
 
-        function checkWord(correctWords) {
-            return function(event) {
-                const input = event.target;
-                const userWord = input.value.trim();
-                const inputs = Array.from(event.target.form.querySelectorAll('input[type="text"]'));
-                const index = inputs.indexOf(input);
-                const correctWord = correctWords[index];
+        // function checkWord(correctWords) {
+        //     return function(event) {
+        //         const input = event.target;
+        //         const userWord = input.value.trim();
+        //         const inputs = Array.from(event.target.form.querySelectorAll('input[type="text"]'));
+        //         const index = inputs.indexOf(input);
+        //         const correctWord = correctWords[index];
 
-                input.classList.remove('correct', 'incorrect');
+        //         input.classList.remove('correct', 'incorrect');
 
-                if (userWord === correctWord) {
-                    input.classList.add('correct');
-                } else {
-                    input.classList.add('incorrect');
-                }
-            };
-        }
+        //         if (userWord === correctWord) {
+        //             input.classList.add('correct');
+        //         } else {
+        //             input.classList.add('incorrect');
+        //         }
+        //     };
+        // }
 
-        correctWordsSets.forEach((correctWords, setIndex) => {
-            document.querySelectorAll(`#text-form-${setIndex + 1} input[type="text"]`).forEach(input => {
-                input.addEventListener('input', checkWord(correctWords));
-            });
-        });
+        // correctWordsSets.forEach((correctWords, setIndex) => {
+        //     document.querySelectorAll(`#text-form-${setIndex + 1} input[type="text"]`).forEach(input => {
+        //         input.addEventListener('input', checkWord(correctWords));
+        //     });
+        // });
     
+
+        function checkWord(correctWords) {
+    return function(event) {
+        const input = event.target;
+        const userWord = input.value.trim().toLowerCase(); // Преобразуем к нижнему регистру
+        const inputs = Array.from(event.target.form.querySelectorAll('input[type="text"]'));
+        const index = inputs.indexOf(input);
+        const correctWord = correctWords[index].toLowerCase(); // Преобразуем к нижнему регистру
+
+        input.classList.remove('correct', 'incorrect');
+
+        if (userWord === correctWord) {
+            input.classList.add('correct');
+        } else {
+            input.classList.add('incorrect');
+        }
+    };
+}
+
+correctWordsSets.forEach((correctWords, setIndex) => {
+    document.querySelectorAll(`#text-form-${setIndex + 1} input[type="text"]`).forEach(input => {
+        input.addEventListener('input', checkWord(correctWords));
+    });
+});
