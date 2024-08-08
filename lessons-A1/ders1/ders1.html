@@ -71,34 +71,13 @@
         <button onclick="prevWord()">Предыдущее</button>
         <button onclick="nextWord()">Следующее</button>
       </div>
-
-      <!-- Набор 1 -->
-      <!-- <div id="card1" class="card" onclick="flipCard(1)">
-        <div class="word">Набор 1</div>
-        <div class="translation hidden">translation</div>
-        <div class="image hidden">
-          <img src="./foto/trainer/akraba.jpg" alt="image" />
-        </div>
-      </div> -->
-
-      <!-- <div id="card" class="card" onclick="flipCard()">
-        <div class="word">родственники</div>
-        <div class="translation hidden">akraba</div>
-        <div class="image hidden">
-          <img class="item-img" src="./foto/trainer/akraba.jpg" alt="akraba" />
-        </div>
-      </div> -->
-      <!-- <div class="controls">
-        <button onclick="prevWord()">Предыдущее</button>
-        <button onclick="nextWord()">Следующее</button>
-      </div> -->
     </div>
     <!-- /////////////video//////////// -->
 
     <div class="section-wrapper">
       <video
         class="ders1-video"
-        src="../../video/video-ders1.mp4"
+        src="../../video/ders1-p1.mp4"
         width="640"
         controls
         loop
@@ -254,7 +233,7 @@
       <div class="task-content hidden" id="taskContent1">
         <div class="image-container">
           <img src="../ders1/foto/ders1_1.jpg" alt="Image 1" />
-          <select class="answer-select" data-correct="araba">
+          <select class="answer-select" data-correct="araba" name="text">
             <option value="">--Выберите ответ--</option>
             <option value="arca">arca</option>
             <option value="araba">araba</option>
@@ -263,7 +242,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_2.jpg" alt="Image 2" />
-          <select class="answer-select" data-correct="bavul">
+          <select class="answer-select" data-correct="bavul" name="text">
             <option value="">--Выберите ответ--</option>
             <option value="baden">baden</option>
             <option value="bacan">bacan</option>
@@ -272,7 +251,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_3.jpg" alt="Image 3" />
-          <select class="answer-select" data-correct="cetvel">
+          <select class="answer-select" data-correct="cetvel" name="text">
             <option value="">--Выберите ответ--</option>
             <option value="cetvel">cetvel</option>
             <option value="cebir">cebir</option>
@@ -281,7 +260,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_4.png" alt="Image 4" />
-          <select class="answer-select" data-correct="çanta">
+          <select class="answer-select" data-correct="çanta" name="text">
             <option value="">--Выберите ответ--</option>
             <option value="çağdaş">çağdaş</option>
             <option value="çalma">çalma</option>
@@ -290,7 +269,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_5.jpg" alt="Image 5" />
-          <select class="answer-select" data-correct="dondurma">
+          <select class="answer-select" name="text" data-correct="dondurma">
             <option value="">--Выберите ответ--</option>
             <option value="dondurma">dondurma</option>
             <option value="damat">damat</option>
@@ -299,7 +278,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_6.jpg" alt="Image 6" />
-          <select class="answer-select" data-correct="el">
+          <select class="answer-select" name="text" data-correct="el">
             <option value="">--Выберите ответ--</option>
             <option value="el">el</option>
             <option value="elbise">elbise</option>
@@ -308,7 +287,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_7.jpg" alt="Image 7" />
-          <select class="answer-select" data-correct="fener">
+          <select class="answer-select" name="text" data-correct="fener">
             <option value="">--Выберите ответ--</option>
             <option value="fare">fare</option>
             <option value="fener">fener</option>
@@ -317,7 +296,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_8.jpg" alt="Image 8" />
-          <select class="answer-select" data-correct="gemi">
+          <select class="answer-select" name="text" data-correct="gemi">
             <option value="">--Выберите ответ--</option>
             <option value="gece">gece</option>
             <option value="galon">galon</option>
@@ -326,7 +305,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_9.jpg" alt="Image 9" />
-          <select class="answer-select" data-correct="havuç">
+          <select class="answer-select" name="text" data-correct="havuç">
             <option value="">--Выберите ответ--</option>
             <option value="hafiza">hafiza</option>
             <option value="havuç">havuç</option>
@@ -335,7 +314,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_10.jpg" alt="Image 10" />
-          <select class="answer-select" data-correct="ıstakoz">
+          <select class="answer-select" name="text" data-correct="ıstakoz">
             <option value="">--Выберите ответ--</option>
             <option value="ıstakoz">ıstakoz</option>
             <option value="ılık">ılık</option>
@@ -344,7 +323,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_11.jpg" alt="Image 11" />
-          <select class="answer-select" data-correct="iğne">
+          <select class="answer-select" name="text" data-correct="iğne">
             <option value="">--Выберите ответ--</option>
             <option value="ip">ip</option>
             <option value="iştah">iştah</option>
@@ -353,7 +332,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_12.jpg" alt="Image 12" />
-          <select class="answer-select" data-correct="jilet">
+          <select class="answer-select" name="text" data-correct="jilet">
             <option value="">--Выберите ответ--</option>
             <option value="jilet">jilet</option>
             <option value="jeton">jeton</option>
@@ -362,7 +341,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_13.jpg" alt="Image 13" />
-          <select class="answer-select" data-correct="kalem">
+          <select class="answer-select" name="text" data-correct="kalem">
             <option value="">--Выберите ответ--</option>
             <option value="kalem">kalem</option>
             <option value="kravat">kravat</option>
@@ -371,7 +350,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_14.jpg" alt="Image 14" />
-          <select class="answer-select" data-correct="lokomotif">
+          <select class="answer-select" name="text" data-correct="lokomotif">
             <option value="">--Выберите ответ--</option>
             <option value="leylek">leylek</option>
             <option value="lavabo">lavabo</option>
@@ -380,7 +359,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_15.jpg" alt="Image 15" />
-          <select class="answer-select" data-correct="makas">
+          <select class="answer-select" name="text" data-correct="makas">
             <option value="">--Выберите ответ--</option>
             <option value="makas">makas</option>
             <option value="masa">masa</option>
@@ -389,7 +368,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_16.jpg" alt="Image 16" />
-          <select class="answer-select" data-correct="nar">
+          <select class="answer-select" name="text" data-correct="nar">
             <option value="">--Выберите ответ--</option>
             <option value="nakit">nakit</option>
             <option value="nar">nar</option>
@@ -398,7 +377,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_17.jpg" alt="Image 17" />
-          <select class="answer-select" data-correct="ocak">
+          <select class="answer-select" name="text" data-correct="ocak">
             <option value="">--Выберите ответ--</option>
             <option value="ocak">ocak</option>
             <option value="oğul">oğul</option>
@@ -407,7 +386,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_18.jpg" alt="Image 18" />
-          <select class="answer-select" data-correct="öküz">
+          <select class="answer-select" name="text" data-correct="öküz">
             <option value="">--Выберите ответ--</option>
             <option value="öfke">öfke</option>
             <option value="ödeme">ödeme</option>
@@ -416,7 +395,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_19.jpg" alt="Image 19" />
-          <select class="answer-select" data-correct="palto">
+          <select class="answer-select" name="text" data-correct="palto">
             <option value="">--Выберите ответ--</option>
             <option value="palet">palet</option>
             <option value="palto">palto</option>
@@ -425,7 +404,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_20.jpg" alt="Image 20" />
-          <select class="answer-select" data-correct="ruj">
+          <select class="answer-select" name="text" data-correct="ruj">
             <option value="">--Выберите ответ--</option>
             <option value="ruj">ruj</option>
             <option value="radon">radon</option>
@@ -434,7 +413,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_21.jpg" alt="Image 21" />
-          <select class="answer-select" data-correct="saat">
+          <select class="answer-select" name="text" data-correct="saat">
             <option value="">--Выберите ответ--</option>
             <option value="sarı">sarı</option>
             <option value="saat">saat</option>
@@ -443,7 +422,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_22.jpg" alt="Image 22" />
-          <select class="answer-select" data-correct="şişe">
+          <select class="answer-select" name="text" data-correct="şişe">
             <option value="">--Выберите ответ--</option>
             <option value="şah">şah</option>
             <option value="şişe">şişe</option>
@@ -452,7 +431,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_23.jpg" alt="Image 23" />
-          <select class="answer-select" data-correct="tren">
+          <select class="answer-select" name="text" data-correct="tren">
             <option value="">--Выберите ответ--</option>
             <option value="transfer">transfer</option>
             <option value="tren">tren</option>
@@ -461,7 +440,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_24.jpg" alt="Image 24" />
-          <select class="answer-select" data-correct="uçak">
+          <select class="answer-select" name="text" data-correct="uçak">
             <option value="">--Выберите ответ--</option>
             <option value="uçak">uçak</option>
             <option value="ufo">ufo</option>
@@ -470,7 +449,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_25.jpg" alt="Image 25" />
-          <select class="answer-select" data-correct="ütü">
+          <select class="answer-select" name="text" data-correct="ütü">
             <option value="">--Выберите ответ--</option>
             <option value="üç">üç</option>
             <option value="ülke">ülke</option>
@@ -479,7 +458,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_26.jpg" alt="Image 26" />
-          <select class="answer-select" data-correct="vazo">
+          <select class="answer-select" name="text" data-correct="vazo">
             <option value="">--Выберите ответ--</option>
             <option value="varoş">varoş</option>
             <option value="vazo">vazo</option>
@@ -488,7 +467,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_27.jpg" alt="Image 27" />
-          <select class="answer-select" data-correct="yüzük">
+          <select class="answer-select" name="text" data-correct="yüzük">
             <option value="">--Выберите ответ--</option>
             <option value="yabanci">yabanci</option>
             <option value="yatak">yatak</option>
@@ -497,7 +476,7 @@
         </div>
         <div class="image-container">
           <img src="../ders1/foto/ders1_28.jpg" alt="Image 28" />
-          <select class="answer-select" data-correct="zeytin">
+          <select class="answer-select" name="text" data-correct="zeytin">
             <option value="">--Выберите ответ--</option>
             <option value="zeytin">zeytin</option>
             <option value="zam">zam</option>
@@ -515,7 +494,7 @@
       <div class="task-content write hidden" id="taskContent2">
         <div class="write-container">
           <p>Какой буквы нет в турецком алфавите?</p>
-          <select class="answer-select" data-correct="w">
+          <select class="answer-select" name="text" data-correct="w">
             <option value="">--Выберите ответ--</option>
             <option value="ğ">ğ</option>
             <option value="n">n</option>
@@ -526,7 +505,7 @@
 
         <div class="write-container">
           <p>В какой из строчек перечислены только согласные буквы?</p>
-          <select class="answer-select" data-correct="y,g,ğ,c">
+          <select class="answer-select" name="text" data-correct="y,g,ğ,c">
             <option value="">--Выберите ответ--</option>
             <option value="ğ,v,i,ş">ğ,v,i,ş</option>
             <option value="y,g,ğ,c">y,g,ğ,c</option>
@@ -537,7 +516,7 @@
 
         <div class="write-container">
           <p>В каком из вариантов ответов имя 'ЮРИЙ' написано правильно?</p>
-          <select class="answer-select" data-correct="Yuriy">
+          <select class="answer-select" name="text" data-correct="Yuriy">
             <option value="">--Выберите ответ--</option>
             <option value="Urii">Urii</option>
             <option value="Uriy">Uriy</option>
@@ -550,7 +529,7 @@
           <p>
             В каком из вариантов ответов дано правильное произношение буквы 'L'?
           </p>
-          <select class="answer-select" data-correct="Лэ">
+          <select class="answer-select" name="text" data-correct="Лэ">
             <option value="">--Выберите ответ--</option>
             <option value="Эл">Эл</option>
             <option value="Лэ">Лэ</option>
@@ -561,7 +540,7 @@
 
         <div class="write-container">
           <p>Как правильно транскрибировать на русский язык слово 'ELEM'?</p>
-          <select class="answer-select" data-correct="Элем">
+          <select class="answer-select" name="text" data-correct="Элем">
             <option value="">--Выберите ответ--</option>
             <option value="Элем">Элем</option>
             <option value="Елем">Елем</option>
@@ -574,6 +553,7 @@
           <p>Сколько согласных и гласных букв в турецком алфавите?</p>
           <select
             class="answer-select"
+            name="text"
             data-correct="Гласные -8, согласные-21."
           >
             <option value="">--Выберите ответ--</option>
@@ -594,7 +574,7 @@
 
         <div class="write-container">
           <p>Как правильно, произносится слово 'AĞAÇ'?</p>
-          <select class="answer-select" data-correct="Аач">
+          <select class="answer-select" name="text" data-correct="Аач">
             <option value="">--Выберите ответ--</option>
             <option value="Аач">Аач</option>
             <option value="Ааш">Ааш</option>
@@ -607,6 +587,8 @@
 
     <!-- /////////////переключение страниц//////////// -->
     <div class="controls">
+      <a href="../../index_levelA1.html"> <button>Level A1</button></a>
+
       <a href="./ders1_2.html"> <button>Далее</button></a>
     </div>
 
