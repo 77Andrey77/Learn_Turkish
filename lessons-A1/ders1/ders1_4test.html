@@ -87,23 +87,6 @@
       нужно ответить правильно с минимальным количеством ошибок. Удачи!
     </p>
 
-    <div class="section-wrapper">
-      <!-- <video
-        class="ders1-video"
-        src="../../video/video-ders1.mp4"
-        width="640"
-        controls
-        loop
-        preload="none"
-      ></video> -->
-      <!-- <audio
-        src="../../audio/ders1-page3.m4a"
-        width="640"
-        controls
-        loop
-        preload="none"
-      ></audio> -->
-    </div>
     <!-- ///////////////////////// -->
 
     <div class="section-wrapper section-download hidden">
@@ -122,7 +105,7 @@
       <div class="task-content write hidden">
         <div class="write-container">
           <p>Сколько букв в турецком алфавите?</p>
-          <select class="answer-select" data-correct="29">
+          <select class="answer-select" name="text" data-correct="29">
             <option value="">--Выберите ответ--</option>
             <option value="28">28</option>
             <option value="29">29</option>
@@ -132,7 +115,7 @@
 
         <div class="write-container">
           <p>Каких букв нет в турецком алфавите?</p>
-          <select class="answer-select" data-correct="w">
+          <select class="answer-select" name="text" data-correct="w">
             <option value="">--Выберите ответ--</option>
             <option value="w">w</option>
             <option value="y">y</option>
@@ -142,7 +125,7 @@
 
         <div class="write-container">
           <p>Сколько гласных букв в турецком языке?</p>
-          <select class="answer-select" data-correct="8">
+          <select class="answer-select" name="text" data-correct="8">
             <option value="">--Выберите ответ--</option>
             <option value="21">21</option>
             <option value="29">29</option>
@@ -152,7 +135,7 @@
 
         <div class="write-container">
           <p>Какая из приведенных ниже гласных не является твердой?</p>
-          <select class="answer-select" data-correct="e">
+          <select class="answer-select" name="text" data-correct="e">
             <option value="">--Выберите ответ--</option>
             <option value="a">a</option>
             <option value="o">o</option>
@@ -163,7 +146,7 @@
 
         <div class="write-container">
           <p>Какая буква является согласной в турецком языке?</p>
-          <select class="answer-select" data-correct="y">
+          <select class="answer-select" name="text" data-correct="y">
             <option value="">--Выберите ответ--</option>
             <option value="ı">ı</option>
             <option value="y">y</option>
@@ -174,7 +157,7 @@
 
         <div class="write-container">
           <p>Попробуйте затранскрибировать турецкое имя Aydın.</p>
-          <select class="answer-select" data-correct="Айдын">
+          <select class="answer-select" name="text" data-correct="Айдын">
             <option value="">--Выберите ответ--</option>
             <option value="Айдин">Айдин</option>
             <option value="Аудин">Аудин</option>
@@ -185,7 +168,7 @@
 
         <div class="write-container">
           <p>Попробуйте затранскрибировать турецкое имя Zeynep.</p>
-          <select class="answer-select" data-correct="Зейнеп">
+          <select class="answer-select" name="text" data-correct="Зейнеп">
             <option value="">--Выберите ответ--</option>
             <option value="Зейнеп">Зейнеп</option>
             <option value="Зейнер">Зейнер</option>
@@ -196,7 +179,7 @@
 
         <div class="write-container">
           <p>Какая буква в турецком языке не выражает никакого звука?</p>
-          <select class="answer-select" data-correct="ğ">
+          <select class="answer-select" name="text" data-correct="ğ">
             <option value="">--Выберите ответ--</option>
             <option value="ş">ş</option>
             <option value="ı">ı</option>
@@ -207,7 +190,7 @@
 
         <div class="write-container">
           <p>Какая гласная буква не является мягкой?</p>
-          <select class="answer-select" data-correct="u">
+          <select class="answer-select" name="text" data-correct="u">
             <option value="">--Выберите ответ--</option>
             <option value="u">u</option>
             <option value="e">e</option>
@@ -219,7 +202,11 @@
           <p>
             Найдите правильное написание города Екатеринбург на турецком языке.
           </p>
-          <select class="answer-select" data-correct="Yekaterinburg">
+          <select
+            class="answer-select"
+            name="text"
+            data-correct="Yekaterinburg"
+          >
             <option value="">--Выберите ответ--</option>
             <option value="Ekaterinburg">Ekaterinburg</option>
             <option value="Yekaterinburg">Yekaterinburg</option>
@@ -240,5 +227,3 @@
     <script src="../scriptDers.js"></script>
   </body>
 </html>
-
-<!-- Задание 5. Посмотрите на картинку и правильно выберите вариант -->

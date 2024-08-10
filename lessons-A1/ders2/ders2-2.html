@@ -72,24 +72,6 @@
         <button onclick="nextWord()">Следующее</button>
       </div>
     </div>
-    <!-- /////////////audio//////////// -->
-    <!-- <img
-      class="icon-headphones"
-      src="../../icons/icon-headphones.svg"
-      alt="icon-headphones"
-    />
-    <p class="title-audio">Давайте послушаем текст</p>
-
-    <div class="section-wrapper">
-      <audio
-        src="../../audio/ders2-page3.m4a"
-        width="640"
-        controls
-        loop
-        preload="none"
-      ></audio>
-    </div> -->
-    <!-- /////////////dowloading//////////// -->
 
     <!-- ////////////more info///////////// -->
     <section class="task-section">
@@ -135,6 +117,7 @@
               <p>2.</p>
               <select
                 class="answer-select"
+                name="text"
                 data-correct="Aslı: Merhaba! Benim adım Aslı"
               >
                 <option value="">--Выберите ответ--</option>
@@ -168,7 +151,11 @@
           <li>
             <div class="write-container">
               <p>3.</p>
-              <select class="answer-select" data-correct="Ümit: Memnun oldum.">
+              <select
+                class="answer-select"
+                name="text"
+                data-correct="Ümit: Memnun oldum."
+              >
                 <option value="">--Выберите ответ--</option>
                 <option value="Ümit: Memnun oldum.">Ümit: Memnun oldum.</option>
                 <option value="Aslı: Ben de memnun oldum.">
@@ -201,6 +188,7 @@
               <p>4.</p>
               <select
                 class="answer-select"
+                name="text"
                 data-correct="Aslı: Ben de memnun oldum."
               >
                 <option value="">--Выберите ответ--</option>
@@ -233,7 +221,11 @@
           <li>
             <div class="write-container">
               <p>5.</p>
-              <select class="answer-select" data-correct="Ümit: Nasılsın Aslı?">
+              <select
+                class="answer-select"
+                name="text"
+                data-correct="Ümit: Nasılsın Aslı?"
+              >
                 <option value="">--Выберите ответ--</option>
                 <option value="Ümit: Memnun oldum.">Ümit: Memnun oldum.</option>
                 <option value="Aslı: Ben de memnun oldum.">
@@ -266,6 +258,7 @@
               <p>6.</p>
               <select
                 class="answer-select"
+                name="text"
                 data-correct="Aslı: Teşekkürler, iyiyim sen nasılsın?"
               >
                 <option value="">--Выберите ответ--</option>
@@ -300,6 +293,7 @@
               <p>7.</p>
               <select
                 class="answer-select"
+                name="text"
                 data-correct="Ümit: Sağ ol, ben de iyiyim."
               >
                 <option value="">--Выберите ответ--</option>
@@ -334,6 +328,7 @@
               <p>8.</p>
               <select
                 class="answer-select"
+                name="text"
                 data-correct="Aslı: Görüşmek üzere. Hoşça kal."
               >
                 <option value="">--Выберите ответ--</option>
@@ -368,6 +363,7 @@
               <p>9.</p>
               <select
                 class="answer-select"
+                name="text"
                 data-correct="Ümit: Görüşürüz. Güle güle."
               >
                 <option value="">--Выберите ответ--</option>
@@ -409,7 +405,7 @@
       <div class="task-content write hidden">
         <div class="write-container">
           <p>Görüşmek üzere</p>
-          <select class="answer-select" data-correct="Görüşürüz">
+          <select class="answer-select" name="text" data-correct="Görüşürüz">
             <option value="">--Выберите ответ--</option>
             <option value="Çinliyim">Çinliyim</option>
             <option value="İyilik">İyilik</option>
@@ -426,7 +422,7 @@
 
         <div class="write-container">
           <p>Merhaba</p>
-          <select class="answer-select" data-correct="Merhaba">
+          <select class="answer-select" name="text" data-correct="Merhaba">
             <option value="">--Выберите ответ--</option>
             <option value="Çinliyim">Çinliyim</option>
             <option value="İyilik">İyilik</option>
@@ -443,7 +439,7 @@
 
         <div class="write-container">
           <p>Teşekkür ederim</p>
-          <select class="answer-select" data-correct="Rica ederim">
+          <select class="answer-select" name="text" data-correct="Rica ederim">
             <option value="">--Выберите ответ--</option>
             <option value="Çinliyim">Çinliyim</option>
             <option value="İyilik">İyilik</option>
@@ -460,7 +456,7 @@
 
         <div class="write-container">
           <p>Hoşça kal</p>
-          <select class="answer-select" data-correct="Güle güle">
+          <select class="answer-select" name="text" data-correct="Güle güle">
             <option value="">--Выберите ответ--</option>
             <option value="Çinliyim">Çinliyim</option>
             <option value="İyilik">İyilik</option>
@@ -477,7 +473,7 @@
 
         <div class="write-container">
           <p>Memnun oldum</p>
-          <select class="answer-select" data-correct="Ben de">
+          <select class="answer-select" name="text" data-correct="Ben de">
             <option value="">--Выберите ответ--</option>
             <option value="Çinliyim">Çinliyim</option>
             <option value="İyilik">İyilik</option>
@@ -494,7 +490,7 @@
 
         <div class="write-container">
           <p>Nasılsın?</p>
-          <select class="answer-select" data-correct="İyiyim">
+          <select class="answer-select" name="text" data-correct="İyiyim">
             <option value="">--Выберите ответ--</option>
             <option value="Çinliyim">Çinliyim</option>
             <option value="İyilik">İyilik</option>
@@ -511,7 +507,7 @@
 
         <div class="write-container">
           <p>Nerelisin?</p>
-          <select class="answer-select" data-correct="Çinliyim">
+          <select class="answer-select" name="text" data-correct="Çinliyim">
             <option value="">--Выберите ответ--</option>
             <option value="Çinliyim">Çinliyim</option>
             <option value="İyilik">İyilik</option>
@@ -528,7 +524,7 @@
 
         <div class="write-container">
           <p>Ne haber?</p>
-          <select class="answer-select" data-correct="İyilik">
+          <select class="answer-select" name="text" data-correct="İyilik">
             <option value="">--Выберите ответ--</option>
             <option value="Çinliyim">Çinliyim</option>
             <option value="İyilik">İyilik</option>
@@ -545,7 +541,7 @@
 
         <div class="write-container">
           <p>Hoş geldin</p>
-          <select class="answer-select" data-correct="Hoş bulduk">
+          <select class="answer-select" name="text" data-correct="Hoş bulduk">
             <option value="">--Выберите ответ--</option>
             <option value="Çinliyim">Çinliyim</option>
             <option value="İyilik">İyilik</option>
@@ -562,7 +558,7 @@
 
         <div class="write-container">
           <p>Senin adın ne?</p>
-          <select class="answer-select" data-correct="Ahmet">
+          <select class="answer-select" name="text" data-correct="Ahmet">
             <option value="">--Выберите ответ--</option>
             <option value="Çinliyim">Çinliyim</option>
             <option value="İyilik">İyilik</option>
